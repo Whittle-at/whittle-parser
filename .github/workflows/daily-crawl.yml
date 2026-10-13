@@ -10,6 +10,7 @@ on:
 permissions:
   contents: write
   issues: write   # 03.10: crawl-health.js sorun varsa issue açıyor (e-posta bildirimi)
+  actions: write  # 13.10: ara artifact'leri silmek için
 
 jobs:
   # 26.09: şirket listesi 4 paralel işe bölündü. Tek iş 28 şirkette bile uzun sürüyordu; liste
@@ -66,7 +67,7 @@ jobs:
           name: results-shard-${{ matrix.shard }}
           path: results/*shard*.json
           if-no-files-found: warn
-          retention-days: 3
+          retention-days: 1
 
   # 02.10: problem-companies.json (BMW, Bain, OeKB, Schönherr + sonradan eklenenler) 2 günde bir, ayrı işte.
   # Bot korumasına takılan olursa sadece o şirket boş döner (continue-on-error) — günlük tarama etkilenmez,
@@ -126,7 +127,7 @@ jobs:
             results/whittle-import-*-problem.json
             results/ai-queue-*.json
           if-no-files-found: warn
-          retention-days: 3
+          retention-days: 1
 
   merge:
     needs: [crawl, problem]
@@ -186,12 +187,22 @@ jobs:
         run: echo "d=$(date -u +%Y-%m-%d)" >> "$GITHUB_OUTPUT"
 
       # 13.10: bugünün combined dosyası indirilebilir artifact olarak (Actions → bu çalıştırma → Artifacts).
-      - name: Combined dosyasını yükle
+      # 13.10: public repoda artifact'leri GitHub'a giriş yapmış herkes indirebiliyor → combined dosyası şifreli
+      # (secret: ARTIFACT_PASS). Mac'te açmak: openssl enc -d -aes-256-cbc -pbkdf2 -in X.json.enc -out X.json
+      - name: Combined dosyasını şifrele
+        if: always()
+        env:
+          ARTIFACT_PASS: ${{ secrets.ARTIFACT_PASS }}
+        run: |
+          f="results/whittle-import-${{ steps.date.outputs.d }}-combined.json"
+          if [ -f "$f" ] && [ -n "$ARTIFACT_PASS" ]; then openssl enc -aes-256-cbc -pbkdf2 -salt -in "$f" -out "$f.enc" -pass env:ARTIFACT_PASS; fi
+
+      - name: Combined dosyasını yükle (şifreli)
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: whittle-import-${{ steps.date.outputs.d }}
-          path: results/whittle-import-${{ steps.date.outputs.d }}-combined.json
+          path: results/whittle-import-${{ steps.date.outputs.d }}-combined.json.enc
           if-no-files-found: warn
           retention-days: 7
 
@@ -246,3 +257,12 @@ jobs:
           WHITTLE_ADMIN_EMAIL: ${{ secrets.WHITTLE_ADMIN_EMAIL }}
           WHITTLE_ADMIN_PASSWORD: ${{ secrets.WHITTLE_ADMIN_PASSWORD }}
           APPCHECK_DEBUG_TOKEN: ${{ secrets.APPCHECK_DEBUG_TOKEN }}
+
+      # 13.10: ara parça dosyaları (ilan metinli) birleştirildikten sonra silinsin – public repoda indirilebilir kalmasın.
+      - name: Ara parça dosyalarını sil
+        if: always()
+        continue-on-error: true
+        uses: geekyeggo/delete-artifact@v5
+        with:
+          name: results-shard-*
+          failOnError: false
