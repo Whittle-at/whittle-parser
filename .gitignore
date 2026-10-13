@@ -1,0 +1,11 @@
+node_modules/
+.DS_Store
+.DS_Store
+# 13.10: repo public — ilan metinli tarama çıktıları ve yerel test dosyaları repoya girmesin
+results/whittle-import-*.json
+results/ai-queue-*.json
+companies-test.json
+test-log.txt
+node_modules/
+node_modules.nosync/
+.env

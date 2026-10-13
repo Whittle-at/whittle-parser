@@ -1,0 +1,237 @@
+name: Whittle günlük ilan taraması
+
+on:
+  schedule:
+    # Her gün 06:00 UTC = yaz saatinde (CEST) Viyana'da 08:00, kış saatinde (CET) 07:00.
+    # GitHub Actions cron zamanlaması sıkışık olabilir (dakikalarca gecikebilir), bu normal.
+    - cron: '0 6 * * *'
+  workflow_dispatch: {}  # Actions sekmesinden elle "Run workflow" ile de tetiklenebilir
+
+permissions:
+  contents: write
+  issues: write   # 03.10: crawl-health.js sorun varsa issue açıyor (e-posta bildirimi)
+
+jobs:
+  # 26.09: şirket listesi 4 paralel işe bölündü. Tek iş 28 şirkette bile uzun sürüyordu; liste
+  # büyüdükçe GitHub'ın iş başına 3 saat sınırını aşacaktı. Her iş listenin 1/4'ünü tarar
+  # (--shard K/4), sonuçlarını "artifact" olarak bırakır; en sondaki merge işi hepsini toplar,
+  # birleştirir ve TEK commit atar (paralel işler aynı anda commit atıp çakışmasın diye).
+  crawl:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    strategy:
+      fail-fast: false        # bir parça çökerse diğerleri devam etsin
+      matrix:
+        shard: [1, 2, 3, 4]
+    steps:
+      - name: Repoyu çek
+        uses: actions/checkout@v4
+
+      - name: Node.js kur
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      # 30.09: GitHub'ın Ubuntu makinesinde Google Chrome zaten kurulu (bağımlılıklarıyla birlikte). Eskiden her
+      # parçada apt-get ile kütüphane kurup puppeteer'ın kendi ~150 MB'lık Chrome'unu indiriyorduk (iş başına
+      # birkaç dakika × 5 iş, her gün). Artık kurulu Chrome kullanılıyor; yoksa eski yola düşülüyor.
+      - name: Chrome + puppeteer hazırla
+        run: |
+          sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
+          if [ -x /usr/bin/google-chrome ]; then
+            echo "PUPPETEER_EXECUTABLE_PATH=/usr/bin/google-chrome" >> "$GITHUB_ENV"
+            PUPPETEER_SKIP_DOWNLOAD=true npm install puppeteer
+          else
+            sudo apt-get update
+            sudo apt-get install -y libnss3 libatk1.0-0 libatk-bridge2.0-0 libcups2 libdrm2 libxkbcommon0 libxcomposite1 libxdamage1 libxfixes3 libxrandr2 libgbm1 libasound2t64 libpango-1.0-0 libcairo2
+            npm install puppeteer
+          fi
+
+      - name: Taramayı çalıştır (parça ${{ matrix.shard }}/4)
+        run: node jobposting-parser-v2.js --crawl-batch companies.json --shard ${{ matrix.shard }}/4
+        continue-on-error: true  # hata olsa bile o ana kadar yazılmış sonuç dosyası kullanılsın
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # 28.09: Avusturya geneli — companies.json'daki "city" değerlerini geçersiz kılar. Sadece Wien'e dönmek için bu satırı sil.
+          WHITTLE_REGION: AT
+          # 28.09: AI çağrıları parçalarda yapılmıyor, kuyruğa yazılıyor; merge işi tek Batch API isteğiyle (%50 ucuz) gönderiyor.
+          WHITTLE_AI_MODE: batch
+          # 30.09: API'si olmayan (tarayıcıyla taranan) şirketler 2 günde bir; API'li olanlar her gün. Her gün için 1 yaz.
+          WHITTLE_BROWSER_EVERY: '2'
+
+      - name: Parça sonuçlarını sakla
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: results-shard-${{ matrix.shard }}
+          path: results/*shard*.json
+          if-no-files-found: warn
+          retention-days: 3
+
+  # 02.10: problem-companies.json (BMW, Bain, OeKB, Schönherr + sonradan eklenenler) 2 günde bir, ayrı işte.
+  # Bot korumasına takılan olursa sadece o şirket boş döner (continue-on-error) — günlük tarama etkilenmez,
+  # ve boş dönen şirketin ilanları kapatılmaz (perCompany'de ok:false).
+  problem:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150   # 03.10: problem listesi 14 → 29 şirket
+    steps:
+      - name: Gün kontrolü (2 günde bir)
+        id: day
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ $(( 10#$(date -u +%j) % 2 )) -eq 0 ]; then echo "run=1" >> "$GITHUB_OUTPUT"; else echo "run=0" >> "$GITHUB_OUTPUT"; fi
+
+      - name: Repoyu çek
+        if: steps.day.outputs.run == '1'
+        uses: actions/checkout@v4
+
+      - name: Node.js kur
+        if: steps.day.outputs.run == '1'
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Chrome + puppeteer hazırla
+        if: steps.day.outputs.run == '1'
+        run: |
+          sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
+          echo "PUPPETEER_EXECUTABLE_PATH=/usr/bin/google-chrome" >> "$GITHUB_ENV"
+          PUPPETEER_SKIP_DOWNLOAD=true npm install puppeteer
+
+      - name: Problem şirketleri tara
+        if: steps.day.outputs.run == '1'
+        run: node jobposting-parser-v2.js --crawl-batch problem-companies.json
+        continue-on-error: true
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          WHITTLE_REGION: AT
+          WHITTLE_AI_MODE: batch
+
+      - name: Sonucu sakla
+        if: steps.day.outputs.run == '1'
+        uses: actions/upload-artifact@v4
+        with:
+          name: results-shard-problem
+          path: |
+            results/whittle-import-*-problem.json
+            results/ai-queue-*.json
+          if-no-files-found: warn
+          retention-days: 3
+
+  merge:
+    needs: [crawl, problem]
+    if: always()   # bazı parçalar başarısız olsa bile gelenleri birleştir
+    runs-on: ubuntu-latest
+    timeout-minutes: 40   # AI batch'i en fazla 12 dk bekleniyor (bitmezse ertesi gün toplanıyor)
+    steps:
+      - name: Repoyu çek
+        uses: actions/checkout@v4
+
+      - name: Node.js kur
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      # 13.10: combined dosyaları artık repoya commit'lenmiyor (repo public; ilan metinleri yayınlanmasın).
+      # Önceki günlerin combined dosyaları (Markt-Statistik + sağlık raporu için) Actions cache'inde tutuluyor.
+      - name: Önceki combined dosyalarını geri yükle
+        uses: actions/cache@v4
+        with:
+          path: results/whittle-import-*-combined.json
+          key: combined-${{ github.run_id }}
+          restore-keys: combined-
+
+      - name: Parça sonuçlarını indir
+        uses: actions/download-artifact@v4
+        with:
+          pattern: results-shard-*
+          path: results
+          merge-multiple: true
+
+      # 02.10: problem-companies.json artık yukarıdaki "problem" işinde 2 günde bir taranıyor; dosyası varsa
+      # merge-results.js onu otomatik olarak ana sonuçla birleştiriyor (whittle-import-<tarih>-problem.json).
+      # merge-results.js önce 4 parçayı tek ana dosyada toplar (AI cache ve kota dahil), sonra
+      # combined dosyasını üretir. Admin paneline combined dosyasının TAMAMINI yapıştır.
+      - name: Sonuçları birleştir (+ AI batch)
+        run: node merge-results.js
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
+      # 03.10: sağlık raporu — bozulan şirketler results/crawl-health.md + çalıştırma özeti; sorun varsa GitHub issue (e-posta).
+      - name: Sağlık raporu
+        if: always()
+        continue-on-error: true
+        run: node crawl-health.js
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # 05.10: X için günlük post taslakları → results/x-posts.md (repoda, GitHub'dan telefonla da okunur).
+      - name: X post taslakları
+        if: always()
+        continue-on-error: true
+        run: node x-posts.js
+
+      - name: Tarihi al
+        id: date
+        run: echo "d=$(date -u +%Y-%m-%d)" >> "$GITHUB_OUTPUT"
+
+      # 13.10: bugünün combined dosyası indirilebilir artifact olarak (Actions → bu çalıştırma → Artifacts).
+      - name: Combined dosyasını yükle
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: whittle-import-${{ steps.date.outputs.d }}
+          path: results/whittle-import-${{ steps.date.outputs.d }}-combined.json
+          if-no-files-found: warn
+          retention-days: 7
+
+      # Bekçi (crawl-watchdog.yml) artık combined dosyasına değil bu küçük durum dosyasına bakıyor.
+      - name: Durum dosyası + eski combined dosyalarını buda
+        if: always()
+        run: |
+          f="results/whittle-import-${{ steps.date.outputs.d }}-combined.json"
+          if [ -f "$f" ]; then echo "{\"date\":\"${{ steps.date.outputs.d }}\",\"items\":$(jq '.totalItems' "$f")}" > results/crawl-status.json; fi
+          ls results/whittle-import-*-combined.json 2>/dev/null | sort | head -n -7 | xargs -r rm -f
+
+      - name: Sonucu repoya commit'le
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Günlük ilan taraması: ${{ steps.date.outputs.d }}"
+          # results/ klasörü + -A: silinen eski ai-budget dosyaları da commit'e giriyor. whittle-import-*.json .gitignore'da (13.10).
+          file_pattern: 'results/'
+          add_options: '-A'
+
+      # 30.09 — Otomatik içe aktarma: combined dosyası whittle.at'e admin olarak yükleniyor (panelde elle
+      # "Toplu içe aktar" ile birebir aynı). Secret'lar tanımlı değilse adım kendini atlıyor.
+      - name: Chrome + puppeteer hazırla (otomatik içe aktarma için)
+        run: |
+          sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
+          if [ -x /usr/bin/google-chrome ]; then
+            echo "PUPPETEER_EXECUTABLE_PATH=/usr/bin/google-chrome" >> "$GITHUB_ENV"
+            PUPPETEER_SKIP_DOWNLOAD=true npm install puppeteer
+          else
+            sudo apt-get update
+            sudo apt-get install -y libnss3 libatk1.0-0 libatk-bridge2.0-0 libcups2 libdrm2 libxkbcommon0 libxcomposite1 libxdamage1 libxfixes3 libxrandr2 libgbm1 libasound2t64 libpango-1.0-0 libcairo2
+            npm install puppeteer
+          fi
+
+      # 05.10: X paketi — her taslak için PNG kart, ilk 3'ü için 5 sn video + index.html.
+      # Repoya girmez; bu çalıştırmanın sayfasında "x-paket-<tarih>" zip'i olarak indirilir (14 gün saklanır).
+      - name: X paketi (görsel + video)
+        if: always()
+        continue-on-error: true
+        run: node x-cards.js
+      - name: X paketini yükle
+        if: always()
+        continue-on-error: true
+        uses: actions/upload-artifact@v4
+        with:
+          name: x-paket-${{ steps.date.outputs.d }}
+          path: x-paket/
+          retention-days: 14
+
+      - name: whittle.at'e otomatik içe aktar
+        run: node auto-import.js "results/whittle-import-${{ steps.date.outputs.d }}-combined.json"
+        env:
+          WHITTLE_ADMIN_EMAIL: ${{ secrets.WHITTLE_ADMIN_EMAIL }}
+          WHITTLE_ADMIN_PASSWORD: ${{ secrets.WHITTLE_ADMIN_PASSWORD }}
+          APPCHECK_DEBUG_TOKEN: ${{ secrets.APPCHECK_DEBUG_TOKEN }}

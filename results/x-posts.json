@@ -1,0 +1,290 @@
+{
+ "date": "2026-10-13",
+ "dd": "13.10.2026",
+ "link": "whittle.at/?source=x",
+ "posts": [
+  {
+   "i": 1,
+   "key": "week:2026-10-13",
+   "text": "Diese Woche neu in Wien: 44 Praktika & Werkstudentenjobs in Business & Tech.\n\nAm meisten in:\nFinance & Controlling: 10\nMarketing & Kommunikation: 8\nData & Analytics: 8\n\nNeue Stellen jeden Tag:\n\nwhittle.at/?source=x",
+   "card": {
+    "kicker": "Wien · diese Woche",
+    "big": "44",
+    "bigSub": "neue Praktika & Werkstudentenjobs",
+    "rows": [
+     [
+      "Finance & Controlling",
+      "10",
+      0.22727272727272727
+     ],
+     [
+      "Marketing & Kommunikation",
+      "8",
+      0.18181818181818182
+     ],
+     [
+      "Data & Analytics",
+      "8",
+      0.18181818181818182
+     ],
+     [
+      "IT & Software",
+      "7",
+      0.1590909090909091
+     ]
+    ],
+    "n": 44
+   }
+  },
+  {
+   "i": 2,
+   "key": "wm-en:sales",
+   "text": "Remote work in sales & BD? Here's Vienna right now (81 current roles):\n\nHybrid: 75%\nFully remote: 5%\nOffice only: 20%\n\nFully remote is still the exception.\n\nwhittle.at/?source=x",
+   "card": {
+    "kicker": "Vienna · sales & BD",
+    "title": "Office, hybrid or remote?",
+    "rows": [
+     [
+      "Hybrid",
+      "75%",
+      0.7530864197530864
+     ],
+     [
+      "Office only",
+      "20%",
+      0.19753086419753085
+     ],
+     [
+      "Fully remote",
+      "5%",
+      0.04938271604938271
+     ]
+    ],
+    "n": 81
+   }
+  },
+  {
+   "i": 3,
+   "key": "skill:data",
+   "text": "Was in 23 aktuellen Data & Analytics-Praktika in Österreich verlangt wird:\n\nSQL: 35%\nExcel: 26%\nPower BI: 26%\nPython: 22%\n\nWenn du dieses Semester nur eins lernst: SQL.\nPasst dein CV? Check:\n\nwhittle.at/?source=x",
+   "card": {
+    "kicker": "Österreich · Data & Analytics-Praktika",
+    "title": "Diese Skills stehen in den Anzeigen",
+    "rows": [
+     [
+      "SQL",
+      "35%",
+      0.34782608695652173
+     ],
+     [
+      "Excel",
+      "26%",
+      0.2608695652173913
+     ],
+     [
+      "Power BI",
+      "26%",
+      0.2608695652173913
+     ],
+     [
+      "Python",
+      "22%",
+      0.21739130434782608
+     ],
+     [
+      "KI-Tools",
+      "22%",
+      0.21739130434782608
+     ]
+    ],
+    "n": 23
+   }
+  },
+  {
+   "i": 4,
+   "key": "ai-en:office",
+   "text": "AI isn't just an IT topic anymore.\n\n7% of current office & admin job ads in Austria mention AI or AI tools – 6 out of 89.\n\nIf your CV says \"familiar with ChatGPT\", have a concrete example ready.\n\nwhittle.at/?source=x",
+   "card": {
+    "kicker": "Austria · office & admin",
+    "big": "7%",
+    "bigSub": "of ads mention AI or AI tools",
+    "n": 89
+   }
+  },
+  {
+   "i": 5,
+   "key": "sal-en:it",
+   "text": "What does a IT & software internship in Austria actually pay?\n\nMedian of 13 current job ads: €2.600 gross/month (full-time equivalent).\nMiddle half: €2.140 to €2.620.\n\nCheck before you apply:\n\nwhittle.at/?source=x",
+   "card": {
+    "kicker": "Austria · IT & software internship",
+    "big": "€2.600",
+    "bigSub": "median gross/month (full-time equivalent)",
+    "rows": [
+     [
+      "lower 25%",
+      "€2.140",
+      0.8182512409316534
+     ],
+     [
+      "median",
+      "€2.600",
+      0.9927453226422298
+     ],
+     [
+      "upper 25%",
+      "€2.620",
+      1
+     ]
+    ],
+    "n": 13
+   }
+  },
+  {
+   "i": 6,
+   "key": "skill:finance",
+   "text": "Was in 34 aktuellen Finance & Controlling-Praktika in Österreich verlangt wird:\n\nExcel: 53%\nPowerPoint: 38%\nKI-Tools: 21%\nSQL: 18%\n\nWenn du dieses Semester nur eins lernst: Excel.\nPasst dein CV? Check:\n\nwhittle.at/?source=x",
+   "card": {
+    "kicker": "Österreich · Finance & Controlling-Praktika",
+    "title": "Diese Skills stehen in den Anzeigen",
+    "rows": [
+     [
+      "Excel",
+      "53%",
+      0.5294117647058824
+     ],
+     [
+      "PowerPoint",
+      "38%",
+      0.38235294117647056
+     ],
+     [
+      "KI-Tools",
+      "21%",
+      0.20588235294117646
+     ],
+     [
+      "SQL",
+      "18%",
+      0.17647058823529413
+     ],
+     [
+      "Python",
+      "15%",
+      0.14705882352941177
+     ]
+    ],
+    "n": 34
+   }
+  },
+  {
+   "i": 7,
+   "key": "ai:hr",
+   "text": "KI ist kein IT-Thema mehr.\n\n23% der aktuellen HR-Stellen in Österreich erwähnen KI oder KI-Tools in der Anzeige. Das sind 12 von 53.\n\nWer \"ChatGPT im Alltag\" in den CV schreibt, sollte Beispiele parat haben.\n\nwhittle.at/?source=x",
+   "card": {
+    "kicker": "Österreich · HR",
+    "big": "23%",
+    "bigSub": "der Anzeigen erwähnen KI oder KI-Tools",
+    "n": 53
+   }
+  },
+  {
+   "i": 8,
+   "key": "junior-en",
+   "text": "\"Junior\" doesn't mean \"no experience\".\n\n39% of current junior job ads in Austria already ask for 1+ years of work experience.\n\nThat's why internships and working-student jobs during your degree matter.\n\nwhittle.at/?source=x",
+   "card": {
+    "kicker": "Austria · junior roles",
+    "big": "39%",
+    "bigSub": "ask for at least 1 year of experience",
+    "n": 57
+   }
+  },
+  {
+   "i": 9,
+   "key": "wm:marketing",
+   "text": "Homeoffice in Marketing & Kommunikation? So sieht es in Wien gerade aus (37 aktuelle Stellen):\n\nHybrid: 46%\nVoll remote: 0%\nNur Büro: 54%\n\nVoll remote bleibt die Ausnahme.\n\nwhittle.at/?source=x",
+   "card": {
+    "kicker": "Wien · Marketing & Kommunikation",
+    "title": "Büro, hybrid oder remote?",
+    "rows": [
+     [
+      "Hybrid",
+      "46%",
+      0.4594594594594595
+     ],
+     [
+      "Nur Büro",
+      "54%",
+      0.5405405405405406
+     ],
+     [
+      "Voll remote",
+      "0%",
+      0
+     ]
+    ],
+    "n": 37
+   }
+  },
+  {
+   "i": 10,
+   "key": "teilzeit",
+   "text": "Neben dem Studium arbeiten, aber nicht im Café oder an der Kassa?\n\nGerade offen in Wien: 147 Teilzeitstellen in Business & Tech, 7 davon geringfügig.\n\nFinance, Marketing, Data, Office – gefiltert nach deinem Profil:\n\nwhittle.at/?source=x",
+   "card": {
+    "kicker": "Wien · neben dem Studium",
+    "big": "147",
+    "bigSub": "Teilzeitstellen in Business & Tech",
+    "rows": [
+     [
+      "davon geringfügig",
+      "7",
+      0.047619047619047616
+     ]
+    ],
+    "n": 834
+   }
+  },
+  {
+   "i": 11,
+   "key": "season:2027",
+   "text": "Sommerpraktikum 2027? Die Bewerbungsphase läuft schon.\n\n48 aktuelle Studenten-Anzeigen in Österreich erwähnen bereits 2027. Bei Big Four, Banken und Konzernen ist Herbst/Winter die Hauptsaison.\n\nJetzt schauen:\n\nwhittle.at/?source=x",
+   "card": {
+    "kicker": "Österreich · Praktika 2027",
+    "big": "48",
+    "bigSub": "Anzeigen erwähnen schon 2027",
+    "n": 214
+   }
+  },
+  {
+   "i": 12,
+   "key": "emptype",
+   "text": "Wer in Wien gerade Studierende sucht (Business & Tech, 143 offene Stellen):\n\nKonzerne: 93\nBeratung, Big Four & Kanzleien: 29\nÖffentlich & Uni: 15\nStart-ups: 6\n\nwhittle.at/?source=x",
+   "card": {
+    "kicker": "Wien · Studentenjobs",
+    "title": "Wer gerade Studierende sucht",
+    "rows": [
+     [
+      "Konzerne",
+      "93",
+      0.6503496503496503
+     ],
+     [
+      "Beratung, Big Four & Kanzleien",
+      "29",
+      0.20279720279720279
+     ],
+     [
+      "Öffentlich & Uni",
+      "15",
+      0.1048951048951049
+     ],
+     [
+      "Start-ups",
+      "6",
+      0.04195804195804196
+     ]
+    ],
+    "n": 143
+   }
+  }
+ ]
+}

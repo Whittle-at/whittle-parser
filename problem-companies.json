@@ -1,0 +1,178 @@
+[
+  {
+    "name": "BMW Group Austria",
+    "url": "https://www.bmwgroup.jobs/at/de/standorte/wien/_jcr_content/main/layoutcontainer_copy/jobfinder30_copy.jobfinder_table.content.html?filterSearch=location_AT%2FVienna&rowIndex=0&blockCount=5",
+    "_note": "Adobe AEM Job Finder bileseni — parser'a eklenen fetchBmwJobs() ile otomatik tespit edilip API'den (tarayici acilmadan) cekiliyor. Elle-girilecek listesinden cikarildi, dogrulandi (2 Wien ilani, 17.09.2026).",
+    "employerType": "konzern"
+  },
+  {
+    "name": "Bain & Company",
+    "url": "https://www.bain.com/de/api/jobsearch/keyword/get?start=0&results=10&filters=offices(1529351)|&searchValue=",
+    "_note": "Kendi ic 'jobsearch' API'si — ama site bot korumasi (403) yuzunden duz Node fetch() calismiyor, fetchBainJobs() Puppeteer'in actigi gercek tarayicinin ICINDEN (page.evaluate+fetch) istek atiyor, bu yuzden diger ATS entegrasyonlarindan daha yavas (bir Chrome sekmesi aciliyor). Elle-girilecek listesinden cikarildi, dogrulandi (14 Wien ilani, 11 hedef-uygun, 17.09.2026).",
+    "employerType": "beratung"
+  },
+  {
+    "name": "OeKB",
+    "url": "https://908.ob.sagedpw.at/programme/onlinebewerbung_uebersicht.php",
+    "city": "*",
+    "_note": "Eski/legacy bir basvuru sistemi (sagedpw.at) — --crawl modu kullaniliyor, sehir filtresi olarak \"*\" verilmeli (OeKB tek sehirli/Viyana oldugu icin sayfalar hic sehir adi yazmiyor, parser'a eklenen '*' ozel degeri filtreyi devre disi birakiyor). Ilanlarin cogu duz-metin yedegiyle (lowConfidence:true) isleniyor, JSON-LD/etiketli-alan yok — elle dogrulama onerilir ama isliyor. Elle-girilecek listesinden cikarildi, dogrulandi (8 ilandan 7'si temiz basliklarla, 17.09.2026).",
+    "employerType": "konzern"
+  },
+  {
+    "name": "Schönherr Rechtsanwälte",
+    "url": "https://www.schoenherr.eu/umbraco/surface/JobFiltersSurface/GetJobList?country=Austria&field=&lng=en-US",
+    "_note": "Sitenin kendi ilanlar sayfasi bir onlyfy 'aday portali' SPA'sina yonlendiriyor, o SPA icerigi tamamen client-side JS ile dolduruyor (Puppeteer bile yakalayamiyordu, sayfa 'All jobsEN' gibi bos kaliyordu). COZULDU: Eren DevTools'ta asil icerigi sunucu-tarafli donduren gercek uc noktayi buldu — {origin}/job/show/{id}/full?lang=en&mode=candidate (id, normal /job/{id} linkindeki AYNI id; origin onemli — Umbraco listesinin origin'i degil, her ilanin KENDI url'inden turetilen onlyfy origin'i kullaniliyor, ilk denemede bu karistirilmisti ve evidence hep bos geliyordu). Kendi Umbraco CMS liste uc noktasindan (baslik+konum+departman) gelen her ilan icin bu endpoint de ayrica cekiliyor artik — tam 'Das erwartet Sie/Sie zeichnet aus' metni geliyor, deg/de/en/exp/wm artik gercekten metinden cikarilabiliyor (hepsi 'estimated' olmak zorunda degil). Iki ek duzeltme daha yapildi: (1) 'Master Data Specialist' gibi basliklarda salt 'master' kelimesinin deg:4 (yuksek lisans) olarak yanlis algilanmasi onlendi (negative-lookahead: master(?!\\s*(data|of ceremonies|black belt))), (2) detay sayfasindaki <script>/<style> icerigi (ornegin sizan CSS/JS metni '/* Bootstrap for...') aciklama metnine tam temizlenmeden karisiyordu, artik tag icerigiyle birlikte tamamen cikariliyor. parser'a eklenen fetchSchoenherrJobs() ile otomatik. Elle-girilecek listesinden cikarildi, dogrulandi (12 ilan, hepsi Wien/Linz, 18.09.2026).",
+    "employerType": "beratung"
+  },
+  {
+    "name": "VERBUND",
+    "url": "https://jobs.verbund.com/en/job-portal",
+    "_note": "02.10: JS ile yüklenen portal — tarayıcı taraması (problem işi). Sonuç gelmezse ATS'yi logdan bul.",
+    "employerType": "konzern"
+  },
+  {
+    "name": "Porsche Holding",
+    "url": "https://www.porsche-holding.com/en/career/jobs/jobportal",
+    "_note": "02.10: JS ile yüklenen portal (Salzburg + Wien) — tarayıcı taraması.",
+    "employerType": "konzern"
+  },
+  {
+    "name": "Procter & Gamble Austria",
+    "url": "https://www.pgcareers.com/global/en/search-results?location=Vienna%2C%20Austria",
+    "_note": "02.10: P&G Wien CEE merkezi — Phenom sitesi; genel tarayıcı/Phenom okuyucusu denesin.",
+    "employerType": "konzern"
+  },
+  {
+    "name": "BAWAG Group",
+    "url": "https://jobs.bawaggroup.at/",
+    "_added": "2026-10-03",
+    "employerType": "konzern"
+  },
+  {
+    "name": "Beiersdorf Austria",
+    "url": "https://www.beiersdorf.de/karriere/bewerbung/jobsuche?country=Austria&count=10&sort=date",
+    "_added": "2026-10-03",
+    "employerType": "konzern"
+  },
+  {
+    "name": "Dynatrace",
+    "url": "https://apply.careers.dynatrace.com/search/?q=&locationsearch=Vienna",
+    "_added": "2026-10-03",
+    "employerType": "konzern"
+  },
+  {
+    "name": "STRABAG",
+    "url": "https://jobboerse.strabag.at/",
+    "_added": "2026-10-03",
+    "employerType": "konzern"
+  },
+  {
+    "name": "ORF",
+    "url": "https://jobs.orf.at/search/?q=&locationsearch=&searchResultView=LIST",
+    "_added": "2026-10-03",
+    "employerType": "public"
+  },
+  {
+    "name": "Mastercard Vienna",
+    "url": "https://careers.mastercard.com/us/en/search-results?keywords=Vienna",
+    "_added": "2026-10-03",
+    "employerType": "konzern"
+  },
+  {
+    "name": "Mars Austria",
+    "url": "https://careers.mars.com/global/en/search-results?keywords=Austria",
+    "_added": "2026-10-03",
+    "employerType": "konzern"
+  },
+  {
+    "name": "Oesterreichische Nationalbank (OeNB)",
+    "url": "https://karriere.oenb.at/Jobs",
+    "_added": "2026-10-03",
+    "employerType": "public"
+  },
+  {
+    "name": "Statistik Austria",
+    "url": "https://www.statistik.at/en/ueber-uns/karriere/jobangebote",
+    "_added": "2026-10-03",
+    "employerType": "public"
+  },
+  {
+    "name": "Wirtschaftsagentur Wien",
+    "url": "https://jobs.wirtschaftsagentur.at/Jobs",
+    "_added": "2026-10-03",
+    "employerType": "public"
+  },
+  {
+    "name": "Siemens AG Österreich",
+    "url": "https://jobs.siemens.com/en_US/externaljobs",
+    "_added": "2026-10-03",
+    "employerType": "konzern"
+  },
+  {
+    "name": "T-Systems / Telekom Austria",
+    "url": "https://careers.telekom.com/jobs?location=Austria",
+    "_added": "2026-10-03",
+    "employerType": "beratung"
+  },
+  {
+    "name": "Forvis Mazars Austria",
+    "url": "https://karriere-at.forvismazars.com/unsere-jobs/",
+    "_added": "2026-10-03",
+    "employerType": "beratung"
+  },
+  {
+    "name": "TPA Steuerberatung",
+    "url": "https://karriere.tpa-group.at/",
+    "_added": "2026-10-03",
+    "employerType": "beratung"
+  },
+  {
+    "name": "Horváth",
+    "url": "https://www.horvath-partners.com/de/karriere/jobs/jobsuche",
+    "_added": "2026-10-03",
+    "employerType": "beratung"
+  },
+  {
+    "name": "Binder Grösswang",
+    "url": "https://www.bindergroesswang.at/en/career/jobs",
+    "_added": "2026-10-03",
+    "employerType": "beratung"
+  },
+  {
+    "name": "Raiffeisen (Wien)",
+    "url": "https://www.raiffeisen.at/de/meine-bank/karriere/jobangebote.html?location=11",
+    "_added": "2026-10-03",
+    "employerType": "konzern"
+  },
+  {
+    "name": "OSCE Secretariat",
+    "url": "https://jobs.osce.org/vacancies",
+    "_added": "2026-10-03",
+    "employerType": "public"
+  },
+  {
+    "name": "Lidl Österreich",
+    "url": "https://karriere.lidl.at/positionen-bei-lidl-oesterreich",
+    "_added": "2026-10-03",
+    "mode": "office",
+    "employerType": "konzern"
+  },
+  {
+    "name": "Capgemini Austria",
+    "url": "https://www.capgemini.com/at-de/karriere/join-us/",
+    "_added": "2026-10-03",
+    "employerType": "beratung"
+  },
+  {
+    "name": "Addiko Bank",
+    "url": "https://addiko-ag.talentlyft.com/",
+    "_added": "2026-10-03",
+    "employerType": "konzern"
+  },
+  {
+    "name": "Microsoft Österreich",
+    "url": "https://jobs.careers.microsoft.com/global/en/search?lc=Vienna%2C%20Vienna%2C%20Austria",
+    "_added": "2026-10-03",
+    "employerType": "konzern"
+  }
+]

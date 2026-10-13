@@ -1,0 +1,56 @@
+name: Crawl bekçisi
+
+# 05.10: 04.10'da GitHub zamanlanmış taramayı hiç başlatmadı ve kimse fark etmedi.
+# Bu iş günde iki kez bakıyor: bugünün combined dosyası repoda var mı?
+#   • varsa → hiçbir şey yapmaz
+#   • yoksa ama bugünkü tarama hâlâ çalışıyorsa → bekler (bir sonraki kontrolde tekrar bakar)
+#   • yoksa ve çalışan tarama da yoksa → taramayı kendisi başlatır + "Crawl çalışmadı" issue'su açar
+#     (GitHub sana e-posta atar). Aynı gün ikinci kez başlatmaz.
+on:
+  schedule:
+    - cron: '0 11 * * *'   # 13:00 Viyana (yaz saati) — tarama normalde ~10:00 UTC'de bitiyor
+    - cron: '0 15 * * *'   # 17:00 Viyana — ikinci kontrol
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  actions: write
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Bugünün taraması var mı?
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: |
+          d=$(date -u +%Y-%m-%d)
+          if grep -q "\"date\":\"$d\"" results/crawl-status.json 2>/dev/null; then # 13.10: combined artık repoda değil
+            echo "✅ $d taraması tamam."; exit 0
+          fi
+          # Bugün başlamış (zamanlanmış ya da elle) daily-crawl çalıştırmaları
+          runs=$(gh run list -R "$REPO" --workflow daily-crawl.yml --created ">=$d" --json status,event,databaseId --limit 20)
+          echo "$runs"
+          active=$(echo "$runs" | jq '[.[] | select(.status=="in_progress" or .status=="queued" or .status=="waiting" or .status=="pending")] | length')
+          if [ "$active" -gt 0 ]; then
+            echo "⏳ Tarama hâlâ çalışıyor — sonraki kontrolde tekrar bakılacak."; exit 0
+          fi
+          dispatched=$(echo "$runs" | jq '[.[] | select(.event=="workflow_dispatch")] | length')
+          total=$(echo "$runs" | jq 'length')
+          if [ "$dispatched" -eq 0 ]; then
+            gh workflow run daily-crawl.yml -R "$REPO" && echo "▶️  Tarama yeniden başlatıldı."
+            action="Tarama otomatik olarak yeniden başlatıldı (~3-4 saat sürer)."
+          else
+            action="Bugün zaten bir kez yeniden başlatılmıştı ve yine dosya oluşmadı — Actions sekmesindeki son çalıştırmanın loguna bak."
+          fi
+          if [ "$total" -eq 0 ]; then why="GitHub zamanlanmış taramayı hiç başlatmadı."; else why="Tarama başladı ama combined dosyası commit'lenmedi (çökmüş ya da iptal olmuş olabilir)."; fi
+          body="**$d** için \`results/whittle-import-$d-combined.json\` yok.
+
+          - Sebep: $why
+          - Yapılan: $action"
+          num=$(gh issue list -R "$REPO" --state open --search "Crawl çalışmadı in:title" --json number --jq '.[0].number')
+          if [ -n "$num" ]; then gh issue comment "$num" -R "$REPO" --body "$body"; else gh issue create -R "$REPO" --title "Crawl çalışmadı" --body "$body"; fi

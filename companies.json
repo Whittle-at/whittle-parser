@@ -1,0 +1,1166 @@
+[
+  {
+    "name": "KPMG",
+    "url": "https://bewerbung.kpmg.at/go/Alle-Stellen/9402055/",
+    "employerType": "beratung"
+  },
+  {
+    "name": "PwC",
+    "url": "https://pwc.wd3.myworkdayjobs.com/Global_Campus_Careers",
+    "employerType": "beratung"
+  },
+  {
+    "name": "A1 Telekom Austria",
+    "url": "https://a1group.wd3.myworkdayjobs.com/A1_Jobs_at",
+    "employerType": "konzern"
+  },
+  {
+    "name": "BDO Austria",
+    "url": "https://karriere.bdo.at/jobs",
+    "_noteUrl": "02.10: Wien filtresi kaldırıldı (önceki: https://karriere.bdo.at/jobs/orte/wien)",
+    "employerType": "beratung"
+  },
+  {
+    "name": "Lindt & Sprüngli",
+    "url": "https://lindtspruengli.wd103.myworkdayjobs.com/de-DE/LindtSpruengliGroupCareers",
+    "_note": "DÜZELTME (22-24 Eylül taramalarında 0 sonuç veriyordu): eski path 'Lindt_Careers' 404 dönüyordu (WebFetch ile doğrulandı) — doğru Workday site adı 'LindtSpruengliGroupCareers', arama sonucundan (jobID: JR101032, JR101939-1 gibi gerçek ilan linkleriyle) doğrulanıp düzeltildi.",
+    "employerType": "konzern"
+  },
+  {
+    "name": "Raiffeisen Bank Intl. (RBI)",
+    "url": "https://jobs.rbinternational.com/go/DE_Default/9012702/",
+    "employerType": "konzern",
+    "city": "*",
+    "_note06": "06.10: kariyer sitesi Wien'e özel (Frequentis /karriere, Uni Wien, RBI HQ); konum alanı bölüm adı geliyordu → city '*'."
+  },
+  {
+    "name": "Österreichische Post AG",
+    "url": "https://karriere.post.at/go/Alle_Jobs/3515701/",
+    "_note": "Docx'teki URL '...' ile kısaltılmıştı, tam path'i eksik olabilir — ilk çalıştırmada kontrol et.",
+    "mode": "office",
+    "employerType": "konzern"
+  },
+  {
+    "name": "Erste Group Bank",
+    "url": "https://www.erstegroup.com/en/career/positions-offered",
+    "employerType": "konzern"
+  },
+  {
+    "name": "Volksbank Wien",
+    "url": "https://jobs.volksbankwien.at",
+    "employerType": "konzern"
+  },
+  {
+    "name": "UniQA",
+    "url": "https://careers.uniqagroup.com/search/?createNewAlert=false&q=&locationsearch=Austria",
+    "_noteUrl": "02.10: Wien filtresi kaldırıldı (önceki: https://careers.uniqagroup.com/search/?location=Wien&searchby=location&d=15)",
+    "employerType": "konzern"
+  },
+  {
+    "name": "OMV",
+    "url": "https://careers.omv.com/search/?createNewAlert=false&q=&locationsearch=Austria",
+    "_noteUrl": "02.10: Wien filtresi kaldırıldı (önceki: https://careers.omv.com/search/?location=Vienna)",
+    "employerType": "konzern"
+  },
+  {
+    "name": "Amundi Austria",
+    "url": "https://jobs.amundi.com/pages/offre/listeoffre.aspx?lcid=2057&facet_Country=35",
+    "employerType": "konzern"
+  },
+  {
+    "name": "Helvetia Versicherung",
+    "url": "https://jobs.helvetia.com/at/?lang=de&f=20:1192756",
+    "employerType": "konzern"
+  },
+  {
+    "name": "Red Bull",
+    "url": "https://jobs.redbull.com/at-de/results?locations=9",
+    "employerType": "konzern"
+  },
+  {
+    "name": "ÖBB",
+    "url": "https://oebb.csod.com/ux/ats/careersite/4/home?c=oebb&state=wien",
+    "employerType": "konzern"
+  },
+  {
+    "name": "UniCredit Bank Austria",
+    "url": "https://careers.unicredit.eu/en_GB/jobsuche/SearchJobs/?1286=%5B1883%5D&listFilterMode=1&jobRecordsPerPage=15",
+    "_noteUrl": "02.10: Wien filtresi kaldırıldı (önceki: https://careers.unicredit.eu/en_GB/jobsuche/SearchJobs/?1286=%5B1883%5D&15082_location_place=Vienna,%20Austria&15082_location_radius=10&15082_location_coordinates=[48.21,16.37]&listFilterMode=1&jobRecordsPerPage=15)",
+    "employerType": "konzern"
+  },
+  {
+    "name": "Wiener Stadtwerke (Wiener Linien + Wien Energie)",
+    "url": "https://jobs.wienerstadtwerke.at/de/jobs",
+    "employerType": "konzern"
+  },
+  {
+    "name": "Generali Österreich",
+    "url": "https://www.generali.at/karriere/aktuelle-jobs/",
+    "_noteUrl": "02.10: Wien filtresi kaldırıldı (önceki: https://www.generali.at/karriere/aktuelle-jobs/?Bundesland=Wien)",
+    "employerType": "konzern"
+  },
+  {
+    "name": "ANDRITZ",
+    "url": "https://careers.andritz.com/search/?createNewAlert=false&q=&locationsearch=Austria",
+    "_noteUrl": "02.10: Wien filtresi kaldırıldı (önceki: https://careers.andritz.com/search/?createNewAlert=false&q=Vienna&optionsFacetsDD_country=&optionsFacetsDD_location=&optionsFacetsDD_customfield1=&optionsFacetsDD_dept=&optionsFacetsDD_customfield4=&optionsFacetsDD_shifttype=&optionsFacetsDD_customfield5=)",
+    "employerType": "konzern"
+  },
+  {
+    "name": "Vienna Insurance Group (VIG)",
+    "url": "https://group.vig/karriere/bewerben/jobs/",
+    "employerType": "konzern"
+  },
+  {
+    "name": "EY",
+    "url": "https://careers.ey.com/ey/search/?createNewAlert=false&locationsearch=Austria",
+    "_note": "DUZELTME (24 Eylul): eski URL (eyglobal.yello.co, 1897+ global ilan) yanlis siteydi - EY'nin GERCEK Avusturya listesi ayri bir site olan careers.ey.com'da, ve orada 'locationsearch=Austria' parametresi (eskiden denenen 'optionsFacetsDD_country=AT' degil) GERCEKTEN calisiyor - tarayicida dogrulandi, filtre olmadan binlerce yerine SADECE 44 sonuc (2 sayfa) donuyor. Sayfa sunucu tarafinda render ediliyor (JS API'ye gerek yok), ilan linkleri /ey/job/{Sehir}-{Baslik}-{id}/ formatinda ('/job/' icerdigi icin genel crawler'in link-tespiti zaten yakaliyor), sayfalama '?startrow=25' ile klasik 'sonraki sayfa' linki - genel crawlListing'in mevcut sayfalama tespiti bunu halletmeli. Henuz gercek bir --crawl calistirmasiyla dogrulanmadi, ilk calistirmada sonuc sayisini kontrol et.",
+    "employerType": "beratung"
+  },
+  {
+    "name": "Magenta Telekom",
+    "url": "https://magenta.onlyfy.jobs/candidate/widget/y6lvdyzt",
+    "_note": "onlyfy (softgarden) widget'i — parser'a eklenen fetchOnlyfyJobs() ile otomatik tespit edilip API'den (tarayici acilmadan) cekiliyor. Elle-girilecek listesinden cikarildi, dogrulandi (16 Wien ilani, 17.09.2026).",
+    "employerType": "konzern"
+  },
+  {
+    "name": "BCG",
+    "url": "https://careers.bcg.com",
+    "_note": "Phenom People — parser'a eklenen fetchPhenomJobs() ile otomatik tespit edilip /widgets API'sinden (tarayici acilmadan) cekiliyor, her ilanin detay sayfasindan (careers.bcg.com/global/en/job/{id}) JSON-LD ile aciklama zenginlestirmesi de var. Elle-girilecek listesinden cikarildi, dogrulandi (20 Wien ilani, 12 hedef-uygun, 17.09.2026). NOT: fetchPhenomJobs genel (host-bagimsiz) yazildi, baska Phenom People sirketlerinde de (Deloitte olabilir mi?) denemeye deger.",
+    "employerType": "beratung"
+  },
+  {
+    "name": "Deloitte Austria",
+    "url": "https://www.deloitte.at/karriere",
+    "_note": "SmartRecruiters (Phenom degilmis) — zaten desteklenen 5 ATS'ten biri, sayfaya gomulu script uzerinden otomatik tespit ediliyor. fetchSmartRecruitersJobs() her ilanin kendi detay endpoint'inden (/postings/{id}) tam aciklama cekecek sekilde guncellendi (once bos donuyordu). Elle-girilecek listesinden cikarildi, dogrulandi (75 Wien ilani, 54 hedef-uygun, 17.09.2026).",
+    "employerType": "beratung"
+  },
+  {
+    "name": "Bitpanda",
+    "url": "https://job-boards.eu.greenhouse.io/bitpanda",
+    "_note": "Greenhouse — zaten desteklenen 5 ATS'ten biri, hic yeni kod yazmadan ilk denemede calisti. Roadmap'teki arastirilmamis adaylardan biriydi, elle-girilecek listesinde degildi. Dogrulandi (22 Wien ilani, 10 hedef-uygun, 17.09.2026).",
+    "employerType": "startup"
+  },
+  {
+    "name": "Philip Morris Austria (PMI)",
+    "url": "https://join.pmicareers.com",
+    "_note": "Phenom People — BCG ile ayni platform, fetchPhenomJobs() zaten host-bagimsiz oldugu icin hic yeni kod yazmadan ilk denemede calisti (Bitpanda gibi). PMI'nin ham /widgets cevabinda applyUrl VE tam aciklama YOK — sadece jobId+locale (ör. \"en_GB\") ve kirpilmis teaser metinleri var (Eren'in getirdigi ham JSON ile dogrulandi). Gercek ilan linki simdi locale'den turetiliyor ({origin}/{ulke}/{dil}/job/{jobId}/{baslik-slug}, ornek: join.pmicareers.com/gb/en/job/23262/...), detay sayfasindan JSON-LD aranmaya devam ediyor, bulunamazsa en temiz teaser (descriptionTeaser) aciklama olarak kullaniliyor. Sirket adi COMPANY_NAME_OVERRIDES haritasiyla \"Philip Morris International\" olarak sabitlendi (alan adindan turetilen otomatik \"Pmi\" yerine). DÜZELTME (evidence sorunu — Eren'in birkac kez tekrar test edip dogruladigi hata, iki asamada cozuldu): hem JSON-LD description hem de teaser metinleri ham HTML tasiyordu (\"<br />•\", \"</strong>\" gibi etiketler evidence alintilarina karisiyordu, ör. \"…><br />•    Du befindest dich mitten im Masterstudium…\"). Ilk duzeltme (script/style'i icerigiyle silip kalan etiketleri temizleme — Schönherr'deki ayni mantik) TEK BASINA yetmedi, Eren'in gercek terminal ciktisinda hala ayni ham HTML goruluyordu. GERCEK KOK NEDEN: PMI'nin teaser metni Bitpanda'da gorulen turden CIFT KODLANMIS HTML donduruyor — gercek \"<br />\" yerine literal \"&lt;br /&gt;\" metni geliyor. Etiket-silme regex'leri gercek \"<...>\" karakteri ariyordu ama entity cozme (decodeHtmlEntities) bundan SONRA, guessRequirements'in ICINDE calisiyordu — yani temizlik sirasinda etiketler henuz \"gorunmez\" haldeydi, temizlikten SONRA decode edilince tekrar ortaya cikip evidence'a siziyordu. fetchPhenomJobs artik once decodeHtmlEntities cagirip SONRA etiketleri temizliyor (siralama duzeltildi) — sahte cift-kodlanmis veriyle yeniden uretilip dogrulandi. Etiketsiz/tek-kodlanmis metinleri (BCG gibi) hic etkilemiyor. Dogrulandi (9 Wien ilani, 7 hedef-uygun, 18.09.2026, evidence artik tertemiz) — NOT: aciklama hala kismen teaser-kaynakli olabilir, req alanlari icin elle goz atmak iyi olur.",
+    "employerType": "konzern"
+  },
+  {
+    "name": "MediaMarkt Austria",
+    "url": "https://careers.mediamarktsaturn.com/MediaMarktAT/?locale=de_DE&region=Wien",
+    "_note": "SAP SuccessFactors Career Site Builder ama ilan aramasi tamamen Azure Cognitive Search uzerinden calisiyor — Eren'in DevTools Network sekmesinde bulup ilettigi gercek istek: POST https://searchui.search.windows.net/indexes/mms-prod/docs/search?api-version=2020-06-30, 'api-key' header'iyla (bu Azure Search'un salt-okunur 'query key'i, sitenin kendi tarayici kodu da ayniyla herkese acik sekilde calisiyor, gizli bir sir degil). --crawl modu ONCE denendi ama cerez banner'i/JS arama tetikleyicisi yuzunden Puppeteer gercek ilan kartlarini hic goremedi (0 sonuc). Ilk API denemesinde 'brand' alanina gore filtreleme sorgusu BOS donuyordu — muhtemelen o alan Azure index'inde filtrelenebilir isaretlenmemis (400 hata, sessizce 'bu site degil' sanilip null donuyordu). Eren'in yakaladigi CALISTIGI KANITLANMIS filtreye (language + addresses/country) gecilince calisti, marka (MediaMarktAT vs SaturnAT gibi) filtrelemesi API'ye sorulmadan cevap geldikten SONRA kendi tarafimizda uygulaniyor. Cevap zaten TAM aciklamayi HTML olarak tasiyor (tasks/profile/description alanlari), ayri detay sayfasi cekmeye gerek yok — PMI/Schönherr'de kullanilan ayni HTML-temizleme mantigi (stripHtmlToPlainText) burada da kullanildi. parser'a eklenen fetchMediaMarktJobs() ile otomatik, detectAtsFromUrl 'careers.mediamarktsaturn.com' host'unu taniyor. Elle-girilecek listesinden cikarildi, dogrulandi (38 Wien ilani, hedef-uygun, evidence temiz, 18.09.2026).",
+    "mode": "office",
+    "employerType": "konzern"
+  },
+  {
+    "name": "Stadt Wien",
+    "url": "https://jobs.wien.gv.at/stellenangebote/index.html?searchCriteria[0][key]=LOV10&searchCriteria[0][values][]=20280&searchCriteria[0][values][]=10884&searchCriteria[0][values][]=10885&searchCriteria[0][values][]=10886&searchCriteria[0][values][]=10900&searchCriteria[0][values][]=10901&searchCriteria[0][values][]=10903&searchCriteria[0][values][]=10902&searchCriteria[1][key]=SiteSubDept1&searchCriteria[1][values][]=5",
+    "employerType": "public",
+    "_note07": "07.10: Site artık filtresiz arama yapmıyor (05.10 sonrası 2 ilan). Berufsfelder: Führung, Verwaltung, Technik, IT, Ordnung/Sicherheit, Infrastruktur, Lehre, Praktika; Bereich: Magistratische Dienststellen."
+  },
+  {
+    "name": "Fonds Soziales Wien",
+    "url": "https://karriere.fsw.at/jobs/",
+    "employerType": "public"
+  },
+  {
+    "name": "Volkshilfe Wien",
+    "url": "https://www.volkshilfe-wien.at/meine-karriere/unsere-jobs/",
+    "employerType": "ngo"
+  },
+  {
+    "name": "Universität Wien",
+    "url": "https://jobs.univie.ac.at/go/Alle-Jobangebote/8879601/",
+    "employerType": "public",
+    "city": "*",
+    "_note06": "06.10: kariyer sitesi Wien'e özel (Frequentis /karriere, Uni Wien, RBI HQ); konum alanı bölüm adı geliyordu → city '*'."
+  },
+  {
+    "name": "AIT Austrian Institute of Technology",
+    "url": "https://jobs.ait.ac.at/Jobs",
+    "employerType": "public"
+  },
+  {
+    "name": "REWE Group Austria",
+    "url": "https://rewe-group.jobs/en/jobs",
+    "mode": "office",
+    "employerType": "konzern"
+  },
+  {
+    "name": "DO & CO",
+    "url": "https://careers.smartrecruiters.com/DOCO1",
+    "mode": "office",
+    "employerType": "konzern"
+  },
+  {
+    "name": "Meininger Hotels",
+    "url": "https://meiningerhotels.wd103.myworkdayjobs.com/MeiningerHotelsCareers",
+    "employerType": "konzern"
+  },
+  {
+    "name": "DHL Austria",
+    "url": "https://careers.dhl.com/global/en/search-results?keywords=&p=ChIJfyqdJZsHbUcRr8Hk3XvUEhA&location=Austria",
+    "mode": "office",
+    "employerType": "konzern"
+  },
+  {
+    "name": "Kontron Transportation",
+    "url": "https://kontron-transportation.softgarden.io/de/vacancies",
+    "employerType": "konzern"
+  },
+  {
+    "name": "Kapsch TrafficCom",
+    "url": "https://www.kapsch.net/en/career/at",
+    "employerType": "konzern"
+  },
+  {
+    "name": "Octapharma",
+    "url": "https://careers.octapharma.com/search/",
+    "employerType": "konzern"
+  },
+  {
+    "name": "GoStudent",
+    "url": "https://boards.greenhouse.io/gostudent",
+    "employerType": "startup"
+  },
+  {
+    "name": "Bitmovin",
+    "url": "https://boards.greenhouse.io/bitmovin",
+    "employerType": "startup"
+  },
+  {
+    "name": "Vinzenz Gruppe",
+    "url": "https://karriereportal.vinzenzgruppe.at/",
+    "employerType": "ngo"
+  },
+  {
+    "name": "Josef Manner & Comp.",
+    "url": "https://manner.csod.com/ux/ats/careersite/5/home?c=manner",
+    "employerType": "konzern"
+  },
+  {
+    "name": "Wienerberger",
+    "url": "https://wienerberger.csod.com/ux/ats/careersite/4/home?c=wienerberger&lang=en-US",
+    "employerType": "konzern"
+  },
+  {
+    "name": "HOFER",
+    "url": "https://karriere.hofer.at/jobsuche",
+    "_note": "30.09: kendi JSON API'si (rest/jobs/search) ile çekiliyor; mağaza işleri rol+eyalet başına gruplanıyor, Lehrling hariç.",
+    "mode": "office",
+    "employerType": "konzern"
+  },
+  {
+    "name": "SPAR Österreich",
+    "url": "https://www.spar.at/karriere/jobboerse",
+    "_note": "30.09: FACT-Finder API (bfs.spar-ics.com) ile çekiliyor; mağaza işleri rol+eyalet başına gruplanıyor, Lehrling/Initiativ hariç.",
+    "mode": "office",
+    "employerType": "konzern"
+  },
+  {
+    "name": "dm drogerie markt",
+    "url": "https://www.dm-jobs.at/job-listing/",
+    "mode": "office",
+    "employerType": "konzern"
+  },
+  {
+    "name": "WU Wien",
+    "url": "https://jobs.wu.ac.at/",
+    "employerType": "public"
+  },
+  {
+    "name": "Anyline",
+    "url": "https://anyline-gmbh.jobs.personio.de/?language=de",
+    "employerType": "startup"
+  },
+  {
+    "name": "Refurbed",
+    "url": "https://job-boards.greenhouse.io/refurbed",
+    "employerType": "startup",
+    "_note": "01.10: Personio hesabı kapanmış (personio.com'a yönleniyor) — Greenhouse panosu."
+  },
+  {
+    "name": "Borealis",
+    "url": "https://careers.borealisgroup.com/search/?createNewAlert=false&q=&optionsFacetsDD_country=AT&optionsFacetsDD_customfield4=&optionsFacetsDD_customfield3=&optionsFacetsDD_customfield5=",
+    "employerType": "konzern",
+    "_note": "10.10: Avusturya filtresi. Sitede toplam sadece 7 ilan var (2'si genel başvuru, 3'ü üretim)."
+  },
+  {
+    "name": "Frequentis",
+    "url": "https://jobs.frequentis.com/karriere",
+    "_note": "30.09: JSON-LD konumu boş geliyor; sayfa başlığından (… - Wien - id) alınıyor.",
+    "employerType": "konzern",
+    "city": "*",
+    "_note06": "06.10: kariyer sitesi Wien'e özel (Frequentis /karriere, Uni Wien, RBI HQ); konum alanı bölüm adı geliyordu → city '*'."
+  },
+  {
+    "name": "Siemens Mobility Austria",
+    "url": "https://jobs.siemens.com/en_US/externaljobs/SearchJobs/?42386=%5B812123%5D&42386_format=17546&42394=22162546&42394_format=17553&folderRecordsPerPage=50&listFilterMode=1",
+    "employerType": "konzern"
+  },
+  {
+    "name": "Johanniter Österreich",
+    "url": "https://www.johanniter.at/jobs",
+    "employerType": "ngo"
+  },
+  {
+    "name": "Takeda Austria",
+    "url": "https://jobs.takeda.com/location/austria-jobs/1113/2782113/2",
+    "_note": "10.10: Austria linki tarayıcıda global search-jobs'a yönleniyor; 29 ilanın çoğu üretim/lab. Şimdilik olduğu gibi.",
+    "employerType": "konzern"
+  },
+  {
+    "name": "Magna",
+    "url": "https://magna.wd3.myworkdayjobs.com/en-US/Magna",
+    "_note": "01.10: Workday (global) — AT modunda konuma göre süzülüyor; Graz/Magna Steyr.",
+    "employerType": "konzern"
+  },
+  {
+    "name": "Swarovski",
+    "url": "https://swarovski.wd3.myworkdayjobs.com/swarovski",
+    "_note": "01.10: Workday (global) — Wattens/Tirol.",
+    "employerType": "konzern"
+  },
+  {
+    "name": "H&M Österreich",
+    "url": "https://jobs.smartrecruiters.com/HMGroup",
+    "_note": "01.10: SmartRecruiters, country=at ile çekiliyor (Verkauf Teilzeit).",
+    "mode": "office",
+    "employerType": "konzern"
+  },
+  {
+    "name": "Bosch Österreich",
+    "url": "https://jobs.smartrecruiters.com/BoschGroup",
+    "_note": "01.10: SmartRecruiters, country=at (Praktika Wien/Linz).",
+    "employerType": "konzern"
+  },
+  {
+    "name": "AVL List",
+    "url": "https://jobs.avl.com/go/Jobs-in-Austria/9215001/",
+    "_note": "01.10: SuccessFactors, Austria listesi (Graz).",
+    "employerType": "konzern"
+  },
+  {
+    "name": "voestalpine",
+    "url": "https://jobs.voestalpine.com/index.php?ac=search_result&search_criterion_channel%5B%5D=12&search_criterion_entry_level%5B%5D=5&search_criterion_country%5B%5D=161&restoreLastSearch=1",
+    "_note": "10.10: Eren'in linki – Praktika, Österreich. Sayfa JS ile yükleniyor (Puppeteer).",
+    "employerType": "konzern"
+  },
+  {
+    "name": "voestalpine",
+    "url": "https://jobs.voestalpine.com/index.php?ac=search_result&search_criterion_channel%5B%5D=12&search_criterion_entry_level%5B%5D=1&search_criterion_country%5B%5D=161&restoreLastSearch=1",
+    "mode": "office",
+    "_note": "10.10: Regular employment, Österreich – üretim/saha ilanları 'office' modu ile ayıklanıyor.",
+    "employerType": "konzern",
+    "_added": "2026-10-10"
+  },
+  {
+    "name": "Prewave",
+    "url": "https://prewave.jobs.personio.com/",
+    "employerType": "startup"
+  },
+  {
+    "name": "Adverity",
+    "url": "https://apply.workable.com/adverity/",
+    "employerType": "startup"
+  },
+  {
+    "name": "Eversports",
+    "url": "https://job-boards.greenhouse.io/eversports",
+    "employerType": "startup"
+  },
+  {
+    "name": "fiskaly",
+    "url": "https://job-boards.greenhouse.io/fiskaly",
+    "employerType": "startup"
+  },
+  {
+    "name": "PlanRadar",
+    "url": "https://job-boards.greenhouse.io/planradar",
+    "employerType": "startup"
+  },
+  {
+    "name": "TU Wien",
+    "url": "https://tuwien.bewerberportal.at/Jobs",
+    "employerType": "public",
+    "_note": "01.10: Liste DOM'da (/Job/{id}), detayda JSON-LD var — genel crawler."
+  },
+  {
+    "name": "Austrian Airlines",
+    "url": "https://www.lufthansagroup.careers/de/austrian/praktikum",
+    "_note": "01.10: fetchAustrianJobs — api-apply.lufthansagroup.careers (tüm Austrian ilanları, Lehre hariç).",
+    "employerType": "konzern"
+  },
+  {
+    "name": "GROPYUS",
+    "url": "https://job-boards.greenhouse.io/gropyus",
+    "employerType": "startup"
+  },
+  {
+    "name": "XUND",
+    "url": "https://job-boards.greenhouse.io/xund",
+    "employerType": "startup"
+  },
+  {
+    "name": "Sandoz Austria",
+    "url": "https://sandoz.wd103.myworkdayjobs.com/Sandoz_Careers",
+    "_note": "01.10: Workday (Kundl/Wien); konum filtresi Austria.",
+    "employerType": "konzern"
+  },
+  {
+    "name": "Allianz Österreich",
+    "url": "https://careers.allianz.com/Oesterreich/go/Alle-Job-Welten-Oesterreich/5148801/",
+    "_note": "01.10: SuccessFactors go-sayfası (KPMG/RBI ile aynı yapı).",
+    "employerType": "konzern"
+  },
+  {
+    "name": "Accenture Österreich",
+    "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers",
+    "_note": "02.10: Workday CXS API (tarayıcısız) — problem listesinden çıkarıldı. Wien Praktikum ilanları var.",
+    "employerType": "beratung"
+  },
+  {
+    "name": "Havas Media Austria",
+    "url": "https://havas.wd3.myworkdayjobs.com/MediaExternalCareerSite",
+    "_note": "02.10: Medya ajansı (Marketing/Creative açığı için).",
+    "employerType": "beratung"
+  },
+  {
+    "name": "Wolt",
+    "url": "https://job-boards.greenhouse.io/wolt",
+    "employerType": "startup",
+    "_note": "02.10: 5 Avusturya ilanı."
+  },
+  {
+    "name": "McKinsey & Company",
+    "url": "https://gateway.mckinsey.com/apigw-x0cceuow60/v1/api/jobs/search?cities=Vienna&lang=en",
+    "_note": "02.10: API www.mckinsey.com'dan gateway.mckinsey.com'a taşınmış (eski adres 0 dönüyordu). Wien: 24 ilan, Intern dahil.",
+    "employerType": "beratung"
+  },
+  {
+    "name": "Oliver Wyman",
+    "url": "https://mmc.wd1.myworkdayjobs.com/MMC",
+    "_note": "02.10: Marsh McLennan Workday — Avusturya filtresi + onlyIf (Marsh broker ilanları da geliyordu).",
+    "onlyIf": "Oliver Wyman",
+    "employerType": "beratung"
+  },
+  {
+    "name": "Roland Berger",
+    "url": "https://www.rolandberger.com/en/Join/All-Jobs/",
+    "_note": "02.10: fetchRolandBergerJobs — e-spirit arama API + SmartRecruiters detay. Wien: 10 ilan (Junior Consultant dahil).",
+    "employerType": "beratung"
+  },
+  {
+    "name": "Kearney",
+    "url": "https://kearney.recsolu.com/job_boards/1",
+    "_note": "02.10: fetchYelloJobs — Wien: 22 ilan (Werkstudent, Part-Time Student Consultant, Summer Trainee, Business Analyst).",
+    "employerType": "beratung"
+  },
+  {
+    "name": "Henkel CEE",
+    "url": "https://www.henkel.com/careers/find-your-job-apply",
+    "_note": "02.10: fetchHenkelJobs — tüm liste çekilip Austria süzülüyor (~3 ilan).",
+    "employerType": "konzern"
+  },
+  {
+    "name": "Simon-Kucher",
+    "url": "https://simon-kucher.csod.com/ux/ats/careersite/6/home?c=simon-kucher",
+    "_note": "02.10: Cornerstone (ÖBB/Manner gibi genel tarayıcı).",
+    "employerType": "beratung"
+  },
+  {
+    "name": "Sixt Austria",
+    "url": "https://jobs.smartrecruiters.com/Sixt",
+    "_note": "02.10: SmartRecruiters, country=at → 7 ilan.",
+    "employerType": "konzern"
+  },
+  {
+    "name": "SAP Österreich",
+    "url": "https://careers.sap.com/search/?createNewAlert=false&q=&locationsearch=Vienna",
+    "_note": "02.10: SuccessFactors arama sayfası (fetchSuccessFactorsJobs, search modu). İlk taramada kontrol et.",
+    "_noteUrl": "02.10: Wien filtresi kaldırıldı (önceki: https://jobs.sap.com/search/?createNewAlert=false&q=&locationsearch=Wien)",
+    "employerType": "konzern",
+    "_oldUrl": "https://jobs.sap.com/search/?createNewAlert=false&q=&locationsearch=Austria",
+    "_note06": "06.10: jobs.sap.com 403 + 'işler yeni platforma taşınıyor' (SAP SmartRecruiters'ı satın aldı). Şirket kodu 'SAP' TAHMİN; 0 gelirse kontrol et.",
+    "_note07": "07.10: Yeni platformda (SmartRecruiters) henüz AT ilanı yok; eski SuccessFactors sitesi careers.sap.com kullanılıyor."
+  },
+  {
+    "name": "Boehringer Ingelheim RCV",
+    "url": "https://www.boehringer-ingelheim.com/at/de/karriere/jobs-finden?currentPage=1&pageSize=25&addresses%2FcountryCity=%C3%96sterreich%7CWien&orderBy=datePosted&isDesc=true",
+    "_added": "2026-10-03",
+    "employerType": "konzern",
+    "city": "*",
+    "_note": "10.10: Kurumsal sitede Österreich|Wien filtresi (13 ilan, JS ile yükleniyor → Puppeteer). İlan linkleri jobs.boehringer-ingelheim.com'a gidiyor (aynı ana alan adı)."
+  },
+  {
+    "name": "AGRANA",
+    "url": "https://www.agrana.com/career/positions",
+    "_added": "2026-10-03",
+    "employerType": "konzern"
+  },
+  {
+    "name": "Mondi",
+    "url": "https://www.mondigroup.com/careers/available-jobs/?country=at&site=wien",
+    "_added": "2026-10-03",
+    "employerType": "konzern"
+  },
+  {
+    "name": "Novartis Austria",
+    "url": "https://novartis.wd3.myworkdayjobs.com/Novartis_Careers",
+    "_added": "2026-10-03",
+    "employerType": "konzern"
+  },
+  {
+    "name": "JTI Austria",
+    "url": "https://jobs.jti.com/search/?q=&locationsearch=Wien",
+    "_added": "2026-10-03",
+    "employerType": "konzern"
+  },
+  {
+    "name": "PORR",
+    "url": "https://karriere.porr.at/jobboerse",
+    "_added": "2026-10-03",
+    "employerType": "konzern",
+    "sitemap": "https://karriere.porr.at/sitemap.xml",
+    "linkPattern": "/jobboerse/job/",
+    "mode": "office",
+    "_note": "10.10: robots.txt arama/filtre URL'lerini (tx_solr) yasaklıyor, sitemap serbest → ilan linkleri sitemap'ten; inşaat/saha ilanları office moduyla eleniyor."
+  },
+  {
+    "name": "Nestlé Österreich",
+    "url": "https://jobdetails.nestle.com/search/?q=&locationsearch=Wien",
+    "_added": "2026-10-03",
+    "employerType": "konzern"
+  },
+  {
+    "name": "AIYA Europe",
+    "url": "https://aiya-europe.jobs.personio.de/",
+    "_added": "2026-10-03",
+    "employerType": "startup"
+  },
+  {
+    "name": "nobile Group",
+    "url": "https://nobile-group.jobs.personio.com/",
+    "_added": "2026-10-03",
+    "employerType": "konzern"
+  },
+  {
+    "name": "cyan Security Group",
+    "url": "https://cyan.jobs.personio.com/",
+    "_added": "2026-10-03",
+    "employerType": "startup"
+  },
+  {
+    "name": "kraftwerk",
+    "url": "https://kraftwerk.jobs.personio.com/",
+    "_added": "2026-10-03",
+    "employerType": "beratung"
+  },
+  {
+    "name": "Tito & Friends (Reppublika)",
+    "url": "https://titoandfriends.jobs.personio.com/",
+    "_added": "2026-10-03",
+    "employerType": "beratung"
+  },
+  {
+    "name": "SPiNNWERK",
+    "url": "https://spinnwerk.jobs.personio.com/",
+    "_added": "2026-10-03",
+    "employerType": "beratung"
+  },
+  {
+    "name": "corplife",
+    "url": "https://corplife.jobs.personio.de/",
+    "_added": "2026-10-03",
+    "employerType": "startup"
+  },
+  {
+    "name": "dvo Software",
+    "url": "https://dvo.jobs.personio.com/",
+    "_added": "2026-10-03",
+    "employerType": "konzern"
+  },
+  {
+    "name": "TOWA",
+    "url": "https://towa.jobs.personio.de/",
+    "_added": "2026-10-03",
+    "employerType": "beratung"
+  },
+  {
+    "name": "Mavie",
+    "url": "https://mavie.jobs.personio.com/",
+    "_added": "2026-10-03",
+    "employerType": "startup"
+  },
+  {
+    "name": "NAVAX",
+    "url": "https://navax.jobs.personio.com/",
+    "_added": "2026-10-03",
+    "employerType": "konzern"
+  },
+  {
+    "name": "Modul University Vienna",
+    "url": "https://modul-university-vienna-gmbh.jobs.personio.com/",
+    "_added": "2026-10-03",
+    "employerType": "public"
+  },
+  {
+    "name": "Vollpension",
+    "url": "https://vollpension.jobs.personio.de/",
+    "_added": "2026-10-03",
+    "employerType": "startup"
+  },
+  {
+    "name": "Impact Hub Vienna",
+    "url": "https://impacthubvienna.jobs.personio.com/",
+    "_added": "2026-10-03",
+    "employerType": "startup"
+  },
+  {
+    "name": "DEMNER GROUP",
+    "url": "https://dmb.jobs.personio.com/",
+    "_added": "2026-10-03",
+    "employerType": "beratung"
+  },
+  {
+    "name": "HYDROGRID",
+    "url": "https://hydrogrid.jobs.personio.com/",
+    "_added": "2026-10-03",
+    "employerType": "startup"
+  },
+  {
+    "name": "Falstaff Verlag",
+    "url": "https://falstaff.jobs.personio.com/",
+    "_added": "2026-10-03",
+    "employerType": "konzern"
+  },
+  {
+    "name": "Rausgegangen",
+    "url": "https://rausgegangen.jobs.personio.de/",
+    "_added": "2026-10-03",
+    "employerType": "startup"
+  },
+  {
+    "name": "Europ Assistance Österreich",
+    "url": "https://europ-assistance.jobs.personio.com/",
+    "_added": "2026-10-03",
+    "employerType": "konzern"
+  },
+  {
+    "name": "Austria Center Vienna (IAKW)",
+    "url": "https://iakw.jobs.personio.de/",
+    "_added": "2026-10-03",
+    "employerType": "public"
+  },
+  {
+    "name": "DENZEL Gruppe",
+    "url": "https://denzel-gruppe.jobs.personio.de/",
+    "_added": "2026-10-03",
+    "mode": "office",
+    "employerType": "konzern"
+  },
+  {
+    "name": "myneva group",
+    "url": "https://myneva-group.jobs.personio.de/",
+    "_added": "2026-10-03",
+    "employerType": "konzern"
+  },
+  {
+    "name": "Taylor Wessing Wien",
+    "url": "https://twvienna.jobs.personio.com/",
+    "_added": "2026-10-03",
+    "employerType": "beratung"
+  },
+  {
+    "name": "Bluecode",
+    "url": "https://bluecode.jobs.personio.com/",
+    "_added": "2026-10-03",
+    "employerType": "startup"
+  },
+  {
+    "name": "Journi",
+    "url": "https://journi-gmbh.jobs.personio.de/",
+    "_added": "2026-10-03",
+    "employerType": "startup"
+  },
+  {
+    "name": "Bikemap",
+    "url": "https://bikemap.jobs.personio.com/",
+    "_added": "2026-10-03",
+    "employerType": "startup"
+  },
+  {
+    "name": "Renaissance Wien Hotel",
+    "url": "https://renaissance-wien.jobs.personio.com/",
+    "_added": "2026-10-03",
+    "employerType": "konzern"
+  },
+  {
+    "name": "AutoScout24",
+    "url": "https://job-boards.greenhouse.io/autoscout24",
+    "_added": "2026-10-03",
+    "employerType": "konzern"
+  },
+  {
+    "name": "Bybit EU",
+    "url": "https://job-boards.eu.greenhouse.io/bybit",
+    "_added": "2026-10-03",
+    "employerType": "startup"
+  },
+  {
+    "name": "Massar Capital",
+    "url": "https://job-boards.greenhouse.io/massarcapital",
+    "_added": "2026-10-03",
+    "employerType": "startup"
+  },
+  {
+    "name": "Ketryx",
+    "url": "https://job-boards.greenhouse.io/ketryx",
+    "_added": "2026-10-03",
+    "employerType": "startup"
+  },
+  {
+    "name": "Appinio",
+    "url": "https://job-boards.eu.greenhouse.io/appinio",
+    "_added": "2026-10-03",
+    "employerType": "startup"
+  },
+  {
+    "name": "world4you",
+    "url": "https://job-boards.eu.greenhouse.io/world4you",
+    "_added": "2026-10-03",
+    "employerType": "konzern"
+  },
+  {
+    "name": "The Social Hub",
+    "url": "https://job-boards.eu.greenhouse.io/thesocialhub",
+    "_added": "2026-10-03",
+    "employerType": "konzern"
+  },
+  {
+    "name": "Aleph",
+    "url": "https://jobs.lever.co/aleph",
+    "_added": "2026-10-03",
+    "employerType": "startup"
+  },
+  {
+    "name": "Qualysoft",
+    "url": "https://jobs.lever.co/qualysoft",
+    "_added": "2026-10-03",
+    "employerType": "beratung"
+  },
+  {
+    "name": "Netlight",
+    "url": "https://jobs.lever.co/netlight",
+    "_added": "2026-10-03",
+    "employerType": "beratung"
+  },
+  {
+    "name": "cargo-partner",
+    "url": "https://jobs.lever.co/cargo-partner",
+    "_added": "2026-10-03",
+    "employerType": "konzern"
+  },
+  {
+    "name": "Westernacher Consulting",
+    "url": "https://jobs.eu.lever.co/westernacher",
+    "_added": "2026-10-03",
+    "employerType": "beratung"
+  },
+  {
+    "name": "Mendix",
+    "url": "https://jobs.lever.co/mendix",
+    "_added": "2026-10-03",
+    "employerType": "konzern"
+  },
+  {
+    "name": "Unzer",
+    "url": "https://jobs.eu.lever.co/unzer",
+    "_added": "2026-10-03",
+    "employerType": "startup"
+  },
+  {
+    "name": "Interpath Advisory",
+    "url": "https://apply.workable.com/interpath-advisory/",
+    "_added": "2026-10-03",
+    "employerType": "beratung"
+  },
+  {
+    "name": "TetraScience",
+    "url": "https://apply.workable.com/tetrascience/",
+    "_added": "2026-10-03",
+    "employerType": "startup"
+  },
+  {
+    "name": "Lomography",
+    "url": "https://lomography.recruitee.com/",
+    "_added": "2026-10-03",
+    "employerType": "konzern"
+  },
+  {
+    "name": "Speedinvest",
+    "url": "https://speedinvestgmbh.recruitee.com/",
+    "_added": "2026-10-03",
+    "employerType": "startup"
+  },
+  {
+    "name": "Better Collective",
+    "url": "https://bettercollective.recruitee.com/",
+    "_added": "2026-10-03",
+    "employerType": "konzern"
+  },
+  {
+    "name": "NOVRITSCH",
+    "url": "https://novritschtrading.recruitee.com/",
+    "_added": "2026-10-03",
+    "employerType": "startup"
+  },
+  {
+    "name": "goMed",
+    "url": "https://gomedgmbh.recruitee.com/",
+    "_added": "2026-10-03",
+    "employerType": "startup"
+  },
+  {
+    "name": "SORAVIA",
+    "url": "https://soravia.recruitee.com/",
+    "_added": "2026-10-03",
+    "employerType": "konzern"
+  },
+  {
+    "name": "Apotheker-Verlag",
+    "url": "https://apoverlag.recruitee.com/",
+    "_added": "2026-10-03",
+    "employerType": "konzern"
+  },
+  {
+    "name": "Investmentpunk Academy",
+    "url": "https://investmentpunk.recruitee.com/",
+    "_added": "2026-10-03",
+    "employerType": "startup"
+  },
+  {
+    "name": "enspired",
+    "url": "https://enspired.recruitee.com/",
+    "_added": "2026-10-03",
+    "employerType": "startup"
+  },
+  {
+    "name": "wiiw",
+    "url": "https://wiiw.recruitee.com/",
+    "_added": "2026-10-03",
+    "employerType": "public"
+  },
+  {
+    "name": "OeAD",
+    "url": "https://oead.recruitee.com/",
+    "_added": "2026-10-03",
+    "employerType": "public"
+  },
+  {
+    "name": "accilium Group",
+    "url": "https://accilium.recruitee.com/",
+    "_added": "2026-10-03",
+    "employerType": "beratung"
+  },
+  {
+    "name": "MYFLEXBOX",
+    "url": "https://myflexbox.recruitee.com/",
+    "_added": "2026-10-03",
+    "employerType": "startup"
+  },
+  {
+    "name": "Sportradar",
+    "url": "https://jobs.smartrecruiters.com/Sportradar",
+    "_added": "2026-10-03",
+    "employerType": "konzern"
+  },
+  {
+    "name": "Tipico Austria",
+    "url": "https://jobs.smartrecruiters.com/Tipico",
+    "_added": "2026-10-03",
+    "mode": "office",
+    "employerType": "konzern"
+  },
+  {
+    "name": "Coface Austria",
+    "url": "https://jobs.smartrecruiters.com/Coface",
+    "_added": "2026-10-03",
+    "employerType": "konzern"
+  },
+  {
+    "name": "Acuity",
+    "url": "https://jobs.smartrecruiters.com/Acuity1",
+    "_added": "2026-10-03",
+    "employerType": "konzern"
+  },
+  {
+    "name": "McMakler",
+    "url": "https://jobs.smartrecruiters.com/McMakler1",
+    "_added": "2026-10-03",
+    "employerType": "startup"
+  },
+  {
+    "name": "ÖSW-Gruppe",
+    "url": "https://oesw-gruppe.onlyfy.jobs/",
+    "_added": "2026-10-03",
+    "employerType": "konzern"
+  },
+  {
+    "name": "MANZ Verlag",
+    "url": "https://manz.onlyfy.jobs/",
+    "_added": "2026-10-03",
+    "employerType": "konzern"
+  },
+  {
+    "name": "Wolf Theiss",
+    "url": "https://wolftheiss.onlyfy.jobs/",
+    "_added": "2026-10-03",
+    "employerType": "beratung"
+  },
+  {
+    "name": "Austrian Power Grid",
+    "url": "https://austrian-power-grid.onlyfy.jobs/",
+    "_added": "2026-10-03",
+    "employerType": "konzern"
+  },
+  {
+    "name": "ÖSB Gruppe",
+    "url": "https://oesb-gruppe.onlyfy.jobs/",
+    "_added": "2026-10-03",
+    "employerType": "public"
+  },
+  {
+    "name": "TROX Austria",
+    "url": "https://trox-at.softgarden.io/",
+    "_added": "2026-10-03",
+    "employerType": "konzern"
+  },
+  {
+    "name": "FH Technikum Wien",
+    "url": "https://technikum-wien.softgarden.io/",
+    "_added": "2026-10-03",
+    "employerType": "public"
+  },
+  {
+    "name": "ConnectWise",
+    "url": "https://job-boards.greenhouse.io/connectwise",
+    "_added": "2026-10-03",
+    "employerType": "konzern"
+  },
+  {
+    "name": "Freshfields Wien",
+    "url": "https://freshfields.wd3.myworkdayjobs.com/FBD_101?locationCountry=d004c0d1a6c84511ab048669fcdf9fd7",
+    "_added": "2026-10-03",
+    "employerType": "beratung"
+  },
+  {
+    "name": "Kommunalkredit Austria",
+    "url": "https://careers.kommunalkredit.at/search/?createNewAlert=false&q=&locationsearch=",
+    "_added": "2026-10-03",
+    "employerType": "konzern"
+  },
+  {
+    "name": "OPEC Fund",
+    "url": "https://careers.opecfund.org/go/INTERNSHIP/818502/",
+    "_added": "2026-10-03",
+    "employerType": "public",
+    "city": "*",
+    "_note": "05.10: arama URL'si zaten Wien/Avusturya filtreli ama SF konum alanı eşleşmiyordu → city \"*\"."
+  },
+  {
+    "name": "UNIDO",
+    "url": "https://careers.unido.org/go/Internship-Programme/8954055/",
+    "_added": "2026-10-03",
+    "employerType": "public"
+  },
+  {
+    "name": "IIASA",
+    "url": "https://iiasa.onlyfy.jobs/",
+    "_added": "2026-10-03",
+    "employerType": "public"
+  },
+  {
+    "name": "Atos / Eviden Austria",
+    "url": "https://jobs.atos.net/search/?locationsearch=Austria",
+    "_added": "2026-10-03",
+    "employerType": "beratung"
+  },
+  {
+    "name": "Zurich Versicherung Österreich",
+    "url": "https://www.careers.zurich.com/search/?locationsearch=Austria",
+    "_added": "2026-10-03",
+    "employerType": "konzern",
+    "city": "*",
+    "_note": "05.10: arama URL'si zaten Wien/Avusturya filtreli ama SF konum alanı eşleşmiyordu → city \"*\"."
+  },
+  {
+    "name": "Mondelez Österreich",
+    "url": "https://mdlz.wd3.myworkdayjobs.com/External",
+    "_added": "2026-10-05",
+    "_note": "05.10: Wien ofisi — Supply Chain/Finance/HR/Marketing Praktikum (Taste the Future). Workday; ilk taramada sağlık raporuna bak.",
+    "employerType": "konzern"
+  },
+  {
+    "name": "woom",
+    "url": "https://woom.bamboohr.com/careers",
+    "employerType": "startup",
+    "_added": "2026-10-05",
+    "_note": "05.10: BambooHR okuyucu (özel). Merkez Klosterneuburg → city AT.",
+    "city": "AT"
+  },
+  {
+    "name": "Grant Thornton Austria",
+    "url": "https://grantthorntonaustria.recruitee.com/",
+    "employerType": "beratung",
+    "_added": "2026-10-08"
+  },
+  {
+    "name": "LeitnerLeitner",
+    "url": "https://leitnerleitner.recruitee.com/",
+    "employerType": "beratung",
+    "_added": "2026-10-08"
+  },
+  {
+    "name": "DORDA Rechtsanwälte",
+    "url": "https://dorda-rechtsanwaelte-gmbh.jobs.personio.com/",
+    "employerType": "beratung",
+    "_added": "2026-10-08"
+  },
+  {
+    "name": "ASFINAG",
+    "url": "https://karriere.asfinag.at/go/Alle-Stellenangebote/5055101/",
+    "employerType": "public",
+    "_added": "2026-10-08",
+    "city": "*",
+    "mode": "office"
+  },
+  {
+    "name": "Pfizer Austria",
+    "url": "https://pfizer.wd1.myworkdayjobs.com/PfizerCareers",
+    "employerType": "konzern",
+    "_added": "2026-10-08"
+  },
+  {
+    "name": "Baker McKenzie Wien",
+    "url": "https://careers.bakermckenzie.com/en_US/opportunities/SearchJobs",
+    "employerType": "beratung",
+    "_added": "2026-10-08"
+  },
+  {
+    "name": "Drei (Hutchison Drei Austria)",
+    "url": "https://karriere.drei.at/job-offers.html",
+    "employerType": "konzern",
+    "_added": "2026-10-08",
+    "city": "*",
+    "mode": "office"
+  },
+  {
+    "name": "ProSiebenSat.1 PULS 4",
+    "url": "https://www.prosiebensat1puls4.com/jobs/",
+    "employerType": "konzern",
+    "_added": "2026-10-08",
+    "city": "*"
+  },
+  {
+    "name": "Roche Austria",
+    "url": "https://careers.roche.com/global/en/search-results?keywords=Vienna",
+    "employerType": "konzern",
+    "_added": "2026-10-08"
+  },
+  {
+    "name": "Medtronic Österreich",
+    "url": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers",
+    "employerType": "konzern",
+    "_added": "2026-10-08"
+  },
+  {
+    "name": "Fronius",
+    "url": "https://fronius.wd3.myworkdayjobs.com/Job_Board",
+    "employerType": "konzern",
+    "_added": "2026-10-08"
+  },
+  {
+    "name": "Santander Consumer Bank Austria",
+    "url": "https://santander.wd3.myworkdayjobs.com/SantanderCareers",
+    "employerType": "konzern",
+    "_added": "2026-10-08"
+  },
+  {
+    "name": "Hitachi Energy Austria",
+    "url": "https://hitachi.wd1.myworkdayjobs.com/hitachi",
+    "employerType": "konzern",
+    "_added": "2026-10-08"
+  },
+  {
+    "name": "ZEISS Austria",
+    "url": "https://zeissgroup.wd3.myworkdayjobs.com/External",
+    "employerType": "konzern",
+    "_added": "2026-10-08"
+  },
+  {
+    "name": "Snap Vienna",
+    "url": "https://snapchat.wd1.myworkdayjobs.com/snap",
+    "employerType": "konzern",
+    "_added": "2026-10-08"
+  },
+  {
+    "name": "Delivery Hero / foodora",
+    "url": "https://jobs.smartrecruiters.com/DeliveryHero",
+    "employerType": "startup",
+    "_added": "2026-10-08"
+  },
+  {
+    "name": "ALTEN Austria",
+    "url": "https://jobs.smartrecruiters.com/ALTEN",
+    "employerType": "beratung",
+    "_added": "2026-10-08"
+  },
+  {
+    "name": "Delta Electronics",
+    "url": "https://jobs.smartrecruiters.com/DeltaElectronics",
+    "employerType": "konzern",
+    "_added": "2026-10-08"
+  },
+  {
+    "name": "AbbVie Austria",
+    "url": "https://jobs.smartrecruiters.com/AbbVie",
+    "employerType": "konzern",
+    "_added": "2026-10-08"
+  },
+  {
+    "name": "BERNARD Gruppe",
+    "url": "https://bernardgruppe.recruitee.com",
+    "employerType": "beratung",
+    "_added": "2026-10-08"
+  },
+  {
+    "name": "Greiner",
+    "url": "https://jobs.greiner.com/GreinerAG/go/Jobs-AT/9208355/",
+    "employerType": "konzern",
+    "_added": "2026-10-08",
+    "city": "*"
+  },
+  {
+    "name": "KNAPP",
+    "url": "https://careers.knapp.com/search/?locationsearch=Hart",
+    "employerType": "konzern",
+    "_added": "2026-10-08",
+    "city": "*"
+  },
+  {
+    "name": "Julius Blum",
+    "url": "https://julius-blum-gmbh.onlyfy.jobs",
+    "employerType": "konzern",
+    "_added": "2026-10-08",
+    "city": "*"
+  },
+  {
+    "name": "Salzburg AG",
+    "url": "https://karriere.salzburg-ag.at/stellenangebote.html",
+    "employerType": "konzern",
+    "_added": "2026-10-08",
+    "city": "*"
+  }
+]
