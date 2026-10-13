@@ -4,7 +4,7 @@ on:
   schedule:
     # Her gün 06:00 UTC = yaz saatinde (CEST) Viyana'da 08:00, kış saatinde (CET) 07:00.
     # GitHub Actions cron zamanlaması sıkışık olabilir (dakikalarca gecikebilir), bu normal.
-    - cron: '0 6 * * *'
+    - cron: '0 6 * * 1-5'   # 13.10: sadece pazartesi–cuma (GitHub dakikası; hafta sonu az ilan geliyor)
   workflow_dispatch: {}  # Actions sekmesinden elle "Run workflow" ile de tetiklenebilir
 
 permissions:
@@ -48,6 +48,14 @@ jobs:
             npm install puppeteer
           fi
 
+      # 13.10: dünkü taramada görülen ilanların detay sayfaları 7 gün yeniden indirilmiyor (parser'da installDetailCache).
+      - name: Detay sayfası önbelleği
+        uses: actions/cache@v4
+        with:
+          path: results/detail-cache-shard${{ matrix.shard }}.json.gz
+          key: detail-${{ matrix.shard }}-${{ github.run_id }}
+          restore-keys: detail-${{ matrix.shard }}-
+
       - name: Taramayı çalıştır (parça ${{ matrix.shard }}/4)
         run: node jobposting-parser-v2.js --crawl-batch companies.json --shard ${{ matrix.shard }}/4
         continue-on-error: true  # hata olsa bile o ana kadar yazılmış sonuç dosyası kullanılsın
@@ -59,6 +67,7 @@ jobs:
           WHITTLE_AI_MODE: batch
           # 30.09: API'si olmayan (tarayıcıyla taranan) şirketler 2 günde bir; API'li olanlar her gün. Her gün için 1 yaz.
           WHITTLE_BROWSER_EVERY: '2'
+          WHITTLE_DETAIL_CACHE: results/detail-cache-shard${{ matrix.shard }}.json.gz
 
       - name: Parça sonuçlarını sakla
         if: always()
@@ -74,7 +83,7 @@ jobs:
   # ve boş dönen şirketin ilanları kapatılmaz (perCompany'de ok:false).
   problem:
     runs-on: ubuntu-latest
-    timeout-minutes: 90    # 13.10: 150 → 90 (sonuçsuz 11 şirket haftada bire indi)
+    timeout-minutes: 150   # 03.10: problem listesi 14 → 29 şirket
     steps:
       - name: Gün kontrolü (2 günde bir)
         id: day
@@ -97,17 +106,6 @@ jobs:
           sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
           echo "PUPPETEER_EXECUTABLE_PATH=/usr/bin/google-chrome" >> "$GITHUB_ENV"
           PUPPETEER_SKIP_DOWNLOAD=true npm install puppeteer
-
-      # 13.10: 13.10 taramasında bu 11 şirket 0 ilan verdi ama problem işinin süresinin büyük kısmını yiyordu
-      # (tarayıcı + zaman aşımı). Artık sadece pazartesileri (ve elle başlatınca) taranıyorlar; diğer günler listeden çıkarılıyor.
-      - name: Sonuçsuz şirketleri ayıkla (pazartesi hariç)
-        if: steps.day.outputs.run == '1' && github.event_name != 'workflow_dispatch'
-        run: |
-          if [ "$(date -u +%u)" != "1" ]; then
-            ZERO='["OeKB","Beiersdorf Austria","Dynatrace","STRABAG","Siemens AG Österreich","Forvis Mazars Austria","TPA Steuerberatung","Horváth","Binder Grösswang","Raiffeisen (Wien)","Microsoft Österreich"]'
-            jq --argjson z "$ZERO" '[.[] | select(.name as $n | ($z | index($n)) | not)]' problem-companies.json > pc.tmp && mv pc.tmp problem-companies.json
-            echo "Bugün $(jq length problem-companies.json) problem şirketi taranacak."
-          fi
 
       - name: Problem şirketleri tara
         if: steps.day.outputs.run == '1'

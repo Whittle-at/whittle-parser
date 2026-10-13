@@ -9,3 +9,4 @@ test-log.txt
 node_modules/
 node_modules.nosync/
 .env
+results/detail-cache-*

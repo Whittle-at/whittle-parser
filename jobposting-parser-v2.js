@@ -3956,9 +3956,49 @@ function addExtraFields(item, company){
 // aşmasın diye). Şirketler sırayla dağıtılıyor (0,4,8… → 1. parça; 1,5,9… → 2. parça), böylece
 // listede yan yana duran büyük şirketler aynı parçaya yığılmıyor. Her parça kendi sonuç dosyasını,
 // kendi AI kota payını (80/N) ve kendi cache kopyasını yazıyor; merge-results.js hepsini birleştiriyor.
+
+// 13.10: Detay sayfası önbelleği (GitHub Actions dakikası). Dünkü taramada İLAN olarak görülen bir URL'in HTML sayfası
+// 7 gün boyunca yeniden indirilmez, önbellekten verilir. Liste sayfaları / API cevapları önbelleğe girmez: sadece sonunda
+// bir ilanın externalUrl'i olduğu anlaşılan HTML sayfaları saklanıyor. Yeni ilanlar ve 7 günden eski kayıtlar normal çekilir.
+const zlib = require('zlib');
+const DETAIL_CACHE_DAYS = 7;
+function installDetailCache(file){
+  let cache = {};
+  try{ cache = JSON.parse(zlib.gunzipSync(fs.readFileSync(file)).toString('utf8')); }catch(e){}
+  const now = Date.now(), fresh = {};
+  for(const [u, v] of Object.entries(cache)) if(v && v.at && now - Date.parse(v.at) < DETAIL_CACHE_DAYS * 864e5) fresh[u] = v;
+  let seen = {};
+  const stats = { hit: 0, fetched: 0, loaded: Object.keys(fresh).length };
+  const orig = globalThis.fetch;
+  globalThis.fetch = async (input, init) => {
+    const url = typeof input === 'string' ? input : (input && input.url) || String(input);
+    const method = String((init && init.method) || (input && typeof input === 'object' && input.method) || 'GET').toUpperCase();
+    if(method === 'GET' && fresh[url]){ stats.hit++; const v = fresh[url]; return new Response(v.body, { status: 200, headers: { 'content-type': v.ct || 'text/html' } }); }
+    const res = await orig(input, init);
+    if(method === 'GET' && res.ok){
+      stats.fetched++;
+      try{ const ct = res.headers.get('content-type') || ''; if(/html/i.test(ct)){ const body = await res.clone().text(); if(body.length < 1500000) seen[url] = { body, ct, at: new Date().toISOString() }; } }catch(e){}
+    }
+    return res;
+  };
+  return {
+    stats,
+    // items: o ana kadar bulunan bütün ilanlar. İlan olmayan (liste sayfası vb.) indirilenler bellekten atılıyor.
+    save(items){
+      const urls = new Set(); for(const it of items || []){ const u = it && (it.externalUrl || it.url); if(u) urls.add(u); }
+      const keep = {}, nextSeen = {};
+      for(const u of urls){ if(seen[u]){ keep[u] = seen[u]; nextSeen[u] = seen[u]; } else if(fresh[u]) keep[u] = fresh[u]; }
+      seen = nextSeen;
+      try{ fs.writeFileSync(file, zlib.gzipSync(JSON.stringify(keep))); }catch(e){ console.log(`⚠️  Detay önbelleği yazılamadı: ${e.message}`); }
+      return Object.keys(keep).length;
+    }
+  };
+}
 async function runCrawlBatch(configFile, shard){
   const fullConfig = JSON.parse(fs.readFileSync(configFile, 'utf8'));
   const config = shard ? fullConfig.filter((_, i) => i % shard.total === shard.index - 1) : fullConfig;
+  const detailCache = process.env.WHITTLE_DETAIL_CACHE ? installDetailCache(process.env.WHITTLE_DETAIL_CACHE) : null;
+  if(detailCache) console.log(`🗂️  Detay önbelleği: ${detailCache.stats.loaded} ilan sayfası (≤ ${DETAIL_CACHE_DAYS} gün) yüklendi.`);
   const shardTag = shard ? `-shard${shard.index}` : '';
   if(shard) console.log(`🧩 Parça ${shard.index}/${shard.total}: ${config.length}/${fullConfig.length} şirket bu işte taranacak.`);
   const aiCacheOut = shard ? path.join(__dirname, 'results', `ai-soft-cache${shardTag}.json`) : AI_CACHE_FILE;
@@ -4128,6 +4168,7 @@ async function runCrawlBatch(configFile, shard){
     const chunk = config.slice(start, start + CRAWL_CONCURRENCY);
     await Promise.all(chunk.map((company, j) => processCompany(company, start + j)));
     const soFar = writeProgress();
+    if(detailCache) detailCache.save(all);
     saveBudget(); saveQueue();
     saveAiCache(aiCache, aiCacheOut); // sonuç dosyasıyla aynı "yarıda kesilse bile kayıp olmasın" mantığı
     const doneCount = perCompany.filter(Boolean).length;
@@ -4142,6 +4183,7 @@ async function runCrawlBatch(configFile, shard){
   if(!shard){ try{ fs.writeFileSync(path.join(outDir, 'ai-learning-report.md'), learning.learningReport(aiCache, dateStr)); }catch(e){} }
 
   const finalCount = writeProgress();
+  if(detailCache){ const n = detailCache.save(all); console.log(`🗂️  Detay önbelleği: ${detailCache.stats.hit} sayfa önbellekten, ${detailCache.stats.fetched} sayfa internetten; ${n} ilan sayfası kaydedildi.`); }
   console.log(`\n📄 Sonuç dosyaya yazıldı: ${outFile} (${finalCount} ilan, Whittle Toplu İçe Aktar'a doğrudan yapıştırılabilir "items" alanı içinde)`);
   return { items: all, outFile };
 }
