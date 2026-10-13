@@ -4,7 +4,7 @@ on:
   schedule:
     # Her gün 06:00 UTC = yaz saatinde (CEST) Viyana'da 08:00, kış saatinde (CET) 07:00.
     # GitHub Actions cron zamanlaması sıkışık olabilir (dakikalarca gecikebilir), bu normal.
-    - cron: '0 6 * * 1-5'   # 13.10: sadece pazartesi–cuma (GitHub dakikası; hafta sonu az ilan geliyor)
+    - cron: '0 6 * * 2-6'   # 13.10: salı–cumartesi (cuma ilanları cumartesi sabahı yakalanıyor; GitHub dakikası)
   workflow_dispatch: {}  # Actions sekmesinden elle "Run workflow" ile de tetiklenebilir
 
 permissions:

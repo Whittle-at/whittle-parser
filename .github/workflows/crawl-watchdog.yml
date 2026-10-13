@@ -8,7 +8,7 @@ name: Crawl bekçisi
 #     (GitHub sana e-posta atar). Aynı gün ikinci kez başlatmaz.
 on:
   schedule:
-    - cron: '0 12 * * 1-5'  # 13.10: günde bir kez, sadece hafta içi (tarama hafta sonu çalışmıyor) — 14:00 Viyana
+    - cron: '0 12 * * 2-6'  # 13.10: günde bir kez, sadece tarama günleri (salı–cumartesi) — 14:00 Viyana
   workflow_dispatch: {}
 
 permissions:
