@@ -73,7 +73,7 @@ jobs:
   # ve boş dönen şirketin ilanları kapatılmaz (perCompany'de ok:false).
   problem:
     runs-on: ubuntu-latest
-    timeout-minutes: 150   # 03.10: problem listesi 14 → 29 şirket
+    timeout-minutes: 90    # 13.10: 150 → 90 (sonuçsuz 11 şirket haftada bire indi)
     steps:
       - name: Gün kontrolü (2 günde bir)
         id: day
@@ -96,6 +96,17 @@ jobs:
           sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
           echo "PUPPETEER_EXECUTABLE_PATH=/usr/bin/google-chrome" >> "$GITHUB_ENV"
           PUPPETEER_SKIP_DOWNLOAD=true npm install puppeteer
+
+      # 13.10: 13.10 taramasında bu 11 şirket 0 ilan verdi ama problem işinin süresinin büyük kısmını yiyordu
+      # (tarayıcı + zaman aşımı). Artık sadece pazartesileri (ve elle başlatınca) taranıyorlar; diğer günler listeden çıkarılıyor.
+      - name: Sonuçsuz şirketleri ayıkla (pazartesi hariç)
+        if: steps.day.outputs.run == '1' && github.event_name != 'workflow_dispatch'
+        run: |
+          if [ "$(date -u +%u)" != "1" ]; then
+            ZERO='["OeKB","Beiersdorf Austria","Dynatrace","STRABAG","Siemens AG Österreich","Forvis Mazars Austria","TPA Steuerberatung","Horváth","Binder Grösswang","Raiffeisen (Wien)","Microsoft Österreich"]'
+            jq --argjson z "$ZERO" '[.[] | select(.name as $n | ($z | index($n)) | not)]' problem-companies.json > pc.tmp && mv pc.tmp problem-companies.json
+            echo "Bugün $(jq length problem-companies.json) problem şirketi taranacak."
+          fi
 
       - name: Problem şirketleri tara
         if: steps.day.outputs.run == '1'
