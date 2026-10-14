@@ -1,9 +1,9 @@
-# Parser öğrenme raporu — 2026-10-13
+# Parser öğrenme raporu — 2026-10-14
 
-Kaynak: results/ai-soft-cache.json. İfade (_q) taşıyan ilan kaydı: **1508**.
+Kaynak: results/ai-soft-cache.json. İfade (_q) taşıyan ilan kaydı: **1562**.
 Terfi eşiği: ≥3 ilan, ≥2 farklı şirket, oyların ≥%90'i aynı değer.
 
-## Terfi etmiş kurallar (55) — artık AI'ya sorulmadan uygulanıyor
+## Terfi etmiş kurallar (62) — artık AI'ya sorulmadan uygulanıyor
 Sürekli burada duranlar parser'daki kalıcı regex'e taşınmaya aday.
 
 | Alan | Değer | İfade | İlan | Şirket |
@@ -39,32 +39,39 @@ Sürekli burada duranlar parser'daki kalıcı regex'e taşınmaya aday.
 | de | `1` | german is an advantage | 3 | 3 |
 | de | `3` | kommunikationsstärke auf deutsch | 3 | 2 |
 | de | `3` | fluent in german | 3 | 3 |
+| de | `3` | verhandlungssichere englisch- und deutschkenntnisse | 3 | 2 |
 | deg | `1` | abgeschlossene technische ausbildung | 3 | 3 |
 | deg | `1` | abgeschlossene berufsausbildung | 3 | 3 |
 | emp | `["teilzeit"]` | 25 wochenstunden | 3 | 2 |
 | emp | `["vollzeit"]` | abgeschlossene ausbildung | 3 | 2 |
 | en | `3` | strong written and verbal communication | 3 | 2 |
+| en | `3` | proficiency in english | 3 | 3 |
 | en | `3` | very good english skills | 3 | 3 |
 | exp | `1` | erste berufserfahrung | 3 | 3 |
 | exp | `0` | von vorteil | 3 | 3 |
 | f_customers | `"b2c"` | unsere gäste | 3 | 2 |
+| f_customers | `"b2c"` | kundinnen und kunden | 3 | 3 |
 | f_customers | `"b2b"` | our clients | 3 | 3 |
 | f_place | `"field"` | im außendienst | 3 | 2 |
 | f_place | `"field"` | im store | 3 | 2 |
 | f_shift | `"day"` | flexible arbeitszeiten | 3 | 3 |
 | hrs | `[40,40]` | 40 wochenstunden | 3 | 2 |
 | hrs | `[38.5,38.5]` | full time | 3 | 3 |
+| phys | `1` | handwerkliches geschick | 3 | 3 |
 | shift | `1` | flexible arbeitszeiten | 3 | 2 |
 | start | `"asap"` | ab sofort | 3 | 3 |
 | start | `"asap"` | as soon as possible | 3 | 3 |
 | start | `"2027-01"` | ab 01.01.2027 | 3 | 2 |
+| study | `["wirt"]` | kaufmännische ausbildung | 3 | 2 |
 | team | `"large"` | interdisziplinären team | 3 | 2 |
 | team | `"large"` | cross-functional teams | 3 | 3 |
 | variety | `1` | folgende aufgaben | 3 | 3 |
+| variety | `1` | deine aufgaben | 3 | 2 |
 | variety | `1` | abwechslungsreiche aufgaben | 3 | 2 |
+| wm | `"onsite"` | am standort wien | 3 | 2 |
 | wm | `"hybrid"` | flexible arbeitszeiten | 3 | 2 |
 
-## Yaklaşanlar (631) — bir-iki ilan daha görülürse terfi eder
+## Yaklaşanlar (645) — bir-iki ilan daha görülürse terfi eder
 
 | Alan | Değer | İfade | İlan | Şirket |
 |---|---|---|---|---|
@@ -94,6 +101,7 @@ Sürekli burada duranlar parser'daki kalıcı regex'e taşınmaya aday.
 | f_commission | `"yes"` | ansprechende provision | 15 | 1 |
 | mobile | `1` | als zusteller*in | 14 | 1 |
 | competitive | `1` | unmittelbaren erfolg eines verkaufs | 13 | 1 |
+| creative | `1` | begeisterung für die umsetzung von ideen | 13 | 1 |
 | cust | `1` | umgang mit anderen menschen | 13 | 1 |
 | f_shift | `"two"` | früh- und spätdienste | 13 | 1 |
 | shift | `1` | früh- und spätdienste (montag bis samstag | 13 | 1 |
@@ -103,7 +111,6 @@ Sürekli burada duranlar parser'daki kalıcı regex'e taşınmaya aday.
 | de | `1` | grundlegende deutschkenntnisse | 11 | 1 |
 | autonomy | `1` | flache hierarchien, kurze entscheidungswege | 10 | 1 |
 | creative | `1` | ihre ideen für verkaufsfördernde maßnahmen | 10 | 1 |
-| creative | `1` | begeisterung für die umsetzung von ideen | 10 | 1 |
 | cust | `1` | beantworten von kund:innenanfragen | 10 | 1 |
 | f_customers | `"b2c"` | beantworten von kund:innenanfragen | 10 | 1 |
 | f_lehramt | `"open"` | auch als quereinsteiger*in | 10 | 1 |
@@ -148,6 +155,7 @@ Sürekli burada duranlar parser'daki kalıcı regex'e taşınmaya aday.
 | variety | `1` | abteilungsübergreifende einblicke in neue tätigkeitsbereiche | 6 | 1 |
 | variety | `1` | du entwickelst deinen standort aktiv | 6 | 1 |
 | variety | `1` | never a dull moment | 6 | 1 |
+| variety | `1` | umsetzung von ideen | 6 | 1 |
 | autonomy | `1` | zeit gerne selbst ein | 5 | 1 |
 | autonomy | `1` | stärkung der eigenständigkeit sowie der selbstbestimmung | 5 | 1 |
 | autonomy | `0` | dienstplan ermöglicht dir die vorhersehbarkeit | 5 | 1 |
@@ -167,9 +175,8 @@ Sürekli burada duranlar parser'daki kalıcı regex'e taşınmaya aday.
 | f_lehramt | `"open"` | du brauchst keinen pädagogischen background | 5 | 1 |
 | study | `["wirt"]` | laufendes studium mit wirtschaftlichem schwerpunkt | 5 | 1 |
 | team | `"large"` | kolleg:innen aus über 65 ländern | 5 | 1 |
-| team | `"large"` | colleagues from all over the world | 5 | 1 |
 
-## Çelişkili ifadeler (41) — aynı ifade farklı değerlere işaret ediyor, kural OLMAZ
+## Çelişkili ifadeler (49) — aynı ifade farklı değerlere işaret ediyor, kural OLMAZ
 Bunlar genelde AI'nın bağlama göre karar verdiği yerler; prompt ya da alan tanımı netleştirilebilir.
 
 | Alan | Değer | İfade | İlan | Şirket | Oylar |
@@ -180,10 +187,10 @@ Bunlar genelde AI'nın bağlama göre karar verdiği yerler; prompt ya da alan t
 | deg | `1` | abgeschlossene fachspezifische ausbildung | 6 | 2 | 1×3, 3×3 |
 | emp | `["teilzeit"]` | 30 wochenstunden | 6 | 4 | ["teilzeit","vollzeit"]×1, ["teilzeit"]×5 |
 | f_night | `"none"` | keine nachtdienste | 6 | 3 | "none"×5, "has"×1 |
+| de | `3` | abgeschlossene kaufmännische ausbildung | 5 | 5 | 2×1, 3×4 |
 | de | `2` | gute deutsch- und/oder englischkenntnisse | 5 | 1 | 2×3, 3×2 |
 | en | `4` | fluency in english | 5 | 3 | 3×2, 4×3 |
 | exp | `2` | mehrjährige berufserfahrung in einer ähnlichen position | 5 | 1 | 1×1, 2×4 |
-| de | `3` | abgeschlossene kaufmännische ausbildung | 4 | 4 | 2×1, 3×3 |
 | de | `3` | gute deutsch- und / oder englischkenntnisse | 4 | 1 | 2×1, 3×3 |
 | en | `3` | fluent in german and english | 4 | 3 | 3×3, 4×1 |
 | en | `3` | fluent english | 4 | 3 | 3×2, 4×2 |
@@ -194,23 +201,31 @@ Bunlar genelde AI'nın bağlama göre karar verdiği yerler; prompt ya da alan t
 | f_place | `"office"` | im friseur- und kosmetikstudio | 4 | 1 | "office"×2, "field"×2 |
 | de | `2` | gute deutsch- und oder englischkenntnisse | 3 | 1 | 2×2, 3×1 |
 | de | `3` | fluent in german and english | 3 | 2 | 3×2, 4×1 |
+| de | `3` | gute deutsch- und mathematikkenntnisse | 3 | 1 | 2×1, 3×2 |
 | en | `4` | very good english | 3 | 2 | 3×1, 4×2 |
+| en | `4` | excellent command of english | 3 | 2 | 3×1, 4×2 |
 | en | `3` | fluent in english (written and spoken | 3 | 2 | 3×2, 4×1 |
 | en | `3` | application should be in english | 3 | 1 | 3×2, 4×1 |
 | team | `"large"` | kollegialen team | 3 | 3 | "large"×2, "small"×1 |
+| team | `"large"` | teil eines teams | 3 | 2 | "large"×2, "small"×1 |
 | team | `"large"` | young, dynamic team | 3 | 1 | "small"×1, "large"×2 |
 | team | `"large"` | dynamischen team | 3 | 3 | "small"×1, "large"×2 |
 | de | `3` | fluency in english and german | 2 | 2 | 3×1, 4×1 |
 | de | `3` | exzellente deutschkenntnisse | 2 | 1 | 3×1, 4×1 |
 | de | `3` | very good written and spoken german | 2 | 2 | 3×1, 4×1 |
+| de | `2` | deutschkenntnisse in wort und schrift | 2 | 2 | 2×1, 3×1 |
 | deg | `3` | law degree (llb, jd, mag. iur., ll.m | 2 | 1 | 3×1, 4×1 |
 | en | `3` | excellent written and spoken english | 2 | 2 | 3×1, 4×1 |
 | en | `3` | sicher auf deutsch und englisch | 2 | 2 | 3×1, 4×1 |
 | en | `3` | fluent english skills | 2 | 2 | 3×1, 4×1 |
+| en | `3` | very good written and spoken english | 2 | 2 | 3×1, 4×1 |
 | exp | `1` | mehrjähriger praxiserfahrung | 2 | 1 | 1×1, 2×1 |
 | exp | `2` | mehrjährige berufspraxis | 2 | 1 | 2×1, 3×1 |
 | exp | `0` | mindestens sechs jahre fachlich einschlägige berufserfahrung | 2 | 1 | 0×1, 3×1 |
+| f_customers | `"b2c"` | für unsere kunden | 2 | 2 | "b2c"×1, "b2b"×1 |
 | f_shift | `"two"` | bereitschaft zur schichtarbeit | 2 | 2 | "two"×1, "three"×1 |
+| hrs | `[38.5,38.5]` | 38 wochenstunden (vollzeit | 2 | 1 | [38.5,38.5]×1, [38,38]×1 |
+| start | `"2026-11"` | nach absprache | 2 | 1 | "2026-11"×1, "asap"×1 |
 | study | `["tech"]` | htl, fh, universität | 2 | 2 | ["tech"]×1, ["tech","wirt"]×1 |
 | team | `"large"` | engagiertes team | 2 | 2 | "large"×1, "small"×1 |
 | team | `"small"` | in unserem team | 2 | 2 | "small"×1, "large"×1 |
