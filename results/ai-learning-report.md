@@ -1,9 +1,9 @@
-# Parser öğrenme raporu — 2026-10-15
+# Parser öğrenme raporu — 2026-10-16
 
-Kaynak: results/ai-soft-cache.json. İfade (_q) taşıyan ilan kaydı: **1643**.
+Kaynak: results/ai-soft-cache.json. İfade (_q) taşıyan ilan kaydı: **1688**.
 Terfi eşiği: ≥3 ilan, ≥2 farklı şirket, oyların ≥%90'i aynı değer.
 
-## Terfi etmiş kurallar (68) — artık AI'ya sorulmadan uygulanıyor
+## Terfi etmiş kurallar (71) — artık AI'ya sorulmadan uygulanıyor
 Sürekli burada duranlar parser'daki kalıcı regex'e taşınmaya aday.
 
 | Alan | Değer | İfade | İlan | Şirket |
@@ -59,6 +59,7 @@ Sürekli burada duranlar parser'daki kalıcı regex'e taşınmaya aday.
 | f_place | `"field"` | im außendienst | 3 | 2 |
 | f_place | `"field"` | im store | 3 | 2 |
 | f_shift | `"day"` | flexible arbeitszeiten | 3 | 3 |
+| hrs | `[38.5,38.5]` | 38,5 wochenstunden | 3 | 3 |
 | hrs | `[40,40]` | 40 wochenstunden | 3 | 2 |
 | hrs | `[38.5,38.5]` | full-time basis | 3 | 2 |
 | hrs | `[38.5,38.5]` | full time | 3 | 3 |
@@ -66,9 +67,11 @@ Sürekli burada duranlar parser'daki kalıcı regex'e taşınmaya aday.
 | shift | `1` | flexible arbeitszeiten | 3 | 2 |
 | start | `"asap"` | ab sofort | 3 | 3 |
 | start | `"asap"` | as soon as possible | 3 | 3 |
+| start | `"2027-01"` | start: januar 2027 | 3 | 2 |
 | start | `"2027-01"` | ab 01.01.2027 | 3 | 2 |
 | study | `["wirt"]` | kaufmännische ausbildung | 3 | 2 |
 | team | `"large"` | interdisziplinären team | 3 | 2 |
+| team | `"large"` | teil unseres teams | 3 | 2 |
 | team | `"large"` | cross-functional teams | 3 | 3 |
 | variety | `1` | folgende aufgaben | 3 | 3 |
 | variety | `1` | deine aufgaben | 3 | 2 |
@@ -77,7 +80,7 @@ Sürekli burada duranlar parser'daki kalıcı regex'e taşınmaya aday.
 | wm | `"onsite"` | dienstort: wien | 3 | 2 |
 | wm | `"hybrid"` | flexible arbeitszeiten | 3 | 2 |
 
-## Yaklaşanlar (670) — bir-iki ilan daha görülürse terfi eder
+## Yaklaşanlar (696) — bir-iki ilan daha görülürse terfi eder
 
 | Alan | Değer | İfade | İlan | Şirket |
 |---|---|---|---|---|
@@ -130,11 +133,11 @@ Sürekli burada duranlar parser'daki kalıcı regex'e taşınmaya aday.
 | f_lehramt | `"open"` | quereinsteiger:innen sind willkommen | 9 | 1 |
 | f_night | `"has"` | früh- und spätdienste | 9 | 1 |
 | f_place | `"office"` | based in one of our european offices | 9 | 1 |
+| leadership | `1` | du führst dein team aus lehrkräften | 9 | 1 |
 | f_cold | `"yes"` | backen und bereitstellen der backware | 8 | 1 |
 | f_customers | `"b2c"` | menschen mit behinderung | 8 | 1 |
 | f_place | `"field"` | vor ort beim klienten | 8 | 1 |
 | f_place | `"field"` | montage von reifen und felgen | 8 | 1 |
-| leadership | `1` | du führst dein team aus lehrkräften | 8 | 1 |
 | mobile | `1` | du bist vor ort beim klienten | 8 | 1 |
 | wm | `"onsite"` | based in one of our european offices | 8 | 1 |
 | competitive | `1` | leistung wird belohnt | 7 | 1 |
@@ -164,6 +167,7 @@ Sürekli burada duranlar parser'daki kalıcı regex'e taşınmaya aday.
 | variety | `1` | never a dull moment | 6 | 1 |
 | autonomy | `1` | zeit gerne selbst ein | 5 | 1 |
 | autonomy | `1` | stärkung der eigenständigkeit sowie der selbstbestimmung | 5 | 1 |
+| autonomy | `1` | eigenverantwortliche und selbständige arbeitsweise | 5 | 1 |
 | autonomy | `0` | dienstplan ermöglicht dir die vorhersehbarkeit | 5 | 1 |
 | certs | `["fsB"]` | gültigen pkw-führerschein | 5 | 1 |
 | creative | `1` | wir haben keine angst vor neuen ideen | 5 | 1 |
@@ -180,9 +184,8 @@ Sürekli burada duranlar parser'daki kalıcı regex'e taşınmaya aday.
 | f_customers | `"b2c"` | an unsere kund*innen | 5 | 1 |
 | f_customers | `"b2b"` | fortune-500- und dax-unternehmen | 5 | 1 |
 | f_lehramt | `"open"` | du brauchst keinen pädagogischen background | 5 | 1 |
-| f_place | `"office"` | office at vienna central station | 5 | 1 |
 
-## Çelişkili ifadeler (52) — aynı ifade farklı değerlere işaret ediyor, kural OLMAZ
+## Çelişkili ifadeler (54) — aynı ifade farklı değerlere işaret ediyor, kural OLMAZ
 Bunlar genelde AI'nın bağlama göre karar verdiği yerler; prompt ya da alan tanımı netleştirilebilir.
 
 | Alan | Değer | İfade | İlan | Şirket | Oylar |
@@ -207,19 +210,22 @@ Bunlar genelde AI'nın bağlama göre karar verdiği yerler; prompt ya da alan t
 | exp | `2` | mehrjährige berufserfahrung | 4 | 3 | 1×1, 2×3 |
 | f_place | `"field"` | im studio | 4 | 1 | "field"×2, "office"×2 |
 | f_place | `"office"` | im friseur- und kosmetikstudio | 4 | 1 | "office"×2, "field"×2 |
+| team | `"large"` | dynamischen team | 4 | 4 | "small"×1, "large"×3 |
 | de | `2` | gute deutsch- und oder englischkenntnisse | 3 | 1 | 2×2, 3×1 |
 | de | `3` | fluent in german and english | 3 | 2 | 3×2, 4×1 |
 | de | `3` | gute deutsch- und mathematikkenntnisse | 3 | 1 | 2×1, 3×2 |
+| de | `3` | fluency in english and german | 3 | 3 | 3×2, 4×1 |
+| de | `3` | very good written and spoken german | 3 | 3 | 3×2, 4×1 |
 | en | `4` | very good english | 3 | 2 | 3×1, 4×2 |
 | en | `3` | fluent in english (written and spoken | 3 | 2 | 3×2, 4×1 |
+| en | `4` | fluency in english and german | 3 | 3 | 3×1, 4×2 |
 | en | `3` | application should be in english | 3 | 1 | 3×2, 4×1 |
+| team | `"small"` | engagiertes team | 3 | 3 | "small"×2, "large"×1 |
 | team | `"large"` | kollegialen team | 3 | 3 | "large"×2, "small"×1 |
 | team | `"large"` | teil eines teams | 3 | 2 | "large"×2, "small"×1 |
 | team | `"large"` | young, dynamic team | 3 | 1 | "small"×1, "large"×2 |
-| team | `"large"` | dynamischen team | 3 | 3 | "small"×1, "large"×2 |
-| de | `3` | fluency in english and german | 2 | 2 | 3×1, 4×1 |
+| de | `3` | perfekte deutschkenntnisse in wort und schrift | 2 | 2 | 3×1, 4×1 |
 | de | `3` | exzellente deutschkenntnisse | 2 | 1 | 3×1, 4×1 |
-| de | `3` | very good written and spoken german | 2 | 2 | 3×1, 4×1 |
 | de | `3` | excellent written and spoken german | 2 | 2 | 3×1, 4×1 |
 | de | `2` | deutschkenntnisse in wort und schrift | 2 | 2 | 2×1, 3×1 |
 | deg | `3` | law degree (llb, jd, mag. iur., ll.m | 2 | 1 | 3×1, 4×1 |
@@ -236,6 +242,5 @@ Bunlar genelde AI'nın bağlama göre karar verdiği yerler; prompt ya da alan t
 | hrs | `[38.5,38.5]` | 38 wochenstunden (vollzeit | 2 | 1 | [38.5,38.5]×1, [38,38]×1 |
 | start | `"2026-11"` | nach absprache | 2 | 1 | "2026-11"×1, "asap"×1 |
 | study | `["tech"]` | htl, fh, universität | 2 | 2 | ["tech"]×1, ["tech","wirt"]×1 |
-| team | `"large"` | engagiertes team | 2 | 2 | "large"×1, "small"×1 |
 | team | `"small"` | in unserem team | 2 | 2 | "small"×1, "large"×1 |
 | team | `"large"` | engagierten und wertschätzenden team | 2 | 1 | "large"×1, "small"×1 |

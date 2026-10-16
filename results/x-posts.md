@@ -1,146 +1,148 @@
-# X-Post-Entwürfe — 2026-10-15
+# X-Post-Entwürfe — 2026-10-16
 
-12 Entwürfe aus 1601 aktuellen Anzeigen (72 mögliche, die der letzten 21 Tage ausgelassen). Link am Ende anhängen: whittle.at/?source=x
+12 Entwürfe aus 1765 aktuellen Anzeigen (82 mögliche, die der letzten 21 Tage ausgelassen). Link am Ende anhängen: whittle.at/?source=x
 
-## 1. `count:data`
+## 1. `sal:office`
 
-Data & Analytics studieren und in Wien was Praktisches suchen?
+Was zahlt ein Praktikum in Office & Assistenz in Österreich?
 
-Gerade offen: 22 Praktika & Werkstudentenjobs.
-8 davon ohne fließendes Deutsch.
-10 hybrid oder remote.
-
-Alle an einem Ort:
-
-whittle.at/?source=x
-
-## 2. `count:consulting`
-
-Consulting, Audit & Tax studieren und in Wien was Praktisches suchen?
-
-Gerade offen: 30 Praktika & Werkstudentenjobs.
-6 davon ohne fließendes Deutsch.
-10 hybrid oder remote.
-
-Alle an einem Ort:
-
-whittle.at/?source=x
-
-## 3. `nogerman`
-
-"You can't get a job in Vienna without German."
-
-We checked 139 open student jobs in business & tech:
-• 29% don't ask for fluent German
-• 40 are written entirely in English
-• only 42% want C1
-
-Find them:
-
-whittle.at/?source=x
-
-## 4. `sal:it`
-
-Was zahlt ein Praktikum in IT & Software in Österreich?
-
-Median aus 14 aktuellen Anzeigen: €2.360 brutto/Monat (auf Vollzeit gerechnet).
-Die mittlere Hälfte liegt zwischen €2.060 und €2.620.
+Median aus 12 aktuellen Anzeigen: €2.170 brutto/Monat (auf Vollzeit gerechnet).
+Die mittlere Hälfte liegt zwischen €1.700 und €2.360.
 
 Gehalt vor der Bewerbung checken:
 
 whittle.at/?source=x
 
-## 5. `salrank`
+## 2. `count:finance`
 
-Welche Praktika in Österreich am besten zahlen (Median brutto/Monat, Vollzeit gerechnet):
+Finance & Controlling studieren und in Wien was Praktisches suchen?
 
-1. Sales/BD: €2.530
-2. Finance: €2.500
-3. Data: €2.420
-4. IT: €2.360
-5. Consulting/Audit/Tax: €2.000
+Gerade offen: 24 Praktika & Werkstudentenjobs.
+4 davon ohne fließendes Deutsch.
+17 hybrid oder remote.
 
-Basis: 92 Anzeigen mit Gehaltsangabe.
+Alle an einem Ort:
 
 whittle.at/?source=x
 
-## 6. `skill-en:consulting`
+## 3. `sal-en:data`
 
-What 32 current consulting, audit & tax internship ads in Austria ask for:
+What does a data & analytics internship in Austria actually pay?
 
-AI tools: 38%
-Excel: 28%
-PowerPoint: 25%
-SAP: 3%
+Median of 24 current job ads: €2.590 gross/month (full-time equivalent).
+Middle half: €2.060 to €2.620.
 
-If you learn one thing this semester: AI tools.
+Check before you apply:
+
+whittle.at/?source=x
+
+## 4. `skill-en:finance`
+
+What 32 current finance & controlling internship ads in Austria ask for:
+
+Excel: 50%
+PowerPoint: 31%
+AI tools: 22%
+SQL: 13%
+
+If you learn one thing this semester: Excel.
 Does your CV match? Check:
 
 whittle.at/?source=x
 
-## 7. `ai-en:supply`
+## 5. `skill:consulting`
 
-AI isn't just an IT topic anymore.
+Was in 34 aktuellen Consulting, Audit & Tax-Praktika in Österreich verlangt wird:
 
-13% of current supply chain & procurement job ads in Austria mention AI or AI tools – 10 out of 78.
+KI-Tools: 38%
+Excel: 26%
+PowerPoint: 24%
+SAP: 3%
 
-If your CV says "familiar with ChatGPT", have a concrete example ready.
-
-whittle.at/?source=x
-
-## 8. `junior`
-
-"Junior" heißt nicht "ohne Erfahrung".
-
-43% der aktuellen Junior-Stellen in Österreich verlangen schon mindestens 1 Jahr Berufserfahrung.
-
-Deshalb zählt jedes Praktikum und jeder Werkstudentenjob während des Studiums.
+Wenn du dieses Semester nur eins lernst: KI-Tools.
+Passt dein CV? Check:
 
 whittle.at/?source=x
 
-## 9. `benefits`
+## 6. `skill-en:marketing`
 
-Was Wiener Arbeitgeber gerade in Stellenanzeigen versprechen (821 Business- & Tech-Stellen):
+What 25 current marketing & comms internship ads in Austria ask for:
 
-Gleitzeit: 42%
-Homeoffice: 35%
-Weiterbildung: 29%
-Essenszuschuss: 23%
-Klimaticket / Öffi-Ticket: 14%
+Adobe: 32%
+AI tools: 20%
+Excel: 16%
+PowerPoint: 8%
 
-Was fehlt dir auf der Liste?
+If you learn one thing this semester: Adobe.
+Does your CV match? Check:
 
 whittle.at/?source=x
 
-## 10. `wm:it`
+## 7. `ai:consulting`
 
-Homeoffice in IT & Software? So sieht es in Wien gerade aus (141 aktuelle Stellen):
+KI ist kein IT-Thema mehr.
 
-Hybrid: 82%
-Voll remote: 4%
-Nur Büro: 15%
+40% der aktuellen Consulting, Audit & Tax-Stellen in Österreich erwähnen KI oder KI-Tools in der Anzeige. Das sind 85 von 211.
+
+Wer "ChatGPT im Alltag" in den CV schreibt, sollte Beispiele parat haben.
+
+whittle.at/?source=x
+
+## 8. `ai:supply`
+
+KI ist kein IT-Thema mehr.
+
+13% der aktuellen Supply Chain & Einkauf-Stellen in Österreich erwähnen KI oder KI-Tools in der Anzeige. Das sind 11 von 84.
+
+Wer "ChatGPT im Alltag" in den CV schreibt, sollte Beispiele parat haben.
+
+whittle.at/?source=x
+
+## 9. `wm:finance`
+
+Homeoffice in Finance & Controlling? So sieht es in Wien gerade aus (83 aktuelle Stellen):
+
+Hybrid: 86%
+Voll remote: 0%
+Nur Büro: 14%
 
 Voll remote bleibt die Ausnahme.
 
 whittle.at/?source=x
 
-## 11. `teilzeit-en`
+## 10. `wm-en:marketing`
 
-Want a part-time job next to your degree – but not in a café?
+Remote work in marketing & comms? Here's Vienna right now (39 current roles):
 
-Open in Vienna right now: 150 part-time roles in business & tech (8 of them "geringfügig", i.e. mini-jobs).
+Hybrid: 49%
+Fully remote: 0%
+Office only: 51%
 
-Finance, marketing, data, office – filtered to your profile:
+Fully remote is still the exception.
 
 whittle.at/?source=x
 
-## 12. `noexp-en`
+## 11. `wm-en:data`
 
-Not every entry-level job is called "internship".
+Remote work in data & analytics? Here's Vienna right now (40 current roles):
 
-Vienna has 237 regular business & tech roles open right now that ask for no work experience.
+Hybrid: 73%
+Fully remote: 3%
+Office only: 25%
 
-If you only search "internship", you miss them. We show both:
+Fully remote is still the exception.
+
+whittle.at/?source=x
+
+## 12. `wm-en:it`
+
+Remote work in IT & software? Here's Vienna right now (149 current roles):
+
+Hybrid: 78%
+Fully remote: 3%
+Office only: 19%
+
+Fully remote is still the exception.
 
 whittle.at/?source=x
 
