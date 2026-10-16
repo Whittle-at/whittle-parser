@@ -307,8 +307,10 @@
   {
     "name": "Takeda Austria",
     "url": "https://jobs.takeda.com/location/austria-jobs/1113/2782113/2",
-    "_note": "10.10: Austria linki tarayıcıda global search-jobs'a yönleniyor; 29 ilanın çoğu üretim/lab. Şimdilik olduğu gibi.",
-    "employerType": "konzern"
+    "_note": "15.10: Sayfalar /2/{n}; 7 sayfa ~38 ilan. robots.txt /search-jobs/'u yasaklıyor, bu yol serbest.",
+    "employerType": "konzern",
+    "pageTemplate": "https://jobs.takeda.com/location/austria-jobs/1113/2782113/2/{n}",
+    "maxPages": 10
   },
   {
     "name": "Magna",
@@ -1162,5 +1164,48 @@
     "employerType": "konzern",
     "_added": "2026-10-08",
     "city": "*"
+  },
+  {
+    "name": "Siemens AG Österreich",
+    "url": "https://jobs.siemens.com/en_US/externaljobs/SearchJobs/?42386=%5B812123%5D&42386_format=17546&listFilterMode=1",
+    "_added": "2026-10-03",
+    "employerType": "konzern",
+    "exceptIf": "Siemens Mobility",
+    "_note": "15.10: Avature (Avusturya filtresi, folderOffset ile 6'şar). Siemens Mobility ilanları ayrı şirket olarak çekiliyor → exceptIf."
+  },
+  {
+    "name": "Microsoft Österreich",
+    "url": "https://apply.careers.microsoft.com/careers?location=Austria",
+    "_added": "2026-10-03",
+    "employerType": "konzern",
+    "_note": "15.10: Eightfold PCSX API (fetchMicrosoftJobs)."
+  },
+  {
+    "name": "STRABAG",
+    "url": "https://jobboerse.strabag.at/",
+    "_added": "2026-10-03",
+    "employerType": "konzern",
+    "_note": "15.10: Kendi POST listesi (Wien +30 km), fetchStrabagJobs."
+  },
+  {
+    "name": "OeKB",
+    "url": "https://908.ob.sagedpw.at/programme/onlinebewerbung_uebersicht.php",
+    "city": "*",
+    "_note": "15.10: sagedpw listesi doğrudan okunuyor (fetchSagedpwJobs); OeEB/OeHT/CSD ilanları dahil. Eski/legacy bir basvuru sistemi (sagedpw.at) — --crawl modu kullaniliyor, sehir filtresi olarak \"*\" verilmeli (OeKB tek sehirli/Viyana oldugu icin sayfalar hic sehir adi yazmiyor, parser'a eklenen '*' ozel degeri filtreyi devre disi birakiyor). Ilanlarin cogu duz-metin yedegiyle (lowConfidence:true) isleniyor, JSON-LD/etiketli-alan yok — elle dogrulama onerilir ama isliyor. Elle-girilecek listesinden cikarildi, dogrulandi (8 ilandan 7'si temiz basliklarla, 17.09.2026).",
+    "employerType": "konzern"
+  },
+  {
+    "name": "Horváth",
+    "url": "https://www.horvath-partners.com/de/karriere/jobs/jobsuche",
+    "_added": "2026-10-03",
+    "employerType": "beratung",
+    "_note": "15.10: İlanlar <tr data-href> satırlarında, Avusturya süzgeci (fetchHorvathJobs)."
+  },
+  {
+    "name": "Binder Grösswang",
+    "url": "https://www.bindergroesswang.at/en/career/jobs",
+    "_added": "2026-10-03",
+    "employerType": "beratung",
+    "_note": "15.10: P&I bewerber-web (#hash linkler) — metin headless tarayıcıyla (fetchBinderJobs)."
   }
 ]

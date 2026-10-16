@@ -12,13 +12,6 @@
     "employerType": "beratung"
   },
   {
-    "name": "OeKB",
-    "url": "https://908.ob.sagedpw.at/programme/onlinebewerbung_uebersicht.php",
-    "city": "*",
-    "_note": "Eski/legacy bir basvuru sistemi (sagedpw.at) — --crawl modu kullaniliyor, sehir filtresi olarak \"*\" verilmeli (OeKB tek sehirli/Viyana oldugu icin sayfalar hic sehir adi yazmiyor, parser'a eklenen '*' ozel degeri filtreyi devre disi birakiyor). Ilanlarin cogu duz-metin yedegiyle (lowConfidence:true) isleniyor, JSON-LD/etiketli-alan yok — elle dogrulama onerilir ama isliyor. Elle-girilecek listesinden cikarildi, dogrulandi (8 ilandan 7'si temiz basliklarla, 17.09.2026).",
-    "employerType": "konzern"
-  },
-  {
     "name": "Schönherr Rechtsanwälte",
     "url": "https://www.schoenherr.eu/umbraco/surface/JobFiltersSurface/GetJobList?country=Austria&field=&lng=en-US",
     "_note": "Sitenin kendi ilanlar sayfasi bir onlyfy 'aday portali' SPA'sina yonlendiriyor, o SPA icerigi tamamen client-side JS ile dolduruyor (Puppeteer bile yakalayamiyordu, sayfa 'All jobsEN' gibi bos kaliyordu). COZULDU: Eren DevTools'ta asil icerigi sunucu-tarafli donduren gercek uc noktayi buldu — {origin}/job/show/{id}/full?lang=en&mode=candidate (id, normal /job/{id} linkindeki AYNI id; origin onemli — Umbraco listesinin origin'i degil, her ilanin KENDI url'inden turetilen onlyfy origin'i kullaniliyor, ilk denemede bu karistirilmisti ve evidence hep bos geliyordu). Kendi Umbraco CMS liste uc noktasindan (baslik+konum+departman) gelen her ilan icin bu endpoint de ayrica cekiliyor artik — tam 'Das erwartet Sie/Sie zeichnet aus' metni geliyor, deg/de/en/exp/wm artik gercekten metinden cikarilabiliyor (hepsi 'estimated' olmak zorunda degil). Iki ek duzeltme daha yapildi: (1) 'Master Data Specialist' gibi basliklarda salt 'master' kelimesinin deg:4 (yuksek lisans) olarak yanlis algilanmasi onlendi (negative-lookahead: master(?!\\s*(data|of ceremonies|black belt))), (2) detay sayfasindaki <script>/<style> icerigi (ornegin sizan CSS/JS metni '/* Bootstrap for...') aciklama metnine tam temizlenmeden karisiyordu, artik tag icerigiyle birlikte tamamen cikariliyor. parser'a eklenen fetchSchoenherrJobs() ile otomatik. Elle-girilecek listesinden cikarildi, dogrulandi (12 ilan, hepsi Wien/Linz, 18.09.2026).",
@@ -56,15 +49,12 @@
   },
   {
     "name": "Dynatrace",
-    "url": "https://apply.careers.dynatrace.com/search/?q=&locationsearch=Vienna",
+    "url": "https://www.dynatrace.com/careers/jobs/",
     "_added": "2026-10-03",
-    "employerType": "konzern"
-  },
-  {
-    "name": "STRABAG",
-    "url": "https://jobboerse.strabag.at/",
-    "_added": "2026-10-03",
-    "employerType": "konzern"
+    "employerType": "konzern",
+    "sitemap": "https://www.dynatrace.com/careers/sitemap-0.xml",
+    "linkPattern": "/careers/jobs/1",
+    "_note": "15.10: Eski apply.careers alanı www.dynatrace.com/careers'a yönleniyor; ilanlar sitemap'te, detayda JSON-LD."
   },
   {
     "name": "ORF",
@@ -103,12 +93,6 @@
     "employerType": "public"
   },
   {
-    "name": "Siemens AG Österreich",
-    "url": "https://jobs.siemens.com/en_US/externaljobs",
-    "_added": "2026-10-03",
-    "employerType": "konzern"
-  },
-  {
     "name": "T-Systems / Telekom Austria",
     "url": "https://careers.telekom.com/jobs?location=Austria",
     "_added": "2026-10-03",
@@ -118,31 +102,24 @@
     "name": "Forvis Mazars Austria",
     "url": "https://karriere-at.forvismazars.com/unsere-jobs/",
     "_added": "2026-10-03",
-    "employerType": "beratung"
+    "employerType": "beratung",
+    "sitemap": "https://karriere-at.forvismazars.com/job-offer-sitemap.xml",
+    "linkPattern": "/job-offer/",
+    "_note": "15.10: Liste JS ile; Yoast job-offer sitemap'i güncel ilanları birebir veriyor."
   },
   {
     "name": "TPA Steuerberatung",
-    "url": "https://karriere.tpa-group.at/",
+    "url": "https://karriere.tpa-group.at/jobboerse/",
     "_added": "2026-10-03",
-    "employerType": "beratung"
+    "employerType": "beratung",
+    "_note": "15.10: Eski URL ana sayfaydı (ilan linki yok)."
   },
   {
-    "name": "Horváth",
-    "url": "https://www.horvath-partners.com/de/karriere/jobs/jobsuche",
+    "name": "Raiffeisenlandesbank NÖ-Wien",
+    "url": "https://stellenangebote.raiffeisenbank.jobs/de/jobs",
     "_added": "2026-10-03",
-    "employerType": "beratung"
-  },
-  {
-    "name": "Binder Grösswang",
-    "url": "https://www.bindergroesswang.at/en/career/jobs",
-    "_added": "2026-10-03",
-    "employerType": "beratung"
-  },
-  {
-    "name": "Raiffeisen (Wien)",
-    "url": "https://www.raiffeisen.at/de/meine-bank/karriere/jobangebote.html?location=11",
-    "_added": "2026-10-03",
-    "employerType": "konzern"
+    "employerType": "konzern",
+    "_note": "15.10: raiffeisen.at listesi kimlik doğrulamalı API ile yükleniyor (401). Wien ilanlarının asıl kaynağı RLB NÖ-Wien jobportalı (sunucu HTML + JSON-LD)."
   },
   {
     "name": "OSCE Secretariat",
@@ -166,12 +143,6 @@
   {
     "name": "Addiko Bank",
     "url": "https://addiko-ag.talentlyft.com/",
-    "_added": "2026-10-03",
-    "employerType": "konzern"
-  },
-  {
-    "name": "Microsoft Österreich",
-    "url": "https://jobs.careers.microsoft.com/global/en/search?lc=Vienna%2C%20Vienna%2C%20Austria",
     "_added": "2026-10-03",
     "employerType": "konzern"
   }

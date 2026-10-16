@@ -597,6 +597,14 @@ function detectAtsFromUrl(url){
     // 04.10: Avature (UniCredit, Frequentis, L'Oréal, Coca-Cola HBC) — tarayıcı taraması metni ya boş ya da GDPR
     // uyarısı olarak alıyordu. Liste + detay sayfaları sunucu tarafında HTML, doğrudan okunuyor.
     if(/^(careers\.unicredit\.eu|jobs\.frequentis\.com|careers\.loreal\.com|careers\.coca-colahellenic\.com)$/.test(host)) return { type: 'avature', url };
+    // 15.10: Siemens da Avature (liste sayfa başı 6 ilan, jobOffset ile). Sadece arama sayfası — tekil JobDetail linki değil.
+    if(host === 'jobs.siemens.com' && /SearchJobs/i.test(path)) return { type: 'avature', url };
+    // 15.10: sıfır ilan veren şirketlerin kendi uç noktaları (bkz. fetchMicrosoftJobs … fetchBinderJobs).
+    if(/^(apply|jobs)\.careers\.microsoft\.com$/.test(host) && !/\/job\/\d/.test(path)) return { type: 'microsoft' };
+    if(host === 'jobboerse.strabag.at' && !/job-detail/.test(path)) return { type: 'strabag' };
+    if(/\.ob\.sagedpw\.at$/.test(host) && /onlinebewerbung_uebersicht/.test(path)) return { type: 'sagedpw', url };
+    if(/(^|\.)horvath-partners\.com$/.test(host) && /\/(jobsuche|jobsearch)\/?$/.test(path)) return { type: 'horvath', url };
+    if(/(^|\.)bindergroesswang\.at$/.test(host) && /\/(career|karriere)\/jobs\/?$/.test(path)) return { type: 'binder', url };
     // 02.10: Roland Berger (kendi arama API'si → ilanlar SmartRecruiters'ta), Kearney (Yello), Henkel (kendi AJAX listesi).
     if(/(^|\.)rolandberger\.com$/.test(host) && /\/join/i.test(path)) return { type: 'rolandberger' };
     if(/(^|\.)kearney\.recsolu\.com$/.test(host) && /^\/job_boards\/\d+/.test(path)) return { type: 'yello', origin: u.origin, board: path.match(/^\/job_boards\/(\d+)/)[1], company: 'Kearney' };
@@ -1162,6 +1170,11 @@ async function fetchAtsJobs(ats){
   if(ats.type === 'yello') return fetchYelloJobs(ats);
   if(ats.type === 'henkel') return fetchHenkelJobs(ats);
   if(ats.type === 'successfactors') return fetchSuccessFactorsJobs(ats);
+  if(ats.type === 'microsoft') return fetchMicrosoftJobs(ats);
+  if(ats.type === 'strabag') return fetchStrabagJobs(ats);
+  if(ats.type === 'sagedpw') return fetchSagedpwJobs(ats);
+  if(ats.type === 'horvath') return fetchHorvathJobs(ats);
+  if(ats.type === 'binder') return fetchBinderJobs(ats);
   return [];
 }
 
@@ -1493,7 +1506,8 @@ async function fetchAvatureJobs(ats){
   // 07.10: UniCredit jobRecordsPerPage=100'ü yok sayıp 15 döndürüyor; offset 100 artınca 15–99 arası atlanıyordu (41 → 13).
   // Offset artık sayfada gerçekten gelen ilan sayısı kadar ilerliyor.
   for(let off = 0, page = 0; page < 20; page++){
-    const pu = new URL(u); if(off) pu.searchParams.set('jobOffset', String(off));
+    // 15.10: Siemens sayfalamayı jobOffset değil folderOffset ile yapıyor (sayfa başı sabit 6) — ikisi birden gönderiliyor.
+    const pu = new URL(u); if(off){ pu.searchParams.set('jobOffset', String(off)); pu.searchParams.set('folderOffset', String(off)); }
     let html; try{ const r = await fetch(pu.toString(), { headers: { ...RETAIL_UA, Accept: 'text/html' }, signal: AbortSignal.timeout(20000) }); if(!r.ok){ console.log(`  ⚠️  Avature HTTP ${r.status} (${pu.hostname}, offset ${off})`); break; } html = await r.text(); }catch(e){ console.log(`  ⚠️  Avature: ${e.message}`); break; }
     const onPage = new Set([...html.matchAll(/href="([^"]*\/JobDetail\/[^"]+)"/gi)].map(x => x[1].split('?')[0])).size;
     // 07.10: L'Oréal 06.10'dan beri 0 — listFilterMode/jobRecordsPerPage=100 eklenmesiyle aynı gün. İlk sayfa boşsa
@@ -1504,7 +1518,7 @@ async function fetchAvatureJobs(ats){
     while((m = re.exec(html))){
       const href = m[1].replace(/&amp;/g, '&'), abs = href.startsWith('http') ? href : u.origin + href;
       const title = decodeHtmlEntities(stripHtmlToPlainText(m[2])).trim();
-      if(!title || title.length < 4 || /^(mehr|more|details|apply|bewerben)/i.test(title)) continue;
+      if(!title || title.length < 4 || /^(mehr|more|learn more|details|apply|bewerben)/i.test(title)) continue;
       const key = abs.split('?')[0];
       if(!seen.has(key)){ const tail = html.slice(m.index, m.index + 1500); const lm = tail.match(/class="[^"]*(?:location|Location)[^"]*"[^>]*>([\s\S]*?)<\/(?:span|div|p)>/); seen.set(key, { title, url: key, location: lm ? decodeHtmlEntities(stripHtmlToPlainText(lm[1])).trim() : '' }); }
     }
@@ -1521,10 +1535,13 @@ async function fetchAvatureJobs(ats){
       const r = await fetch(it.url, { headers: { ...RETAIL_UA, Accept: 'text/html' }, signal: AbortSignal.timeout(15000) });
       if(r.ok){
         const h = await r.text();
-        const vals = [...h.matchAll(/class="[^"]*article__content__view__field__value[^"]*"[^>]*>([\s\S]*?)<\/div>/g)].map(x => stripHtmlToPlainText(x[1]).trim()).filter(x => x.length > 2);
+        // 15.10: değer bloklarında iç içe <div> var (Siemens) — ilk </div>'de kesilince açıklama yarıda kalıyordu → dengeli eşleşme.
+        const vals = [...h.matchAll(/<div\b[^>]*class="[^"]*article__content__view__field__value[^"]*"[^>]*>/g)].map(x => stripHtmlToPlainText(balancedInner(h, x.index)).trim()).filter(x => x.length > 2);
         description = vals.join('\n');
         if(description.length < 300){ const jp = findJobPostings(extractJsonLd(h))[0]; if(jp && jp.description) description = stripHtmlToPlainText(String(jp.description)); }
         if(description.length < 300) description = stripHtmlToPlainText((h.match(/<main[\s\S]*?<\/main>/i) || [h])[0]).replace(BOILER, '').trim();
+        // 15.10: Siemens — "Location(s)" etiketi + değer bloğu (etiketsiz genel regex dil seçicisinden "English" yakalıyordu).
+        if(!location){ const lm = h.match(/field__label[^>]*>\s*(?:Location\(s\)|Locations?|Standorte?|Arbeitsort)\s*<\/div>\s*<div\b[^>]*field__value[^>]*>([\s\S]{0,4000}?)<\/div>/i); if(lm){ const v = stripHtmlToPlainText(lm[1]).replace(/^•\s*/, '').replace(/\s+/g, ' ').trim(); if(v.length > 2) location = v; } }
         if(!location){ const lm = h.match(/(?:Standort|Location|Ort|Arbeitsort)\s*<\/[^>]+>\s*<[^>]+>\s*([^<]{2,80})</i); if(lm) location = decodeHtmlEntities(lm[1]).trim(); }
         if(!location){ const tm = (it.title + ' ' + description.slice(0, 3000)).match(/\b(Wien|Vienna|Graz|Linz|Salzburg|Innsbruck|Klagenfurt)\b/); if(tm) location = tm[1] + ', Österreich'; }
         // Frequentis başlıkları lokasyon koduyla başlıyor (VIE-…); UniCredit/L'Oréal listeleri URL'de zaten Avusturya'ya süzülü.
@@ -2446,6 +2463,176 @@ function mapExperienceLevel(raw){
 // 04.10: ATS API'si boş/hatalı dönünce (Personio'da XML beslemesi kapalı: Taylor Wessing, DEMNER, myneva…;
 // Greenhouse'ta API 404: ImmoScout24) panonun HTML sayfasından ilan linkleri toplanıp her ilanın JSON-LD'si okunuyor.
 const BOARD_FALLBACK = new Set(['personio', 'greenhouse', 'recruitee', 'lever', 'workable', 'smartrecruiters', 'onlyfy']);
+// 15.10: Sıfır ilan veren şirketler için kendi uç noktaları (Microsoft, STRABAG, OeKB, Horváth, Binder Grösswang).
+// Hepsi boş/başarısızsa null döner → runAtsPath "API boş" der, şirketin sitedeki ilanları kapanmaz.
+
+// Microsoft (Eightfold PCSX): liste /api/pcsx/search?location=Austria (10'arlı sayfa), detay /api/pcsx/position_details.
+async function fetchMicrosoftJobs(){
+  const base = 'https://apply.careers.microsoft.com';
+  const H = { ...RETAIL_UA, Accept: 'application/json' };
+  const seen = new Map();
+  for(let start = 0; start < 200; start += 10){
+    let d;
+    try{ const r = await fetch(`${base}/api/pcsx/search?domain=microsoft.com&query=&location=Austria&start=${start}`, { headers: H, signal: AbortSignal.timeout(20000) }); if(!r.ok){ console.log(`  ⚠️  Microsoft PCSX HTTP ${r.status}`); break; } d = (await r.json()).data || {}; }catch(e){ console.log(`  ⚠️  Microsoft PCSX: ${e.message}`); break; }
+    const ps = Array.isArray(d.positions) ? d.positions : [];
+    const before = seen.size;
+    ps.forEach(p => { if(p && p.id && !seen.has(p.id)) seen.set(p.id, p); });
+    if(!ps.length || seen.size === before || (d.count && seen.size >= d.count)) break;
+    await sleep2(300);
+  }
+  if(!seen.size) return null;
+  const out = [];
+  for(const p of seen.values()){
+    let det = {};
+    try{ const r = await fetch(`${base}/api/pcsx/position_details?position_id=${p.id}&domain=microsoft.com&hl=en`, { headers: H, signal: AbortSignal.timeout(15000) }); if(r.ok) det = (await r.json()).data || {}; }catch(e){}
+    const locs = [].concat(det.locations || p.locations || []).filter(Boolean);
+    const ts = det.postedTs || p.postedTs;
+    const emp = [].concat(det.efcustomTextEmploymentType || []).join(', ');
+    out.push({ title: det.name || p.name, company: 'Microsoft', location: locs.join(' | ') || null,
+      datePosted: ts ? new Date(ts * 1000).toISOString().slice(0, 10) : null,
+      description: [stripHtmlToPlainText(String(det.jobDescription || '')), emp ? `Employment type: ${emp}` : ''].filter(Boolean).join('\n\n').slice(0, 9000),
+      url: `${base}${p.positionUrl || det.positionUrl || '/careers/job/' + p.id}`, departmentNames: det.department ? [det.department] : [] });
+    await sleep2(200);
+  }
+  console.log(`  Microsoft: ${out.length} ilan (Austria).`);
+  return out;
+}
+
+// STRABAG: liste POST /inc/jobsuche_2026_v2.php (morejobs=0,1,2… her biri ~22 ilanlık HTML parçası, Wien 30 km);
+// detayda JSON-LD yok → sayfa metni, çerez/YouTube ve "Wie geht es im Prozess weiter?" sonrası atılıyor.
+async function fetchStrabagJobs(){
+  const origin = 'https://jobboerse.strabag.at';
+  const seen = new Map(); let stale = 0;
+  for(let i = 0; i < 12; i++){
+    const body = new URLSearchParams({ morejobs: String(i), search: '', taetigkeitsbereich: '', arbeitsbereich: '', beschaeftigungsart: '', jobfamilie: '',
+      adresse: 'Wien, Österreich', radius: '30', latPost: '48.2082', lngPost: '16.3738', language: 'AT_DE', divisionID: '', konzernfirma: '',
+      status: i === 0 ? '1' : '0', campaign: '', source: 'nosource', referer: '', countryCodes_get: '', letsprogress: '' });
+    let h;
+    try{ const r = await fetch(`${origin}/inc/jobsuche_2026_v2.php`, { method: 'POST', headers: { ...RETAIL_UA, Accept: 'text/html', 'Content-Type': 'application/x-www-form-urlencoded', Origin: origin, Referer: `${origin}/jobs-overview.php` }, body, signal: AbortSignal.timeout(20000) }); if(!r.ok){ console.log(`  ⚠️  STRABAG HTTP ${r.status}`); break; } h = await r.text(); }catch(e){ console.log(`  ⚠️  STRABAG: ${e.message}`); break; }
+    const before = seen.size;
+    for(const part of h.split(/<div class="search-entry"/).slice(1)){
+      const id = (part.match(/ReqId=(\d+)/) || [])[1]; if(!id || seen.has(id)) continue;
+      const tags = [...part.matchAll(/class="search-entry__tag"[^>]*>([\s\S]*?)<\/span>/g)].map(x => decodeHtmlEntities(stripHtmlToPlainText(x[1])).trim());
+      const title = decodeHtmlEntities(stripHtmlToPlainText((part.match(/search-entry__headline[^>]*>([\s\S]*?)<\/h4>/) || [])[1] || '')).trim();
+      const firm = decodeHtmlEntities(stripHtmlToPlainText((part.match(/search-entry__text[^>]*>([\s\S]*?)<\/p>/) || [])[1] || '')).trim();
+      if(title) seen.set(id, { id, title, firm, location: tags.find(t => /:/.test(t) && !/Job-ID/i.test(t)) || '', tags }); // "Österreich: Wien" / "Deutschland: Dresden" — ülke kalsın, AT filtresi ayıklasın
+    }
+    // morejobs=1 sunucuda 0 ile aynı sayfayı döndürüyor (2, 3 yeni) → "yeni yok" değil, sadece boş sayfada dur.
+    if(!/ReqId=\d/.test(h)) break;
+    stale = seen.size === before ? stale + 1 : 0; if(stale >= 2) break;
+    await sleep2(400);
+  }
+  if(!seen.size) return null;
+  const out = [];
+  for(const j of seen.values()){
+    if(isLehre(j.title)) continue;
+    const url = `${origin}/job-detail.php?ReqId=${j.id}&language=AT_DE&source=nosource`;
+    let description = '';
+    try{
+      const r = await fetch(url, { headers: { ...RETAIL_UA, Accept: 'text/html' }, signal: AbortSignal.timeout(15000) });
+      if(r.ok){
+        let t = stripHtmlToPlainText((await r.text()).replace(/<(script|style|nav|header|footer|form)\b[\s\S]*?<\/\1>/gi, ' '));
+        t = t.replace(/Um die erteilte Einwilligung[\s\S]*?Einwilligen und abspielen/g, ' ').split(/Wie geht es im Prozess weiter\?/)[0];
+        const k = t.indexOf(j.title.slice(0, 25)); description = (k > 0 ? t.slice(k) : t).replace(/[ \t]+/g, ' ').trim();
+      }
+    }catch(e){}
+    out.push({ title: j.title, company: 'STRABAG', location: j.location || null, datePosted: null,
+      description: [j.firm, j.tags.filter(t => !/Job-ID/i.test(t)).join(' · '), description].filter(Boolean).join('\n').slice(0, 9000), url, departmentNames: [] });
+    await sleep2(250);
+  }
+  console.log(`  STRABAG: ${out.length} ilan (Wien +30 km, Lehre hariç).`);
+  return out;
+}
+
+// OeKB grubu (sagedpw.at eski başvuru sistemi): liste <a data-ref="job" href="onlinebewerbung_detail.php?…">, şirket grubu
+// "blocktitle" başlığında. Detay sade HTML. Initiativbewerbung atlanıyor. Tüm ilanlar Wien (Strauchgasse).
+async function fetchSagedpwJobs(ats){
+  const listUrl = ats.url, base = listUrl.replace(/[^\/]*$/, '');
+  let h;
+  try{ const r = await fetch(listUrl, { headers: { ...RETAIL_UA, Accept: 'text/html' }, signal: AbortSignal.timeout(20000) }); if(!r.ok){ console.log(`  ⚠️  sagedpw HTTP ${r.status}`); return null; } h = await r.text(); }catch(e){ console.log(`  ⚠️  sagedpw: ${e.message}`); return null; }
+  const jobs = []; let group = '';
+  const re = /class="blocktitle"[^>]*>([\s\S]*?)<\/div>|<a\b[^>]*data-ref="job"[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/g; let m;
+  while((m = re.exec(h))){
+    if(m[1] !== undefined){ group = decodeHtmlEntities(stripHtmlToPlainText(m[1])).replace(/ /g, ' ').trim(); continue; }
+    const title = decodeHtmlEntities(stripHtmlToPlainText(m[3])).replace(/ /g, ' ').trim();
+    if(!title || /initiativbewerbung/i.test(title)) continue;
+    const url = new URL(m[2].replace(/&amp;/g, '&'), base).toString();
+    if(!jobs.some(j => j.url === url)) jobs.push({ title, url, group });
+  }
+  if(!jobs.length) return null;
+  const out = [];
+  for(const j of jobs){
+    let description = '';
+    try{ const r = await fetch(j.url, { headers: { ...RETAIL_UA, Accept: 'text/html' }, signal: AbortSignal.timeout(15000) }); if(r.ok) description = stripHtmlToPlainText((await r.text()).replace(/<(script|style)\b[\s\S]*?<\/\1>/gi, ' ')).replace(/[ \t]+/g, ' ').trim(); }catch(e){}
+    out.push({ title: j.title, company: null, location: 'Wien, Österreich', datePosted: null,
+      description: [j.group, description].filter(Boolean).join('\n').slice(0, 9000), url: j.url, departmentNames: [] });
+    await sleep2(250);
+  }
+  console.log(`  sagedpw: ${out.length} ilan (Initiativbewerbung hariç).`);
+  return out;
+}
+
+// Horváth: iş listesi <tr data-href="/…/job-detailseite/detail/<id>/"> satırlarında (link <a> değil → genel tarayıcı 0 buluyordu).
+// İkinci hücre konum; sadece Avusturya şehirleri alınıyor. Detay sunucu tarafında HTML (<main>).
+async function fetchHorvathJobs(ats){
+  const u = new URL(ats.url);
+  let h;
+  try{ const r = await fetch(u.toString(), { headers: { ...RETAIL_UA, Accept: 'text/html' }, signal: AbortSignal.timeout(25000) }); if(!r.ok){ console.log(`  ⚠️  Horváth HTTP ${r.status}`); return null; } h = await r.text(); }catch(e){ console.log(`  ⚠️  Horváth: ${e.message}`); return null; }
+  const AT = buildCityRegex('AT'), rows = new Map();
+  for(const m of h.matchAll(/<tr[^>]*data-href="([^"]*job-detailseite[^"]*)"[^>]*>([\s\S]*?)<\/tr>/g)){
+    const cells = [...m[2].matchAll(/<td[^>]*>([\s\S]*?)<\/td>/g)].map(x => decodeHtmlEntities(stripHtmlToPlainText(x[1])).replace(/\s+/g, ' ').trim());
+    const title = (cells[0] || '').replace(/^\(R\d+\)\s*/, ''), location = cells[1] || '';
+    const url = new URL(m[1], u.origin).toString();
+    if(title && AT.test(location) && !rows.has(url)) rows.set(url, { title, location, url });
+  }
+  if(!rows.size) return null;
+  const out = [];
+  for(const j of rows.values()){
+    let description = '';
+    try{ const r = await fetch(j.url, { headers: { ...RETAIL_UA, Accept: 'text/html' }, signal: AbortSignal.timeout(15000) }); if(r.ok){ const d = await r.text(); description = stripHtmlToPlainText(((d.match(/<main[\s\S]*?<\/main>/i) || [d])[0]).replace(/<(script|style|nav|form)\b[\s\S]*?<\/\1>/gi, ' ')).replace(/[ \t]+/g, ' ').trim(); } }catch(e){}
+    out.push({ title: j.title, company: 'Horváth', location: `${j.location}, Österreich`, datePosted: null, description: description.slice(0, 9000), url: j.url, departmentNames: [] });
+    await sleep2(250);
+  }
+  console.log(`  Horváth: ${out.length} ilan (Avusturya).`);
+  return out;
+}
+
+// Binder Grösswang: kariyer sayfası P&I "bewerber-web" ilanlarına #hash linkleriyle gidiyor (GWT-RPC, düz HTML yok; genel
+// tarayıcı hash'i atınca 7 link tek URL'e iniyordu). Liste kendi sayfasından, metin her ilan headless tarayıcıda açılarak.
+async function fetchBinderJobs(ats){
+  let h;
+  try{ const r = await fetch(ats.url, { headers: { ...RETAIL_UA, Accept: 'text/html' }, signal: AbortSignal.timeout(20000) }); if(!r.ok){ console.log(`  ⚠️  Binder HTTP ${r.status}`); return null; } h = await r.text(); }catch(e){ console.log(`  ⚠️  Binder: ${e.message}`); return null; }
+  const jobs = new Map();
+  for(const m of h.matchAll(/<a\b[^>]*href="(https:\/\/[a-z0-9-]+\.pi-asp\.de\/bewerber-web[^"]*#position[^"]*)"[^>]*>([\s\S]*?)<\/a>/gi)){
+    const url = decodeHtmlEntities(m[1]); const txt = decodeHtmlEntities(stripHtmlToPlainText(m[2])).replace(/\s+/g, ' ').trim();
+    // Sadece gerçek ilanlar: "(m/w/d)" içeren metin (Initiativbewerbung / "log in here" linkleri aynı sisteme gidiyor).
+    if(!/\((?:m\/w\/d|w\/m\/d|m\/f\/d|f\/m\/d|all genders)\)/i.test(txt) || /initiativ/i.test(txt)) continue;
+    if(!jobs.has(url)) jobs.set(url, { url, listText: txt });
+  }
+  if(!jobs.size) return null;
+  let browser; const out = [];
+  try{
+    browser = await puppeteer.launch({ headless: 'new', args: ['--no-sandbox', '--disable-setuid-sandbox'] });
+    const pg = await browser.newPage();
+    await pg.setUserAgent(RETAIL_UA['User-Agent']);
+    for(const j of jobs.values()){
+      let text = '';
+      try{
+        await pg.goto('about:blank');
+        await pg.goto(j.url, { waitUntil: 'networkidle2', timeout: 45000 });
+        await pg.waitForFunction(() => document.body && document.body.innerText.length > 600, { timeout: 15000 }).catch(() => {});
+        text = await pg.evaluate(() => document.body.innerText);
+      }catch(e){ console.log(`  ⚠️  Binder ilan açılamadı: ${e.message}`); }
+      text = String(text || '').replace(/[ \t]+/g, ' ').replace(/\n{3,}/g, '\n\n').trim();
+      const title = j.listText.replace(/\s+Wien\s*$/, '').trim(); // "Rechtsanwaltsanwärter*in (m/w/d) - Immobilienrecht" — alan eki kalsın
+      out.push({ title, company: 'Binder Grösswang', location: 'Wien, Österreich', datePosted: null, description: (text || j.listText).slice(0, 9000), url: j.url, departmentNames: [] });
+    }
+  }catch(e){ console.log(`  ⚠️  Binder tarayıcı: ${e.message}`); }
+  finally{ if(browser) await browser.close().catch(() => {}); }
+  console.log(`  Binder Grösswang: ${out.length} ilan.`);
+  return out.length ? out : null;
+}
+
 async function fetchBoardHtmlFallback(boardUrl){
   let html = '', base;
   try{ base = new URL(boardUrl); const r = await fetch(boardUrl, { headers: { ...RETAIL_UA, Accept: 'text/html' }, signal: AbortSignal.timeout(20000) }); if(!r.ok) return []; html = await r.text(); }catch(e){ return []; }
@@ -4132,6 +4319,12 @@ async function runCrawlBatch(configFile, shard){
         const re = new RegExp(company.onlyIf, 'i'), before = items.length;
         items = items.filter(it => re.test([it.title, it.companyName, it.company, String(it.description || it._adText || it._rawText || '').slice(0, 3000)].join(' ')));
         console.log(`  onlyIf /${company.onlyIf}/: ${before} → ${items.length}`);
+      }
+      // 15.10: tersi — eşleşenler atılıyor (Siemens AG Österreich listesi Siemens Mobility ilanlarını da içeriyor; onlar ayrı şirket).
+      if(company.exceptIf){
+        const re = new RegExp(company.exceptIf, 'i'), before = items.length;
+        items = items.filter(it => !re.test([it.title, it.companyName, it.company, String(it.description || it._adText || it._rawText || '').slice(0, 3000)].join(' ')));
+        console.log(`  exceptIf /${company.exceptIf}/: ${before} → ${items.length}`);
       }
       // 05.10: "mode": "office" → mağaza/depo/şoför ilanları AI'a gitmeden atılıyor, sadece merkez ofis + öğrenci ilanları kalıyor.
       if(company.mode === 'office'){
