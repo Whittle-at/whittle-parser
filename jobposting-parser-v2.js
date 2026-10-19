@@ -1146,6 +1146,23 @@ async function fetchOnlyfyJobs(subdomain, token){
   return full;
 }
 
+// 19.10: ilanın şirketteki yayın günü → 'YYYY-MM-DD' (site "vor X Tagen veröffentlicht" ve 60 günlük ömür sınırı için).
+// ISO / epoch / Workday "Posted 5 Days Ago" / "Posted 30+ Days Ago" / "vor 3 Tagen" kabul; makul aralık dışı → null.
+function postedDay(v){
+  if(v == null || v === '') return null;
+  const now = Date.now(); let ms = null;
+  if(typeof v === 'number') ms = v < 1e12 ? v * 1000 : v;
+  else {
+    const s = String(v).trim();
+    const rel = s.match(/(?:posted\s+)?(\d+)\+?\s*(day|days|tag|tagen|tage)\b/i);
+    if(/\b(today|heute)\b/i.test(s)) ms = now;
+    else if(/\b(yesterday|gestern)\b/i.test(s)) ms = now - 86400000;
+    else if(rel) ms = now - Number(rel[1]) * 86400000;
+    else { const d = Date.parse(s); if(Number.isFinite(d)) ms = d; else { const m = s.match(/^(\d{1,2})\.(\d{1,2})\.(\d{4})/); if(m) ms = Date.UTC(+m[3], +m[2] - 1, +m[1]); } }
+  }
+  if(!Number.isFinite(ms) || ms > now + 86400000 || ms < now - 730 * 86400000) return null;
+  return new Date(ms).toISOString().slice(0, 10);
+}
 async function fetchAtsJobs(ats){
   if(ats.type === 'workday') return fetchWorkdayJobs(ats);
   if(ats.type === 'greenhouse') return fetchGreenhouseJobs(ats.token, ats.apiHost);
@@ -2690,7 +2707,7 @@ async function runAtsPath(ats, sourceUrl, cityFilter){
     const withGuess = filtered.map(j => {
       const req = guessRequirements(j.description);
       return {
-        title: j.title, companyName: j.company, sourceNote: j.location,
+        title: j.title, companyName: j.company, sourceNote: j.location, postedAt: postedDay(j.datePosted),
         // DÜZELTME: eskiden her ilana AYNI externalUrl (sourceUrl — API çağrısını tetikleyen
         // sayfa) atanıyordu, ilanın kendi gerçek linki (j.url, zaten her fetch*Jobs fonksiyonu
         // döndürüyor) yok sayılıyordu. Tek ilan dönen entegrasyonlarda fark etmiyordu ama
@@ -3048,7 +3065,7 @@ async function processUrl(url, cityFilter, sharedBrowser, ctx){
     const items = filtered.map(j => {
       const req = guessRequirements(j.description);
       return {
-        title: j.title, companyName: j.company, sourceNote: j.location, externalUrl: j.url || url,
+        title: j.title, companyName: j.company, sourceNote: j.location, externalUrl: j.url || url, postedAt: postedDay(j.datePosted),
         ...req.guess, estimated: req.estimated, evidence: req.evidence,
         nicheGuess: guessNiche(`${j.title || ''} ${j.description || ''}`),
         seniorityGuess: guessSeniority(j.title),
@@ -3073,7 +3090,7 @@ async function processUrl(url, cityFilter, sharedBrowser, ctx){
     const items = phenomJobs.map(j => {
       const req = guessRequirements(j.description);
       return {
-        title: j.title, companyName: j.company, sourceNote: j.location, externalUrl: j.url || url,
+        title: j.title, companyName: j.company, sourceNote: j.location, externalUrl: j.url || url, postedAt: postedDay(j.datePosted),
         ...req.guess, estimated: req.estimated, evidence: req.evidence,
         nicheGuess: guessNiche(`${j.title || ''} ${j.description || ''}`),
         seniorityGuess: guessSeniority(j.title),
@@ -3177,7 +3194,7 @@ async function processUrl(url, cityFilter, sharedBrowser, ctx){
           exp: j.whittleGuess.exp, wm: j.whittleGuess.wm, team: j.whittleGuess.team, estimated: j.whittleEstimated,
           evidence: j.whittleEvidence || {},
           _rawText: j.descriptionFull || '', _adLines: j.descriptionLines || null,
-          externalUrl: url, sourceNote: j.location,
+          externalUrl: url, sourceNote: j.location, postedAt: postedDay(j.datePosted),
           nicheGuess: guessNiche(`${j.title || ''} ${j.descriptionSnippet || ''}`),
           seniorityGuess: guessSeniority(j.title),
         }));
