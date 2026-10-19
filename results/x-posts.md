@@ -1,142 +1,145 @@
-# X-Post-Entwürfe — 2026-10-18
+# X-Post-Entwürfe — 2026-10-19
 
-12 Entwürfe aus 1663 aktuellen Anzeigen (80 mögliche, die der letzten 21 Tage ausgelassen). Link am Ende anhängen: whittle.at/?source=x
+12 Entwürfe aus 1750 aktuellen Anzeigen (82 mögliche, die der letzten 21 Tage ausgelassen). Link am Ende anhängen: whittle.at/?source=x
 
-## 1. `count-en:finance`
+## 1. `sal:consulting`
 
-Studying in Vienna and looking for something in finance & controlling?
+Was zahlt ein Praktikum in Consulting, Audit & Tax in Österreich?
 
-Open right now: 21 internships & working-student jobs.
-4 don't require fluent German.
-16 are hybrid or remote.
-
-All in one place:
-
-whittle.at/?source=x
-
-## 2. `sal-en:sales`
-
-What does a sales & BD internship in Austria actually pay?
-
-Median of 14 current job ads: €2.530 gross/month (full-time equivalent).
-Middle half: €2.260 to €2.690.
-
-Check before you apply:
-
-whittle.at/?source=x
-
-## 3. `sal:data`
-
-Was zahlt ein Praktikum in Data & Analytics in Österreich?
-
-Median aus 21 aktuellen Anzeigen: €2.590 brutto/Monat (auf Vollzeit gerechnet).
-Die mittlere Hälfte liegt zwischen €2.180 und €2.650.
+Median aus 20 aktuellen Anzeigen: €2.200 brutto/Monat (auf Vollzeit gerechnet).
+Die mittlere Hälfte liegt zwischen €1.600 und €2.500.
 
 Gehalt vor der Bewerbung checken:
 
 whittle.at/?source=x
 
-## 4. `skill-en:data`
+## 2. `sal-en:marketing`
 
-What 25 current data & analytics internship ads in Austria ask for:
+What does a marketing & comms internship in Austria actually pay?
 
-SQL: 52%
-Python: 36%
-Excel: 32%
-Power BI: 28%
+Median of 14 current job ads: €2.750 gross/month (full-time equivalent).
+Middle half: €2.140 to €2.780.
 
-If you learn one thing this semester: SQL.
+Check before you apply:
+
+whittle.at/?source=x
+
+## 3. `skill-en:it`
+
+What 23 current IT & software internship ads in Austria ask for:
+
+AI tools: 35%
+Python: 30%
+Excel: 26%
+PowerPoint: 22%
+
+If you learn one thing this semester: AI tools.
 Does your CV match? Check:
 
 whittle.at/?source=x
 
-## 5. `skill:it`
+## 4. `skill:office`
 
-Was in 22 aktuellen IT & Software-Praktika in Österreich verlangt wird:
+Was in 16 aktuellen Office & Assistenz-Praktika in Österreich verlangt wird:
 
-KI-Tools: 32%
-Excel: 27%
-Python: 27%
-PowerPoint: 23%
+Excel: 38%
+PowerPoint: 31%
+Projektmanagement: 13%
+Power BI: 6%
 
-Wenn du dieses Semester nur eins lernst: KI-Tools.
+Wenn du dieses Semester nur eins lernst: Excel.
 Passt dein CV? Check:
 
 whittle.at/?source=x
 
-## 6. `ai-en:consulting`
+## 5. `ai-en:finance`
 
 AI isn't just an IT topic anymore.
 
-41% of current consulting, audit & tax job ads in Austria mention AI or AI tools – 83 out of 204.
+18% of current finance & controlling job ads in Austria mention AI or AI tools – 35 out of 191.
 
 If your CV says "familiar with ChatGPT", have a concrete example ready.
 
 whittle.at/?source=x
 
-## 7. `ai:marketing`
+## 6. `ai-en:marketing`
 
-KI ist kein IT-Thema mehr.
+AI isn't just an IT topic anymore.
 
-18% der aktuellen Marketing & Kommunikation-Stellen in Österreich erwähnen KI oder KI-Tools in der Anzeige. Das sind 14 von 78.
+19% of current marketing & comms job ads in Austria mention AI or AI tools – 15 out of 78.
 
-Wer "ChatGPT im Alltag" in den CV schreibt, sollte Beispiele parat haben.
-
-whittle.at/?source=x
-
-## 8. `ai:sales`
-
-KI ist kein IT-Thema mehr.
-
-13% der aktuellen Sales & Business Development-Stellen in Österreich erwähnen KI oder KI-Tools in der Anzeige. Das sind 33 von 245.
-
-Wer "ChatGPT im Alltag" in den CV schreibt, sollte Beispiele parat haben.
+If your CV says "familiar with ChatGPT", have a concrete example ready.
 
 whittle.at/?source=x
 
-## 9. `ai:office`
+## 7. `ai-en:sales`
 
-KI ist kein IT-Thema mehr.
+AI isn't just an IT topic anymore.
 
-5% der aktuellen Office & Assistenz-Stellen in Österreich erwähnen KI oder KI-Tools in der Anzeige. Das sind 5 von 103.
+14% of current sales & BD job ads in Austria mention AI or AI tools – 35 out of 252.
 
-Wer "ChatGPT im Alltag" in den CV schreibt, sollte Beispiele parat haben.
-
-whittle.at/?source=x
-
-## 10. `wm-en:finance`
-
-Remote work in finance & controlling? Here's Vienna right now (74 current roles):
-
-Hybrid: 88%
-Fully remote: 0%
-Office only: 12%
-
-Fully remote is still the exception.
+If your CV says "familiar with ChatGPT", have a concrete example ready.
 
 whittle.at/?source=x
 
-## 11. `wm:hr`
+## 8. `wm:consulting`
 
-Homeoffice in HR? So sieht es in Wien gerade aus (24 aktuelle Stellen):
+Homeoffice in Consulting, Audit & Tax? So sieht es in Wien gerade aus (114 aktuelle Stellen):
 
-Hybrid: 88%
-Voll remote: 0%
-Nur Büro: 13%
+Hybrid: 66%
+Voll remote: 1%
+Nur Büro: 33%
 
 Voll remote bleibt die Ausnahme.
 
 whittle.at/?source=x
 
-## 12. `count-en:marketing`
+## 9. `wm-en:hr`
 
-Studying in Vienna and looking for something in marketing & comms?
+Remote work in HR? Here's Vienna right now (27 current roles):
 
-Open right now: 21 internships & working-student jobs.
-5 don't require fluent German.
-9 are hybrid or remote.
+Hybrid: 89%
+Fully remote: 0%
+Office only: 11%
 
-All in one place:
+Fully remote is still the exception.
+
+whittle.at/?source=x
+
+## 10. `wm-en:office`
+
+Remote work in office & admin? Here's Vienna right now (52 current roles):
+
+Hybrid: 48%
+Fully remote: 2%
+Office only: 50%
+
+Fully remote is still the exception.
+
+whittle.at/?source=x
+
+## 11. `sal-en:it`
+
+What does a IT & software internship in Austria actually pay?
+
+Median of 18 current job ads: €2.600 gross/month (full-time equivalent).
+Middle half: €2.060 to €2.730.
+
+Check before you apply:
+
+whittle.at/?source=x
+
+## 12. `skill:finance`
+
+Was in 29 aktuellen Finance & Controlling-Praktika in Österreich verlangt wird:
+
+Excel: 55%
+PowerPoint: 34%
+KI-Tools: 24%
+Python: 14%
+
+Wenn du dieses Semester nur eins lernst: Excel.
+Passt dein CV? Check:
 
 whittle.at/?source=x
 
