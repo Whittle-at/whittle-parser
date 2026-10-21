@@ -1,137 +1,145 @@
-# X-Post-Entwürfe — 2026-10-20
+# X-Post-Entwürfe — 2026-10-21
 
-12 Entwürfe aus 1722 aktuellen Anzeigen (76 mögliche, die der letzten 21 Tage ausgelassen). Link am Ende anhängen: whittle.at/?source=x
+12 Entwürfe aus 1795 aktuellen Anzeigen (76 mögliche, die der letzten 21 Tage ausgelassen). Link am Ende anhängen: whittle.at/?source=x
 
-## 1. `skill:data`
+## 1. `salrank-en`
 
-Was in 23 aktuellen Data & Analytics-Praktika in Österreich verlangt wird:
+Which internships in Austria pay best (median gross/month, full-time equivalent):
 
-SQL: 48%
-Python: 35%
-Excel: 30%
-Power BI: 26%
+1. Sales/BD: €2.690
+2. Marketing: €2.620
+3. Finance: €2.500
+4. Data: €2.420
+5. IT: €2.360
 
-Wenn du dieses Semester nur eins lernst: SQL.
+Based on 94 ads that state a salary.
+
+whittle.at/?source=x
+
+## 2. `skill:marketing`
+
+Was in 24 aktuellen Marketing & Kommunikation-Praktika in Österreich verlangt wird:
+
+Adobe: 25%
+Excel: 17%
+KI-Tools: 17%
+PowerPoint: 8%
+
+Wenn du dieses Semester nur eins lernst: Adobe.
 Passt dein CV? Check:
 
 whittle.at/?source=x
 
-## 2. `ai:hr`
-
-KI ist kein IT-Thema mehr.
-
-22% der aktuellen HR-Stellen in Österreich erwähnen KI oder KI-Tools in der Anzeige. Das sind 11 von 51.
-
-Wer "ChatGPT im Alltag" in den CV schreibt, sollte Beispiele parat haben.
-
-whittle.at/?source=x
-
-## 3. `ai-en:office`
+## 3. `ai-en:hr`
 
 AI isn't just an IT topic anymore.
 
-5% of current office & admin job ads in Austria mention AI or AI tools – 5 out of 102.
+18% of current HR job ads in Austria mention AI or AI tools – 10 out of 55.
 
 If your CV says "familiar with ChatGPT", have a concrete example ready.
 
 whittle.at/?source=x
 
-## 4. `junior-en`
+## 4. `benefits-en`
 
-"Junior" doesn't mean "no experience".
+What Vienna employers promise in job ads right now (840 business & tech roles):
 
-36% of current junior job ads in Austria already ask for 1+ years of work experience.
+Flexible hours: 41%
+Home office: 38%
+Training budget: 29%
+Meal allowance: 24%
+Public transport ticket: 14%
 
-That's why internships and working-student jobs during your degree matter.
+What's missing from the list?
 
 whittle.at/?source=x
 
-## 5. `wm:marketing`
+## 5. `wm:data`
 
-Homeoffice in Marketing & Kommunikation? So sieht es in Wien gerade aus (38 aktuelle Stellen):
+Homeoffice in Data & Analytics? So sieht es in Wien gerade aus (38 aktuelle Stellen):
 
-Hybrid: 50%
-Voll remote: 0%
-Nur Büro: 50%
+Hybrid: 76%
+Voll remote: 3%
+Nur Büro: 21%
 
 Voll remote bleibt die Ausnahme.
 
 whittle.at/?source=x
 
-## 6. `wm-en:sales`
+## 6. `season-en:2027`
 
-Remote work in sales & BD? Here's Vienna right now (76 current roles):
+Summer internship 2027? Applications are already open.
 
-Hybrid: 70%
-Fully remote: 5%
-Office only: 25%
+82 current student job ads in Austria already mention 2027. Big Four firms, banks and corporates mostly hire for summer in autumn and winter.
 
-Fully remote is still the exception.
+Look now:
 
 whittle.at/?source=x
 
-## 7. `teilzeit`
+## 7. `emptype-en`
 
-Neben dem Studium arbeiten, aber nicht im Café oder an der Kassa?
+Who's hiring students in Vienna right now (business & tech, 133 open roles):
 
-Gerade offen in Wien: 138 Teilzeitstellen in Business & Tech, 9 davon geringfügig.
-
-Finance, Marketing, Data, Office – gefiltert nach deinem Profil:
-
-whittle.at/?source=x
-
-## 8. `season:2027`
-
-Sommerpraktikum 2027? Die Bewerbungsphase läuft schon.
-
-75 aktuelle Studenten-Anzeigen in Österreich erwähnen bereits 2027. Bei Big Four, Banken und Konzernen ist Herbst/Winter die Hauptsaison.
-
-Jetzt schauen:
+Corporates: 84
+Consulting, Big Four & law firms: 29
+Public sector & universities: 12
+Start-ups: 8
 
 whittle.at/?source=x
 
-## 9. `emptype`
+## 8. `c1rank-en`
 
-Wer in Wien gerade Studierende sucht (Business & Tech, 130 offene Stellen):
+Where in Vienna you most likely need C1 German (share of job ads):
 
-Konzerne: 82
-Beratung, Big Four & Kanzleien: 29
-Öffentlich & Uni: 12
-Start-ups: 7
+Marketing & comms: 53%
+HR: 50%
+Consulting, audit & tax: 47%
 
-whittle.at/?source=x
-
-## 10. `c1rank`
-
-In welchen Bereichen du in Wien am ehesten Deutsch C1 brauchst (Anteil der Anzeigen):
-
-Marketing & Kommunikation: 52%
-HR: 51%
-Consulting, Audit & Tax: 46%
-
-Am wenigsten: IT & Software (23%)
+Least: IT & software (23%)
 
 whittle.at/?source=x
 
-## 11. `nogerman-de`
+## 9. `noexp`
 
-Deutsch ist nicht immer Pflicht.
+Nicht jeder Einstiegsjob heißt "Praktikum".
 
-Von 130 offenen Studentenjobs in Wien (Business & Tech):
-• 39 komplett auf Englisch ausgeschrieben
-• 30% ohne fließendes Deutsch
-• nur 45% verlangen C1
+In Wien sind gerade 260 reguläre Stellen in Business & Tech offen, die keine Berufserfahrung verlangen.
 
-Hier filtern:
+Wer nur nach "Praktikum" sucht, sieht die nicht. Wir zeigen beides:
 
 whittle.at/?source=x
 
-## 12. `sal:finance`
+## 10. `count:consulting`
 
-Was zahlt ein Praktikum in Finance & Controlling in Österreich?
+Consulting, Audit & Tax studieren und in Wien was Praktisches suchen?
 
-Median aus 28 aktuellen Anzeigen: €2.500 brutto/Monat (auf Vollzeit gerechnet).
-Die mittlere Hälfte liegt zwischen €2.200 und €2.620.
+Gerade offen: 30 Praktika & Werkstudentenjobs.
+5 davon ohne fließendes Deutsch.
+11 hybrid oder remote.
+
+Alle an einem Ort:
+
+whittle.at/?source=x
+
+## 11. `nogerman`
+
+"You can't get a job in Vienna without German."
+
+We checked 133 open student jobs in business & tech:
+• 30% don't ask for fluent German
+• 40 are written entirely in English
+• only 45% want C1
+
+Find them:
+
+whittle.at/?source=x
+
+## 12. `sal:it`
+
+Was zahlt ein Praktikum in IT & Software in Österreich?
+
+Median aus 14 aktuellen Anzeigen: €2.360 brutto/Monat (auf Vollzeit gerechnet).
+Die mittlere Hälfte liegt zwischen €2.060 und €2.620.
 
 Gehalt vor der Bewerbung checken:
 

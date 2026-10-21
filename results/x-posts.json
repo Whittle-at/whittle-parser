@@ -1,100 +1,162 @@
 {
- "date": "2026-10-20",
- "dd": "20.10.2026",
+ "date": "2026-10-21",
+ "dd": "21.10.2026",
  "link": "whittle.at/?source=x",
  "posts": [
   {
    "i": 1,
-   "key": "skill:data",
-   "text": "Was in 23 aktuellen Data & Analytics-Praktika in Österreich verlangt wird:\n\nSQL: 48%\nPython: 35%\nExcel: 30%\nPower BI: 26%\n\nWenn du dieses Semester nur eins lernst: SQL.\nPasst dein CV? Check:\n\nwhittle.at/?source=x",
+   "key": "salrank-en",
+   "text": "Which internships in Austria pay best (median gross/month, full-time equivalent):\n\n1. Sales/BD: €2.690\n2. Marketing: €2.620\n3. Finance: €2.500\n4. Data: €2.420\n5. IT: €2.360\n\nBased on 94 ads that state a salary.\n\nwhittle.at/?source=x",
    "card": {
-    "kicker": "Österreich · Data & Analytics-Praktika",
-    "title": "Diese Skills stehen in den Anzeigen",
+    "kicker": "Austria · internship pay",
+    "title": "Which internships pay best",
     "rows": [
      [
-      "SQL",
-      "48%",
-      0.4782608695652174
+      "sales & BD (19)",
+      "€2.690",
+      1
      ],
      [
-      "Python",
-      "35%",
-      0.34782608695652173
+      "marketing & comms (13)",
+      "€2.620",
+      0.9736059479553903
      ],
      [
-      "Excel",
-      "30%",
-      0.30434782608695654
+      "finance & controlling (29)",
+      "€2.500",
+      0.929368029739777
      ],
      [
-      "Power BI",
-      "26%",
-      0.2608695652173913
+      "data & analytics (19)",
+      "€2.420",
+      0.9011152416356877
      ],
      [
-      "KI-Tools",
-      "22%",
-      0.21739130434782608
+      "IT & software (14)",
+      "€2.360",
+      0.8780669144981412
+     ],
+     [
+      "consulting, audit & tax (21)",
+      "€2.350",
+      0.8736059479553904
      ]
     ],
-    "n": 23
+    "n": 115
    }
   },
   {
    "i": 2,
-   "key": "ai:hr",
-   "text": "KI ist kein IT-Thema mehr.\n\n22% der aktuellen HR-Stellen in Österreich erwähnen KI oder KI-Tools in der Anzeige. Das sind 11 von 51.\n\nWer \"ChatGPT im Alltag\" in den CV schreibt, sollte Beispiele parat haben.\n\nwhittle.at/?source=x",
+   "key": "skill:marketing",
+   "text": "Was in 24 aktuellen Marketing & Kommunikation-Praktika in Österreich verlangt wird:\n\nAdobe: 25%\nExcel: 17%\nKI-Tools: 17%\nPowerPoint: 8%\n\nWenn du dieses Semester nur eins lernst: Adobe.\nPasst dein CV? Check:\n\nwhittle.at/?source=x",
    "card": {
-    "kicker": "Österreich · HR",
-    "big": "22%",
-    "bigSub": "der Anzeigen erwähnen KI oder KI-Tools",
-    "n": 51
+    "kicker": "Österreich · Marketing & Kommunikation-Praktika",
+    "title": "Diese Skills stehen in den Anzeigen",
+    "rows": [
+     [
+      "Adobe",
+      "25%",
+      0.25
+     ],
+     [
+      "Excel",
+      "17%",
+      0.16666666666666666
+     ],
+     [
+      "KI-Tools",
+      "17%",
+      0.16666666666666666
+     ],
+     [
+      "PowerPoint",
+      "8%",
+      0.08333333333333333
+     ],
+     [
+      "Salesforce",
+      "4%",
+      0.041666666666666664
+     ]
+    ],
+    "n": 24
    }
   },
   {
    "i": 3,
-   "key": "ai-en:office",
-   "text": "AI isn't just an IT topic anymore.\n\n5% of current office & admin job ads in Austria mention AI or AI tools – 5 out of 102.\n\nIf your CV says \"familiar with ChatGPT\", have a concrete example ready.\n\nwhittle.at/?source=x",
+   "key": "ai-en:hr",
+   "text": "AI isn't just an IT topic anymore.\n\n18% of current HR job ads in Austria mention AI or AI tools – 10 out of 55.\n\nIf your CV says \"familiar with ChatGPT\", have a concrete example ready.\n\nwhittle.at/?source=x",
    "card": {
-    "kicker": "Austria · office & admin",
-    "big": "5%",
+    "kicker": "Austria · HR",
+    "big": "18%",
     "bigSub": "of ads mention AI or AI tools",
-    "n": 102
+    "n": 55
    }
   },
   {
    "i": 4,
-   "key": "junior-en",
-   "text": "\"Junior\" doesn't mean \"no experience\".\n\n36% of current junior job ads in Austria already ask for 1+ years of work experience.\n\nThat's why internships and working-student jobs during your degree matter.\n\nwhittle.at/?source=x",
+   "key": "benefits-en",
+   "text": "What Vienna employers promise in job ads right now (840 business & tech roles):\n\nFlexible hours: 41%\nHome office: 38%\nTraining budget: 29%\nMeal allowance: 24%\nPublic transport ticket: 14%\n\nWhat's missing from the list?\n\nwhittle.at/?source=x",
    "card": {
-    "kicker": "Austria · junior roles",
-    "big": "36%",
-    "bigSub": "ask for at least 1 year of experience",
-    "n": 64
+    "kicker": "Vienna · benefits",
+    "title": "What employers promise",
+    "rows": [
+     [
+      "Flexible hours",
+      "41%",
+      0.4142857142857143
+     ],
+     [
+      "Home office",
+      "38%",
+      0.3773809523809524
+     ],
+     [
+      "Training budget",
+      "29%",
+      0.2916666666666667
+     ],
+     [
+      "Meal allowance",
+      "24%",
+      0.2369047619047619
+     ],
+     [
+      "Public transport ticket",
+      "14%",
+      0.1357142857142857
+     ],
+     [
+      "4-day week",
+      "0%",
+      0.0035714285714285713
+     ]
+    ],
+    "n": 840
    }
   },
   {
    "i": 5,
-   "key": "wm:marketing",
-   "text": "Homeoffice in Marketing & Kommunikation? So sieht es in Wien gerade aus (38 aktuelle Stellen):\n\nHybrid: 50%\nVoll remote: 0%\nNur Büro: 50%\n\nVoll remote bleibt die Ausnahme.\n\nwhittle.at/?source=x",
+   "key": "wm:data",
+   "text": "Homeoffice in Data & Analytics? So sieht es in Wien gerade aus (38 aktuelle Stellen):\n\nHybrid: 76%\nVoll remote: 3%\nNur Büro: 21%\n\nVoll remote bleibt die Ausnahme.\n\nwhittle.at/?source=x",
    "card": {
-    "kicker": "Wien · Marketing & Kommunikation",
+    "kicker": "Wien · Data & Analytics",
     "title": "Büro, hybrid oder remote?",
     "rows": [
      [
       "Hybrid",
-      "50%",
-      0.5
+      "76%",
+      0.7631578947368421
      ],
      [
       "Nur Büro",
-      "50%",
-      0.5
+      "21%",
+      0.21052631578947367
      ],
      [
       "Voll remote",
-      "0%",
-      0
+      "3%",
+      0.02631578947368421
      ]
     ],
     "n": 38
@@ -102,179 +164,168 @@
   },
   {
    "i": 6,
-   "key": "wm-en:sales",
-   "text": "Remote work in sales & BD? Here's Vienna right now (76 current roles):\n\nHybrid: 70%\nFully remote: 5%\nOffice only: 25%\n\nFully remote is still the exception.\n\nwhittle.at/?source=x",
+   "key": "season-en:2027",
+   "text": "Summer internship 2027? Applications are already open.\n\n82 current student job ads in Austria already mention 2027. Big Four firms, banks and corporates mostly hire for summer in autumn and winter.\n\nLook now:\n\nwhittle.at/?source=x",
    "card": {
-    "kicker": "Vienna · sales & BD",
-    "title": "Office, hybrid or remote?",
-    "rows": [
-     [
-      "Hybrid",
-      "70%",
-      0.6973684210526315
-     ],
-     [
-      "Office only",
-      "25%",
-      0.25
-     ],
-     [
-      "Fully remote",
-      "5%",
-      0.05263157894736842
-     ]
-    ],
-    "n": 76
+    "kicker": "Austria · internships 2027",
+    "big": "82",
+    "bigSub": "ads already mention 2027",
+    "n": 228
    }
   },
   {
    "i": 7,
-   "key": "teilzeit",
-   "text": "Neben dem Studium arbeiten, aber nicht im Café oder an der Kassa?\n\nGerade offen in Wien: 138 Teilzeitstellen in Business & Tech, 9 davon geringfügig.\n\nFinance, Marketing, Data, Office – gefiltert nach deinem Profil:\n\nwhittle.at/?source=x",
+   "key": "emptype-en",
+   "text": "Who's hiring students in Vienna right now (business & tech, 133 open roles):\n\nCorporates: 84\nConsulting, Big Four & law firms: 29\nPublic sector & universities: 12\nStart-ups: 8\n\nwhittle.at/?source=x",
    "card": {
-    "kicker": "Wien · neben dem Studium",
-    "big": "138",
-    "bigSub": "Teilzeitstellen in Business & Tech",
+    "kicker": "Vienna · student jobs",
+    "title": "Who's hiring students",
     "rows": [
      [
-      "davon geringfügig",
-      "9",
-      0.06521739130434782
+      "Corporates",
+      "84",
+      0.631578947368421
+     ],
+     [
+      "Consulting, Big Four & law firms",
+      "29",
+      0.21804511278195488
+     ],
+     [
+      "Public sector & universities",
+      "12",
+      0.09022556390977443
+     ],
+     [
+      "Start-ups",
+      "8",
+      0.06015037593984962
      ]
     ],
-    "n": 815
+    "n": 133
    }
   },
   {
    "i": 8,
-   "key": "season:2027",
-   "text": "Sommerpraktikum 2027? Die Bewerbungsphase läuft schon.\n\n75 aktuelle Studenten-Anzeigen in Österreich erwähnen bereits 2027. Bei Big Four, Banken und Konzernen ist Herbst/Winter die Hauptsaison.\n\nJetzt schauen:\n\nwhittle.at/?source=x",
+   "key": "c1rank-en",
+   "text": "Where in Vienna you most likely need C1 German (share of job ads):\n\nMarketing & comms: 53%\nHR: 50%\nConsulting, audit & tax: 47%\n\nLeast: IT & software (23%)\n\nwhittle.at/?source=x",
    "card": {
-    "kicker": "Österreich · Praktika 2027",
-    "big": "75",
-    "bigSub": "Anzeigen erwähnen schon 2027",
-    "n": 214
+    "kicker": "Vienna · C1 German required",
+    "title": "Where C1 German really matters",
+    "rows": [
+     [
+      "Marketing & comms",
+      "53%",
+      0.532258064516129
+     ],
+     [
+      "HR",
+      "50%",
+      0.5
+     ],
+     [
+      "Consulting, audit & tax",
+      "47%",
+      0.4715909090909091
+     ],
+     [
+      "Finance & controlling",
+      "45%",
+      0.4519230769230769
+     ],
+     [
+      "Sales & BD",
+      "44%",
+      0.4426229508196721
+     ],
+     [
+      "Supply chain & procurement",
+      "32%",
+      0.32
+     ]
+    ],
+    "n": 835
    }
   },
   {
    "i": 9,
-   "key": "emptype",
-   "text": "Wer in Wien gerade Studierende sucht (Business & Tech, 130 offene Stellen):\n\nKonzerne: 82\nBeratung, Big Four & Kanzleien: 29\nÖffentlich & Uni: 12\nStart-ups: 7\n\nwhittle.at/?source=x",
+   "key": "noexp",
+   "text": "Nicht jeder Einstiegsjob heißt \"Praktikum\".\n\nIn Wien sind gerade 260 reguläre Stellen in Business & Tech offen, die keine Berufserfahrung verlangen.\n\nWer nur nach \"Praktikum\" sucht, sieht die nicht. Wir zeigen beides:\n\nwhittle.at/?source=x",
    "card": {
-    "kicker": "Wien · Studentenjobs",
-    "title": "Wer gerade Studierende sucht",
-    "rows": [
-     [
-      "Konzerne",
-      "82",
-      0.6307692307692307
-     ],
-     [
-      "Beratung, Big Four & Kanzleien",
-      "29",
-      0.2230769230769231
-     ],
-     [
-      "Öffentlich & Uni",
-      "12",
-      0.09230769230769231
-     ],
-     [
-      "Start-ups",
-      "7",
-      0.05384615384615385
-     ]
-    ],
-    "n": 130
+    "kicker": "Wien · Einstieg",
+    "big": "260",
+    "bigSub": "reguläre Stellen ohne Berufserfahrung",
+    "n": 840
    }
   },
   {
    "i": 10,
-   "key": "c1rank",
-   "text": "In welchen Bereichen du in Wien am ehesten Deutsch C1 brauchst (Anteil der Anzeigen):\n\nMarketing & Kommunikation: 52%\nHR: 51%\nConsulting, Audit & Tax: 46%\n\nAm wenigsten: IT & Software (23%)\n\nwhittle.at/?source=x",
+   "key": "count:consulting",
+   "text": "Consulting, Audit & Tax studieren und in Wien was Praktisches suchen?\n\nGerade offen: 30 Praktika & Werkstudentenjobs.\n5 davon ohne fließendes Deutsch.\n11 hybrid oder remote.\n\nAlle an einem Ort:\n\nwhittle.at/?source=x",
    "card": {
-    "kicker": "Wien · Deutsch C1 verlangt",
-    "title": "Wo C1 wirklich zählt",
+    "kicker": "Wien · Consulting, Audit & Tax",
+    "big": "30",
+    "bigSub": "offene Praktika & Werkstudentenjobs",
     "rows": [
      [
-      "Marketing & Kommunikation",
-      "52%",
-      0.5245901639344263
+      "ohne fließendes Deutsch",
+      "5",
+      0.16666666666666666
      ],
      [
-      "HR",
-      "51%",
-      0.5142857142857142
-     ],
-     [
-      "Consulting, Audit & Tax",
-      "46%",
-      0.46107784431137727
-     ],
-     [
-      "Finance & Controlling",
-      "44%",
-      0.4411764705882353
-     ],
-     [
-      "Sales & Business Development",
-      "43%",
-      0.4322033898305085
-     ],
-     [
-      "Supply Chain & Einkauf",
-      "38%",
-      0.38095238095238093
+      "hybrid oder remote",
+      "11",
+      0.36666666666666664
      ]
     ],
-    "n": 811
+    "n": 30
    }
   },
   {
    "i": 11,
-   "key": "nogerman-de",
-   "text": "Deutsch ist nicht immer Pflicht.\n\nVon 130 offenen Studentenjobs in Wien (Business & Tech):\n• 39 komplett auf Englisch ausgeschrieben\n• 30% ohne fließendes Deutsch\n• nur 45% verlangen C1\n\nHier filtern:\n\nwhittle.at/?source=x",
+   "key": "nogerman",
+   "text": "\"You can't get a job in Vienna without German.\"\n\nWe checked 133 open student jobs in business & tech:\n• 30% don't ask for fluent German\n• 40 are written entirely in English\n• only 45% want C1\n\nFind them:\n\nwhittle.at/?source=x",
    "card": {
-    "kicker": "Wien · Studentenjobs",
-    "title": "Wie viel Deutsch wirklich verlangt wird",
+    "kicker": "Vienna · student jobs",
+    "title": "German isn't always required",
     "rows": [
      [
-      "kein fließendes Deutsch nötig",
+      "no fluent German needed",
       "30%",
-      0.3
+      0.3007518796992481
      ],
      [
-      "Anzeige auf Englisch",
+      "ad written in English",
       "30%",
-      0.3
+      0.3007518796992481
      ],
      [
-      "Deutsch C1 verlangt",
+      "German C1 required",
       "45%",
-      0.45384615384615384
+      0.45112781954887216
      ]
     ],
-    "n": 130
+    "n": 133
    }
   },
   {
    "i": 12,
-   "key": "sal:finance",
-   "text": "Was zahlt ein Praktikum in Finance & Controlling in Österreich?\n\nMedian aus 28 aktuellen Anzeigen: €2.500 brutto/Monat (auf Vollzeit gerechnet).\nDie mittlere Hälfte liegt zwischen €2.200 und €2.620.\n\nGehalt vor der Bewerbung checken:\n\nwhittle.at/?source=x",
+   "key": "sal:it",
+   "text": "Was zahlt ein Praktikum in IT & Software in Österreich?\n\nMedian aus 14 aktuellen Anzeigen: €2.360 brutto/Monat (auf Vollzeit gerechnet).\nDie mittlere Hälfte liegt zwischen €2.060 und €2.620.\n\nGehalt vor der Bewerbung checken:\n\nwhittle.at/?source=x",
    "card": {
-    "kicker": "Österreich · Praktikum Finance & Controlling",
-    "big": "€2.500",
+    "kicker": "Österreich · Praktikum IT & Software",
+    "big": "€2.360",
     "bigSub": "Median brutto/Monat (Vollzeit gerechnet)",
     "rows": [
      [
       "untere 25 %",
-      "€2.200",
-      0.8400152730049637
+      "€2.060",
+      0.7880870561282932
      ],
      [
       "Median",
-      "€2.500",
-      0.9545628102329133
+      "€2.360",
+      0.9018709431080565
      ],
      [
       "obere 25 %",
@@ -282,7 +333,7 @@
       1
      ]
     ],
-    "n": 28
+    "n": 14
    }
   }
  ]
