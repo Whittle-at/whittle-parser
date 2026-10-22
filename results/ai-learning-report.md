@@ -1,9 +1,9 @@
-# Parser öğrenme raporu — 2026-10-21
+# Parser öğrenme raporu — 2026-10-22
 
-Kaynak: results/ai-soft-cache.json. İfade (_q) taşıyan ilan kaydı: **2091**.
+Kaynak: results/ai-soft-cache.json. İfade (_q) taşıyan ilan kaydı: **2167**.
 Terfi eşiği: ≥3 ilan, ≥2 farklı şirket, oyların ≥%90'i aynı değer.
 
-## Terfi etmiş kurallar (102) — artık AI'ya sorulmadan uygulanıyor
+## Terfi etmiş kurallar (104) — artık AI'ya sorulmadan uygulanıyor
 Sürekli burada duranlar parser'daki kalıcı regex'e taşınmaya aday.
 
 | Alan | Değer | İfade | İlan | Şirket |
@@ -16,6 +16,7 @@ Sürekli burada duranlar parser'daki kalıcı regex'e taşınmaya aday.
 | en | `1` | grundkenntnisse in englisch | 12 | 2 |
 | f_place | `"field"` | in der filiale | 12 | 3 |
 | f_customers | `"b2c"` | unsere kund:innen | 8 | 3 |
+| study | `["wirt"]` | betriebswirtschaftliche ausbildung | 7 | 2 |
 | team | `"large"` | multiprofessionellen team | 6 | 3 |
 | variety | `1` | abwechslungsreiche tätigkeit | 6 | 2 |
 | autonomy | `1` | proactive mindset | 5 | 2 |
@@ -93,6 +94,7 @@ Sürekli burada duranlar parser'daki kalıcı regex'e taşınmaya aday.
 | phys | `1` | handwerkliches geschick | 3 | 3 |
 | shift | `1` | flexible arbeitszeiten | 3 | 2 |
 | start | `"asap"` | ab sofort | 3 | 3 |
+| start | `"asap"` | bewirb dich jetzt | 3 | 3 |
 | start | `"2026-11"` | ab november 2026 | 3 | 3 |
 | start | `"asap"` | as soon as possible | 3 | 3 |
 | start | `"2027-01"` | start: januar 2027 | 3 | 2 |
@@ -111,7 +113,7 @@ Sürekli burada duranlar parser'daki kalıcı regex'e taşınmaya aday.
 | wm | `"onsite"` | dienstort: wien | 3 | 2 |
 | wm | `"hybrid"` | flexible arbeitszeiten | 3 | 2 |
 
-## Yaklaşanlar (878) — bir-iki ilan daha görülürse terfi eder
+## Yaklaşanlar (923) — bir-iki ilan daha görülürse terfi eder
 
 | Alan | Değer | İfade | İlan | Şirket |
 |---|---|---|---|---|
@@ -133,7 +135,7 @@ Sürekli burada duranlar parser'daki kalıcı regex'e taşınmaya aday.
 | autonomy | `1` | packen gerne mit an | 26 | 1 |
 | autonomy | `1` | hier können sie mitgestalten | 26 | 1 |
 | cust | `1` | sendungen bei unseren kund*innen | 25 | 1 |
-| creative | `1` | begeisterung für die umsetzung von ideen | 22 | 1 |
+| creative | `1` | begeisterung für die umsetzung von ideen | 23 | 1 |
 | variety | `1` | lieben abwechslung | 20 | 1 |
 | autonomy | `1` | abwechslung und packen gerne mit an | 19 | 1 |
 | phys | `1` | sie stehen und gehen viel | 18 | 1 |
@@ -141,6 +143,7 @@ Sürekli burada duranlar parser'daki kalıcı regex'e taşınmaya aday.
 | competitive | `1` | kompromisslose einhaltung unserer werte | 16 | 1 |
 | f_commission | `"yes"` | ansprechende provision | 15 | 1 |
 | mobile | `1` | als zusteller*in | 14 | 1 |
+| certs | `["fsB"]` | gültigen pkw-führerschein | 13 | 1 |
 | competitive | `1` | unmittelbaren erfolg eines verkaufs | 13 | 1 |
 | cust | `1` | umgang mit anderen menschen | 13 | 1 |
 | f_shift | `"two"` | früh- und spätdienste | 13 | 1 |
@@ -170,6 +173,7 @@ Sürekli burada duranlar parser'daki kalıcı regex'e taşınmaya aday.
 | f_night | `"has"` | früh- und spätdienste | 9 | 1 |
 | f_place | `"office"` | based in one of our european offices | 9 | 1 |
 | team | `"large"` | über 9.500 kolleg*innen | 9 | 1 |
+| variety | `1` | exciting, varied responsibilities | 9 | 1 |
 | variety | `1` | maßgeschneiderte versicherungs- und vorsorge-produkte | 9 | 1 |
 | autonomy | `1` | bereitschaft verantwortung zu übernehmen | 8 | 1 |
 | competitive | `1` | leistungsbezogenes jahresbruttogehalt | 8 | 1 |
@@ -180,43 +184,41 @@ Sürekli burada duranlar parser'daki kalıcı regex'e taşınmaya aday.
 | f_place | `"field"` | montage von reifen und felgen | 8 | 1 |
 | mobile | `1` | du bist vor ort beim klienten | 8 | 1 |
 | study | `["wirt"]` | abgeschlossenes wirtschaftliches universitäts- oder fh-studium | 8 | 1 |
+| team | `"large"` | international academic team | 8 | 1 |
 | variety | `1` | umsetzung von ideen | 8 | 1 |
 | wm | `"onsite"` | based in one of our european offices | 8 | 1 |
 | autonomy | `1` | du übernimmst verantwortung, ohne auf anweisung zu warten | 7 | 1 |
-| certs | `["fsB"]` | gültigen pkw-führerschein | 7 | 1 |
 | competitive | `1` | leistung wird belohnt | 7 | 1 |
 | competitive | `1` | abschlussstarke sowie vertriebsorientierte persönlichkeit | 7 | 1 |
 | creative | `1` | innovative ideas and practical solutions | 7 | 1 |
+| cust | `1` | hilfst unseren kund*innen | 7 | 1 |
 | emp | `["vollzeit"]` | selbstständige:r unternehmer:in | 7 | 1 |
 | f_commission | `"yes"` | attraktive rohertragsbeteiligung | 7 | 1 |
+| f_customers | `"b2c"` | unsere kund*innen | 7 | 1 |
 | f_customers | `"b2c"` | jede kundin und jeden kunden | 7 | 1 |
 | f_place | `"field"` | aktives mitarbeiten in der filiale | 7 | 1 |
 | phys | `1` | sortierst die sendungen | 7 | 1 |
+| team | `"large"` | zielstrebiges und erfahrenes team | 7 | 1 |
 | team | `"large"` | eng mit deinem team zusammen | 7 | 1 |
-| team | `"large"` | international academic team | 7 | 1 |
 | variety | `1` | breites aufgabenspektrum | 7 | 1 |
 | variety | `1` | du entwickelst deinen standort aktiv | 7 | 1 |
 | variety | `1` | abwechslungsreiche ausbildung | 7 | 1 |
 | variety | `1` | gibt es jede menge abwechslung | 7 | 1 |
-| variety | `1` | exciting, varied responsibilities | 7 | 1 |
 | variety | `1` | mitarbeit in einem motivierten team | 7 | 1 |
 | wm | `"onsite"` | a1 shop | 7 | 1 |
 | autonomy | `0` | organisierte arbeitsweise zur gewissenhaften erledigung | 6 | 1 |
 | cust | `1` | briefe, pakete und werbepost an unsere kund*innen zu | 6 | 1 |
-| cust | `1` | hilfst unseren kund*innen | 6 | 1 |
 | cust | `1` | work with colleagues and clients | 6 | 1 |
 | deg | `2` | ongoing studies at university/university of applied sciences | 6 | 1 |
-| f_customers | `"b2c"` | unsere kund*innen | 6 | 1 |
+| f_commission | `"yes"` | einstiegsgehalt von € 2.400,- brutto plus bonus | 6 | 1 |
+| f_customers | `"b2c"` | vermietung unserer premiumfahrzeuge | 6 | 1 |
 | f_lehramt | `"open"` | du brauchst keinen pädagogischen background | 6 | 1 |
 | f_shift | `"day"` | montag-freitag 06:00-14:12 uhr | 6 | 1 |
 | mobile | `1` | neue wege zu gehen | 6 | 1 |
 | phys | `1` | sie sitzen viel | 6 | 1 |
 | phys | `1` | verkaufsfläche und lager gut gefüllt und organisiert | 6 | 1 |
-| phys | `1` | als zusteller*in | 6 | 1 |
-| shift | `1` | montag-freitag 06:00-14:12 uhr | 6 | 1 |
-| team | `"large"` | zielstrebiges und erfahrenes team | 6 | 1 |
 
-## Çelişkili ifadeler (68) — aynı ifade farklı değerlere işaret ediyor, kural OLMAZ
+## Çelişkili ifadeler (72) — aynı ifade farklı değerlere işaret ediyor, kural OLMAZ
 Bunlar genelde AI'nın bağlama göre karar verdiği yerler; prompt ya da alan tanımı netleştirilebilir.
 
 | Alan | Değer | İfade | İlan | Şirket | Oylar |
@@ -233,20 +235,21 @@ Bunlar genelde AI'nın bağlama göre karar verdiği yerler; prompt ya da alan t
 | de | `3` | abgeschlossene kaufmännische ausbildung | 5 | 5 | 2×1, 3×4 |
 | de | `2` | gute deutsch- und/oder englischkenntnisse | 5 | 1 | 2×3, 3×2 |
 | deg | `3` | abgeschlossene wirtschaftliche ausbildung | 5 | 2 | 1×1, 3×4 |
+| en | `3` | fluent in german and english | 5 | 3 | 3×4, 4×1 |
 | en | `3` | fluent english | 5 | 3 | 2×1, 3×2, 4×2 |
 | en | `3` | excellent command of english | 5 | 3 | 3×3, 4×2 |
 | en | `2` | sprachtraining in englisch | 5 | 1 | 1×1, 2×4 |
 | exp | `2` | mehrjährige berufserfahrung in einer ähnlichen position | 5 | 1 | 1×1, 2×4 |
 | f_place | `"office"` | a1 shop | 5 | 1 | "field"×2, "office"×3 |
+| team | `"small"` | engagiertes team | 5 | 5 | "small"×4, "large"×1 |
 | de | `3` | gute deutsch- und / oder englischkenntnisse | 4 | 1 | 2×1, 3×3 |
-| en | `3` | fluent in german and english | 4 | 3 | 3×3, 4×1 |
 | en | `2` | gute deutsch- und/oder englischkenntnisse | 4 | 1 | 1×1, 2×3 |
 | en | `2` | gute deutsch- und / oder englischkenntnisse | 4 | 1 | 1×1, 2×3 |
+| en | `4` | excellent command of written and spoken english | 4 | 1 | 3×1, 4×3 |
 | exp | `2` | mehrjährige berufserfahrung | 4 | 3 | 1×1, 2×3 |
 | f_place | `"field"` | im studio | 4 | 1 | "field"×2, "office"×2 |
 | f_place | `"office"` | im friseur- und kosmetikstudio | 4 | 1 | "office"×2, "field"×2 |
 | team | `"large"` | teil eines teams | 4 | 3 | "large"×3, "small"×1 |
-| team | `"small"` | engagiertes team | 4 | 4 | "small"×3, "large"×1 |
 | de | `2` | gute deutsch- und oder englischkenntnisse | 3 | 1 | 2×2, 3×1 |
 | de | `3` | fluent in german and english | 3 | 2 | 3×2, 4×1 |
 | de | `3` | gute deutsch- und mathematikkenntnisse | 3 | 1 | 2×1, 3×2 |
@@ -259,7 +262,11 @@ Bunlar genelde AI'nın bağlama göre karar verdiği yerler; prompt ya da alan t
 | en | `4` | fluency in english and german | 3 | 3 | 3×1, 4×2 |
 | en | `3` | englisch in wort und schrift | 3 | 3 | 2×1, 3×2 |
 | en | `3` | application should be in english | 3 | 1 | 3×2, 4×1 |
+| exp | `2` | mehrjährige berufs- und führungserfahrung | 3 | 1 | 2×2, 3×1 |
+| f_customers | `"b2c"` | österreichische publikum | 3 | 1 | "b2c"×2, "b2b"×1 |
+| f_night | `"has"` | flexible arbeitszeiten | 3 | 3 | "has"×2, "none"×1 |
 | f_shift | `"three"` | wochenend- und nachtdienste | 3 | 2 | "three"×2, "two"×1 |
+| hrs | `[38.5,38.5]` | 38 wochenstunden (vollzeit | 3 | 1 | [38.5,38.5]×2, [38,38]×1 |
 | study | `["tech"]` | technische ausbildung | 3 | 3 | ["tech"]×2, ["tech","wirt"]×1 |
 | team | `"large"` | young, dynamic team | 3 | 1 | "small"×1, "large"×2 |
 | wm | `"onsite"` | flexiblen arbeitszeiten | 3 | 1 | "onsite"×2, "hybrid"×1 |
@@ -273,11 +280,6 @@ Bunlar genelde AI'nın bağlama göre karar verdiği yerler; prompt ya da alan t
 | en | `3` | sicher auf deutsch und englisch | 2 | 2 | 3×1, 4×1 |
 | en | `3` | fluent english skills | 2 | 2 | 3×1, 4×1 |
 | en | `3` | excellent english skills | 2 | 2 | 3×1, 4×1 |
-| en | `3` | excellent command of written and spoken english | 2 | 1 | 3×1, 4×1 |
 | en | `3` | very good written and spoken english | 2 | 2 | 3×1, 4×1 |
 | en | `3` | excellent command of english as a working language | 2 | 1 | 3×1, 4×1 |
 | exp | `1` | mehrjähriger praxiserfahrung | 2 | 1 | 1×1, 2×1 |
-| exp | `0` | erfahrung im direkten kundenkontakt | 2 | 1 | 0×1, 1×1 |
-| exp | `2` | mehrjährige berufspraxis | 2 | 1 | 2×1, 3×1 |
-| exp | `0` | mindestens sechs jahre fachlich einschlägige berufserfahrung | 2 | 1 | 0×1, 3×1 |
-| f_customers | `"b2c"` | für unsere kunden | 2 | 2 | "b2c"×1, "b2b"×1 |
