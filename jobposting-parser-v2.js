@@ -4089,6 +4089,14 @@ function schoolOkFrom(text){
 const PFLICHT_RE = /pflichtpraktik|pflicht-praktik|verpflichtende[sn]? praktikum|curriculare?s? praktikum|praktikum im rahmen (deines|ihres|eines|des) studium|mandatory internship|compulsory internship|curricular internship|internship (as part of|required by) (your|the) (studies|curriculum|degree)/i;
 const WORK_PERMIT_RE = /\b(eu|ewr|eea)[- ]?(staatsbürgerschaft|bürger(?:schaft)?|staatsangehörigkeit|citizenship|citizen|passport)\b|österreichische staatsbürgerschaft|staatsbürgerschaft eines eu|(uneingeschränkte[nr]?|unbeschränkte[nr]?|freie[nr]?) (zugang|zutritt) zum (österreichischen |eu-? ?)?arbeitsmarkt|(gültige|aufrechte) (arbeits|beschäftigungs)(bewilligung|erlaubnis)|arbeitserlaubnis (für österreich )?(ist )?(erforderlich|voraussetzung|notwendig)|(valid|existing) (eu |austrian )?work permit|right to work in (austria|the eu)|unrestricted access to the (austrian|eu|european) labou?r market|no (visa )?sponsorship|available for work visa sponsorship\?\s*no/i;
 function needsWorkPermit(text){ return WORK_PERMIT_RE.test(String(text || '').replace(/\s+/g, ' ')); }
+// 23.10: Wochenstunden-Sätze aus dem VOLLEN Text (_rawText wird auf 4000 Zeichen gekürzt – Stunden stehen oft am Ende).
+function hoursSnippets(text){
+  const s = String(text || '').replace(/<[^>]+>/g, ' ').replace(/&nbsp;| /g, ' ').replace(/\s+/g, ' ');
+  const re = /[^.!?]{0,80}\b\d{1,2}(?:[,.]\d)?\s*(?:(?:-|–|bis|to)\s*\d{1,2}(?:[,.]\d)?)?\s*(?:wochenstunden|wochenstd|stunden|std\.?|h\s*\/|hours?)[^.!?]{0,60}/gi;
+  const out = []; let m;
+  while((m = re.exec(s)) && out.join(' ').length < 400){ if(/woche|week|wk|vollzeit|teilzeit|full|part/i.test(m[0])) out.push(m[0].trim()); }
+  return out.length ? out.join(' | ').slice(0, 400) : null;
+}
 function salarySnippets(text){
   const s = String(text || '').replace(/<[^>]+>/g, ' ').replace(/&euro;/gi, '€').replace(/&nbsp;|\u00a0/g, ' ').replace(/&amp;/g, '&').replace(/\s+/g, ' ');
   // Cümle sınırı: . ! ? — ama rakamlar arasındaki nokta (3.713,75) sınır sayılmıyor.
@@ -4266,7 +4274,7 @@ async function runCrawlBatch(configFile, shard){
     // Nachtdienste, Kühllager...) import sırasında bu metinden çıkarıyor. İlk 4000 karakter yeterli (site de ilk 4000 karaktere bakıyor).
     // 28.09: Avusturya'da ilanlarda asgari maaş yazmak zorunlu (§ 9 Abs 2 GlBG), ama genelde metnin SONUNDA —
     // 4000 karakterlik kesimde kayboluyordu. Kesmeden önce tam metinden maaş cümlelerini ayırıyoruz.
-    const cleanItems = included.map(it => it._rawText ? { ...it, _salaryText: it._salaryText || salarySnippets(it._rawText), _adText: it._adText || cleanAdText(it._adLines || it._rawText, it.title), requiresPermit: needsWorkPermit(it._rawText) || undefined, pflicht: PFLICHT_RE.test(it.title + ' ' + it._rawText) || undefined, start: it.start || guessStart(it._rawText), schoolOk: schoolOkFrom(it._rawText), _adLines: undefined, _rawText: String(it._rawText).slice(0, 4000) } : it);
+    const cleanItems = included.map(it => it._rawText ? { ...it, _salaryText: it._salaryText || salarySnippets(it._rawText), _hoursText: it._hoursText || hoursSnippets(it._rawText), _adText: it._adText || cleanAdText(it._adLines || it._rawText, it.title), requiresPermit: needsWorkPermit(it._rawText) || undefined, pflicht: PFLICHT_RE.test(it.title + ' ' + it._rawText) || undefined, start: it.start || guessStart(it._rawText), schoolOk: schoolOkFrom(it._rawText), _adLines: undefined, _rawText: String(it._rawText).slice(0, 4000) } : it);
     // EKLENDİ (Eren'in "elenenler gerçekten doğru sebeple mi elendi" sorusu üzerine): elenen
     // ilanlar eskiden SADECE konsol log'una basılıyordu, dosyaya hiç yazılmıyordu — yani bu soruyu
     // her cevaplamak istediğimizde ya GitHub Actions log'unu elle kopyalaman ya da script'i yeniden
