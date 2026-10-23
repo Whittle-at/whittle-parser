@@ -289,7 +289,12 @@ function guessRequirements(text){
   // pozitif üretiyordu. Bilinen, gerçek bir derece ANLAMI TAŞIMAYAN "master X" kalıplarını negatif
   // lookahead ile hariç tutuyoruz — gerçek "Master of Science/Laws", "Masterstudium", "Master's
   // degree" gibi kalıpları hiç etkilemiyor (bunlarda "master" sonrası bu kelimeler gelmiyor).
-  if((m = t.match(/master(?!\s*(data|of ceremonies|black\s*belt))/i))){ guess.deg = 4; evidence.deg = snippetAround(original, m.index, m[0].length); }
+  // 23.10 (feedback "Master'ı yanlış istiyor / kaçırıyor"): Master SADECE tamamlanmış derece olarak istendiğinde (abgeschlossen,
+  // Masterabschluss, master's degree). "Bachelor- oder Masterstudium", "Studierende im Master" = öğrenci → 2.
+  const STUDENT_CTX = /studierende|student(?:in|en)?\b|laufende[sm]?|eingeschrieben|enrolled|currently (?:studying|pursuing)|im (?:bachelor|master)(?:studium)?\b|bachelor[- ]?(?:oder|or|bzw\.?|\/)\s*master/i;
+  const MASTER_REQ = /(?:abgeschlossene[snm]?\s+(?:\w+\s+){0,2}master|masterabschluss|master'?s?[- ]abschluss|master'?s degree|master degree|(?:msc|m\.sc\.|ma|mba)\s*(?:abschluss|degree)|master(?:studium)?\s+(?:\w+\s+){0,2}abgeschlossen)/i;
+  if((m = t.match(MASTER_REQ)) && !STUDENT_CTX.test(t.slice(Math.max(0, m.index - 80), m.index + m[0].length + 80))){ guess.deg = 4; evidence.deg = snippetAround(original, m.index, m[0].length); }
+  else if((m = t.match(/master(?!\s*(data|of ceremonies|black\s*belt|card|plan))/i)) && STUDENT_CTX.test(t)){ guess.deg = 2; evidence.deg = snippetAround(original, m.index, m[0].length); }
   else if((m = t.match(/bachelor/i))){
     guess.deg = /laufend|studierend|noch (im )?studium/i.test(t) ? 2 : 3;
     evidence.deg = snippetAround(original, m.index, m[0].length);
@@ -300,8 +305,13 @@ function guessRequirements(text){
   // abgeschlossen" gibi bir cümlenin parçası). Eren'in fark ettiği gibi bu durumda deg hiç
   // yakalanmıyor, boş/"estimated" kalıyordu. İkinci kalıbı da (isim ÖNCE, "abgeschlossen" SONRA)
   // OR ile ekliyoruz — var olan "abgeschlossene X" eşleşmesini hiç etkilemiyor.
-  else if((m = t.match(/matura|lehrabschluss|abgeschlossene(?:r|s)? (lehre|ausbildung)|(lehre|ausbildung)(?:\s+\w+){0,3}?\s+abgeschlossen/i))){ guess.deg = 1; evidence.deg = snippetAround(original, m.index, m[0].length); }
+  else if((m = t.match(/matura|lehrabschluss|abgeschlossene(?:r|s|n)?\s+(?:\w+\s+){0,2}(lehre|ausbildung)|(lehre|ausbildung)(?:\s+\w+){0,3}?\s+abgeschlossen/i))){ guess.deg = 1; evidence.deg = snippetAround(original, m.index, m[0].length); }
   else if((m = t.match(/immatrikuliert|(du |noch )?studierst\b|eingeschriebene(?:r)? student|eingeschrieben.{0,25}(universität|hochschule|fh\b)|\bstudiums?\b|\bsemester\b/i))){ guess.deg = 2; evidence.deg = snippetAround(original, m.index, m[0].length); } // "hâlâ öğrenciyim" ima ediyor — devam eden Bachelor varsayımı
+  // 23.10 (feedback "kaufmännische Ausbildung nötig ama gösterildi"): ilan SADECE kaufmännische Ausbildung/Lehre/HAK istiyorsa
+  // (yanında "oder Studium / vergleichbar / bzw." alternatifi yoksa) → kfm=true; sitede HAK/kaufm. Ausbildung şartı olur.
+  { const km = t.match(/(?:abgeschlossene[nrs]?\s+)?kaufmännische[nrs]?\s+(?:aus|schul)bildung|kaufmännische[nrs]? lehre|lehrabschluss als (?:bürokauf|industriekauf|einzelhandelskauf)\w*|\bhak[- ]?(?:matura|abschluss)\b/i);
+    if(km){ const ctx = t.slice(Math.max(0, km.index - 60), km.index + km[0].length + 90);
+      if(!/oder|bzw|alternativ|vergleichbar|ähnlich|studium|universit|hochschul|\bfh\b|or similar|equivalent/i.test(ctx)){ guess.kfm = true; evidence.kfm = snippetAround(original, km.index, km[0].length); } } }
 
   // Önce kesin CEFR etiketleri (C1/B2/B1), yoksa doğal dilde sıkça geçen ifadeler.
   // DİKKAT (düzeltildi): eski versiyon "dil kelimesi + 20 karakter içinde seviye kodu" diye
@@ -316,14 +326,15 @@ function guessRequirements(text){
     return mm ? { level: mm[1].toLowerCase(), index: mm.index, length: mm[0].length } : null;
   };
 
-  const deLevel = langLevel('deutsch');
+  const deLevel = langLevel('deutsch|german');
   if(deLevel){
     // DÜZELTME (26.09): ölçek sitenin LEVEL dizisiyle bir kademe kaymıştı (C1→3 yazılıyordu, sitede
     // 3 = B2). Frontend: 0=yok, 1=A2, 2=B1, 3=B2, 4=C1.
     guess.de = deLevel.level === 'c1' ? 4 : deLevel.level === 'b2' ? 3 : 2;
     evidence.de = snippetAround(original, deLevel.index, deLevel.length);
   }
-  else if((m = t.match(/(sehr gute?|ausgezeichnete|fließend|verhandlungssicher|muttersprachlich).{0,15}deutsch/i))){ guess.de = 4; evidence.de = snippetAround(original, m.index, m[0].length); }
+  else if((m = t.match(/(sehr gute?|ausgezeichnete|fließend|verhandlungssicher|muttersprachlich).{0,15}deutsch|(?:fluent|excellent|native|business[- ]fluent|very good)\s+(?:command of\s+|knowledge of\s+|skills in\s+)?german\b|german\s*\((?:fluent|native)\)/i))){ guess.de = 4; evidence.de = snippetAround(original, m.index, m[0].length); }
+  else if((m = t.match(/\bgood\s+(?:command of\s+|knowledge of\s+)?german\b|german\s+(?:skills\s+)?(?:is\s+)?(?:required|a must)/i))){ guess.de = 3; evidence.de = snippetAround(original, m.index, m[0].length); }
   else if((m = t.match(/\bgute?\b.{0,10}deutschkenntnisse/i))){ guess.de = 3; evidence.de = snippetAround(original, m.index, m[0].length); }
   // 12.10: İlan tamamen İngilizce yazılmış VE hiçbir yerde Almanca şartı/bahsi yoksa → Almanca gerekmiyor (0).
   // Reddit'teki B1 öğrenci vakası: Henkel/Bitpanda gibi İngilizce ilanlarda de boş kalıyordu, bu yüzden
@@ -341,8 +352,11 @@ function guessRequirements(text){
     guess.en = enLevel.level === 'c1' ? 4 : enLevel.level === 'b2' ? 3 : 2;
     evidence.en = snippetAround(original, enLevel.index, enLevel.length);
   }
-  else if((m = t.match(/(sehr gute?|ausgezeichnete|fließend|verhandlungssicher).{0,15}englisch/i))){ guess.en = 4; evidence.en = snippetAround(original, m.index, m[0].length); }
-  else if((m = t.match(/\bgute?\b.{0,10}englischkenntnisse/i))){ guess.en = 3; evidence.en = snippetAround(original, m.index, m[0].length); }
+  // 23.10 (feedback: "very good English" C1 sayılıp eleniyordu): sehr gut / very good = B2 (3); fließend, verhandlungssicher,
+  // ausgezeichnet, fluent, excellent, business fluent, native = C1 (4); gut / good = B1 (2).
+  else if((m = t.match(/(ausgezeichnete|fließend|verhandlungssicher|muttersprachlich).{0,15}englisch|(?:fluent|excellent|native|business[- ]fluent|outstanding)\s+(?:command of\s+|knowledge of\s+|skills in\s+|written and spoken\s+)?english|english\s*\((?:fluent|native)\)|fluency in english/i))){ guess.en = 4; evidence.en = snippetAround(original, m.index, m[0].length); }
+  else if((m = t.match(/sehr gute?.{0,15}englisch|(?:very good|strong)\s+(?:command of\s+|knowledge of\s+|written and spoken\s+)?english/i))){ guess.en = 3; evidence.en = snippetAround(original, m.index, m[0].length); }
+  else if((m = t.match(/\bgute?\b.{0,10}englischkenntnisse|\bgood\s+(?:command of\s+|knowledge of\s+)?english/i))){ guess.en = 2; evidence.en = snippetAround(original, m.index, m[0].length); }
 
   // "mobiles Arbeiten" Almanca İK dilinde seyahat DEĞİL, esnek çalışma konumu demek (mobile alanına bakma).
   // DÜZELTME (26.09 ikinci crawl): Avusturya ilanlarında "Homeoffice möglich / mobiles Arbeiten" neredeyse
@@ -357,10 +371,16 @@ function guessRequirements(text){
   // (hybrid/remote isteyen aday bu ilanlarda puan kaybediyordu; Wien ofis işlerinin çoğu aslında
   // hybrid). Artık boş bırakılıyor → 'estimated' listesine düşüyor, frontend puanlamadan çıkarıyor.
 
-  if((m = t.match(/keine (berufs)?erfahrung|no experience/i))){ guess.exp = 0; evidence.exp = snippetAround(original, m.index, m[0].length); }
+  // 23.10 (feedback: "mind. 1 Jahr Erfahrung" ilanlar "Erfahrung nötig değil" görünüyordu): açık yıl şartı, "X von Vorteil"
+  // kalıbından ÖNCE kontrol ediliyor (ilanlar genelde ikisini birden içeriyor: "mind. 1 Jahr …; Erfahrung mit SAP von Vorteil").
+  const WORDN = { ein:1, eine:1, einem:1, einjährige:1, one:1, zwei:2, two:2, drei:3, three:3, vier:4, four:4, fünf:5, five:5 };
+  const yW = t.match(/(?:mindestens|min\.|zumindest|at least|minimum(?: of)?)\s+(ein(?:e[mn]?)?|one|zwei|two|drei|three|vier|four|fünf|five)\s+(?:jahre?n?|years?)\b[^.\n•]{0,50}?(?:berufserfahrung|berufspraxis|erfahrung|praxis|experience)|\b(einjährige|zweijährige|dreijährige)\s+(?:berufs)?(?:erfahrung|praxis)/i);
+  if((m = t.match(/keine (berufs)?erfahrung (nötig|erforderlich|notwendig|vorausgesetzt)|no (prior |previous )?(?:work |professional )?experience (required|needed|necessary)/i))){ guess.exp = 0; evidence.exp = snippetAround(original, m.index, m[0].length); }
+  else if(require('./ai-fields').yearsExp(original) != null){ guess.exp = require('./ai-fields').yearsExp(original); const ym = original.match(/\d{1,2}\s*\+?\s*(?:(?:bis|[-–]|to)\s*\d{1,2}\s*)?(?:jahre?n?|years?)/i); if(ym) evidence.exp = snippetAround(original, ym.index, ym[0].length); } // 08.10: "mindestens 3 bis 5 Jahre"
+  else if(yW){ const w = (yW[1] || yW[2] || '').toLowerCase().replace(/jährige$/, ''); const n = WORDN[w] || (w==='zwei' ? 2 : w==='drei' ? 3 : 1); guess.exp = n >= 5 ? 3 : n >= 3 ? 2 : 1; evidence.exp = snippetAround(original, yW.index, yW[0].length); }
+  else if((m = t.match(/\b1[-–]2 jahre?\b|1-2 years/i)) && !/idealerweise|im idealfall|ideally|von vorteil|wünschenswert|a plus/i.test(t.slice(Math.max(0, m.index - 45), m.index + m[0].length + 80))){ guess.exp = 1; evidence.exp = snippetAround(original, m.index, m[0].length); }
+  else if((m = t.match(/keine (berufs)?erfahrung|no experience/i))){ guess.exp = 0; evidence.exp = snippetAround(original, m.index, m[0].length); }
   else if((m = t.match(/erfahrung.{0,60}(ist )?von vorteil|erfahrung.{0,60}wünschenswert|idealerweise.{0,30}erfahrung/i))){ guess.exp = 0; evidence.exp = snippetAround(original, m.index, m[0].length); } // "deneyim varsa iyi olur" = deneyim ŞART değil
-  else if(require('./ai-fields').yearsExp(original) != null){ guess.exp = require('./ai-fields').yearsExp(original); } // 08.10: "mindestens 3 bis 5 Jahre"
-  else if((m = t.match(/\b1[-–]2 jahre?\b|1-2 years/i))){ guess.exp = 1; evidence.exp = snippetAround(original, m.index, m[0].length); }
   // DİKKAT: "(bereits/schon) erste Erfahrung" — eğer yukarıdaki "von vorteil/idealerweise" kalıplarından
   // biriyle eşleşmediyse, bu genelde "zaten biraz deneyimin olmalı" demek (tersi değil!) — bir önceki
   // sürümde bu ayrım yoktu, "erste Erfahrung" her yerde exp=0 sanılıyordu, bu yanlıştı.
@@ -908,7 +928,14 @@ async function fetchLeverJobs(token, eu){
     company: token,
     location: (j.categories && j.categories.location) || null,
     datePosted: j.createdAt ? new Date(j.createdAt).toISOString() : null,
-    description: j.descriptionPlain || j.description || '',
+    // 23.10: descriptionPlain sadece giriş kısmı; şartlar 'lists'te, maaş/çalışma saati çoğu zaman 'additionalPlain'de
+    // (Qualysoft: ort. 830 karakter, maaş %0). Hepsi birleştiriliyor + commitment (Full-time/Part-time).
+    description: [
+      j.descriptionPlain || j.description || '',
+      ...(Array.isArray(j.lists) ? j.lists.map(l => `${l.text || ''}\n${String(l.content || '').replace(/<li>/g, '\n• ').replace(/<[^>]+>/g, ' ')}`) : []),
+      j.additionalPlain || j.additional || '',
+      j.categories && j.categories.commitment ? `Employment type: ${j.categories.commitment}` : '',
+    ].filter(Boolean).join('\n\n').replace(/[ \t]+/g, ' ').slice(0, 9000),
     url: j.hostedUrl || j.applyUrl || null,
   }));
 }

@@ -348,14 +348,19 @@ function yearsExp(text){
   if(/keine (berufs)?erfahrung (nötig|erforderlich|notwendig)|no (prior )?experience (required|needed)/i.test(t)) return null;
   const m = t.match(YEARS_A) || t.match(YEARS_B);
   if(m){
-    const ctx = t.slice(Math.max(0, m.index - 60), m.index + m[0].length + 60);
+    const ctx = t.slice(Math.max(0, m.index - 60), m.index + m[0].length + 110); // 23.10: 60 → 110 ("… sind von Vorteil" uzak geliyordu)
+    if(/idealerweise|im idealfall|wünschenswert|ideally|preferably|nice to have/i.test(t.slice(Math.max(0, m.index - 45), m.index + 4))) return null; // 23.10: "Idealerweise mindestens 3 Jahre" = şart değil
+    // 23.10: maaş örneği ("Bruttogehalt z.B. mit 2 Jahren Berufserfahrung lt. KV") şart değil.
+    if(/gehalt|kollektivvertrag|\bkv\b|einstufung|vordienstzeit|anrechnung|salary/i.test(t.slice(Math.max(0, m.index - 80), m.index + m[0].length + 40))) return null;
     // "mindestens 3 Jahre …, idealerweise in einer Gruppe" — 'idealerweise' başka şeye ait; 'mindestens/at least' varsa şart sayılır.
     if(!/mindestens|min\.|zumindest|at least|minimum|erforderlich|required/i.test(m[0]) && /von vorteil|wünschenswert|idealerweise|nice to have|a plus|preferred|gerne/i.test(ctx)) return null;
     const n = Number(m[1]);
     if(n >= 1 && n <= 30) return n >= 5 ? 3 : n >= 3 ? 2 : 1;
   }
-  if(/langjährige|extensive experience/i.test(t) && MEHRJ.test(t)) return 3;
-  if(MEHRJ.test(t)) return 2;
+  { const mj = t.match(MEHRJ);
+    if(mj){ const c2 = t.slice(mj.index, mj.index + mj[0].length + 110);
+      if(/von vorteil|wünschenswert|nice to have|a plus|preferred|gerne|idealerweise/i.test(c2)) return null; // 23.10
+      return /langjährige|extensive experience/i.test(mj[0]) ? 3 : 2; } }
   return null;
 }
 module.exports = { yearsExp, buildBriefPrompt, parseBrief, BRIEF_MAX_TOKENS, officeTitle, ruleCat, fieldAiPriority, FIELD_AI_SKIP, parseLoc, CATEGORIES, CAT_DAILY_LIMIT, buildCatPrompt, parseCat, AI_MODEL, AI_MAX_TOKENS, DAILY_AI_LIMIT, SOFT_FIELD_KEYS, HARD_FIELD_KEYS, EXTRA_AI_KEYS, AI_FIELD_KEYS,
