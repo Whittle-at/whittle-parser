@@ -24746,7 +24746,41 @@
     }
   },
   "https://group.vig/karriere/bewerben/stellenangebot/?handle=163": {
-    "cat": "TECH:data"
+    "cat": "TECH:data",
+    "de": 2,
+    "team": null,
+    "cust": null,
+    "phys": null,
+    "shift": null,
+    "autonomy": 1,
+    "variety": 1,
+    "competitive": null,
+    "creative": 1,
+    "leadership": null,
+    "mobile": null,
+    "certs": [],
+    "f_night": null,
+    "f_shift": null,
+    "f_place": "office",
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": null,
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [
+      "tech"
+    ],
+    "sem": null,
+    "hrs": [
+      37.5,
+      37.5
+    ],
+    "start": "asap",
+    "_q": {
+      "f_place": "hybrides arbeiten",
+      "hrs": "37,5 stunden woche"
+    },
+    "_c": "Vienna Insurance Group (VIG)"
   },
   "https://karriere.fsw.at/jobs/School-Nurse-Leben-Sie-Praevention-2604WPB-de-j8615.html": {
     "cat": "HEALTH:medical"
@@ -48982,7 +49016,44 @@
     "study": [],
     "sem": null,
     "hrs": null,
-    "start": null
+    "start": null,
+    "brief": {
+      "summary": "8-12 Wochen Beratungspraktikum bei McKinsey, um für Top-Unternehmen strategische Herausforderungen zu lösen.",
+      "must": [
+        "Studierender oder vergleichbarer akademischer Hintergrund",
+        "Bereitschaft zu anspruchsvollen Herausforderungen",
+        "Analytische Fähigkeiten zur Problemlösung",
+        "Zuverlässigkeit und gutes Urteilsvermögen",
+        "Englischkenntnisse für globales Umfeld"
+      ],
+      "nice": [
+        "Erfahrung in Strategieberatung oder Projektarbeit",
+        "Unternehmerisches Denken und Innovationskraft",
+        "Erfahrung in internationalen Teams",
+        "Branchenkenntnisse in relevanten Sektoren"
+      ],
+      "hidden": [
+        "Hohe Leistungserwartungen und intensives Arbeitspensum",
+        "Reisebereitschaft und Mobilität erforderlich",
+        "Starke analytische und kommunikative Fähigkeiten essentiell"
+      ],
+      "keywords": [
+        "Beratung",
+        "Strategie",
+        "Problemlösung",
+        "Klientenarbeit",
+        "Projektteam",
+        "nachhaltiger Wandel",
+        "analytische Fähigkeiten",
+        "McKinsey"
+      ],
+      "questions": [
+        "Beschreiben Sie eine komplexe Problemstellung, die Sie analysiert und gelöst haben.",
+        "Wie gehen Sie mit Feedback um und wie integrieren Sie es in Ihre Arbeit?",
+        "Welche Erfahrung haben Sie in internationalen oder diversen Teams gesammelt?",
+        "Warum interessiert Sie speziell eine Beratungsposition bei McKinsey?"
+      ]
+    }
   },
   "https://jobs.frequentis.com/karriere/JobDetail/FCO-System-Engineer-SDDS-NG/3450": {
     "cat": "TECH:itsupport",
@@ -74475,7 +74546,45 @@
       "city": "Österreich",
       "country": "",
       "austria": true
-    }
+    },
+    "deg": 3,
+    "de": 3,
+    "en": 3,
+    "wm": null,
+    "team": null,
+    "cust": 1,
+    "phys": null,
+    "shift": null,
+    "autonomy": 1,
+    "variety": 1,
+    "competitive": null,
+    "creative": null,
+    "mobile": 1,
+    "certs": [],
+    "f_night": null,
+    "f_shift": null,
+    "f_place": "office",
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": "b2b",
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [
+      "nat"
+    ],
+    "sem": null,
+    "hrs": null,
+    "start": null,
+    "_q": {
+      "de": "fluency in german and english language",
+      "en": "fluency in german and english language",
+      "autonomy": "advice and lead on hse culture development",
+      "variety": "develop and implement sustainability roadmaps",
+      "mobile": "the role demands/requires travel from time to time",
+      "f_place": "regional business model",
+      "f_customers": "internal and external stakeholders"
+    },
+    "_c": "Mondelez Österreich"
   },
   "https://freshfields.wd3.myworkdayjobs.com/FBD_101/job/Vienna/Associate-Regulatory-Public-Law-and-Foreign-Direct-Investment--f-m-x-_R-08325": {
     "cat": "BIZOFF:legal",
@@ -87095,7 +87204,11 @@
       "cust": "in einem internationalen beratungsteam",
       "variety": "jeden aspekt ihrer unternehmensstrategie optimieren"
     },
-    "_c": "Simon-Kucher"
+    "_c": "Simon-Kucher",
+    "study": [],
+    "sem": null,
+    "hrs": null,
+    "start": null
   },
   "https://careers.knapp.com/job/Leoben-HTL-Absolventin-Elektrotechnik-%28mwd%29-Stei-8700/734475502/": {
     "cat": "ENG:electrical",
@@ -97851,7 +97964,42 @@
       "city": "Wien",
       "country": "Österreich",
       "austria": true
-    }
+    },
+    "de": 2,
+    "team": null,
+    "cust": 1,
+    "phys": null,
+    "shift": null,
+    "autonomy": 1,
+    "variety": 1,
+    "competitive": null,
+    "creative": null,
+    "leadership": 1,
+    "mobile": null,
+    "certs": [],
+    "f_night": null,
+    "f_shift": null,
+    "f_place": "office",
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": "b2b",
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [
+      "jus",
+      "wirt",
+      "tech"
+    ],
+    "sem": null,
+    "hrs": [
+      37.5,
+      37.5
+    ],
+    "start": "asap",
+    "_q": {
+      "hrs": "37,5 stunden woche"
+    },
+    "_c": "Vienna Insurance Group (VIG)"
   },
   "https://jobs.wienerstadtwerke.at/de/jobs/28303/spezialistin-unternehmensentwicklung-transformation": {
     "cat": "CREATIVE:marketing",
@@ -114888,7 +115036,41 @@
   },
   "https://kontron-transportation.softgarden.io/job/68231306/Netzwerktechniker-%E2%80%93-IP-Engineer-m-w-d-?jobDbPVId=288291056&l=de": {
     "cat": "TECH:itsupport",
-    "loc": null
+    "loc": null,
+    "exp": 2,
+    "cust": 1,
+    "phys": null,
+    "competitive": 0,
+    "creative": 1,
+    "leadership": 0,
+    "mobile": 1,
+    "emp": [
+      "vollzeit"
+    ],
+    "certs": [],
+    "f_night": null,
+    "f_place": "office",
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": "b2b",
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [
+      "tech"
+    ],
+    "sem": null,
+    "start": null,
+    "_q": {
+      "exp": "entsprechende einschlägige berufserfahrung",
+      "cust": "kunden- und teamarbeit",
+      "creative": "neue ideen begrüßt und eigeninitiative fördert",
+      "mobile": "reisebereitschaft für gelegentliche einsätze im in- und ausland",
+      "emp": "abgeschlossene technische ausbildung",
+      "f_place": "modernes büro",
+      "f_customers": "kunden im in- und ausland",
+      "study": "it oder netzwerktechnik"
+    },
+    "_c": "Kontron Transportation"
   },
   "https://jobs.smartrecruiters.com/REWEInternationalDienstleistungsgesellschaftmbH/744000153515222": {
     "cat": "TECH:swdev",
@@ -115341,7 +115523,37 @@
   },
   "https://jobs.smartrecruiters.com/REWEInternationalDienstleistungsgesellschaftmbH/744000142088079": {
     "cat": "BIZOFF:finance",
-    "loc": null
+    "loc": null,
+    "de": null,
+    "en": null,
+    "team": null,
+    "cust": null,
+    "phys": null,
+    "shift": null,
+    "variety": 1,
+    "competitive": 1,
+    "creative": 0,
+    "leadership": 0,
+    "mobile": 0,
+    "f_night": null,
+    "f_shift": null,
+    "f_place": "office",
+    "f_sales": "no",
+    "f_commission": "no",
+    "f_customers": "b2b",
+    "f_cold": "no",
+    "f_lehramt": null,
+    "sem": null,
+    "hrs": [
+      38.5,
+      38.5
+    ],
+    "start": null,
+    "_q": {
+      "competitive": "leistungsbezogenes jahresbruttogehalt",
+      "f_customers": "immobiliendaten, mietverträge"
+    },
+    "_c": "REWE Group Austria"
   },
   "https://apply.lufthansagroup.careers/index.php?ac=jobad&id=135986": {
     "en": 4,
@@ -115613,7 +115825,44 @@
   },
   "https://jobs.smartrecruiters.com/REWEInternationalDienstleistungsgesellschaftmbH/744000152466466": {
     "cat": "TECH:techpm",
-    "loc": null
+    "loc": null,
+    "deg": 3,
+    "de": 3,
+    "team": "large",
+    "cust": 1,
+    "phys": null,
+    "shift": null,
+    "competitive": 1,
+    "leadership": 1,
+    "mobile": 1,
+    "certs": [],
+    "f_night": null,
+    "f_shift": null,
+    "f_place": "office",
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": "b2b",
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [
+      "wirt"
+    ],
+    "sem": null,
+    "hrs": [
+      38.5,
+      38.5
+    ],
+    "start": "asap",
+    "_q": {
+      "deg": "abgeschlossene wirtschaftliche ausbildung",
+      "team": "internationalen kolleg:innen",
+      "cust": "mit unterschiedlichsten stakeholder:innen",
+      "leadership": "verantworten teilprojekte",
+      "mobile": "internationalen stakeholder:innen",
+      "f_place": "zentralen controlling-organisation",
+      "study": "abgeschlossene wirtschaftliche ausbildung"
+    },
+    "_c": "REWE Group Austria"
   },
   "https://jobs.smartrecruiters.com/REWEInternationalDienstleistungsgesellschaftmbH/744000146944129": {
     "deg": 3,
@@ -116923,7 +117172,37 @@
   },
   "https://jobs.smartrecruiters.com/REWEInternationalDienstleistungsgesellschaftmbH/744000153673829": {
     "cat": "BIZOFF:supplychain",
-    "loc": null
+    "loc": null,
+    "de": null,
+    "en": null,
+    "team": "small",
+    "cust": 1,
+    "phys": null,
+    "shift": null,
+    "competitive": 0,
+    "creative": 1,
+    "leadership": null,
+    "mobile": null,
+    "f_night": null,
+    "f_shift": null,
+    "f_place": "office",
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": "b2b",
+    "f_cold": null,
+    "f_lehramt": null,
+    "sem": null,
+    "hrs": [
+      38.5,
+      38.5
+    ],
+    "_q": {
+      "team": "in einem kollegialen team",
+      "cust": "korrespondenz mit lieferanten und geschäftspartnern",
+      "creative": "verbesserungsvorschläge ein",
+      "f_customers": "lieferanten und geschäftspartner"
+    },
+    "_c": "REWE Group Austria"
   },
   "https://jobs.smartrecruiters.com/REWEInternationalDienstleistungsgesellschaftmbH/744000154350970": {
     "deg": 0,
@@ -117107,7 +117386,40 @@
   },
   "https://jobs.smartrecruiters.com/REWEInternationalDienstleistungsgesellschaftmbH/744000146433649": {
     "cat": "TECH:data",
-    "loc": null
+    "loc": null,
+    "de": null,
+    "en": null,
+    "team": "large",
+    "cust": null,
+    "phys": null,
+    "shift": null,
+    "autonomy": 1,
+    "competitive": 1,
+    "creative": 1,
+    "leadership": null,
+    "mobile": null,
+    "f_night": null,
+    "f_shift": null,
+    "f_place": "office",
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": "b2b",
+    "f_cold": null,
+    "f_lehramt": null,
+    "sem": null,
+    "hrs": [
+      38.5,
+      38.5
+    ],
+    "start": null,
+    "_q": {
+      "team": "in einem kollegialen team",
+      "competitive": "leistungsbezogenes jahresbruttogehalt",
+      "f_place": "erstellung von standardreportings",
+      "f_customers": "sortiments- und platzierungsentscheidungen",
+      "hrs": "auf vollzeitbasis"
+    },
+    "_c": "REWE Group Austria"
   },
   "https://jobs.smartrecruiters.com/REWEInternationalDienstleistungsgesellschaftmbH/744000131814910": {
     "de": 3,
@@ -117445,7 +117757,45 @@
       "city": "Wien",
       "country": "Österreich",
       "austria": true
-    }
+    },
+    "deg": 3,
+    "en": null,
+    "team": "large",
+    "cust": 1,
+    "phys": null,
+    "autonomy": 1,
+    "variety": 1,
+    "competitive": null,
+    "creative": 1,
+    "leadership": 1,
+    "mobile": null,
+    "certs": [],
+    "f_night": null,
+    "f_place": "office",
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": "b2b",
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [
+      "tech"
+    ],
+    "sem": null,
+    "hrs": [
+      40,
+      40
+    ],
+    "start": "2027-02",
+    "_q": {
+      "deg": "mehrjährige berufserfahrung",
+      "team": "im team cloud technologien",
+      "autonomy": "sie erhalten die möglichkeit, neue ansätze auszuprobieren",
+      "leadership": "technische verantwortung für power platform applikationen",
+      "f_place": "ihr vertragsverhältnis basiert auf dem wiener bediensteten-gesetz",
+      "hrs": "40 wochenstunden",
+      "start": "frühester start: februar 2027"
+    },
+    "_c": "Stadt Wien"
   },
   "https://jobs.smartrecruiters.com/DeloitteAT/744000156481669": {
     "cat": "BIZOFF:supplychain",
@@ -117453,7 +117803,36 @@
       "city": "Wien",
       "country": "Österreich",
       "austria": true
-    }
+    },
+    "de": 3,
+    "en": 3,
+    "team": null,
+    "phys": null,
+    "competitive": 0,
+    "creative": 1,
+    "leadership": 0,
+    "mobile": 0,
+    "certs": [],
+    "f_night": null,
+    "f_place": "office",
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": "b2b",
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [
+      "wirt",
+      "tech"
+    ],
+    "sem": null,
+    "start": null,
+    "_q": {
+      "de": "sehr gute kommunikationsfähigkeiten in deutsch",
+      "creative": "analytisches und innovatives denkvermögen",
+      "f_customers": "internationalen deloitte-netzwerks",
+      "study": "studium mit wirtschaftlichem und/oder technischem schwerpunkt"
+    },
+    "_c": "Deloitte Austria"
   },
   "https://jobs.smartrecruiters.com/REWEInternationalDienstleistungsgesellschaftmbH/744000149292379": {
     "deg": 1,
@@ -117549,7 +117928,47 @@
       "city": "Österreich",
       "country": "Österreich",
       "austria": true
-    }
+    },
+    "de": 3,
+    "team": "large",
+    "cust": 1,
+    "phys": null,
+    "shift": null,
+    "autonomy": 1,
+    "competitive": 1,
+    "creative": 1,
+    "leadership": 1,
+    "emp": [
+      "vollzeit"
+    ],
+    "certs": [],
+    "f_night": null,
+    "f_shift": null,
+    "f_place": "office",
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": "b2b",
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [
+      "wirt",
+      "tech"
+    ],
+    "sem": null,
+    "hrs": null,
+    "start": null,
+    "_q": {
+      "de": "verhandlungssichere englischkenntnisse",
+      "team": "kollegialen team",
+      "cust": "zusammenarbeit mit implementierungspartner:innen",
+      "autonomy": "unternehmerisches denken",
+      "competitive": "leistungsbezogenes jahresbruttogehalt",
+      "leadership": "steuerung externer implementierungspartner:innen",
+      "emp": "langfristige, abwechslungsreiche tätigkeit",
+      "f_place": "großer hr- oder it-programme",
+      "study": "masterstudium der betriebswirtschaft, wirtschaftsinformatik"
+    },
+    "_c": "REWE Group Austria"
   },
   "https://www.dm-jobs.at/job/spezialist-in-fuer-kreislaufwirtschaft-und-verpackung/272455/": {
     "cat": "BIZOFF:supplychain",
@@ -117698,11 +118117,84 @@
       "city": "Wien",
       "country": "Österreich",
       "austria": true
-    }
+    },
+    "en": 3,
+    "wm": "onsite",
+    "team": "large",
+    "cust": 1,
+    "phys": null,
+    "shift": null,
+    "variety": 1,
+    "competitive": 1,
+    "leadership": null,
+    "mobile": null,
+    "certs": [],
+    "f_night": null,
+    "f_shift": null,
+    "f_place": "office",
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": "b2b",
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [
+      "wirt"
+    ],
+    "sem": 2,
+    "hrs": [
+      20,
+      20
+    ],
+    "start": "2027-01",
+    "_q": {
+      "en": "englischsprachige dokumentationen sicher verstehst",
+      "wm": "arbeitsort: 1030 wien",
+      "cust": "nationale und internationale finanzierungen für unternehmen",
+      "variety": "vielfältigen aufgaben von lending operations",
+      "f_customers": "unternehmen und institutionelle kunden",
+      "study": "an einer universität oder fachhochschule studierst",
+      "sem": "noch mindestens zwei jahre bis zum abschluss",
+      "hrs": "20 h/woche",
+      "start": "start: jänner 2027"
+    },
+    "_c": "Raiffeisen Bank Intl. (RBI)"
   },
   "https://jobs.smartrecruiters.com/REWEInternationalDienstleistungsgesellschaftmbH/744000146433529": {
     "cat": "TECH:data",
-    "loc": null
+    "loc": null,
+    "de": null,
+    "en": null,
+    "team": "large",
+    "cust": null,
+    "phys": null,
+    "shift": null,
+    "autonomy": 1,
+    "competitive": 1,
+    "creative": 1,
+    "leadership": null,
+    "mobile": null,
+    "f_night": null,
+    "f_shift": null,
+    "f_place": "office",
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": "b2b",
+    "f_cold": null,
+    "f_lehramt": null,
+    "sem": null,
+    "hrs": [
+      38.5,
+      38.5
+    ],
+    "start": null,
+    "_q": {
+      "team": "kollegialen team",
+      "autonomy": "eigenorganisation und bereichsübergreifendes denken",
+      "competitive": "leistungsbezogenes jahresbruttogehalt",
+      "creative": "sortimentsverbesserungen erarbeitet",
+      "f_customers": "category manager:innen"
+    },
+    "_c": "REWE Group Austria"
   },
   "https://jobs.wu.ac.at/Office-Koordinatorin-de-j2938.html": {
     "cat": "BIZOFF:admin",
@@ -117846,7 +118338,34 @@
       "city": "Wien",
       "country": "Österreich",
       "austria": true
-    }
+    },
+    "de": 3,
+    "en": null,
+    "team": null,
+    "cust": 1,
+    "phys": null,
+    "autonomy": 1,
+    "variety": 1,
+    "competitive": null,
+    "creative": 1,
+    "leadership": null,
+    "mobile": null,
+    "certs": [],
+    "f_night": null,
+    "f_place": "office",
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": "b2b",
+    "f_cold": null,
+    "f_lehramt": null,
+    "sem": null,
+    "start": null,
+    "_q": {
+      "cust": "sparring-partner*in für team, kund*in und stakeholder*innen",
+      "variety": "komplexen produkt- und stakeholder*innen-umfeld",
+      "creative": "entwicklung eines gesamtbildes"
+    },
+    "_c": "Wiener Stadtwerke (Wiener Linien + Wien Energie)"
   },
   "https://jobs.smartrecruiters.com/REWEInternationalDienstleistungsgesellschaftmbH/744000153694239": {
     "cat": "BIZOFF:hr",
@@ -117854,7 +118373,39 @@
   },
   "https://jobs.smartrecruiters.com/REWEInternationalDienstleistungsgesellschaftmbH/744000156553949": {
     "cat": "BIZOFF:admin",
-    "loc": null
+    "loc": null,
+    "de": 3,
+    "en": null,
+    "cust": 1,
+    "phys": null,
+    "shift": null,
+    "competitive": 1,
+    "creative": 1,
+    "leadership": null,
+    "mobile": null,
+    "f_night": null,
+    "f_shift": "day",
+    "f_place": "office",
+    "f_sales": null,
+    "f_commission": null,
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [
+      "wirt"
+    ],
+    "sem": null,
+    "hrs": [
+      38.5,
+      38.5
+    ],
+    "start": "asap",
+    "_q": {
+      "cust": "enge zusammenarbeit mit dem höheren management",
+      "competitive": "leistungsbezogenes jahresbruttogehalt",
+      "creative": "proaktive und eigenständige entwicklung von optimierungsvorschlägen",
+      "study": "betriebswirtschaftliches oder vergleichbares studium"
+    },
+    "_c": "REWE Group Austria"
   },
   "https://jobs.smartrecruiters.com/REWEInternationalDienstleistungsgesellschaftmbH/744000155417639": {
     "de": 3,
@@ -117904,7 +118455,39 @@
   },
   "https://jobs.smartrecruiters.com/REWEInternationalDienstleistungsgesellschaftmbH/744000146651199": {
     "cat": "BIZOFF:supplychain",
-    "loc": null
+    "loc": null,
+    "de": null,
+    "en": null,
+    "team": "small",
+    "cust": 1,
+    "phys": null,
+    "shift": null,
+    "competitive": 1,
+    "creative": 1,
+    "leadership": null,
+    "mobile": null,
+    "f_night": null,
+    "f_shift": null,
+    "f_place": "office",
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": "b2b",
+    "f_cold": null,
+    "f_lehramt": null,
+    "sem": null,
+    "hrs": [
+      38.5,
+      38.5
+    ],
+    "start": null,
+    "_q": {
+      "team": "in einem kollegialen team",
+      "cust": "zusammenarbeit mit unterschiedlichen ansprechpartner:innen",
+      "competitive": "leistungsbezogenes jahresbruttogehalt",
+      "creative": "neugierigen, die verlässlichen, die motivierten",
+      "f_customers": "lieferant:innen und externen dienstleister:innen"
+    },
+    "_c": "REWE Group Austria"
   },
   "https://jobs.smartrecruiters.com/REWEInternationalDienstleistungsgesellschaftmbH/744000139257277": {
     "cat": "TECH:swdev",
@@ -117924,7 +118507,40 @@
   },
   "https://jobs.orf.at/default/job/HAUPTBUCHHALTERIN/1168-de_DE": {
     "cat": "BIZOFF:finance",
-    "loc": null
+    "loc": null,
+    "exp": 2,
+    "wm": "hybrid",
+    "team": null,
+    "cust": null,
+    "phys": null,
+    "autonomy": 1,
+    "variety": 1,
+    "competitive": null,
+    "creative": null,
+    "leadership": null,
+    "mobile": null,
+    "certs": [],
+    "f_night": null,
+    "f_place": "office",
+    "f_sales": "no",
+    "f_commission": "no",
+    "f_customers": null,
+    "f_cold": "no",
+    "f_lehramt": null,
+    "sem": null,
+    "hrs": [
+      40,
+      40
+    ],
+    "start": "asap",
+    "_q": {
+      "exp": "einschlägige berufserfahrung in vergleichbarer position vorteilhaft",
+      "wm": "flexible arbeitszeiten mit home-office-möglichkeit",
+      "autonomy": "strukturierter und lösungsorientierter arbeitsstil",
+      "f_place": "moderner arbeitsplatz am orf-mediencampus",
+      "hrs": "40 wochenstunden"
+    },
+    "_c": "ORF"
   },
   "https://oebb.csod.com/ux/ats/careersite/4/home/requisition/26333?c=oebb": {
     "cat": "RETAIL:gastro",
@@ -119754,7 +120370,46 @@
   },
   "https://lindtspruengli.wd103.myworkdayjobs.com/LindtSpruengliGroupCareers/job/Vienna-Austria/Haustechniker--m-w-d----Fokus-Elektrotechnik_JR104095": {
     "cat": "ENG:electrical",
-    "loc": null
+    "loc": null,
+    "en": 2,
+    "wm": null,
+    "team": null,
+    "phys": 1,
+    "shift": 1,
+    "variety": 1,
+    "competitive": null,
+    "creative": null,
+    "leadership": null,
+    "mobile": null,
+    "f_night": null,
+    "f_shift": "day",
+    "f_place": "field",
+    "f_sales": "no",
+    "f_commission": "no",
+    "f_customers": null,
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [
+      "tech"
+    ],
+    "sem": null,
+    "hrs": [
+      40,
+      40
+    ],
+    "start": "2027-01",
+    "_q": {
+      "en": "englisch von vorteil",
+      "phys": "kontrolle, wartung und reparatur aller elektrotechnischen anlagen",
+      "shift": "flexibilität für eventzeiten",
+      "variety": "bereichsübergreifende zusammenarbeit",
+      "f_shift": "vollzeit (40h",
+      "f_place": "im gesamten gebäude",
+      "study": "abgeschlossene lehre im bereich elektrotechnik",
+      "hrs": "vollzeit (40h",
+      "start": "ab mitte jänner 2027"
+    },
+    "_c": "Lindt & Sprüngli"
   },
   "https://oebb.csod.com/ux/ats/careersite/4/home/requisition/25433?c=oebb": {
     "cat": "TRADES:construction",
@@ -119770,7 +120425,46 @@
   },
   "https://a1group.wd3.myworkdayjobs.com/A1_Jobs_at/job/1020-Wien/Junior-Product-Manager-in-Home-Connectivity--w-m-d-_REQ-9284": {
     "cat": "TECH:techpm",
-    "loc": null
+    "loc": null,
+    "team": null,
+    "cust": null,
+    "phys": null,
+    "shift": null,
+    "autonomy": 1,
+    "variety": 1,
+    "competitive": null,
+    "creative": 1,
+    "leadership": 1,
+    "mobile": null,
+    "emp": [
+      "vollzeit"
+    ],
+    "certs": [],
+    "f_night": null,
+    "f_shift": null,
+    "f_place": "office",
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": "b2c",
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [
+      "wirt"
+    ],
+    "sem": null,
+    "hrs": [
+      38.5,
+      38.5
+    ],
+    "start": null,
+    "_q": {
+      "autonomy": "früh verantwortung übernehmen",
+      "variety": "spannenden projekten",
+      "creative": "weiterentwicklung der strategie",
+      "emp": "abgeschlossenes universitäts- oder fh-studium",
+      "study": "wirtschaftliche ausbildung"
+    },
+    "_c": "A1 Telekom Austria"
   },
   "https://freshfields.wd3.myworkdayjobs.com/FBD_101/job/Vienna/Freshfields-Unplugged---das-Praktikum--w-m-x-_R-08753-1": {
     "de": 3,
@@ -119866,7 +120560,41 @@
       "city": "Wien",
       "country": "Österreich",
       "austria": true
-    }
+    },
+    "deg": null,
+    "wm": null,
+    "team": null,
+    "cust": null,
+    "phys": null,
+    "shift": null,
+    "variety": null,
+    "competitive": null,
+    "creative": null,
+    "leadership": null,
+    "mobile": null,
+    "certs": [],
+    "f_night": null,
+    "f_shift": null,
+    "f_place": "office",
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": null,
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [
+      "jus"
+    ],
+    "sem": null,
+    "hrs": [
+      38,
+      38
+    ],
+    "_q": {
+      "f_place": "legal manager",
+      "study": "legal manager",
+      "hrs": "38 stunden/woche"
+    },
+    "_c": "JTI Austria"
   },
   "https://wd3.myworkdaysite.com/recruiting/magna/Magna/job/Graz-AT/FH-Pflichtpraktikant-im-Bereich-Produktdefinition---Benchmark--m-w-x-_R00267032": {
     "cat": "ENG:mechanical",
@@ -119943,11 +120671,76 @@
       "city": "Wien",
       "country": "Österreich",
       "austria": true
-    }
+    },
+    "deg": null,
+    "wm": null,
+    "team": null,
+    "phys": null,
+    "shift": null,
+    "autonomy": 0,
+    "variety": 1,
+    "competitive": null,
+    "creative": null,
+    "leadership": null,
+    "mobile": null,
+    "certs": [],
+    "f_night": null,
+    "f_shift": null,
+    "f_place": "office",
+    "f_sales": "no",
+    "f_commission": "no",
+    "f_customers": "b2c",
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [],
+    "sem": null,
+    "hrs": [
+      40,
+      40
+    ],
+    "start": null,
+    "_q": {
+      "autonomy": "under the guidance of senior it staff",
+      "variety": "manage, prioritise and resolve incoming support requests"
+    },
+    "_c": "Modul University Vienna"
   },
   "https://novartis.wd3.myworkdayjobs.com/Novartis_Careers/job/Schaftenau/Lehre-Chemieverfahrenstechnik--m-f-d-Profile-for-Interns_REQ-10090585": {
     "cat": "ENG:lab",
-    "loc": null
+    "loc": null,
+    "de": 3,
+    "en": null,
+    "exp": 0,
+    "wm": null,
+    "cust": null,
+    "phys": 1,
+    "shift": null,
+    "competitive": 1,
+    "creative": 1,
+    "leadership": null,
+    "mobile": null,
+    "f_night": null,
+    "f_shift": null,
+    "f_place": "field",
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": null,
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [
+      "nat"
+    ],
+    "sem": null,
+    "hrs": null,
+    "_q": {
+      "de": "gute schulische leistungen, insbesondere in mathematik und naturwissenschaften",
+      "phys": "freude am praktischen arbeiten",
+      "competitive": "zusätzliche erfolgsprämien für gute leistungen",
+      "creative": "verfahrensentwicklung und optimierung",
+      "f_place": "steuerung und überwachung von produktionsanlagen",
+      "study": "interesse an chemie, technik und naturwissenschaftlichen zusammenhängen"
+    },
+    "_c": "Novartis Austria"
   },
   "https://www.erstegroup.com/en/career/positions-offered/job-detail/mitarbeiter-in-marketing-kommunikation-m-w-d/34789": {
     "cat": "CREATIVE:marketing",
@@ -120043,7 +120836,50 @@
   },
   "https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Vienna/Organization-Design-Manager--all-genders-_R00277684": {
     "cat": "BIZOFF:legal",
-    "loc": null
+    "loc": null,
+    "deg": 4,
+    "team": "large",
+    "phys": null,
+    "shift": null,
+    "autonomy": 1,
+    "variety": 1,
+    "competitive": 1,
+    "creative": 1,
+    "leadership": 1,
+    "mobile": 1,
+    "emp": [
+      "vollzeit"
+    ],
+    "certs": [],
+    "f_night": null,
+    "f_shift": null,
+    "f_place": "field",
+    "f_sales": "yes",
+    "f_commission": null,
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [
+      "wirt",
+      "soz",
+      "tech"
+    ],
+    "sem": null,
+    "hrs": null,
+    "start": null,
+    "_q": {
+      "deg": "mba oder promotion von vorteil",
+      "team": "europäischen team",
+      "autonomy": "arbeitsweisen, die zu dir passen",
+      "variety": "unterschiedliche industrien",
+      "competitive": "sehr ambitionierten",
+      "creative": "durchdachten aber pragmatischen lösungen",
+      "leadership": "team building & development",
+      "mobile": "vertrittst unsere practice auch außerhalb",
+      "emp": "5+ jahre berufserfahrung",
+      "f_sales": "akquise von neuen kunden und projekten",
+      "study": "wirtschaftswissenschaften, psychologie, mint"
+    },
+    "_c": "Accenture Österreich"
   },
   "https://jobs.volksbank.at/jobs/68239391/Kommerzkundenberaterin-Kommerzkundenberater-im-Kommerzcenter-Baden-w-m-d-/": {
     "cat": "BIZOFF:salesbiz",
@@ -120063,7 +120899,41 @@
   },
   "https://job-boards.greenhouse.io/ketryx/jobs/5459463008": {
     "cat": "BIZOFF:salesbiz",
-    "loc": null
+    "loc": null,
+    "en": 3,
+    "exp": 0,
+    "team": null,
+    "cust": 1,
+    "phys": null,
+    "shift": null,
+    "autonomy": 1,
+    "variety": 1,
+    "competitive": null,
+    "creative": null,
+    "leadership": null,
+    "mobile": null,
+    "certs": [],
+    "f_night": null,
+    "f_shift": null,
+    "f_place": "office",
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": "b2b",
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [
+      "tech"
+    ],
+    "sem": null,
+    "hrs": null,
+    "start": null,
+    "_q": {
+      "en": "technical communication skills",
+      "exp": "early‑career engineers or technically trained professionals",
+      "cust": "partner with clients during onboarding",
+      "f_customers": "partner with clients"
+    },
+    "_c": "Ketryx"
   },
   "https://oebb.csod.com/ux/ats/careersite/4/home/requisition/26349?c=oebb": {
     "cat": "TRADES:driving",
@@ -120088,5 +120958,2662 @@
   "https://careers.uniqagroup.com/job/Wien-Business-Analyst-Finance-&-Data-%28mwd%29/1449848033/": {
     "cat": "TECH:data",
     "loc": null
+  },
+  "https://pg.wd5.myworkdayjobs.com/1000/job/Spittal-AD-Drau/Lagerist--m-w-d-_R000158433": {
+    "cat": "TRADES:warehouse",
+    "_rc": 1
+  },
+  "https://jobs.smartrecruiters.com/HMGroup/744000157106076": {
+    "cat": "BIZOFF:hr",
+    "loc": {
+      "city": "Klagenfurt",
+      "country": "Österreich",
+      "austria": true
+    },
+    "deg": 1,
+    "de": 3,
+    "en": null,
+    "exp": 1,
+    "wm": "onsite",
+    "cust": 1,
+    "phys": 1,
+    "shift": 1,
+    "autonomy": 1,
+    "variety": 1,
+    "competitive": 1,
+    "creative": 0,
+    "leadership": 1,
+    "mobile": 0,
+    "certs": [],
+    "f_night": null,
+    "f_shift": "two",
+    "f_sales": "yes",
+    "f_commission": null,
+    "f_customers": "b2c",
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [],
+    "sem": null,
+    "hrs": [
+      38.5,
+      38.5
+    ],
+    "start": null,
+    "_q": {
+      "exp": "ersten führungserfahrung im einzelhandel",
+      "cust": "hilfst unseren kund*innen",
+      "phys": "verkaufsfläche über lagerbereiche bis hin zu kassen",
+      "shift": "täglicher store-öffnung und -schließung",
+      "autonomy": "lösungsorientiert, flexibel handeln",
+      "competitive": "umsatz- und budgetziele",
+      "leadership": "lust haben, sich als führungskraft weiterzuentwickeln",
+      "f_shift": "store-öffnung und -schließung",
+      "f_customers": "unsere kund*innen"
+    },
+    "_c": "H&M Österreich"
+  },
+  "https://vacancies.osce.org/landingpages/economic-environmental-affairs-opportunities-at-the-osce-20": {
+    "cat": "EDU:nonprofit",
+    "loc": {
+      "city": "Dushanbe",
+      "country": "Tadschikistan",
+      "austria": false
+    },
+    "deg": null,
+    "en": null,
+    "exp": null,
+    "wm": null,
+    "team": null,
+    "cust": null,
+    "phys": null,
+    "shift": null,
+    "autonomy": null,
+    "variety": null,
+    "competitive": null,
+    "creative": null,
+    "leadership": null,
+    "mobile": null,
+    "emp": null,
+    "certs": [],
+    "f_night": null,
+    "f_shift": null,
+    "f_place": null,
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": null,
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [],
+    "sem": null,
+    "hrs": null,
+    "start": null,
+    "_c": "OSCE Secretariat"
+  },
+  "https://jobs.smartrecruiters.com/HMGroup/744000157390815": {
+    "deg": 1,
+    "de": 3,
+    "en": null,
+    "exp": 1,
+    "wm": "onsite",
+    "cust": 1,
+    "phys": 1,
+    "shift": 1,
+    "autonomy": 1,
+    "variety": 1,
+    "competitive": 1,
+    "creative": 0,
+    "leadership": 1,
+    "mobile": 0,
+    "certs": [],
+    "f_night": null,
+    "f_shift": "two",
+    "f_sales": "yes",
+    "f_commission": null,
+    "f_customers": "b2c",
+    "f_cold": "no",
+    "f_lehramt": null,
+    "study": [],
+    "sem": null,
+    "hrs": [
+      38.5,
+      38.5
+    ],
+    "start": null,
+    "_q": {
+      "exp": "ersten führungserfahrung im einzelhandel",
+      "phys": "verkaufsfläche über lagerbereiche",
+      "shift": "store-öffnung und -schließung",
+      "autonomy": "lösungsorientiert, flexibel handeln",
+      "variety": "aufgaben- und personaleinsatzplannung",
+      "competitive": "umsatz- und budgetziele",
+      "f_shift": "täglicher store-öffnung und -schließung",
+      "f_sales": "umsatz- und budgetziele"
+    },
+    "_c": "H&M Österreich",
+    "cat": "RETAIL:retailsales",
+    "loc": {
+      "city": "Tulln",
+      "country": "Österreich",
+      "austria": true
+    }
+  },
+  "https://jobs.smartrecruiters.com/HMGroup/744000157106091": {
+    "deg": 1,
+    "de": 3,
+    "en": null,
+    "exp": 1,
+    "wm": "onsite",
+    "cust": 1,
+    "phys": 1,
+    "shift": 1,
+    "autonomy": 1,
+    "variety": 1,
+    "competitive": 1,
+    "creative": null,
+    "leadership": 1,
+    "mobile": null,
+    "certs": [],
+    "f_night": null,
+    "f_shift": "two",
+    "f_sales": "yes",
+    "f_commission": null,
+    "f_customers": "b2c",
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [],
+    "sem": null,
+    "hrs": [
+      38.5,
+      38.5
+    ],
+    "start": null,
+    "_q": {
+      "exp": "ersten führungserfahrung im einzelhandel",
+      "cust": "hilfst unseren kund*innen",
+      "phys": "von der verkaufsfläche über lagerbereiche",
+      "shift": "täglicher store-öffnung und -schließung",
+      "autonomy": "lösungsorientiert, flexibel handeln",
+      "competitive": "umsatz- und budgetziele",
+      "leadership": "analysierst gemeinsam mit erfahrenen führungskräften",
+      "f_shift": "täglicher store-öffnung und -schließung",
+      "f_sales": "umsatz- und budgetziele",
+      "f_customers": "unsere kund*innen"
+    },
+    "_c": "H&M Österreich",
+    "cat": "RETAIL:retailsales",
+    "loc": {
+      "city": "Leoben/Kapfenberg",
+      "country": "Österreich",
+      "austria": true
+    }
+  },
+  "https://pg.wd5.myworkdayjobs.com/1000/job/Schwalbach-Am-Taunus/Finance-Manager---Graduate-Entry--m-f-d-_R000149905": {
+    "cat": "BIZOFF:finance",
+    "loc": {
+      "city": "Österreich",
+      "country": "Österreich",
+      "austria": true
+    },
+    "de": 4,
+    "en": 4,
+    "team": "large",
+    "cust": 1,
+    "phys": null,
+    "shift": null,
+    "autonomy": 1,
+    "variety": 1,
+    "competitive": 1,
+    "creative": 1,
+    "leadership": 1,
+    "mobile": 1,
+    "certs": [],
+    "f_night": null,
+    "f_shift": null,
+    "f_place": "office",
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": "b2b",
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [
+      "wirt"
+    ],
+    "sem": null,
+    "start": null,
+    "_q": {
+      "team": "multifunctional team",
+      "cust": "external negotiations with customers",
+      "autonomy": "full responsibility for key strategic initiatives",
+      "competitive": "yearly performance-based compensation reviews",
+      "creative": "embracing creativity, innovation, and initiative",
+      "leadership": "drive for leadership",
+      "f_customers": "external negotiations with customers"
+    },
+    "_c": "Procter & Gamble Austria"
+  },
+  "https://jobs.smartrecruiters.com/REWEInternationalDienstleistungsgesellschaftmbH/744000157134059": {
+    "cat": "TECH:itsupport",
+    "loc": {
+      "city": "Waldviertel",
+      "country": "Österreich",
+      "austria": true
+    }
+  },
+  "https://jobs.univie.ac.at/job/University-assistant-predoctoral/1450277533/": {
+    "cat": "EDU:highered",
+    "loc": {
+      "city": "Wien",
+      "country": "Österreich",
+      "austria": true
+    },
+    "en": 4,
+    "exp": 1,
+    "wm": "hybrid",
+    "team": "small",
+    "cust": null,
+    "phys": null,
+    "shift": null,
+    "autonomy": 1,
+    "variety": 1,
+    "competitive": null,
+    "creative": 1,
+    "leadership": null,
+    "mobile": null,
+    "certs": [],
+    "f_night": null,
+    "f_shift": null,
+    "f_place": "office",
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": null,
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [
+      "nat"
+    ],
+    "sem": 7,
+    "start": "2026-12",
+    "_q": {
+      "en": "excellent command of written and spoken english",
+      "exp": "experience with molecular simulation methods",
+      "wm": "partially work remotely",
+      "team": "part of an international academic team",
+      "autonomy": "research projects",
+      "f_place": "faculty of physics",
+      "study": "msc in physics or chemistry",
+      "start": "starting: 12/01/2026"
+    },
+    "_c": "Universität Wien"
+  },
+  "https://jobs.smartrecruiters.com/BoschGroup/744000157137250": {
+    "cat": "TECH:swdev",
+    "loc": null
+  },
+  "https://jobs.smartrecruiters.com/DeloitteAT/744000157402535": {
+    "cat": "BIZOFF:finance",
+    "loc": null
+  },
+  "https://jobs.univie.ac.at/job/University-assistant-predoctoral/1450278533/": {
+    "en": 4,
+    "exp": 1,
+    "wm": "hybrid",
+    "team": null,
+    "cust": null,
+    "phys": null,
+    "shift": null,
+    "autonomy": 1,
+    "variety": 1,
+    "competitive": null,
+    "creative": 1,
+    "leadership": null,
+    "mobile": 1,
+    "certs": [],
+    "f_night": null,
+    "f_shift": null,
+    "f_place": "office",
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": null,
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [
+      "nat"
+    ],
+    "sem": 7,
+    "start": "2026-12",
+    "_q": {
+      "en": "excellent command of written and spoken english",
+      "exp": "experience with molecular simulation methods",
+      "wm": "partially work remotely",
+      "study": "msc in physics or chemistry",
+      "start": "starting: 12/01/2026"
+    },
+    "_c": "Universität Wien",
+    "cat": "EDU:highered",
+    "loc": {
+      "city": "Wien",
+      "country": "Österreich",
+      "austria": true
+    }
+  },
+  "https://careers.mediamarktsaturn.com/job-invite/100677/?locale=de_DE": {
+    "cat": "BIZOFF:finance",
+    "loc": null
+  },
+  "https://karriereportal.vinzenzgruppe.at/DGKP-fuer-die-Tagesklinik-de-j10789.html": {
+    "deg": 3,
+    "de": null,
+    "en": null,
+    "wm": "onsite",
+    "team": "small",
+    "cust": 1,
+    "phys": 1,
+    "shift": 1,
+    "autonomy": null,
+    "variety": 1,
+    "competitive": null,
+    "creative": null,
+    "leadership": null,
+    "mobile": null,
+    "f_night": null,
+    "f_shift": null,
+    "f_place": "field",
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": "b2c",
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [
+      "health"
+    ],
+    "sem": null,
+    "start": null,
+    "_q": {
+      "deg": "registrierung im gesundheitsberuferegister zum gehobenen dienst",
+      "wm": "zentrumsnaher lage",
+      "study": "gesundheits- und krankenpflege"
+    },
+    "_c": "Vinzenz Gruppe",
+    "cat": "HEALTH:medical",
+    "loc": {
+      "city": "Wien",
+      "country": "Österreich",
+      "austria": true
+    }
+  },
+  "https://job-boards.eu.greenhouse.io/bybit/jobs/4878934101": {
+    "de": 3,
+    "en": 3,
+    "wm": null,
+    "team": null,
+    "phys": null,
+    "shift": null,
+    "autonomy": 1,
+    "variety": 1,
+    "competitive": null,
+    "creative": null,
+    "leadership": 1,
+    "mobile": null,
+    "emp": [
+      "vollzeit"
+    ],
+    "certs": [],
+    "f_night": null,
+    "f_shift": null,
+    "f_place": "office",
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": "b2b",
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [
+      "wirt",
+      "jus"
+    ],
+    "sem": null,
+    "hrs": null,
+    "start": null,
+    "_q": {
+      "autonomy": "support the mlro",
+      "variety": "key responsibilities",
+      "leadership": "deputy mlro",
+      "emp": "investment firm",
+      "f_place": "investment firm activities",
+      "f_customers": "investment firm clients"
+    },
+    "_c": "Bybit EU",
+    "cat": "BIZOFF:legal",
+    "loc": null
+  },
+  "https://wd3.myworkdaysite.com/recruiting/magna/Magna/job/Graz-AT/Mitarbeiter-Program-Assistance--m-w-x-_R00265015-1": {
+    "cat": "BIZOFF:admin",
+    "loc": null
+  },
+  "https://karriereportal.vinzenzgruppe.at/Mitarbeiterin-Patientinnenadministration-Rezeption-de-j10788.html": {
+    "cat": "BIZOFF:admin",
+    "loc": {
+      "city": "Wien",
+      "country": "Österreich",
+      "austria": true
+    }
+  },
+  "https://jobs.ait.ac.at/Job/273190": {
+    "cat": "none",
+    "loc": null,
+    "de": null,
+    "en": null,
+    "exp": 0,
+    "wm": "onsite",
+    "team": null,
+    "cust": 1,
+    "phys": null,
+    "shift": null,
+    "variety": 1,
+    "competitive": null,
+    "creative": 1,
+    "leadership": null,
+    "mobile": null,
+    "emp": null,
+    "certs": [],
+    "f_night": null,
+    "f_shift": null,
+    "f_place": "office",
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": "b2b",
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [
+      "tech"
+    ],
+    "sem": 7,
+    "hrs": null,
+    "start": null,
+    "_q": {
+      "wm": "location in vienna",
+      "creative": "develop and enhance open-source solutions",
+      "study": "computer science, data science, engineering"
+    },
+    "_c": "AIT Austrian Institute of Technology"
+  },
+  "https://jobs.smartrecruiters.com/REWEInternationalDienstleistungsgesellschaftmbH/744000157395571": {
+    "cat": "TECH:techpm",
+    "loc": null,
+    "deg": 3,
+    "de": 3,
+    "en": 3,
+    "exp": 0,
+    "team": null,
+    "cust": 1,
+    "phys": null,
+    "shift": null,
+    "autonomy": 1,
+    "variety": 1,
+    "competitive": 1,
+    "creative": null,
+    "leadership": null,
+    "mobile": null,
+    "certs": [],
+    "f_night": null,
+    "f_shift": null,
+    "f_place": "office",
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": "b2b",
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [
+      "nat"
+    ],
+    "sem": null,
+    "start": null,
+    "_q": {
+      "de": "good written and spoken german",
+      "variety": "further development, support and documentation of the applications",
+      "competitive": "goal-oriented thinking and performance-oriented action",
+      "study": "geographical focus"
+    },
+    "_c": "REWE Group Austria"
+  },
+  "https://jobs.wienerstadtwerke.at/de/jobs/28368/spezialistin-abrechnungsservice": {
+    "de": 3,
+    "en": null,
+    "wm": "hybrid",
+    "team": null,
+    "cust": 1,
+    "phys": null,
+    "shift": null,
+    "autonomy": 1,
+    "variety": 1,
+    "competitive": null,
+    "creative": 1,
+    "leadership": null,
+    "mobile": null,
+    "f_night": null,
+    "f_shift": null,
+    "f_place": "office",
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": "b2b",
+    "f_cold": null,
+    "f_lehramt": null,
+    "sem": null,
+    "start": null,
+    "_q": {
+      "cust": "schnittstellenfunktion und kommunikation mit internen und externen stakeholdern",
+      "f_place": "topmodernes büro"
+    },
+    "_c": "Wiener Stadtwerke (Wiener Linien + Wien Energie)",
+    "cat": "BIZOFF:finance",
+    "loc": {
+      "city": "Wien",
+      "country": "Österreich",
+      "austria": true
+    }
+  },
+  "https://rewe-group.jobs/en/jobs/REF4592H-2dd7f499-cac6-457e-883e-f142f5096acc": {
+    "deg": null,
+    "de": null,
+    "en": null,
+    "team": "small",
+    "cust": null,
+    "phys": null,
+    "shift": null,
+    "autonomy": null,
+    "variety": 1,
+    "competitive": null,
+    "creative": null,
+    "leadership": null,
+    "mobile": null,
+    "emp": null,
+    "certs": [],
+    "f_night": null,
+    "f_shift": null,
+    "f_place": "office",
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": "b2b",
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [
+      "wirt"
+    ],
+    "sem": null,
+    "hrs": null,
+    "start": null,
+    "_q": {
+      "team": "teil des rund zehnköpfigen teams",
+      "variety": "fokussieren sich auf die anlagenbuchhaltung",
+      "f_customers": "mit unseren anderen konzerngesellschaften"
+    },
+    "_c": "REWE Group Austria",
+    "cat": "BIZOFF:finance",
+    "loc": null
+  },
+  "https://jobs.smartrecruiters.com/DeloitteAT/744000156795019": {
+    "exp": 0,
+    "team": null,
+    "cust": null,
+    "phys": null,
+    "autonomy": 1,
+    "variety": 1,
+    "competitive": null,
+    "creative": null,
+    "leadership": null,
+    "mobile": null,
+    "certs": [],
+    "f_night": null,
+    "f_place": "office",
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": "b2b",
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [
+      "wirt",
+      "jus"
+    ],
+    "sem": null,
+    "start": "2027-03",
+    "_q": {
+      "exp": "idealerweise hast du bereits eine einschlägige spezialisierung",
+      "autonomy": "denkst analytisch und strukturiert",
+      "variety": "fachlich kontinuierlich weiterentwickeln",
+      "f_place": "home office zu arbeiten",
+      "f_customers": "steuerliche fragestellungen",
+      "study": "betriebswirtschaft, wirtschaftsrecht oder rechtswissenschaften"
+    },
+    "_c": "Deloitte Austria",
+    "cat": "BIZOFF:finance",
+    "loc": null
+  },
+  "https://jobs.smartrecruiters.com/HMGroup/744000157121859": {
+    "deg": 0,
+    "de": null,
+    "en": null,
+    "exp": 0,
+    "wm": "onsite",
+    "cust": 1,
+    "phys": 1,
+    "shift": 1,
+    "autonomy": 1,
+    "variety": 1,
+    "competitive": null,
+    "leadership": 0,
+    "mobile": null,
+    "certs": [],
+    "f_night": null,
+    "f_shift": null,
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": "b2c",
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [],
+    "sem": null,
+    "hrs": [
+      38.5,
+      38.5
+    ],
+    "start": null,
+    "_q": {
+      "shift": "stores sind das herz von h&m",
+      "autonomy": "herausforderungen proaktiv anzugehen",
+      "variety": "schaufenster und styling",
+      "f_customers": "unsere kund*innen"
+    },
+    "_c": "H&M Österreich",
+    "cat": "CREATIVE:design",
+    "loc": {
+      "city": "Villach",
+      "country": "Österreich",
+      "austria": true
+    }
+  },
+  "https://apply.lufthansagroup.careers/index.php?ac=jobad&id=129006": {
+    "cat": "TRADES:handwerk",
+    "loc": {
+      "city": "Wien",
+      "country": "Österreich",
+      "austria": true
+    },
+    "de": 1,
+    "en": 2,
+    "wm": null,
+    "phys": 1,
+    "variety": 1,
+    "competitive": null,
+    "creative": null,
+    "leadership": null,
+    "mobile": null,
+    "emp": [
+      "vollzeit"
+    ],
+    "certs": [
+      "fsB",
+      "lap"
+    ],
+    "f_night": "has",
+    "f_shift": "three",
+    "f_place": "field",
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": null,
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": null,
+    "sem": null,
+    "hrs": null,
+    "start": null,
+    "_q": {
+      "de": "deutschkenntnisse sind von vorteil",
+      "en": "du sprichst englisch",
+      "phys": "präzise metallstruktur-reparaturen",
+      "variety": "verschiedenen komponenten",
+      "f_night": "nacht- und wochenenddienste",
+      "f_place": "direkt am flugzeug"
+    },
+    "_c": "Austrian Airlines"
+  },
+  "https://careers.unicredit.eu/en_GB/jobsuche/JobDetail/AT-EXT-WP-Praktikum-UCBA-CEO-Marketing-2027/114706": {
+    "exp": 0,
+    "wm": "hybrid",
+    "team": null,
+    "cust": 1,
+    "phys": null,
+    "shift": null,
+    "autonomy": null,
+    "variety": 1,
+    "competitive": null,
+    "creative": null,
+    "leadership": null,
+    "mobile": null,
+    "certs": [],
+    "f_night": null,
+    "f_shift": null,
+    "f_place": "office",
+    "f_sales": null,
+    "f_commission": null,
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [
+      "soz"
+    ],
+    "sem": 4,
+    "hrs": [
+      38.5,
+      38.5
+    ],
+    "start": null,
+    "_q": {
+      "wm": "smart working am austria campus mit flexiblen arbeitszeiten",
+      "cust": "kontakt zu internen und externen partnern",
+      "study": "schwerpunkt marketing / kommunikation / pr",
+      "sem": "fortgeschrittenes laufendes studium"
+    },
+    "_c": "UniCredit Bank Austria",
+    "cat": "CREATIVE:marketing",
+    "loc": {
+      "city": "Wien",
+      "country": "Österreich",
+      "austria": true
+    }
+  },
+  "https://jobs.wienerstadtwerke.at/de/jobs/28404/anlagenbuchhalterin-wmd-mit-sonderaufgaben": {
+    "cat": "BIZOFF:finance",
+    "loc": {
+      "city": "Wien",
+      "country": "Österreich",
+      "austria": true
+    },
+    "de": 3,
+    "en": null,
+    "exp": 1,
+    "team": "large",
+    "cust": null,
+    "phys": null,
+    "shift": null,
+    "variety": 1,
+    "competitive": null,
+    "creative": 1,
+    "leadership": null,
+    "mobile": null,
+    "f_night": null,
+    "f_shift": null,
+    "f_place": "office",
+    "f_sales": "no",
+    "f_commission": "no",
+    "f_customers": null,
+    "f_cold": "no",
+    "f_lehramt": null,
+    "sem": null,
+    "start": null,
+    "_q": {
+      "exp": "mind. zwei jahre",
+      "team": "über 9.500 kolleg*innen",
+      "variety": "unterschiedlichen schnittstellen",
+      "f_place": "zentraler standort in erdberg"
+    },
+    "_c": "Wiener Stadtwerke (Wiener Linien + Wien Energie)"
+  },
+  "https://jobs.univie.ac.at/job/Institutsreferentin/1450301733/": {
+    "cat": "BIZOFF:admin",
+    "loc": {
+      "city": "Wien",
+      "country": "Österreich",
+      "austria": true
+    }
+  },
+  "https://jobs.smartrecruiters.com/DeloitteAT/744000156799999": {
+    "cat": "BIZOFF:finance",
+    "loc": null,
+    "exp": 0,
+    "team": "large",
+    "cust": 1,
+    "phys": null,
+    "autonomy": 1,
+    "variety": 1,
+    "competitive": null,
+    "creative": null,
+    "leadership": null,
+    "mobile": null,
+    "certs": [],
+    "f_night": null,
+    "f_place": "office",
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": "b2b",
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [
+      "wirt",
+      "jus"
+    ],
+    "sem": null,
+    "start": "2027-03",
+    "_q": {
+      "exp": "idealerweise hast du bereits eine einschlägige spezialisierung",
+      "team": "arbeitest gerne im team",
+      "cust": "fachlichen schulungen und networking events",
+      "autonomy": "denkst analytisch und strukturiert",
+      "variety": "möchtest dich fachlich kontinuierlich weiterentwickeln",
+      "study": "betriebswirtschaft, wirtschaftsrecht oder rechtswissenschaften"
+    },
+    "_c": "Deloitte Austria"
+  },
+  "https://pg.wd5.myworkdayjobs.com/1000/job/Schwalbach-Am-Taunus/Strategic-Finance-Internship--m-f-d-_R000149907": {
+    "cat": "BIZOFF:finance",
+    "loc": {
+      "city": "Wien",
+      "country": "Österreich",
+      "austria": true
+    },
+    "de": 4,
+    "en": 4,
+    "wm": null,
+    "team": "large",
+    "cust": 1,
+    "phys": null,
+    "shift": null,
+    "autonomy": 1,
+    "variety": 1,
+    "competitive": null,
+    "creative": 1,
+    "leadership": 1,
+    "mobile": 1,
+    "certs": [],
+    "f_night": null,
+    "f_shift": null,
+    "f_place": "office",
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": "b2b",
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [
+      "wirt"
+    ],
+    "sem": 7,
+    "start": null,
+    "_q": {
+      "team": "multifunctional teams",
+      "cust": "colleagues from sales, marketing",
+      "autonomy": "independent project for which you will be responsible",
+      "creative": "embracing creativity, innovation, and initiative",
+      "leadership": "drive for leadership",
+      "study": "master student",
+      "sem": "master student"
+    },
+    "_c": "Procter & Gamble Austria"
+  },
+  "https://career5.successfactors.eu/careers?company=AZGROUPPROD&career_job_req_id=108671&career_ns=job_application": {
+    "deg": null,
+    "de": null,
+    "en": null,
+    "exp": null,
+    "wm": null,
+    "team": null,
+    "cust": 1,
+    "phys": null,
+    "shift": null,
+    "autonomy": 1,
+    "variety": 1,
+    "competitive": null,
+    "creative": null,
+    "leadership": null,
+    "mobile": 1,
+    "emp": null,
+    "certs": [],
+    "f_night": null,
+    "f_shift": null,
+    "f_place": "field",
+    "f_sales": "yes",
+    "f_commission": null,
+    "f_customers": "b2b",
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [],
+    "sem": null,
+    "hrs": null,
+    "start": null,
+    "_q": {
+      "cust": "ausbau bestehender geschäftsbeziehungen",
+      "autonomy": "strategische weiterentwicklung von partnerschaften",
+      "mobile": "key account manager:in",
+      "f_sales": "ausbau bestehender geschäftsbeziehungen"
+    },
+    "_c": "Allianz Österreich",
+    "cat": "BIZOFF:salesbiz",
+    "loc": null
+  },
+  "https://pg.wd5.myworkdayjobs.com/1000/job/Spittal-AD-Drau/Produktionsmitarbeiter-Pharmaproduktion---Verpackung--m-w-d-_R000158374": {
+    "cat": "TRADES:manufacturing",
+    "loc": {
+      "city": "Österreich",
+      "country": "Österreich",
+      "austria": true
+    }
+  },
+  "https://job-boards.eu.greenhouse.io/bitpanda/jobs/5012230101": {
+    "deg": 2,
+    "de": 2,
+    "en": 3,
+    "exp": 0,
+    "team": "large",
+    "cust": null,
+    "phys": null,
+    "shift": null,
+    "autonomy": 1,
+    "variety": 1,
+    "competitive": null,
+    "creative": 1,
+    "leadership": null,
+    "mobile": null,
+    "emp": [
+      "vollzeit"
+    ],
+    "certs": [],
+    "f_night": null,
+    "f_shift": null,
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": null,
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [
+      "tech",
+      "wirt",
+      "jus",
+      "nat"
+    ],
+    "sem": null,
+    "hrs": null,
+    "start": null,
+    "_q": {
+      "deg": "degree (or currently enrolled in an advanced program",
+      "de": "german proficiency is considered a strong plus",
+      "en": "excellent written and spoken english",
+      "team": "product, tech, data, and operations teams",
+      "autonomy": "engineer automated solutions"
+    },
+    "_c": "Bitpanda",
+    "cat": "BIZOFF:legal",
+    "loc": null
+  },
+  "https://jobs.smartrecruiters.com/REWEInternationalDienstleistungsgesellschaftmbH/744000156805518": {
+    "cat": "BIZOFF:finance",
+    "loc": null
+  },
+  "https://pg.wd5.myworkdayjobs.com/1000/job/Spittal-AD-Drau/Mitarbeiter-IT-Support-auf-Minijob-Basis--m-w-d-_R000160381": {
+    "cat": "TECH:itsupport",
+    "loc": null,
+    "deg": 2,
+    "de": null,
+    "en": null,
+    "exp": 0,
+    "wm": null,
+    "team": null,
+    "cust": null,
+    "phys": null,
+    "shift": null,
+    "autonomy": null,
+    "competitive": null,
+    "creative": null,
+    "leadership": null,
+    "mobile": null,
+    "certs": [],
+    "f_night": null,
+    "f_shift": null,
+    "f_place": "office",
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": null,
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [
+      "tech"
+    ],
+    "sem": null,
+    "hrs": [
+      5,
+      10
+    ],
+    "start": "asap",
+    "_q": {
+      "deg": "besuch einer it-htl oder ähnliches",
+      "hrs": "5-10 std pro woche"
+    },
+    "_c": "Procter & Gamble Austria"
+  },
+  "https://jobs.smartrecruiters.com/REWEInternationalDienstleistungsgesellschaftmbH/744000156795635": {
+    "cat": "BIZOFF:supplychain",
+    "loc": null,
+    "de": 3,
+    "en": null,
+    "exp": 0,
+    "team": null,
+    "phys": null,
+    "shift": null,
+    "competitive": 1,
+    "creative": 1,
+    "leadership": null,
+    "mobile": null,
+    "certs": [],
+    "f_night": null,
+    "f_shift": null,
+    "f_place": "office",
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": null,
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [],
+    "sem": null,
+    "start": null,
+    "_q": {
+      "de": "sichere und aufgabengerechte kommunikation in wort und schrift",
+      "exp": "erste büroerfahrung",
+      "competitive": "leistungsbezogenes jahresbruttogehalt",
+      "creative": "neues entdecken wollen"
+    },
+    "_c": "REWE Group Austria"
+  },
+  "https://karriere.post.at/job/Wien-Junior-KYC-Analystin-%28wmd%29-Teilzeit-%2820-Wst_%29-Wien-1020/1450280333/": {
+    "cat": "BIZOFF:finance",
+    "loc": null
+  },
+  "https://pg.wd5.myworkdayjobs.com/1000/job/Spittal-AD-Drau/Mitarbeiter-Utilities--m-w-d-_R000146600": {
+    "cat": "TRADES:handwerk",
+    "loc": {
+      "city": "Österreich",
+      "country": "",
+      "austria": true
+    }
+  },
+  "https://www.statistik.at/en/ueber-uns/karriere/jobangebote/bewerbung/job/959": {
+    "cat": "TECH:data",
+    "loc": {
+      "city": "Wien",
+      "country": "Österreich",
+      "austria": true
+    },
+    "de": 3,
+    "en": null,
+    "exp": null,
+    "wm": null,
+    "team": null,
+    "cust": null,
+    "phys": null,
+    "shift": null,
+    "autonomy": null,
+    "variety": null,
+    "competitive": null,
+    "creative": null,
+    "leadership": null,
+    "mobile": null,
+    "emp": [
+      "vollzeit"
+    ],
+    "certs": [],
+    "f_night": null,
+    "f_shift": null,
+    "f_place": "office",
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": null,
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [
+      "tech"
+    ],
+    "sem": null,
+    "hrs": [
+      38.5,
+      38.5
+    ],
+    "start": "2026-07",
+    "_q": {
+      "de": "the standard language german is displayed",
+      "study": "data scientist",
+      "start": "befristet bis 30. juni 2028"
+    },
+    "_c": "Statistik Austria"
+  },
+  "https://jobs.wienerstadtwerke.at/de/jobs/28393/fachlead-operative-buchhaltung-wmd": {
+    "de": 3,
+    "en": null,
+    "wm": "onsite",
+    "cust": 1,
+    "phys": null,
+    "shift": null,
+    "autonomy": 1,
+    "variety": 1,
+    "competitive": null,
+    "creative": 1,
+    "leadership": 1,
+    "mobile": null,
+    "f_night": null,
+    "f_shift": null,
+    "f_place": "office",
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": "b2b",
+    "f_cold": null,
+    "f_lehramt": null,
+    "sem": null,
+    "start": null,
+    "_q": {
+      "de": "fundierte kenntnisse in den bereichen finanzbuchhaltung",
+      "wm": "topmodernes büro in zentraler lage",
+      "cust": "ansprechperson für steuerrechtliche fragestellungen",
+      "autonomy": "kontinuierliche optimierung von prozessen",
+      "variety": "gesamtverantwortung für die buchhaltung",
+      "creative": "weiterentwicklung und überwachung",
+      "leadership": "fachlead (w/m/d) für ein kleines team",
+      "f_place": "topmodernes büro"
+    },
+    "_c": "Wiener Stadtwerke (Wiener Linien + Wien Energie)",
+    "cat": "BIZOFF:finance",
+    "loc": {
+      "city": "Wien",
+      "country": "Österreich",
+      "austria": true
+    }
+  },
+  "https://karriere.oenb.at/Job/5149": {
+    "team": null,
+    "cust": null,
+    "phys": null,
+    "variety": 1,
+    "competitive": null,
+    "creative": 1,
+    "leadership": null,
+    "mobile": null,
+    "certs": [],
+    "f_night": null,
+    "f_place": "office",
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": "b2b",
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [
+      "tech",
+      "wirt"
+    ],
+    "sem": null,
+    "start": "2027-01",
+    "_q": {
+      "f_place": "dashboards für die aufsicht",
+      "start": "besetzung ab: 01.01.2027 oder 01.07.2027"
+    },
+    "_c": "Oesterreichische Nationalbank (OeNB)",
+    "cat": "TECH:data",
+    "loc": null
+  },
+  "https://jobs.wien.gv.at/stellenangebote/details.html?jobTitle=Werkmeister*in-Bauwesen-fuer-den-Fachbereich-Baumanagement&jobId=59279": {
+    "cat": "TRADES:construction",
+    "loc": {
+      "city": "Wien",
+      "country": "Österreich",
+      "austria": true
+    },
+    "de": 3,
+    "en": null,
+    "exp": 3,
+    "team": null,
+    "cust": null,
+    "phys": null,
+    "shift": null,
+    "autonomy": 1,
+    "variety": 1,
+    "competitive": null,
+    "creative": null,
+    "leadership": null,
+    "mobile": 1,
+    "f_night": null,
+    "f_shift": "day",
+    "f_place": "field",
+    "f_sales": "no",
+    "f_commission": "no",
+    "f_customers": "b2b",
+    "f_cold": "no",
+    "f_lehramt": null,
+    "study": [
+      "tech"
+    ],
+    "sem": null,
+    "start": "asap",
+    "_q": {
+      "de": "fachwissen auf dem gebiet bauwesen",
+      "exp": "mindestens achtjährige fachlich einschlägige tätigkeit",
+      "variety": "interessante und herausfordernde aufgaben",
+      "mobile": "örtliche überwachung der herstellung des bauwerkes",
+      "f_place": "örtliche überwachung",
+      "study": "einschlägigen lehrberuf"
+    },
+    "_c": "Stadt Wien"
+  },
+  "https://jobs.wienerstadtwerke.at/de/jobs/28380/iso-mit-fokus-organisatorische-sicherheit-wmd": {
+    "cat": "TECH:itsupport",
+    "loc": {
+      "city": "Wien",
+      "country": "Österreich",
+      "austria": true
+    },
+    "deg": 3,
+    "de": null,
+    "en": null,
+    "team": null,
+    "cust": 1,
+    "phys": null,
+    "autonomy": 1,
+    "variety": 1,
+    "competitive": null,
+    "creative": 1,
+    "leadership": 1,
+    "mobile": null,
+    "certs": [],
+    "f_night": null,
+    "f_place": "office",
+    "f_sales": "no",
+    "f_commission": "no",
+    "f_customers": "b2b",
+    "f_cold": "no",
+    "f_lehramt": null,
+    "study": [
+      "tech"
+    ],
+    "sem": null,
+    "start": null,
+    "_q": {
+      "cust": "ansprechperson für führungskräfte und mitarbeiter*innen",
+      "autonomy": "hohes maß an eigenverantwortung",
+      "variety": "entwicklung und implementierung von richtlinien",
+      "leadership": "leitung und umsetzung von projekten",
+      "f_customers": "zusammenarbeit mit den fachbereichen"
+    },
+    "_c": "Wiener Stadtwerke (Wiener Linien + Wien Energie)"
+  },
+  "https://karriereportal.vinzenzgruppe.at/Diplomierter-Gesundheits-und-Krankenpflegerin-de-j7052.html": {
+    "deg": 3,
+    "de": 3,
+    "en": null,
+    "exp": 0,
+    "cust": 1,
+    "phys": 1,
+    "autonomy": 1,
+    "variety": 1,
+    "competitive": null,
+    "creative": null,
+    "leadership": 1,
+    "mobile": null,
+    "emp": [
+      "vollzeit"
+    ],
+    "f_night": null,
+    "f_place": "office",
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": "b2c",
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [
+      "health"
+    ],
+    "sem": null,
+    "start": null,
+    "_q": {
+      "deg": "diplom der allgemeinen gesundheits- und krankenpflege",
+      "de": "sichere deutschkenntnisse in wort und schrift",
+      "cust": "betreuung im psychosozialen bereich",
+      "leadership": "anleitung, unterweisung und begleitung des hilfspersonals",
+      "emp": "39 wochenstunden",
+      "f_place": "pflegehaus st. katharina",
+      "study": "diplom der allgemeinen gesundheits- und krankenpflege"
+    },
+    "_c": "Vinzenz Gruppe",
+    "cat": "HEALTH:eldercare",
+    "loc": null
+  },
+  "https://rewe-group.jobs/en/jobs/REF4589U-61f58de0-2973-4cc2-bdee-64b62ffb4f40": {
+    "deg": null,
+    "de": null,
+    "en": null,
+    "exp": null,
+    "team": null,
+    "cust": 1,
+    "phys": null,
+    "shift": null,
+    "autonomy": 1,
+    "variety": 1,
+    "competitive": null,
+    "creative": null,
+    "leadership": null,
+    "mobile": null,
+    "emp": null,
+    "certs": [],
+    "f_night": null,
+    "f_shift": null,
+    "f_place": "office",
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": "b2b",
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [],
+    "sem": null,
+    "hrs": null,
+    "start": null,
+    "_q": {
+      "cust": "accompany developments",
+      "autonomy": "translating business requirements",
+      "f_place": "senior business analyst",
+      "f_customers": "rewe group"
+    },
+    "_c": "REWE Group Austria",
+    "cat": "TECH:techpm",
+    "loc": null
+  },
+  "https://careers.unicredit.eu/en_GB/jobsuche/JobDetail/AT-INT-EXT-Schoellerbank-Professional-WealthManagementAdvisor-Klagenfurt-DE/114631": {
+    "deg": null,
+    "de": null,
+    "en": null,
+    "exp": null,
+    "wm": "onsite",
+    "team": null,
+    "phys": null,
+    "shift": null,
+    "autonomy": 1,
+    "variety": 1,
+    "competitive": null,
+    "creative": null,
+    "leadership": null,
+    "mobile": null,
+    "certs": [],
+    "f_night": null,
+    "f_shift": null,
+    "f_place": "office",
+    "f_sales": "yes",
+    "f_commission": null,
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [],
+    "sem": null,
+    "hrs": null,
+    "start": null,
+    "_q": {
+      "wm": "arbeitsplatz in bester lage in klagenfurt",
+      "autonomy": "zentrale ansprechpartner:in für alle anliegen",
+      "variety": "erarbeitung individueller lösungsvorschläge",
+      "f_place": "persönliche beratung",
+      "f_sales": "kund:innen mit veranlagungsbedarf"
+    },
+    "_c": "UniCredit Bank Austria",
+    "cat": "BIZOFF:salesbiz",
+    "loc": {
+      "city": "Klagenfurt",
+      "country": "Österreich",
+      "austria": true
+    }
+  },
+  "https://jobs.wienerstadtwerke.at/de/jobs/28378/kundenbetreuerin-auftragsmanagement": {
+    "cat": "BIZOFF:salesbiz",
+    "loc": {
+      "city": "Wien",
+      "country": "Österreich",
+      "austria": true
+    },
+    "de": 3,
+    "en": null,
+    "exp": 0,
+    "team": "large",
+    "cust": 1,
+    "phys": null,
+    "autonomy": 1,
+    "variety": 1,
+    "competitive": null,
+    "creative": null,
+    "leadership": null,
+    "mobile": null,
+    "certs": [
+      "lap"
+    ],
+    "f_night": null,
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": "b2b",
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [],
+    "sem": null,
+    "start": null,
+    "_q": {
+      "de": "abgeschlossene kaufmännische oder technische ausbildung",
+      "team": "zusammenarbeit im team",
+      "cust": "du betreust großkund*innen",
+      "autonomy": "eigenverantwortliches und selbstständiges arbeiten",
+      "variety": "effiziente prozessabläufe",
+      "certs": "kaufmännische oder technische ausbildung"
+    },
+    "_c": "Wiener Stadtwerke (Wiener Linien + Wien Energie)"
+  },
+  "https://a1group.wd3.myworkdayjobs.com/A1_Jobs_at/job/1020-Wien/Business-Support-and-Administration-Intern--f-m-d-_REQ-9241": {
+    "deg": 2,
+    "de": 3,
+    "en": 3,
+    "exp": 1,
+    "team": null,
+    "cust": null,
+    "phys": null,
+    "shift": null,
+    "autonomy": 1,
+    "variety": 1,
+    "competitive": null,
+    "creative": null,
+    "leadership": null,
+    "mobile": null,
+    "certs": [],
+    "f_night": null,
+    "f_shift": "day",
+    "f_place": "office",
+    "f_sales": "no",
+    "f_commission": "no",
+    "f_customers": null,
+    "f_cold": "no",
+    "f_lehramt": null,
+    "study": [
+      "wirt"
+    ],
+    "sem": null,
+    "hrs": [
+      40,
+      40
+    ],
+    "start": null,
+    "_q": {
+      "de": "strong communication skills in german",
+      "exp": "initial work experience in organization and administration",
+      "autonomy": "independently take over pre-defined administrative and organizational tasks",
+      "f_shift": "flexible working: home office, remote work, flextime",
+      "f_place": "support the director team in the day-to-day operations",
+      "hrs": "40-hour work week (full-time"
+    },
+    "_c": "A1 Telekom Austria",
+    "cat": "BIZOFF:admin",
+    "loc": null
+  },
+  "https://www.henkel.com/careers/find-your-job-apply/2260344-2260344": {
+    "deg": 1,
+    "de": 3,
+    "en": null,
+    "exp": 0,
+    "wm": null,
+    "team": null,
+    "cust": 1,
+    "phys": null,
+    "shift": null,
+    "autonomy": null,
+    "variety": 1,
+    "competitive": null,
+    "creative": null,
+    "leadership": null,
+    "mobile": null,
+    "emp": [
+      "vollzeit"
+    ],
+    "certs": [],
+    "f_night": null,
+    "f_shift": null,
+    "f_place": "office",
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": null,
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [
+      "wirt",
+      "jus"
+    ],
+    "sem": null,
+    "hrs": null,
+    "start": null,
+    "_q": {
+      "cust": "begleite mitarbeiter:innen",
+      "study": "arbeits-, lohnsteuer- und sozialversicherungsrecht"
+    },
+    "_c": "Henkel CEE",
+    "cat": "BIZOFF:finance",
+    "loc": null
+  },
+  "https://www.dm-jobs.at/job/spezialist-in-business-intelligence-und-datenmanagement-intralogistik-in-4470-enns/272603/": {
+    "cat": "TECH:data",
+    "loc": {
+      "city": "Enns",
+      "country": "Österreich",
+      "austria": true
+    }
+  },
+  "https://jobs.smartrecruiters.com/HMGroup/744000157107249": {
+    "deg": 1,
+    "de": 3,
+    "en": null,
+    "exp": 1,
+    "wm": "onsite",
+    "cust": 1,
+    "phys": 1,
+    "shift": 1,
+    "autonomy": 1,
+    "variety": 1,
+    "competitive": 1,
+    "creative": null,
+    "leadership": 1,
+    "mobile": null,
+    "certs": [],
+    "f_night": null,
+    "f_shift": "two",
+    "f_sales": "yes",
+    "f_commission": null,
+    "f_customers": "b2c",
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [],
+    "sem": null,
+    "hrs": [
+      38.5,
+      38.5
+    ],
+    "start": null,
+    "_q": {
+      "exp": "ersten führungserfahrung im einzelhandel",
+      "phys": "verkaufsfläche über lagerbereiche",
+      "shift": "store-öffnung und -schließung",
+      "autonomy": "lösungsorientiert, flexibel handeln",
+      "variety": "aufgaben- und personaleinsatzplannung",
+      "competitive": "umsatz- und budgetziele",
+      "leadership": "analysierst gemeinsam mit erfahrenen führungskräften",
+      "f_shift": "täglicher store-öffnung und -schließung",
+      "f_sales": "umsatz- und budgetziele"
+    },
+    "_c": "H&M Österreich",
+    "cat": "RETAIL:retailsales",
+    "loc": {
+      "city": "Weiz",
+      "country": "Österreich",
+      "austria": true
+    }
+  },
+  "https://karriereportal.vinzenzgruppe.at/DGKP-auf-der-akutkonservativen-Bettenstation-de-j10764.html": {
+    "cat": "HEALTH:medical",
+    "loc": {
+      "city": "Wien",
+      "country": "Österreich",
+      "austria": true
+    },
+    "deg": 3,
+    "de": null,
+    "en": null,
+    "exp": 0,
+    "wm": "onsite",
+    "cust": 1,
+    "phys": 1,
+    "shift": 1,
+    "autonomy": 1,
+    "variety": 1,
+    "competitive": null,
+    "creative": 1,
+    "leadership": null,
+    "mobile": null,
+    "f_night": "has",
+    "f_shift": "two",
+    "f_place": "field",
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": "b2c",
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [
+      "health"
+    ],
+    "sem": null,
+    "start": "2027-01",
+    "_q": {
+      "phys": "ganzheitliche pflege und betreuung",
+      "creative": "innovatives denken und aufgeschlossenheit",
+      "f_customers": "betreuung von patient*innen",
+      "study": "gesundheits- und krankenpflegegesetz anerkannte berufsberechtigung",
+      "start": "ab januar 2027"
+    },
+    "_c": "Vinzenz Gruppe"
+  },
+  "https://careers.unicredit.eu/en_GB/jobsuche/JobDetail/AT-INT-UCBA-Professional-COO-Securities-Support-Specialist-EN/112492": {
+    "cat": "BIZOFF:finance",
+    "loc": {
+      "city": "Wien",
+      "country": "Österreich",
+      "austria": true
+    },
+    "deg": 3,
+    "de": 3,
+    "en": 3,
+    "exp": 1,
+    "wm": "onsite",
+    "team": null,
+    "cust": 1,
+    "phys": null,
+    "shift": null,
+    "variety": 1,
+    "competitive": null,
+    "creative": 1,
+    "leadership": null,
+    "mobile": null,
+    "certs": [],
+    "f_night": null,
+    "f_shift": null,
+    "f_place": "office",
+    "f_sales": null,
+    "f_commission": null,
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [
+      "wirt"
+    ],
+    "sem": null,
+    "hrs": [
+      38.5,
+      38.5
+    ],
+    "start": null,
+    "_q": {
+      "exp": "hands-on experience with geos",
+      "wm": "operations vienna austria",
+      "cust": "cooperate with internal stakeholders, custodians, counterparties",
+      "variety": "identify opportunities for process optimization, automation, and digitalization",
+      "creative": "identify opportunities for process optimization, automation, and digitalization",
+      "f_place": "back-office activities",
+      "study": "investment operations",
+      "hrs": "full-time permanent"
+    },
+    "_c": "UniCredit Bank Austria"
+  },
+  "https://careers.unicredit.eu/en_GB/jobsuche/JobDetail/AT-EXT-WP-Praktikum-Corporates-Debt-Markets-2027/114708": {
+    "exp": 0,
+    "wm": "hybrid",
+    "team": null,
+    "cust": 1,
+    "phys": null,
+    "shift": null,
+    "autonomy": null,
+    "variety": 1,
+    "competitive": null,
+    "creative": 1,
+    "leadership": null,
+    "mobile": null,
+    "certs": [],
+    "f_night": null,
+    "f_shift": null,
+    "f_place": "office",
+    "f_sales": null,
+    "f_commission": null,
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [
+      "wirt"
+    ],
+    "sem": null,
+    "hrs": [
+      38.5,
+      38.5
+    ],
+    "start": "2027-01",
+    "_q": {
+      "wm": "smart working am austria campus mit flexiblen arbeitszeiten",
+      "variety": "schnupperaufenthalte in anderen unternehmensbereichen",
+      "creative": "erstellung von finanzmodellen, kreditanträgen und memos",
+      "f_place": "analyse makroökonomischer faktoren",
+      "study": "laufendes studium mit wirtschaftlichem schwerpunkt",
+      "start": "6-monatiges praktikum"
+    },
+    "_c": "UniCredit Bank Austria",
+    "cat": "BIZOFF:finance",
+    "loc": {
+      "city": "Wien",
+      "country": "Österreich",
+      "austria": true
+    }
+  },
+  "https://careers.unicredit.eu/en_GB/jobsuche/JobDetail/AT-EXT-WP-Praktikum-Real-Invest-2027/114574": {
+    "deg": 2,
+    "de": null,
+    "en": null,
+    "exp": 0,
+    "wm": "hybrid",
+    "team": null,
+    "cust": null,
+    "phys": null,
+    "shift": null,
+    "autonomy": null,
+    "variety": 1,
+    "competitive": null,
+    "creative": null,
+    "leadership": null,
+    "mobile": null,
+    "certs": [],
+    "f_night": null,
+    "f_shift": null,
+    "f_place": "office",
+    "f_sales": null,
+    "f_commission": null,
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [
+      "wirt"
+    ],
+    "sem": null,
+    "hrs": [
+      38.5,
+      38.5
+    ],
+    "start": "2027-03",
+    "_q": {
+      "wm": "smart working am austria campus mit flexiblen arbeitszeiten",
+      "variety": "schnupperaufenthalte in anderen unternehmensbereichen",
+      "f_place": "bereich real estate",
+      "start": "ab märz 2027"
+    },
+    "_c": "UniCredit Bank Austria",
+    "brief": {
+      "summary": "4-6 Monate Praktikum im Real Estate Management von offenen und geschlossenen Immobilienfonds.",
+      "must": [
+        "Immatrikulation an österreichischer Universität oder FH",
+        "Verfügbarkeit ab März 2027 für 4-6 Monate",
+        "Deutsch und Englisch fließend",
+        "Interesse an Immobilienwirtschaft oder Finanzsektor",
+        "Selbstständiges und strukturiertes Arbeiten"
+      ],
+      "nice": [
+        "Kenntnisse in Excel und Microsoft Office",
+        "Erste Erfahrung im Banking oder Real Estate Sektor",
+        "Verständnis für Compliance und Risk Management",
+        "Projektmanagement-Erfahrung"
+      ],
+      "hidden": [
+        "Erwartung von eigenständiger Projektmitarbeit trotz Praktikumsstatus",
+        "Bereitschaft zu Schnupperaufenthalten in anderen Bereichen erwartet",
+        "Langfristiges Interesse an Vollzeitanstellung nach Praktikum willkommen"
+      ],
+      "keywords": [
+        "Immobilienfonds",
+        "Real Estate",
+        "Asset Management",
+        "Compliance",
+        "Risk Management",
+        "Projektentwicklung",
+        "Immobilienveranlagungen",
+        "Bank Austria"
+      ],
+      "questions": [
+        "Welche Erfahrung haben Sie bereits mit Immobilien oder dem Finanzsektor?",
+        "Wie stellen Sie sich den Arbeitsalltag in unserem Real Estate Team vor?",
+        "Welche Bereiche der Bank Austria interessieren Sie für Schnupperaufenthalte?",
+        "Warum möchten Sie ausgerechnet bei der Bank Austria Real Invest praktizieren?"
+      ]
+    },
+    "cat": "BIZOFF:finance",
+    "loc": {
+      "city": "Wien",
+      "country": "Österreich",
+      "austria": true
+    }
+  },
+  "https://karriere.hofer.at/job/1450706433": {
+    "cat": "TRADES:manufacturing",
+    "loc": null,
+    "deg": 2,
+    "en": null,
+    "exp": 0,
+    "wm": "onsite",
+    "team": null,
+    "cust": null,
+    "phys": 1,
+    "shift": null,
+    "variety": 1,
+    "competitive": null,
+    "creative": 1,
+    "leadership": null,
+    "mobile": null,
+    "certs": [],
+    "f_night": null,
+    "f_shift": null,
+    "f_place": "office",
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": null,
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [
+      "nat"
+    ],
+    "sem": null,
+    "start": "2027-07",
+    "_q": {
+      "deg": "laufende höhere ausbildung im lebensmittelbereich",
+      "variety": "vielseitiges kennenlernen",
+      "creative": "mitwirken bei projekten in der produktionsentwicklung",
+      "f_place": "administratives mitarbeiten in der abteilung",
+      "start": "ab sommer 2027"
+    },
+    "_c": "HOFER"
+  },
+  "https://career5.successfactors.eu/careers?company=AZGROUPPROD&career_job_req_id=107490&career_ns=job_application": {
+    "deg": null,
+    "de": 3,
+    "en": null,
+    "exp": 0,
+    "team": null,
+    "cust": 1,
+    "phys": null,
+    "shift": null,
+    "autonomy": null,
+    "variety": 1,
+    "competitive": null,
+    "creative": null,
+    "leadership": null,
+    "mobile": null,
+    "emp": [
+      "vollzeit"
+    ],
+    "certs": [],
+    "f_night": null,
+    "f_shift": null,
+    "f_place": "office",
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": "b2b",
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [],
+    "sem": null,
+    "hrs": null,
+    "start": null,
+    "_q": {
+      "f_place": "im innendienst",
+      "f_customers": "key account manager:innen"
+    },
+    "_c": "Allianz Österreich",
+    "cat": "BIZOFF:salesbiz",
+    "loc": null
+  },
+  "https://jobs.smartrecruiters.com/REWEInternationalDienstleistungsgesellschaftmbH/744000157124643": {
+    "deg": 3,
+    "de": 4,
+    "en": 4,
+    "team": "large",
+    "cust": 1,
+    "phys": null,
+    "shift": null,
+    "competitive": 0,
+    "creative": 1,
+    "leadership": 0,
+    "mobile": null,
+    "emp": [
+      "vollzeit"
+    ],
+    "certs": [],
+    "f_night": null,
+    "f_shift": null,
+    "f_place": "office",
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": "b2b",
+    "f_cold": null,
+    "f_lehramt": null,
+    "sem": null,
+    "hrs": null,
+    "start": null,
+    "_q": {
+      "deg": "abgeschlossene technische oder betriebswirtschaftliche ausbildung",
+      "team": "crossfunktionalen, länderübergreifenden team",
+      "cust": "betreuung und beratung unserer key user"
+    },
+    "_c": "REWE Group Austria",
+    "cat": "TECH:techpm",
+    "loc": {
+      "city": "Österreich",
+      "country": "Österreich",
+      "austria": true
+    }
+  },
+  "https://karriereportal.vinzenzgruppe.at/Pflegefachassistenz-Akutgeriatrie-Remobilisation-de-j10791.html": {
+    "de": 3,
+    "en": null,
+    "exp": 1,
+    "wm": "onsite",
+    "cust": 1,
+    "phys": 1,
+    "shift": 1,
+    "autonomy": 1,
+    "variety": 1,
+    "competitive": null,
+    "creative": null,
+    "leadership": null,
+    "mobile": null,
+    "f_night": null,
+    "f_shift": null,
+    "f_place": "field",
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": "b2c",
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [
+      "health"
+    ],
+    "sem": null,
+    "start": "asap",
+    "_q": {
+      "de": "abgeschlossene ausbildung und erfahrung",
+      "exp": "abgeschlossene ausbildung und erfahrung",
+      "wm": "zentrumsnahe lage",
+      "cust": "mitwirkung bei der beratung von patient*innen"
+    },
+    "_c": "Vinzenz Gruppe",
+    "cat": "HEALTH:medical",
+    "loc": {
+      "city": "Wien",
+      "country": "Österreich",
+      "austria": true
+    }
+  },
+  "https://www.eversportsmanager.com/career?gh_jid=5012506101#offene-stellen": {
+    "cat": "CREATIVE:marketing",
+    "loc": null,
+    "deg": null,
+    "en": 3,
+    "wm": "onsite",
+    "cust": 1,
+    "shift": null,
+    "autonomy": 1,
+    "variety": 1,
+    "competitive": null,
+    "creative": 1,
+    "leadership": null,
+    "mobile": null,
+    "certs": [],
+    "f_night": null,
+    "f_shift": null,
+    "f_place": "office",
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": "b2b",
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [
+      "tech"
+    ],
+    "sem": null,
+    "start": null,
+    "_q": {
+      "en": "fluent english",
+      "wm": "vienna, austria",
+      "cust": "work closely with marketers",
+      "autonomy": "organise your own work, set priorities",
+      "variety": "build ai tools and workflows"
+    },
+    "_c": "Eversports"
+  },
+  "https://wd3.myworkdaysite.com/recruiting/magna/Magna/job/Graz-AT/Mitarbeiter-Project-Management-Office--m-w-x-_R00265014-1": {
+    "cat": "BIZOFF:admin",
+    "loc": null
+  },
+  "https://jobs.wienerstadtwerke.at/de/jobs/28388/projektumsetzerin-fur-errichtung-von-glasfaserinfrastruktur": {
+    "cat": "TECH:techpm",
+    "loc": {
+      "city": "Wien",
+      "country": "Österreich",
+      "austria": true
+    }
+  },
+  "https://jobs.univie.ac.at/job/University-assistant-predoctoralPhD-Candidate/1450133433/": {
+    "cat": "EDU:highered",
+    "loc": {
+      "city": "Wien",
+      "country": "Österreich",
+      "austria": true
+    },
+    "en": null,
+    "exp": 0,
+    "wm": "onsite",
+    "team": "small",
+    "cust": null,
+    "phys": null,
+    "shift": null,
+    "autonomy": 1,
+    "variety": 1,
+    "competitive": 1,
+    "creative": 1,
+    "leadership": null,
+    "mobile": null,
+    "certs": [],
+    "f_night": null,
+    "f_shift": null,
+    "f_place": "office",
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": null,
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [
+      "nat"
+    ],
+    "sem": 7,
+    "start": "2026-11",
+    "_q": {
+      "exp": "completed your masters degree or diploma in physics",
+      "wm": "faculty of physics",
+      "team": "small subgroups",
+      "autonomy": "develop new ideas, technologies and experiments",
+      "variety": "active participation in research, teaching and administration",
+      "competitive": "continuous demand for excellence",
+      "creative": "develop new ideas, technologies and experiments",
+      "f_place": "experimental quantum photonic",
+      "study": "masters degree or diploma in physics"
+    },
+    "_c": "Universität Wien"
+  },
+  "https://wd3.myworkdaysite.com/recruiting/magna/Magna/job/Graz-AT/FH-Pflichtpraktikant-im-Bereich-Public-Funding---Research-Cooperations--m-w-x-_R00267351": {
+    "de": 3,
+    "en": null,
+    "team": "large",
+    "cust": null,
+    "phys": null,
+    "shift": null,
+    "competitive": 0,
+    "creative": 1,
+    "leadership": null,
+    "mobile": null,
+    "certs": [],
+    "f_night": null,
+    "f_shift": null,
+    "f_place": "office",
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": "b2b",
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [
+      "wirt",
+      "tech"
+    ],
+    "sem": null,
+    "start": "2027-03",
+    "_q": {
+      "f_place": "abteilung advanced engineering, cooperations & strategy",
+      "f_customers": "mit internen stakeholdern",
+      "start": "ab frühjahr 2027"
+    },
+    "_c": "Magna",
+    "cat": "BIZOFF:admin",
+    "loc": null
+  },
+  "https://wd3.myworkdaysite.com/recruiting/magna/Magna/job/Graz-AT/IT-Application-Engineer-MES--m-w-x-_R00267399-6": {
+    "cat": "TECH:techpm",
+    "loc": null
+  },
+  "https://jobs.smartrecruiters.com/DeloitteAT/744000156796596": {
+    "exp": 0,
+    "team": null,
+    "cust": null,
+    "phys": null,
+    "autonomy": 1,
+    "variety": 1,
+    "competitive": null,
+    "creative": null,
+    "leadership": null,
+    "mobile": null,
+    "certs": [],
+    "f_night": null,
+    "f_place": "office",
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": "b2b",
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [
+      "wirt",
+      "jus"
+    ],
+    "sem": null,
+    "start": "2027-03",
+    "_q": {
+      "variety": "fachlichen schulungen und networking events",
+      "f_place": "im home office zu arbeiten",
+      "f_customers": "steuerliche fragestellungen",
+      "study": "betriebswirtschaft, wirtschaftsrecht oder rechtswissenschaften"
+    },
+    "_c": "Deloitte Austria",
+    "cat": "BIZOFF:finance",
+    "loc": null
+  },
+  "https://jobs.smartrecruiters.com/REWEInternationalDienstleistungsgesellschaftmbH/744000157050640": {
+    "cat": "BIZOFF:legal",
+    "loc": null
+  },
+  "https://wd3.myworkdaysite.com/recruiting/magna/Magna/job/Graz-AT/Project-Responsible---Information-Security--m-w-x-_R00265022-1": {
+    "cat": "TECH:itsupport",
+    "loc": null
+  },
+  "https://karriereportal.vinzenzgruppe.at/Departmentleitung-Zentrale-Aufnahme-und-Erstversorgung-ZAE-de-j10780.html": {
+    "deg": 3,
+    "de": 3,
+    "en": null,
+    "wm": "onsite",
+    "cust": 1,
+    "phys": null,
+    "shift": 1,
+    "autonomy": 1,
+    "variety": 1,
+    "competitive": null,
+    "creative": 1,
+    "leadership": 1,
+    "mobile": null,
+    "certs": [],
+    "f_night": "has",
+    "f_shift": null,
+    "f_place": "office",
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": "b2c",
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [
+      "health"
+    ],
+    "sem": null,
+    "hrs": [
+      40,
+      40
+    ],
+    "start": null,
+    "_q": {
+      "wm": "montag - freitag (werktags",
+      "autonomy": "weiterentwicklung der strukturen, prozesse und behandlungspfade",
+      "creative": "weiterentwicklung der strukturen, prozesse",
+      "leadership": "medizinische leitung und organisationsverantwortung",
+      "f_place": "zentrale aufnahme und erstversorgung",
+      "hrs": "40 stunden"
+    },
+    "_c": "Vinzenz Gruppe",
+    "cat": "HEALTH:medical",
+    "loc": {
+      "city": "Wien",
+      "country": "Österreich",
+      "austria": true
+    }
+  },
+  "https://pg.wd5.myworkdayjobs.com/1000/job/Schwalbach-Am-Taunus/Sales-Internship--m-f-d-_R000144357": {
+    "de": 3,
+    "en": 3,
+    "wm": null,
+    "team": null,
+    "phys": null,
+    "shift": null,
+    "autonomy": 1,
+    "variety": 1,
+    "competitive": null,
+    "creative": 1,
+    "leadership": 1,
+    "mobile": null,
+    "certs": [],
+    "f_night": null,
+    "f_shift": null,
+    "f_place": "field",
+    "f_sales": "yes",
+    "f_commission": null,
+    "f_customers": "b2b",
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [],
+    "sem": 2,
+    "start": null,
+    "_q": {
+      "autonomy": "bring your ideas to the table",
+      "creative": "creating new ideas to implement",
+      "leadership": "drive for leadership",
+      "f_place": "direct link between our innovative products",
+      "f_sales": "passion for sales",
+      "f_customers": "collaborative partnerships with our retail customers",
+      "sem": "minimum of 2 semesters of studies completed"
+    },
+    "_c": "Procter & Gamble Austria",
+    "cat": "BIZOFF:salesbiz",
+    "loc": null
+  },
+  "https://careers.andritz.com/andritz/job/Vienna-Assistant-%28mfd%29-Grid-Stability-Teilzeit-20hWoche-Vien-1120/1374970957/": {
+    "cat": "BIZOFF:admin",
+    "loc": {
+      "city": "Wien",
+      "country": "Österreich",
+      "austria": true
+    }
+  },
+  "https://jobs.smartrecruiters.com/REWEInternationalDienstleistungsgesellschaftmbH/744000156805218": {
+    "cat": "BIZOFF:finance",
+    "loc": null,
+    "deg": 1,
+    "de": null,
+    "en": null,
+    "team": "large",
+    "phys": null,
+    "shift": null,
+    "autonomy": 1,
+    "competitive": 1,
+    "creative": 1,
+    "leadership": null,
+    "mobile": null,
+    "certs": [],
+    "f_night": null,
+    "f_shift": null,
+    "f_place": "office",
+    "f_sales": "no",
+    "f_commission": "no",
+    "f_customers": "b2b",
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [
+      "wirt"
+    ],
+    "sem": null,
+    "hrs": [
+      38.5,
+      38.5
+    ],
+    "start": null,
+    "_q": {
+      "deg": "abgeschlossene kaufmännische berufsausbildung",
+      "team": "kollegialen team",
+      "autonomy": "strukturierte, genaue und ausdauernde arbeitsweise",
+      "competitive": "leistungsbezogenes jahresbruttogehalt",
+      "creative": "digitalisierung des anlageninventurprozesses",
+      "f_customers": "anderen fachbereichen",
+      "study": "kaufmännische berufsausbildung"
+    },
+    "_c": "REWE Group Austria"
+  },
+  "https://lindtspruengli.wd103.myworkdayjobs.com/LindtSpruengliGroupCareers/job/Vienna-Austria/Social-Media-Manager---Content-Creator--m-w-d-_JR104034": {
+    "cat": "CREATIVE:content",
+    "loc": null
+  },
+  "https://vacancies.osce.org/jobs/environmental-governance-adviser-s-5121": {
+    "en": 3,
+    "exp": 2,
+    "wm": null,
+    "team": null,
+    "cust": 1,
+    "phys": null,
+    "shift": null,
+    "autonomy": 1,
+    "variety": 1,
+    "competitive": null,
+    "creative": 1,
+    "leadership": null,
+    "mobile": 1,
+    "certs": [],
+    "f_night": null,
+    "f_shift": null,
+    "f_place": "field",
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": "b2b",
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [
+      "nat",
+      "soz"
+    ],
+    "sem": null,
+    "hrs": null,
+    "_q": {
+      "autonomy": "working with minimum supervision",
+      "mobile": "interaction with regional and local osce executive structures"
+    },
+    "_c": "OSCE Secretariat",
+    "cat": "BIZOFF:legal",
+    "loc": null
+  },
+  "https://pg.wd5.myworkdayjobs.com/1000/job/Schwalbach-Am-Taunus/Professional---Scientific-Relations--PSR--Manager---DACH-Region_R000160215": {
+    "deg": 3,
+    "de": 3,
+    "en": 3,
+    "exp": 1,
+    "wm": null,
+    "team": null,
+    "cust": 1,
+    "phys": null,
+    "shift": null,
+    "autonomy": 1,
+    "variety": 1,
+    "competitive": null,
+    "creative": 1,
+    "certs": [
+      "fsB"
+    ],
+    "f_night": null,
+    "f_shift": null,
+    "f_place": "field",
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": "b2b",
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [
+      "health"
+    ],
+    "sem": null,
+    "start": null,
+    "_q": {
+      "deg": "degree in dentistry from a dach university",
+      "de": "fluency in english and german",
+      "en": "fluency in english and german",
+      "exp": "up to three years of relevant experience",
+      "autonomy": "own and develop all psr resources and activities",
+      "variety": "design and manage scientific presentations and educational events",
+      "creative": "design and manage scientific presentations",
+      "f_place": "travel up to 50% within dach",
+      "study": "degree in dentistry"
+    },
+    "_c": "Procter & Gamble Austria",
+    "cat": "CREATIVE:marketing",
+    "loc": {
+      "city": "Wien",
+      "country": "Österreich",
+      "austria": true
+    }
+  },
+  "https://careers.andritz.com/andritz/job/Vienna-Systems-Engineer-%28mwd%29-f%C3%BCr-Erregungssysteme-Vien-1120/1375674457/": {
+    "cat": "ENG:electrical",
+    "loc": null,
+    "exp": 2,
+    "wm": "hybrid",
+    "team": null,
+    "cust": 1,
+    "phys": null,
+    "shift": null,
+    "variety": 1,
+    "competitive": null,
+    "creative": null,
+    "leadership": 1,
+    "emp": [
+      "vollzeit"
+    ],
+    "certs": [],
+    "f_night": null,
+    "f_shift": null,
+    "f_place": "field",
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": "b2b",
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [
+      "tech"
+    ],
+    "sem": null,
+    "hrs": null,
+    "start": null,
+    "_q": {
+      "exp": "erfahrung mit erregungssystemen für synchrongeneratoren und projektmanagement",
+      "wm": "bis zu 40% home-office möglichkeit",
+      "cust": "technische kundenschulungen",
+      "leadership": "projektleitung und -bearbeitung",
+      "emp": "innovativen und internationalen unternehmen",
+      "f_place": "inbetriebsetzung der anlagen",
+      "study": "technische ausbildung im bereich elektrotechnik"
+    },
+    "_c": "ANDRITZ"
+  },
+  "https://www.eversportsmanager.com/career?gh_jid=5012418101#offene-stellen": {
+    "deg": 0,
+    "de": 3,
+    "en": 3,
+    "exp": 1,
+    "team": "small",
+    "phys": null,
+    "shift": null,
+    "autonomy": 1,
+    "variety": 1,
+    "competitive": 0,
+    "creative": 0,
+    "leadership": 0,
+    "mobile": 0,
+    "certs": [],
+    "f_night": null,
+    "f_shift": "day",
+    "f_place": "office",
+    "f_sales": "no",
+    "f_commission": "no",
+    "f_customers": null,
+    "f_cold": "no",
+    "f_lehramt": null,
+    "study": [],
+    "sem": null,
+    "start": null,
+    "_q": {
+      "de": "good german (at least b2 level",
+      "en": "fluent english skills",
+      "team": "international, dynamic team",
+      "autonomy": "find solutions",
+      "f_shift": "full-time, 35 hours per week"
+    },
+    "_c": "Eversports",
+    "cat": "BIZOFF:admin",
+    "loc": {
+      "city": "Wien",
+      "country": "Österreich",
+      "austria": true
+    }
+  },
+  "https://jobs.smartrecruiters.com/BoschGroup/744000157135955": {
+    "cat": "TECH:data",
+    "loc": {
+      "city": "Österreich",
+      "country": "Österreich",
+      "austria": true
+    }
+  },
+  "https://jobs.smartrecruiters.com/DeloitteAT/744000156802728": {
+    "cat": "BIZOFF:finance",
+    "loc": null
+  },
+  "https://careers.telekom.com/en/jobs/enterprise-platform-engineer-m-w-d-563465374869452": {
+    "cat": "TECH:itsupport",
+    "loc": {
+      "city": "Wien",
+      "country": "Österreich",
+      "austria": true
+    },
+    "deg": null,
+    "de": 3,
+    "en": 2,
+    "team": null,
+    "cust": null,
+    "phys": null,
+    "shift": null,
+    "autonomy": 1,
+    "variety": 1,
+    "competitive": null,
+    "creative": 1,
+    "leadership": null,
+    "mobile": null,
+    "certs": [],
+    "f_night": null,
+    "f_shift": null,
+    "f_place": "office",
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": null,
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [],
+    "sem": null,
+    "start": "asap",
+    "_q": {
+      "de": "required languages: german"
+    },
+    "_c": "T-Systems / Telekom Austria"
+  },
+  "https://jobs.smartrecruiters.com/DeloitteAT/744000157176289": {
+    "cat": "BIZOFF:finance",
+    "loc": {
+      "city": "Wien",
+      "country": "Österreich",
+      "austria": true
+    }
+  },
+  "https://jobs.wienerstadtwerke.at/de/jobs/28402/werkmeisterin-wmd-infrastruktur": {
+    "cat": "TRADES:construction",
+    "loc": {
+      "city": "Wien",
+      "country": "Österreich",
+      "austria": true
+    }
+  },
+  "https://pfizer.wd1.myworkdayjobs.com/PfizerCareers/job/Austria---Orth/Labortechniker--m-w-d-_4966348-2": {
+    "cat": "ENG:lab",
+    "loc": {
+      "city": "Orth an der Donau",
+      "country": "Österreich",
+      "austria": true
+    }
+  },
+  "https://jobs.avl.com/job/Graz-Test-Engineer-Software-%28mwd%29/1450714433/": {
+    "cat": "TECH:swdev",
+    "loc": null
+  },
+  "https://wd3.myworkdaysite.com/recruiting/magna/Magna/job/Graz-AT/IT-Application-Engineer-MES--m-w-x-_R00267394-5": {
+    "cat": "TECH:swdev",
+    "loc": null
+  },
+  "https://apply.lufthansagroup.careers/index.php?ac=jobad&id=136040": {
+    "wm": null,
+    "phys": null,
+    "shift": null,
+    "autonomy": 1,
+    "variety": 1,
+    "competitive": null,
+    "leadership": null,
+    "mobile": null,
+    "certs": [],
+    "f_night": null,
+    "f_shift": null,
+    "f_place": "office",
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": null,
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [
+      "wirt",
+      "tech"
+    ],
+    "sem": null,
+    "hrs": null,
+    "_q": {
+      "autonomy": "arbeitest hands-on und findest kreative lösungen",
+      "f_place": "ground operations",
+      "study": "innovation, digitalisierung, projektmanagement, wirtschaftsinformatik oder bwl"
+    },
+    "_c": "Austrian Airlines",
+    "cat": "TECH:techpm",
+    "loc": {
+      "city": "Wien",
+      "country": "Österreich",
+      "austria": true
+    }
+  },
+  "https://wd3.myworkdaysite.com/recruiting/magna/Magna/job/Graz-AT/Modul-Controller--m-w-x-_R00265021-1": {
+    "cat": "BIZOFF:finance",
+    "loc": null
+  },
+  "https://wd3.myworkdaysite.com/recruiting/magna/Magna/job/Graz-AT/Spezialist-Lieferantenqualitat---Supplier-Quality-Assurance--m-w-x-_R00267199-1": {
+    "cat": "BIZOFF:supplychain",
+    "loc": null
+  },
+  "https://wd3.myworkdaysite.com/recruiting/magna/Magna/job/Graz-AT/Program-Responsible-Quality--m-w-x-_R00266716-1": {
+    "cat": "ENG:safety",
+    "loc": null
+  },
+  "https://jobs.smartrecruiters.com/BoschGroup/744000157132492": {
+    "cat": "TECH:swdev",
+    "loc": null
+  },
+  "https://wd3.myworkdaysite.com/recruiting/magna/Magna/job/Graz-AT/Projektmanager-SCM--m-w-x-_R00265017-1": {
+    "cat": "BIZOFF:supplychain",
+    "loc": null
+  },
+  "https://wd3.myworkdaysite.com/recruiting/magna/Magna/job/Graz-AT/Projektmanager-Produktion--m-w-x-_R00265018-1": {
+    "cat": "BIZOFF:supplychain",
+    "loc": null
+  },
+  "https://karriere.fsw.at/jobs/Data-Analystin-2610FSW-de-j9650.html": {
+    "cat": "TECH:data",
+    "loc": {
+      "city": "Wien",
+      "country": "Österreich",
+      "austria": true
+    }
+  },
+  "https://jobs.smartrecruiters.com/DeloitteAT/744000156734649": {
+    "cat": "BIZOFF:supplychain",
+    "loc": {
+      "city": "Wien",
+      "country": "Österreich",
+      "austria": true
+    }
+  },
+  "https://wd3.myworkdaysite.com/recruiting/magna/Magna/job/Graz-AT/Technical-Program-Liaison-Manager--m-w-x-_R00265019-1": {
+    "cat": "TECH:techpm",
+    "loc": null
+  },
+  "https://jobs.wienerstadtwerke.at/de/jobs/28342/projektmanagerin-kraftwerks-und-energietechnik": {
+    "cat": "BIZOFF:admin",
+    "loc": {
+      "city": "Wien",
+      "country": "Österreich",
+      "austria": true
+    },
+    "de": 3,
+    "en": null,
+    "exp": 2,
+    "team": "large",
+    "cust": 1,
+    "phys": null,
+    "autonomy": 1,
+    "variety": 1,
+    "competitive": null,
+    "creative": null,
+    "leadership": 1,
+    "mobile": null,
+    "certs": [],
+    "f_night": null,
+    "f_sales": null,
+    "f_commission": null,
+    "f_customers": "b2b",
+    "f_cold": null,
+    "f_lehramt": null,
+    "study": [
+      "tech"
+    ],
+    "sem": null,
+    "start": null,
+    "_q": {
+      "de": "als größter regionaler energieversorger österreichs",
+      "team": "interdisziplinäre projektteams",
+      "autonomy": "eigenständig, strukturiert",
+      "variety": "mehrere anlagenprojekte",
+      "leadership": "du führst und koordinierst interdisziplinäre projektteams",
+      "f_customers": "industrie-, energie- oder kraftwerksanlagen"
+    },
+    "_c": "Wiener Stadtwerke (Wiener Linien + Wien Energie)"
   }
 }
