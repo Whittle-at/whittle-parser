@@ -1,26 +1,31 @@
 {
- "date": "2026-10-23",
- "dd": "23.10.2026",
+ "date": "2026-10-24",
+ "dd": "24.10.2026",
  "link": "whittle.at/?source=x",
  "posts": [
   {
    "i": 1,
-   "key": "count:data",
-   "text": "Data & Analytics studieren und in Wien was Praktisches suchen?\n\nGerade offen: 22 Praktika & Werkstudentenjobs.\n9 davon ohne fließendes Deutsch.\n14 hybrid oder remote.\n\nAlle an einem Ort:\n\nwhittle.at/?source=x",
+   "key": "sal-en:consulting",
+   "text": "What does a consulting, audit & tax internship in Austria actually pay?\n\nMedian of 22 current job ads: €2.200 gross/month (full-time equivalent).\nMiddle half: €1.600 to €2.600.\n\nCheck before you apply:\n\nwhittle.at/?source=x",
    "card": {
-    "kicker": "Wien · Data & Analytics",
-    "big": "22",
-    "bigSub": "offene Praktika & Werkstudentenjobs",
+    "kicker": "Austria · consulting, audit & tax internship",
+    "big": "€2.200",
+    "bigSub": "median gross/month (full-time equivalent)",
     "rows": [
      [
-      "ohne fließendes Deutsch",
-      "9",
-      0.4090909090909091
+      "lower 25%",
+      "€1.600",
+      0.6153846153846154
      ],
      [
-      "hybrid oder remote",
-      "14",
-      0.6363636363636364
+      "median",
+      "€2.200",
+      0.8461538461538461
+     ],
+     [
+      "upper 25%",
+      "€2.600",
+      1
      ]
     ],
     "n": 22
@@ -28,247 +33,256 @@
   },
   {
    "i": 2,
-   "key": "skill-en:finance",
-   "text": "What 32 current finance & controlling internship ads in Austria ask for:\n\nExcel: 47%\nPowerPoint: 28%\nAI tools: 28%\nPower BI: 13%\n\nIf you learn one thing this semester: Excel.\nDoes your CV match? Check:\n\nwhittle.at/?source=x",
+   "key": "sal:marketing",
+   "text": "Was zahlt ein Praktikum in Marketing & Kommunikation in Österreich?\n\nMedian aus 16 aktuellen Anzeigen: €2.620 brutto/Monat (auf Vollzeit gerechnet).\nDie mittlere Hälfte liegt zwischen €2.140 und €2.750.\n\nGehalt vor der Bewerbung checken:\n\nwhittle.at/?source=x",
    "card": {
-    "kicker": "Austria · finance & controlling internships",
-    "title": "Skills the ads ask for",
+    "kicker": "Österreich · Praktikum Marketing & Kommunikation",
+    "big": "€2.620",
+    "bigSub": "Median brutto/Monat (Vollzeit gerechnet)",
     "rows": [
      [
-      "Excel",
-      "47%",
-      0.46875
+      "untere 25 %",
+      "€2.140",
+      0.7806921675774134
      ],
      [
-      "PowerPoint",
-      "28%",
-      0.28125
+      "Median",
+      "€2.620",
+      0.9540983606557377
      ],
      [
-      "AI tools",
-      "28%",
-      0.28125
-     ],
-     [
-      "Power BI",
-      "13%",
-      0.125
-     ],
-     [
-      "Python",
-      "13%",
-      0.125
+      "obere 25 %",
+      "€2.750",
+      1
      ]
     ],
-    "n": 32
+    "n": 16
    }
   },
   {
    "i": 3,
-   "key": "skill:consulting",
-   "text": "Was in 33 aktuellen Consulting, Audit & Tax-Praktika in Österreich verlangt wird:\n\nKI-Tools: 52%\nExcel: 33%\nPowerPoint: 33%\nSAP: 3%\n\nWenn du dieses Semester nur eins lernst: KI-Tools.\nPasst dein CV? Check:\n\nwhittle.at/?source=x",
+   "key": "sal:sales",
+   "text": "Was zahlt ein Praktikum in Sales & Business Development in Österreich?\n\nMedian aus 21 aktuellen Anzeigen: €2.690 brutto/Monat (auf Vollzeit gerechnet).\nDie mittlere Hälfte liegt zwischen €2.500 und €3.340.\n\nGehalt vor der Bewerbung checken:\n\nwhittle.at/?source=x",
    "card": {
-    "kicker": "Österreich · Consulting, Audit & Tax-Praktika",
-    "title": "Diese Skills stehen in den Anzeigen",
+    "kicker": "Österreich · Praktikum Sales & Business Development",
+    "big": "€2.690",
+    "bigSub": "Median brutto/Monat (Vollzeit gerechnet)",
     "rows": [
      [
-      "KI-Tools",
-      "52%",
-      0.5151515151515151
+      "untere 25 %",
+      "€2.500",
+      0.7485029940119761
      ],
      [
-      "Excel",
-      "33%",
-      0.3333333333333333
+      "Median",
+      "€2.690",
+      0.8053892215568862
      ],
      [
-      "PowerPoint",
-      "33%",
-      0.3333333333333333
-     ],
-     [
-      "SAP",
-      "3%",
-      0.030303030303030304
-     ],
-     [
-      "Jira",
-      "3%",
-      0.030303030303030304
+      "obere 25 %",
+      "€3.340",
+      1
      ]
     ],
-    "n": 33
+    "n": 21
    }
   },
   {
    "i": 4,
-   "key": "ai:consulting",
-   "text": "KI ist kein IT-Thema mehr.\n\n40% der aktuellen Consulting, Audit & Tax-Stellen in Österreich erwähnen KI oder KI-Tools in der Anzeige. Das sind 85 von 214.\n\nWer \"ChatGPT im Alltag\" in den CV schreibt, sollte Beispiele parat haben.\n\nwhittle.at/?source=x",
+   "key": "sal-en:office",
+   "text": "What does a office & admin internship in Austria actually pay?\n\nMedian of 16 current job ads: €1.970 gross/month (full-time equivalent).\nMiddle half: €1.170 to €2.170.\n\nCheck before you apply:\n\nwhittle.at/?source=x",
    "card": {
-    "kicker": "Österreich · Consulting, Audit & Tax",
-    "big": "40%",
-    "bigSub": "der Anzeigen erwähnen KI oder KI-Tools",
-    "n": 214
+    "kicker": "Austria · office & admin internship",
+    "big": "€1.970",
+    "bigSub": "median gross/month (full-time equivalent)",
+    "rows": [
+     [
+      "lower 25%",
+      "€1.170",
+      0.5375057524160147
+     ],
+     [
+      "median",
+      "€1.970",
+      0.9052001840773125
+     ],
+     [
+      "upper 25%",
+      "€2.170",
+      1
+     ]
+    ],
+    "n": 16
    }
   },
   {
    "i": 5,
-   "key": "ai:supply",
-   "text": "KI ist kein IT-Thema mehr.\n\n15% der aktuellen Supply Chain & Einkauf-Stellen in Österreich erwähnen KI oder KI-Tools in der Anzeige. Das sind 12 von 79.\n\nWer \"ChatGPT im Alltag\" in den CV schreibt, sollte Beispiele parat haben.\n\nwhittle.at/?source=x",
+   "key": "skill-en:office",
+   "text": "What 21 current office & admin internship ads in Austria ask for:\n\nExcel: 29%\nPowerPoint: 24%\nAI tools: 19%\nProject management: 10%\n\nIf you learn one thing this semester: Excel.\nDoes your CV match? Check:\n\nwhittle.at/?source=x",
    "card": {
-    "kicker": "Österreich · Supply Chain & Einkauf",
-    "big": "15%",
-    "bigSub": "der Anzeigen erwähnen KI oder KI-Tools",
-    "n": 79
+    "kicker": "Austria · office & admin internships",
+    "title": "Skills the ads ask for",
+    "rows": [
+     [
+      "Excel",
+      "29%",
+      0.2857142857142857
+     ],
+     [
+      "PowerPoint",
+      "24%",
+      0.23809523809523808
+     ],
+     [
+      "AI tools",
+      "19%",
+      0.19047619047619047
+     ],
+     [
+      "Project management",
+      "10%",
+      0.09523809523809523
+     ],
+     [
+      "SAP",
+      "5%",
+      0.047619047619047616
+     ]
+    ],
+    "n": 21
    }
   },
   {
    "i": 6,
-   "key": "wm:finance",
-   "text": "Homeoffice in Finance & Controlling? So sieht es in Wien gerade aus (88 aktuelle Stellen):\n\nHybrid: 84%\nVoll remote: 0%\nNur Büro: 16%\n\nVoll remote bleibt die Ausnahme.\n\nwhittle.at/?source=x",
+   "key": "ai:finance",
+   "text": "KI ist kein IT-Thema mehr.\n\n18% der aktuellen Finance & Controlling-Stellen in Österreich erwähnen KI oder KI-Tools in der Anzeige. Das sind 37 von 210.\n\nWer \"ChatGPT im Alltag\" in den CV schreibt, sollte Beispiele parat haben.\n\nwhittle.at/?source=x",
    "card": {
-    "kicker": "Wien · Finance & Controlling",
-    "title": "Büro, hybrid oder remote?",
-    "rows": [
-     [
-      "Hybrid",
-      "84%",
-      0.8409090909090909
-     ],
-     [
-      "Nur Büro",
-      "16%",
-      0.1590909090909091
-     ],
-     [
-      "Voll remote",
-      "0%",
-      0
-     ]
-    ],
-    "n": 88
+    "kicker": "Österreich · Finance & Controlling",
+    "big": "18%",
+    "bigSub": "der Anzeigen erwähnen KI oder KI-Tools",
+    "n": 210
    }
   },
   {
    "i": 7,
-   "key": "wm-en:marketing",
-   "text": "Remote work in marketing & comms? Here's Vienna right now (42 current roles):\n\nHybrid: 52%\nFully remote: 0%\nOffice only: 48%\n\nFully remote is still the exception.\n\nwhittle.at/?source=x",
+   "key": "wm-en:consulting",
+   "text": "Remote work in consulting, audit & tax? Here's Vienna right now (112 current roles):\n\nHybrid: 65%\nFully remote: 1%\nOffice only: 34%\n\nFully remote is still the exception.\n\nwhittle.at/?source=x",
    "card": {
-    "kicker": "Vienna · marketing & comms",
+    "kicker": "Vienna · consulting, audit & tax",
     "title": "Office, hybrid or remote?",
     "rows": [
      [
       "Hybrid",
-      "52%",
-      0.5238095238095238
+      "65%",
+      0.6517857142857143
      ],
      [
       "Office only",
-      "48%",
-      0.47619047619047616
+      "34%",
+      0.3392857142857143
      ],
      [
       "Fully remote",
-      "0%",
-      0
+      "1%",
+      0.008928571428571428
      ]
     ],
-    "n": 42
+    "n": 112
    }
   },
   {
    "i": 8,
-   "key": "wm-en:data",
-   "text": "Remote work in data & analytics? Here's Vienna right now (44 current roles):\n\nHybrid: 80%\nFully remote: 2%\nOffice only: 18%\n\nFully remote is still the exception.\n\nwhittle.at/?source=x",
+   "key": "wm:sales",
+   "text": "Homeoffice in Sales & Business Development? So sieht es in Wien gerade aus (80 aktuelle Stellen):\n\nHybrid: 71%\nVoll remote: 6%\nNur Büro: 23%\n\nVoll remote bleibt die Ausnahme.\n\nwhittle.at/?source=x",
    "card": {
-    "kicker": "Vienna · data & analytics",
-    "title": "Office, hybrid or remote?",
+    "kicker": "Wien · Sales & Business Development",
+    "title": "Büro, hybrid oder remote?",
     "rows": [
      [
       "Hybrid",
-      "80%",
-      0.7954545454545454
+      "71%",
+      0.7125
      ],
      [
-      "Office only",
-      "18%",
-      0.18181818181818182
+      "Nur Büro",
+      "23%",
+      0.225
      ],
      [
-      "Fully remote",
-      "2%",
-      0.022727272727272728
+      "Voll remote",
+      "6%",
+      0.0625
      ]
     ],
-    "n": 44
+    "n": 80
    }
   },
   {
    "i": 9,
-   "key": "wm-en:it",
-   "text": "Remote work in IT & software? Here's Vienna right now (145 current roles):\n\nHybrid: 78%\nFully remote: 3%\nOffice only: 19%\n\nFully remote is still the exception.\n\nwhittle.at/?source=x",
+   "key": "wm:office",
+   "text": "Homeoffice in Office & Assistenz? So sieht es in Wien gerade aus (56 aktuelle Stellen):\n\nHybrid: 48%\nVoll remote: 2%\nNur Büro: 50%\n\nVoll remote bleibt die Ausnahme.\n\nwhittle.at/?source=x",
    "card": {
-    "kicker": "Vienna · IT & software",
-    "title": "Office, hybrid or remote?",
+    "kicker": "Wien · Office & Assistenz",
+    "title": "Büro, hybrid oder remote?",
     "rows": [
      [
       "Hybrid",
-      "78%",
-      0.7793103448275862
+      "48%",
+      0.48214285714285715
      ],
      [
-      "Office only",
-      "19%",
-      0.18620689655172415
+      "Nur Büro",
+      "50%",
+      0.5
      ],
      [
-      "Fully remote",
-      "3%",
-      0.034482758620689655
+      "Voll remote",
+      "2%",
+      0.017857142857142856
      ]
     ],
-    "n": 145
+    "n": 56
    }
   },
   {
    "i": 10,
-   "key": "count-en:consulting",
-   "text": "Studying in Vienna and looking for something in consulting, audit & tax?\n\nOpen right now: 31 internships & working-student jobs.\n5 don't require fluent German.\n11 are hybrid or remote.\n\nAll in one place:\n\nwhittle.at/?source=x",
+   "key": "count-en:finance",
+   "text": "Studying in Vienna and looking for something in finance & controlling?\n\nOpen right now: 27 internships & working-student jobs.\n4 don't require fluent German.\n23 are hybrid or remote.\n\nAll in one place:\n\nwhittle.at/?source=x",
    "card": {
-    "kicker": "Vienna · consulting, audit & tax",
-    "big": "31",
+    "kicker": "Vienna · finance & controlling",
+    "big": "27",
+    "bigSub": "open internships & working-student jobs",
+    "rows": [
+     [
+      "no fluent German needed",
+      "4",
+      0.14814814814814814
+     ],
+     [
+      "hybrid or remote",
+      "23",
+      0.8518518518518519
+     ]
+    ],
+    "n": 27
+   }
+  },
+  {
+   "i": 11,
+   "key": "count-en:marketing",
+   "text": "Studying in Vienna and looking for something in marketing & comms?\n\nOpen right now: 21 internships & working-student jobs.\n5 don't require fluent German.\n9 are hybrid or remote.\n\nAll in one place:\n\nwhittle.at/?source=x",
+   "card": {
+    "kicker": "Vienna · marketing & comms",
+    "big": "21",
     "bigSub": "open internships & working-student jobs",
     "rows": [
      [
       "no fluent German needed",
       "5",
-      0.16129032258064516
-     ],
-     [
-      "hybrid or remote",
-      "11",
-      0.3548387096774194
-     ]
-    ],
-    "n": 31
-   }
-  },
-  {
-   "i": 11,
-   "key": "count:marketing",
-   "text": "Marketing & Kommunikation studieren und in Wien was Praktisches suchen?\n\nGerade offen: 21 Praktika & Werkstudentenjobs.\n5 davon ohne fließendes Deutsch.\n9 hybrid oder remote.\n\nAlle an einem Ort:\n\nwhittle.at/?source=x",
-   "card": {
-    "kicker": "Wien · Marketing & Kommunikation",
-    "big": "21",
-    "bigSub": "offene Praktika & Werkstudentenjobs",
-    "rows": [
-     [
-      "ohne fließendes Deutsch",
-      "5",
       0.23809523809523808
      ],
      [
-      "hybrid oder remote",
+      "hybrid or remote",
       "9",
       0.42857142857142855
      ]
@@ -278,30 +292,30 @@
   },
   {
    "i": 12,
-   "key": "sal-en:finance",
-   "text": "What does a finance & controlling internship in Austria actually pay?\n\nMedian of 31 current job ads: €2.500 gross/month (full-time equivalent).\nMiddle half: €2.200 to €2.620.\n\nCheck before you apply:\n\nwhittle.at/?source=x",
+   "key": "sal:data",
+   "text": "Was zahlt ein Praktikum in Data & Analytics in Österreich?\n\nMedian aus 24 aktuellen Anzeigen: €2.500 brutto/Monat (auf Vollzeit gerechnet).\nDie mittlere Hälfte liegt zwischen €2.160 und €2.750.\n\nGehalt vor der Bewerbung checken:\n\nwhittle.at/?source=x",
    "card": {
-    "kicker": "Austria · finance & controlling internship",
+    "kicker": "Österreich · Praktikum Data & Analytics",
     "big": "€2.500",
-    "bigSub": "median gross/month (full-time equivalent)",
+    "bigSub": "Median brutto/Monat (Vollzeit gerechnet)",
     "rows": [
      [
-      "lower 25%",
-      "€2.200",
-      0.8400152730049637
+      "untere 25 %",
+      "€2.160",
+      0.7861566484517304
      ],
      [
-      "median",
+      "Median",
       "€2.500",
-      0.9545628102329133
+      0.9107468123861566
      ],
      [
-      "upper 25%",
-      "€2.620",
+      "obere 25 %",
+      "€2.750",
       1
      ]
     ],
-    "n": 31
+    "n": 24
    }
   }
  ]
