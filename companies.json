@@ -2388,5 +2388,376 @@
     "_added": "2026-10-25",
     "employerType": "konzern",
     "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Bundesrechenzentrum (BRZ)",
+    "url": "https://www.brz-jobs.at/",
+    "_added": "2026-10-25",
+    "employerType": "public",
+    "_note": "25.10: karriere Junior/Trainee (Vollzeit) listesinden (5 ilan)."
+  },
+  {
+    "name": "GVS Austria (Goldvorsorge)",
+    "url": "https://www.goldvorsorge.at/jobs",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Junior/Trainee (Vollzeit) listesinden (3 ilan)."
+  },
+  {
+    "name": "Münzer Bioindustrie",
+    "url": "https://muenzer.com/at-de/karriere/jobs",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Junior/Trainee (Vollzeit) listesinden (2 ilan)."
+  },
+  {
+    "name": "Stellantis Austria",
+    "url": "https://www.stellantisandyou.com/at/karriere",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Junior/Trainee (Vollzeit) listesinden (2 ilan)."
+  },
+  {
+    "name": "SPAR ICS",
+    "url": "https://www.spar-ics.com/de/career/work-ics/offene-stellen-all",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Junior/Trainee (Vollzeit) listesinden (2 ilan)."
+  },
+  {
+    "name": "EBCONT",
+    "url": "https://www.ebcont.com/career/jobs",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Junior/Trainee (Vollzeit) listesinden (2 ilan)."
+  },
+  {
+    "name": "fonio",
+    "url": "https://jobs.ashbyhq.com/Fonio",
+    "_added": "2026-10-25",
+    "employerType": "startup",
+    "_note": "25.10: karriere Junior/Trainee (Vollzeit) listesinden (2 ilan)."
+  },
+  {
+    "name": "ViennaEstate Immobilien",
+    "url": "https://www.viennaestate.com/karriere",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Junior/Trainee (Vollzeit) listesinden (1 ilan)."
+  },
+  {
+    "name": "Reisinger & Kornprat Steuerberatung",
+    "url": "https://www.reisinger-kornprat.at/de/kanzlei/karriere/",
+    "_added": "2026-10-25",
+    "employerType": "beratung",
+    "_note": "25.10: karriere Junior/Trainee (Vollzeit) listesinden (1 ilan)."
+  },
+  {
+    "name": "Sparkassen-Prüfungsverband",
+    "url": "https://s-pv.at/jobs/",
+    "_added": "2026-10-25",
+    "employerType": "beratung",
+    "_note": "25.10: karriere Junior/Trainee (Vollzeit) listesinden (1 ilan)."
+  },
+  {
+    "name": "Digiknall",
+    "url": "https://onboarding.digiknall.eu/jobs/",
+    "_added": "2026-10-25",
+    "employerType": "startup",
+    "_note": "25.10: karriere Junior/Trainee (Vollzeit) listesinden (1 ilan)."
+  },
+  {
+    "name": "Apleona Austria",
+    "url": "https://jobs.apleona.com/",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Junior/Trainee (Vollzeit) listesinden (1 ilan)."
+  },
+  {
+    "name": "ANANTARA Holding",
+    "url": "https://anantara.at/de/karriere/",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Junior/Trainee (Vollzeit) listesinden (1 ilan)."
+  },
+  {
+    "name": "BOC Group",
+    "url": "https://career.boc-group.com/de/stellenangebote/",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Junior/Trainee (Vollzeit) listesinden (1 ilan)."
+  },
+  {
+    "name": "GBTEC Austria",
+    "url": "https://www.gbtec.com/de/unternehmen/karriere/stellenangebote/",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Junior/Trainee (Vollzeit) listesinden (1 ilan)."
+  },
+  {
+    "name": "ENERGIEALLIANZ Austria",
+    "url": "https://www.energieallianz.com/wir-die-eaa/karriere/offene-positionen",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Junior/Trainee (Vollzeit) listesinden (1 ilan)."
+  },
+  {
+    "name": "OTTO Immobilien",
+    "url": "https://www.otto.at/karriere",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Junior/Trainee (Vollzeit) listesinden (1 ilan)."
+  },
+  {
+    "name": "Schrack Seconet",
+    "url": "https://careers.schrack-seconet.com/de/offene-stellen",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Junior/Trainee (Vollzeit) listesinden (1 ilan)."
+  },
+  {
+    "name": "LANSKY, GANZGER, GOETH & Partner",
+    "url": "https://www.lansky.at/de/karriere/",
+    "_added": "2026-10-25",
+    "employerType": "beratung",
+    "_note": "25.10: karriere Junior/Trainee (Vollzeit) listesinden (1 ilan)."
+  },
+  {
+    "name": "Anadeo Consulting",
+    "url": "https://anadeo.com/karriere/stellenangebote/",
+    "_added": "2026-10-25",
+    "employerType": "beratung",
+    "_note": "25.10: karriere Junior/Trainee (Vollzeit) listesinden (1 ilan)."
+  },
+  {
+    "name": "United Souvenirs",
+    "url": "https://unitedsouvenirs.eu/karriere/",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Junior/Trainee (Vollzeit) listesinden (1 ilan)."
+  },
+  {
+    "name": "RICOH Austria",
+    "url": "https://www.ricoh.at/ueber-ricoh/karriere/jobs/",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Junior/Trainee (Vollzeit) listesinden (1 ilan)."
+  },
+  {
+    "name": "ecosio",
+    "url": "https://job-boards.eu.greenhouse.io/ecosio",
+    "_added": "2026-10-25",
+    "employerType": "startup",
+    "_note": "25.10: karriere Junior/Trainee (Vollzeit) listesinden (1 ilan)."
+  },
+  {
+    "name": "IMS Austria",
+    "url": "https://ims-austria.com/uber-uns/karriere/",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Junior/Trainee (Vollzeit) listesinden (1 ilan)."
+  },
+  {
+    "name": "IMS Nanofabrication",
+    "url": "https://www.ims.co.at/karriere/jobs/",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Junior/Trainee (Vollzeit) listesinden (1 ilan)."
+  },
+  {
+    "name": "Badger Meter Europe",
+    "url": "https://badgermeter.wd5.myworkdayjobs.com/de-DE/badger_meter_europe",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Junior/Trainee (Vollzeit) listesinden (1 ilan)."
+  },
+  {
+    "name": "GBV HEIM",
+    "url": "https://www.heimbau.at/jobs",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Junior/Trainee (Vollzeit) listesinden (1 ilan)."
+  },
+  {
+    "name": "iSi Group",
+    "url": "https://www.isi.gmbh/karriere",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Junior/Trainee (Vollzeit) listesinden (1 ilan)."
+  },
+  {
+    "name": "Austria Wirtschaftsservice (aws)",
+    "url": "https://www.aws.at/karriere/offene-stellen/",
+    "_added": "2026-10-25",
+    "employerType": "public",
+    "_note": "25.10: karriere Junior/Trainee (Vollzeit) listesinden (1 ilan)."
+  },
+  {
+    "name": "KFA Wien",
+    "url": "https://www.kfawien.at/web/kfa-wien-und-karriere/karriere/offene-stellen",
+    "_added": "2026-10-25",
+    "employerType": "public",
+    "_note": "25.10: karriere Junior/Trainee (Vollzeit) listesinden (1 ilan)."
+  },
+  {
+    "name": "Sabo + Mandl & Tomaschek Immobilien",
+    "url": "https://join.com/companies/smt-immobilien",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Junior/Trainee (Vollzeit) listesinden (1 ilan)."
+  },
+  {
+    "name": "Cushman & Wakefield CBS",
+    "url": "https://cw-cbs.at/careers/",
+    "_added": "2026-10-25",
+    "employerType": "beratung",
+    "_note": "25.10: karriere Junior/Trainee (Vollzeit) listesinden (1 ilan)."
+  },
+  {
+    "name": "ITSV",
+    "url": "https://karriere.itsv.at/go/Jobs-in-Wien/9093255/",
+    "_added": "2026-10-25",
+    "employerType": "public",
+    "_note": "25.10: karriere Junior/Trainee (Vollzeit) listesinden (1 ilan)."
+  },
+  {
+    "name": "Senacor Technologies",
+    "url": "https://jobs.senacor.com/jobs",
+    "_added": "2026-10-25",
+    "employerType": "beratung",
+    "_note": "25.10: karriere Junior/Trainee (Vollzeit) listesinden (1 ilan)."
+  },
+  {
+    "name": "Swietelsky",
+    "url": "https://www.wir-swietelskys.at/stellenanzeigen/",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Junior/Trainee (Vollzeit) listesinden (1 ilan)."
+  },
+  {
+    "name": "Holzkern",
+    "url": "https://holzkern.jobs.personio.de/",
+    "_added": "2026-10-25",
+    "employerType": "startup",
+    "_note": "25.10: karriere Junior/Trainee (Vollzeit) listesinden (1 ilan)."
+  },
+  {
+    "name": "STILL Österreich",
+    "url": "https://www.still.at/karriere/stellenangebote.html",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Junior/Trainee (Vollzeit) listesinden (1 ilan)."
+  },
+  {
+    "name": "BearingPoint Österreich",
+    "url": "https://www.bearingpoint.com/de-at/karriere/stellenangebote/?country=AT",
+    "_added": "2026-10-25",
+    "employerType": "beratung",
+    "_note": "25.10: karriere Junior/Trainee (Vollzeit) listesinden (1 ilan)."
+  },
+  {
+    "name": "METRO Österreich",
+    "url": "https://karriere.metro.at/Jobs",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Junior/Trainee (Vollzeit) listesinden (1 ilan)."
+  },
+  {
+    "name": "Rhomberg Sersa",
+    "url": "https://jobs.rhomberg-sersa.com/",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Junior/Trainee (Vollzeit) listesinden (1 ilan)."
+  },
+  {
+    "name": "Croma-Pharma",
+    "url": "https://www.cromapharma.com/at/ueber-croma/karriere/jobs/",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Junior/Trainee (Vollzeit) listesinden (1 ilan)."
+  },
+  {
+    "name": "Coca-Cola HBC Austria",
+    "url": "https://at.coca-colahellenic.com/de/working-with-us/career-opportunities",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Junior/Trainee (Vollzeit) listesinden (1 ilan)."
+  },
+  {
+    "name": "ORF",
+    "url": "https://karriere.orf.at/",
+    "_added": "2026-10-25",
+    "employerType": "public",
+    "_note": "25.10: karriere Junior/Trainee (Vollzeit) listesinden (1 ilan)."
+  },
+  {
+    "name": "Dr. Richard Gruppe",
+    "url": "https://recruiting.richard.at/",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Junior/Trainee (Vollzeit) listesinden (1 ilan)."
+  },
+  {
+    "name": "icm Immobilien Comfort Management",
+    "url": "https://www.icm-gmbh.at/jobs/",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Junior/Trainee (Vollzeit) listesinden (1 ilan)."
+  },
+  {
+    "name": "HealthCareConsulting Group",
+    "url": "https://www.hccgroup.at/jobs/",
+    "_added": "2026-10-25",
+    "employerType": "beratung",
+    "_note": "25.10: karriere Junior/Trainee (Vollzeit) listesinden (1 ilan)."
+  },
+  {
+    "name": "HARIBO Österreich",
+    "url": "https://www.haribo.com/de-at/karriere/jobboerse",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Junior/Trainee (Vollzeit) listesinden (1 ilan)."
+  },
+  {
+    "name": "Servoking",
+    "url": "https://join.com/companies/servoking",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Junior/Trainee (Vollzeit) listesinden (1 ilan)."
+  },
+  {
+    "name": "IW Group",
+    "url": "https://ats.rippling.com/de-DE/iwgroup/jobs",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Junior/Trainee (Vollzeit) listesinden (1 ilan)."
+  },
+  {
+    "name": "SALESIANER MIETTEX",
+    "url": "https://careers.smartrecruiters.com/SalesianerMiettex",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Junior/Trainee (Vollzeit) listesinden (1 ilan)."
+  },
+  {
+    "name": "Techem Österreich",
+    "url": "https://www.techem.com/at/de/karriere",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Junior/Trainee (Vollzeit) listesinden (1 ilan)."
+  },
+  {
+    "name": "LIMBERG Immobilien",
+    "url": "https://www.limberg.at/karriere/",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Junior/Trainee (Vollzeit) listesinden (1 ilan)."
+  },
+  {
+    "name": "Grossmann & Kaswurm Immobilien",
+    "url": "https://join.com/companies/grossmann-kaswurmat",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Junior/Trainee (Vollzeit) listesinden (1 ilan)."
   }
 ]
