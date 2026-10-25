@@ -24,11 +24,15 @@ const euroInText = it => /€|\bEUR\b|\bEuro\b/i.test((it._salaryText || '') + '
 
 const fields = ['deg', 'de', 'en', 'exp'];
 const cov = Object.fromEntries(fields.map(k => [k, { known: 0, evidence: 0 }]));
-let sal = 0, eur = 0, hrs = 0, emp = 0, shortText = 0;
+let sal = 0, eur = 0, hrs = 0, emp = 0, shortText = 0, time = 0, nonLehre = 0;
+// 25.10: "Arbeitszeit bekannt" = Stundenzahl ODER Voll-/Teilzeit/geringfügig (Lehre zählt nicht mit – für Studierende irrelevant)
+const TIME_EMP = new Set(['vollzeit', 'teilzeit', 'geringfuegig']);
 const per = {};
 for(const it of items){
   for(const k of fields){ if(known(it, k)) cov[k].known++; if(it.evidence && it.evidence[k]) cov[k].evidence++; }
   const s = hasSalaryText(it), e = euroInText(it), h = hasHours(it), L = (it._rawText || '').length;
+  const isLehre = Array.isArray(it.emp) && it.emp.includes('lehre');
+  if(!isLehre){ nonLehre++; if(h || (Array.isArray(it.emp) && it.emp.some(x => TIME_EMP.has(x)))) time++; }
   if(s) sal++; if(e) eur++; if(h) hrs++; if(Array.isArray(it.emp) && it.emp.length && !est(it, 'emp')) emp++; if(L < 600) shortText++;
   const c = co(it); per[c] = per[c] || { n: 0, sal: 0, hrs: 0, len: 0, exp: 0 };
   per[c].n++; if(s) per[c].sal++; if(h) per[c].hrs++; per[c].len += L; if(known(it, 'exp')) per[c].exp++;
@@ -52,7 +56,8 @@ const md = [
   '| Alan | Değer var | Kural kanıtı (evidence) var |', '|---|---|---|',
   ...fields.map(k => `| ${{ deg: 'Abschluss', de: 'Deutsch', en: 'Englisch', exp: 'Erfahrung' }[k]} | ${pct(cov[k].known)} | ${pct(cov[k].evidence)} |`),
   `| Maaş cümlesi bulundu | ${pct(sal)} | metinde € geçen: ${pct(eur)} |`,
-  `| Wochenstunden | ${pct(hrs)} | |`,
+  `| Wochenstunden (Zahl) | ${pct(hrs)} | |`,
+  `| Arbeitszeit bekannt (Zahl oder Voll-/Teilzeit, ohne Lehre) | ${pct(time, nonLehre)} | |`,
   `| Beschäftigungsart (emp) | ${pct(emp)} | |`,
   `| Kısa metin (<600 karakter, fetcher detay sayfasını açmıyor olabilir) | ${pct(shortText)} | |`, '',
   '## En kötü şirketler (≥5 ilan)', '',
