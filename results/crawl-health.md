@@ -1,18 +1,17 @@
-# Crawl sağlık raporu — 2026-10-24
+# Crawl sağlık raporu — 2026-10-25
 
-Toplam ilan: **1371** (önceki dosya 2026-10-23: 1357) · taranan şirket: 182
+Toplam ilan: **1411** (önceki dosya 2026-10-24: 1371) · taranan şirket: 208
 
 ## Bugün 0 ilan getiren (önceden ilanı vardı) (1)
 
-- Salzburg AG: bugün 0 (son 6 günün en iyisi 2026-10-22: 31)
+- Raiffeisen (Wien): bugün 0 (son 6 günün en iyisi 2026-10-19: 1)
 
 ## İlan sayısı sert düşen (0)
 
 - yok
 
-## Metni okunamayan (2)
+## Metni okunamayan (0)
 
-- Volkshilfe Wien: 9/14 ilanda metin boş ya da çok kısa
-- Julius Blum: 51/51 ilanda metin boş ya da çok kısa
+- yok
 
 _0 ilan getiren şirketlerin ilanları sitede kapanmıyor; sadece yenileri gelmiyor._
