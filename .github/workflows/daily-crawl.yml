@@ -28,6 +28,16 @@ jobs:
       - name: Repoyu çek
         uses: actions/checkout@v4
 
+      # 25.10: önceki günlerin combined dosyaları (merge işinin cache'i) parçalara da geri yükleniyor →
+      # parser son 7 günde açılmış ilan linklerini tanıyor (KNOWN_LINKS) ve detay sayfasını tekrar açmıyor.
+      # Bu olmadan parçalar her gün her ilanı baştan açıyordu (dakikaların çoğu buradan gidiyordu).
+      - name: Önceki combined dosyalarını geri yükle (bilinen ilanlar)
+        uses: actions/cache/restore@v4
+        with:
+          path: results/whittle-import-*-combined.json
+          key: combined-none
+          restore-keys: combined-
+
       - name: Node.js kur
         uses: actions/setup-node@v4
         with:
@@ -93,6 +103,17 @@ jobs:
       - name: Repoyu çek
         if: steps.day.outputs.run == '1'
         uses: actions/checkout@v4
+
+      # 25.10: önceki günlerin combined dosyaları (merge işinin cache'i) parçalara da geri yükleniyor →
+      # parser son 7 günde açılmış ilan linklerini tanıyor (KNOWN_LINKS) ve detay sayfasını tekrar açmıyor.
+      # Bu olmadan parçalar her gün her ilanı baştan açıyordu (dakikaların çoğu buradan gidiyordu).
+      - name: Önceki combined dosyalarını geri yükle (bilinen ilanlar)
+        if: steps.day.outputs.run == '1'
+        uses: actions/cache/restore@v4
+        with:
+          path: results/whittle-import-*-combined.json
+          key: combined-none
+          restore-keys: combined-
 
       - name: Node.js kur
         if: steps.day.outputs.run == '1'

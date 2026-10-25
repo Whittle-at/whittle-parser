@@ -4014,6 +4014,7 @@ async function runCrawl(listingUrl, cityFilter, opts = {}){
   // vardı ama bu, TEK bir şirketin içindeki ilanlar arasında hiç fark etmiyordu.
   const browser = await puppeteer.launch({ headless: 'new', args: ['--no-sandbox', '--disable-setuid-sandbox'] });
   const all = [];
+  const crawlStats = { reused: 0, opened: 0 };
   try{
     let jobLinks;
     if(opts.sitemap) jobLinks = await sitemapLinks(opts.sitemap, opts.linkPattern || '');
@@ -4067,6 +4068,7 @@ async function runCrawl(listingUrl, cityFilter, opts = {}){
       }
       await new Promise(r => setTimeout(r, 400)); // nezaket: siteyi arka arkaya çok hızlı yormayalım
     }
+    crawlStats.reused = reused; crawlStats.opened = toVisit.length - reused;
     if(reused) console.log(`\n♻️  ${reused}/${toVisit.length} ilan son ${REFETCH_DAYS} günde zaten açılmıştı — detay sayfası tekrar açılmadı.`);
   } finally {
     await browser.close();
@@ -4099,7 +4101,7 @@ async function runCrawl(listingUrl, cityFilter, opts = {}){
   const unclear = deduped.length - junior.length - excluded.length;
   console.log(`\n📊 Kıdem tahmini (TAHMİN): ${junior.length} junior/staj görünümlü, ${excluded.length} senior/kıdemli görünümlü (paste bloğundan çıkarıldı), ${unclear} belirsiz (bloğa dahil).`);
   printExcludedSenior(excluded);
-  return { items: deduped };
+  return { items: deduped, reused: crawlStats.reused, opened: crawlStats.opened };
 }
 
 // ---- AI soft-field katmanı (Eren onayladı) ----
@@ -4591,6 +4593,7 @@ async function runCrawlBatch(configFile, shard){
   }
 
   async function processCompany(company, i){
+    const t0 = Date.now(); // 25.10: şirket başına süre (GitHub dakikası nereye gidiyor) → perCompany.ms
     console.log(`\n${'#'.repeat(60)}\n[${i+1}/${config.length}] ${company.name || company.url}\n${'#'.repeat(60)}`);
     try{
       // DÜZELTME (24 Eylül — BMW/Bain'in --crawl-batch modunda hep 0 dönmesinin GERÇEK sebebi):
@@ -4671,10 +4674,10 @@ async function runCrawlBatch(configFile, shard){
       // burada yapılan zenginleştirme aşağıdaki spread'e de yansıyor.
       await enrichFieldsForItems(companyIncluded, aiCache, aiBudget, aiExtractFields, learnedRules);
       all.push(...itemsX);
-      perCompany[i] = { name: company.name || company.url, count: companyIncluded.length, rawCount: items.length, ok: true };
+      perCompany[i] = { name: company.name || company.url, count: companyIncluded.length, rawCount: items.length, ok: true, ms: Date.now() - t0, mode: directAts ? directAts.type : 'browser', reused: (result && result.reused) || 0, opened: (result && result.opened) || 0 };
     }catch(e){
       console.log(`⚠️  ${company.name || company.url} işlenirken hata: ${e.message} — atlanıp bir sonraki şirkete geçiliyor.`);
-      perCompany[i] = { name: company.name || company.url, count: 0, rawCount: 0, ok: false, error: e.message };
+      perCompany[i] = { name: company.name || company.url, count: 0, rawCount: 0, ok: false, error: e.message, ms: Date.now() - t0 };
     }
   }
 
@@ -4690,7 +4693,7 @@ async function runCrawlBatch(configFile, shard){
   }
 
   console.log(`\n${'='.repeat(60)}\n✅ TOPLU-CRAWL SONUCU (${config.length} şirket):\n`);
-  perCompany.forEach(c => c && console.log(`  ${c.ok ? '✅' : '❌'} ${c.name}: ${c.count} ilan (${c.rawCount} link işlendi, ${c.rawCount-c.count} elendi: senior / genel başvuru / ilan olmayan sayfa)${c.error ? ` (hata: ${c.error})` : ''}`));
+  perCompany.forEach(c => c && console.log(`  ${c.ok ? '✅' : '❌'} ${c.name} [${Math.round((c.ms||0)/1000)} sn, ${c.mode||'?'}${c.opened!=null && c.mode==='browser' ? `, ${c.opened} açıldı/${c.reused} önbellek` : ''}]: ${c.count} ilan (${c.rawCount} link işlendi, ${c.rawCount-c.count} elendi: senior / genel başvuru / ilan olmayan sayfa)${c.error ? ` (hata: ${c.error})` : ''}`));
   saveBudget(); saveQueue();
   console.log(`\n🤖 AI katmanı: bu taramada ${batchMode ? 0 : (MAX_AI_THIS_RUN - usedToday) - aiBudget.remaining} çağrı yapıldı${batchMode ? ` (batch modu: ${aiBudget.queue.length} ilan kuyruğa yazıldı, gönderimi merge yapıyor)` : ''}; günlük kota: ${usedToday + (batchMode ? 0 : Math.max(0, (MAX_AI_THIS_RUN - usedToday) - aiBudget.remaining))}/${MAX_AI_THIS_RUN}. 🧠 Öğrenilmiş kurallarla AI'sız doldurulan alan: ${aiBudget.learnedHits || 0}.`);
   // Paralel parçalarda rapor merge-results.js'te (birleşmiş cache'ten) yazılıyor.
