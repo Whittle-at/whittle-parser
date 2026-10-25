@@ -5,179 +5,45 @@
  "posts": [
   {
    "i": 1,
-   "key": "sal-en:sales",
-   "text": "What does a sales & BD internship in Austria actually pay?\n\nMedian of 19 current job ads: €2.690 gross/month (full-time equivalent).\nMiddle half: €2.500 to €3.340.\n\nCheck before you apply:\n\nwhittle.at/?source=x",
+   "key": "ai:sales",
+   "text": "KI ist kein IT-Thema mehr.\n\n14% der aktuellen Sales & Business Development-Stellen in Österreich erwähnen KI oder KI-Tools in der Anzeige. Das sind 36 von 250.\n\nWer \"ChatGPT im Alltag\" in den CV schreibt, sollte Beispiele parat haben.\n\nwhittle.at/?source=x",
    "card": {
-    "kicker": "Austria · sales & BD internship",
-    "big": "€2.690",
-    "bigSub": "median gross/month (full-time equivalent)",
-    "rows": [
-     [
-      "lower 25%",
-      "€2.500",
-      0.7485029940119761
-     ],
-     [
-      "median",
-      "€2.690",
-      0.8053892215568862
-     ],
-     [
-      "upper 25%",
-      "€3.340",
-      1
-     ]
-    ],
-    "n": 19
+    "kicker": "Österreich · Sales & Business Development",
+    "big": "14%",
+    "bigSub": "der Anzeigen erwähnen KI oder KI-Tools",
+    "n": 250
    }
   },
   {
    "i": 2,
-   "key": "skill-en:data",
-   "text": "What 29 current data & analytics internship ads in Austria ask for:\n\nSQL: 62%\nPython: 41%\nExcel: 34%\nAI tools: 31%\n\nIf you learn one thing this semester: SQL.\nDoes your CV match? Check:\n\nwhittle.at/?source=x",
+   "key": "sal-en:marketing",
+   "text": "What does a marketing & comms internship in Austria actually pay?\n\nMedian of 15 current job ads: €2.620 gross/month (full-time equivalent).\nMiddle half: €2.140 to €2.750.\n\nCheck before you apply:\n\nwhittle.at/?source=x",
    "card": {
-    "kicker": "Austria · data & analytics internships",
-    "title": "Skills the ads ask for",
+    "kicker": "Austria · marketing & comms internship",
+    "big": "€2.620",
+    "bigSub": "median gross/month (full-time equivalent)",
     "rows": [
      [
-      "SQL",
-      "62%",
-      0.6206896551724138
+      "lower 25%",
+      "€2.140",
+      0.7806921675774134
      ],
      [
-      "Python",
-      "41%",
-      0.41379310344827586
+      "median",
+      "€2.620",
+      0.9540983606557377
      ],
      [
-      "Excel",
-      "34%",
-      0.3448275862068966
-     ],
-     [
-      "AI tools",
-      "31%",
-      0.3103448275862069
-     ],
-     [
-      "Power BI",
-      "17%",
-      0.1724137931034483
+      "upper 25%",
+      "€2.750",
+      1
      ]
     ],
-    "n": 29
+    "n": 15
    }
   },
   {
    "i": 3,
-   "key": "skill:it",
-   "text": "Was in 18 aktuellen IT & Software-Praktika in Österreich verlangt wird:\n\nExcel: 28%\nKI-Tools: 28%\nPython: 22%\nPowerPoint: 22%\n\nWenn du dieses Semester nur eins lernst: Excel.\nPasst dein CV? Check:\n\nwhittle.at/?source=x",
-   "card": {
-    "kicker": "Österreich · IT & Software-Praktika",
-    "title": "Diese Skills stehen in den Anzeigen",
-    "rows": [
-     [
-      "Excel",
-      "28%",
-      0.2777777777777778
-     ],
-     [
-      "KI-Tools",
-      "28%",
-      0.2777777777777778
-     ],
-     [
-      "Python",
-      "22%",
-      0.2222222222222222
-     ],
-     [
-      "PowerPoint",
-      "22%",
-      0.2222222222222222
-     ],
-     [
-      "Power BI",
-      "17%",
-      0.16666666666666666
-     ]
-    ],
-    "n": 18
-   }
-  },
-  {
-   "i": 4,
-   "key": "ai-en:consulting",
-   "text": "AI isn't just an IT topic anymore.\n\n40% of current consulting, audit & tax job ads in Austria mention AI or AI tools – 84 out of 210.\n\nIf your CV says \"familiar with ChatGPT\", have a concrete example ready.\n\nwhittle.at/?source=x",
-   "card": {
-    "kicker": "Austria · consulting, audit & tax",
-    "big": "40%",
-    "bigSub": "of ads mention AI or AI tools",
-    "n": 210
-   }
-  },
-  {
-   "i": 5,
-   "key": "ai:marketing",
-   "text": "KI ist kein IT-Thema mehr.\n\n23% der aktuellen Marketing & Kommunikation-Stellen in Österreich erwähnen KI oder KI-Tools in der Anzeige. Das sind 19 von 82.\n\nWer \"ChatGPT im Alltag\" in den CV schreibt, sollte Beispiele parat haben.\n\nwhittle.at/?source=x",
-   "card": {
-    "kicker": "Österreich · Marketing & Kommunikation",
-    "big": "23%",
-    "bigSub": "der Anzeigen erwähnen KI oder KI-Tools",
-    "n": 82
-   }
-  },
-  {
-   "i": 6,
-   "key": "ai:sales",
-   "text": "KI ist kein IT-Thema mehr.\n\n15% der aktuellen Sales & Business Development-Stellen in Österreich erwähnen KI oder KI-Tools in der Anzeige. Das sind 36 von 248.\n\nWer \"ChatGPT im Alltag\" in den CV schreibt, sollte Beispiele parat haben.\n\nwhittle.at/?source=x",
-   "card": {
-    "kicker": "Österreich · Sales & Business Development",
-    "big": "15%",
-    "bigSub": "der Anzeigen erwähnen KI oder KI-Tools",
-    "n": 248
-   }
-  },
-  {
-   "i": 7,
-   "key": "ai:office",
-   "text": "KI ist kein IT-Thema mehr.\n\n10% der aktuellen Office & Assistenz-Stellen in Österreich erwähnen KI oder KI-Tools in der Anzeige. Das sind 12 von 116.\n\nWer \"ChatGPT im Alltag\" in den CV schreibt, sollte Beispiele parat haben.\n\nwhittle.at/?source=x",
-   "card": {
-    "kicker": "Österreich · Office & Assistenz",
-    "big": "10%",
-    "bigSub": "der Anzeigen erwähnen KI oder KI-Tools",
-    "n": 116
-   }
-  },
-  {
-   "i": 8,
-   "key": "wm-en:finance",
-   "text": "Remote work in finance & controlling? Here's Vienna right now (88 current roles):\n\nHybrid: 86%\nFully remote: 0%\nOffice only: 14%\n\nFully remote is still the exception.\n\nwhittle.at/?source=x",
-   "card": {
-    "kicker": "Vienna · finance & controlling",
-    "title": "Office, hybrid or remote?",
-    "rows": [
-     [
-      "Hybrid",
-      "86%",
-      0.8636363636363636
-     ],
-     [
-      "Office only",
-      "14%",
-      0.13636363636363635
-     ],
-     [
-      "Fully remote",
-      "0%",
-      0
-     ]
-    ],
-    "n": 88
-   }
-  },
-  {
-   "i": 9,
    "key": "wm:hr",
    "text": "Homeoffice in HR? So sieht es in Wien gerade aus (22 aktuelle Stellen):\n\nHybrid: 86%\nVoll remote: 0%\nNur Büro: 14%\n\nVoll remote bleibt die Ausnahme.\n\nwhittle.at/?source=x",
    "card": {
@@ -204,9 +70,46 @@
    }
   },
   {
-   "i": 10,
+   "i": 4,
+   "key": "skill-en:data",
+   "text": "What 28 current data & analytics internship ads in Austria ask for:\n\nSQL: 64%\nPython: 43%\nAI tools: 36%\nExcel: 32%\n\nIf you learn one thing this semester: SQL.\nDoes your CV match? Check:\n\nwhittle.at/?source=x",
+   "card": {
+    "kicker": "Austria · data & analytics internships",
+    "title": "Skills the ads ask for",
+    "rows": [
+     [
+      "SQL",
+      "64%",
+      0.6428571428571429
+     ],
+     [
+      "Python",
+      "43%",
+      0.42857142857142855
+     ],
+     [
+      "AI tools",
+      "36%",
+      0.35714285714285715
+     ],
+     [
+      "Excel",
+      "32%",
+      0.32142857142857145
+     ],
+     [
+      "Power BI",
+      "18%",
+      0.17857142857142858
+     ]
+    ],
+    "n": 28
+   }
+  },
+  {
+   "i": 5,
    "key": "sal:consulting",
-   "text": "Was zahlt ein Praktikum in Consulting, Audit & Tax in Österreich?\n\nMedian aus 20 aktuellen Anzeigen: €2.200 brutto/Monat (auf Vollzeit gerechnet).\nDie mittlere Hälfte liegt zwischen €1.600 und €2.600.\n\nGehalt vor der Bewerbung checken:\n\nwhittle.at/?source=x",
+   "text": "Was zahlt ein Praktikum in Consulting, Audit & Tax in Österreich?\n\nMedian aus 21 aktuellen Anzeigen: €2.200 brutto/Monat (auf Vollzeit gerechnet).\nDie mittlere Hälfte liegt zwischen €1.600 und €2.600.\n\nGehalt vor der Bewerbung checken:\n\nwhittle.at/?source=x",
    "card": {
     "kicker": "Österreich · Praktikum Consulting, Audit & Tax",
     "big": "€2.200",
@@ -228,39 +131,38 @@
       1
      ]
     ],
-    "n": 20
+    "n": 21
    }
   },
   {
-   "i": 11,
-   "key": "sal-en:marketing",
-   "text": "What does a marketing & comms internship in Austria actually pay?\n\nMedian of 16 current job ads: €2.620 gross/month (full-time equivalent).\nMiddle half: €2.140 to €2.750.\n\nCheck before you apply:\n\nwhittle.at/?source=x",
+   "i": 6,
+   "key": "wm-en:finance",
+   "text": "Remote work in finance & controlling? Here's Vienna right now (90 current roles):\n\nHybrid: 87%\nFully remote: 0%\nOffice only: 13%\n\nFully remote is still the exception.\n\nwhittle.at/?source=x",
    "card": {
-    "kicker": "Austria · marketing & comms internship",
-    "big": "€2.620",
-    "bigSub": "median gross/month (full-time equivalent)",
+    "kicker": "Vienna · finance & controlling",
+    "title": "Office, hybrid or remote?",
     "rows": [
      [
-      "lower 25%",
-      "€2.140",
-      0.7806921675774134
+      "Hybrid",
+      "87%",
+      0.8666666666666667
      ],
      [
-      "median",
-      "€2.620",
-      0.9540983606557377
+      "Office only",
+      "13%",
+      0.13333333333333333
      ],
      [
-      "upper 25%",
-      "€2.750",
-      1
+      "Fully remote",
+      "0%",
+      0
      ]
     ],
-    "n": 16
+    "n": 90
    }
   },
   {
-   "i": 12,
+   "i": 7,
    "key": "skill:finance",
    "text": "Was in 31 aktuellen Finance & Controlling-Praktika in Österreich verlangt wird:\n\nExcel: 55%\nPowerPoint: 35%\nKI-Tools: 23%\nPower BI: 13%\n\nWenn du dieses Semester nur eins lernst: Excel.\nPasst dein CV? Check:\n\nwhittle.at/?source=x",
    "card": {
@@ -294,6 +196,104 @@
      ]
     ],
     "n": 31
+   }
+  },
+  {
+   "i": 8,
+   "key": "sal-en:sales",
+   "text": "What does a sales & BD internship in Austria actually pay?\n\nMedian of 14 current job ads: €2.530 gross/month (full-time equivalent).\nMiddle half: €2.310 to €2.690.\n\nCheck before you apply:\n\nwhittle.at/?source=x",
+   "card": {
+    "kicker": "Austria · sales & BD internship",
+    "big": "€2.530",
+    "bigSub": "median gross/month (full-time equivalent)",
+    "rows": [
+     [
+      "lower 25%",
+      "€2.310",
+      0.8576208178438661
+     ],
+     [
+      "median",
+      "€2.530",
+      0.9397769516728625
+     ],
+     [
+      "upper 25%",
+      "€2.690",
+      1
+     ]
+    ],
+    "n": 14
+   }
+  },
+  {
+   "i": 9,
+   "key": "ai-en:consulting",
+   "text": "AI isn't just an IT topic anymore.\n\n40% of current consulting, audit & tax job ads in Austria mention AI or AI tools – 84 out of 212.\n\nIf your CV says \"familiar with ChatGPT\", have a concrete example ready.\n\nwhittle.at/?source=x",
+   "card": {
+    "kicker": "Austria · consulting, audit & tax",
+    "big": "40%",
+    "bigSub": "of ads mention AI or AI tools",
+    "n": 212
+   }
+  },
+  {
+   "i": 10,
+   "key": "ai:marketing",
+   "text": "KI ist kein IT-Thema mehr.\n\n23% der aktuellen Marketing & Kommunikation-Stellen in Österreich erwähnen KI oder KI-Tools in der Anzeige. Das sind 19 von 82.\n\nWer \"ChatGPT im Alltag\" in den CV schreibt, sollte Beispiele parat haben.\n\nwhittle.at/?source=x",
+   "card": {
+    "kicker": "Österreich · Marketing & Kommunikation",
+    "big": "23%",
+    "bigSub": "der Anzeigen erwähnen KI oder KI-Tools",
+    "n": 82
+   }
+  },
+  {
+   "i": 11,
+   "key": "skill:it",
+   "text": "Was in 19 aktuellen IT & Software-Praktika in Österreich verlangt wird:\n\nExcel: 26%\nKI-Tools: 26%\nPython: 21%\nPowerPoint: 21%\n\nWenn du dieses Semester nur eins lernst: Excel.\nPasst dein CV? Check:\n\nwhittle.at/?source=x",
+   "card": {
+    "kicker": "Österreich · IT & Software-Praktika",
+    "title": "Diese Skills stehen in den Anzeigen",
+    "rows": [
+     [
+      "Excel",
+      "26%",
+      0.2631578947368421
+     ],
+     [
+      "KI-Tools",
+      "26%",
+      0.2631578947368421
+     ],
+     [
+      "Python",
+      "21%",
+      0.21052631578947367
+     ],
+     [
+      "PowerPoint",
+      "21%",
+      0.21052631578947367
+     ],
+     [
+      "Power BI",
+      "16%",
+      0.15789473684210525
+     ]
+    ],
+    "n": 19
+   }
+  },
+  {
+   "i": 12,
+   "key": "ai:office",
+   "text": "KI ist kein IT-Thema mehr.\n\n12% der aktuellen Office & Assistenz-Stellen in Österreich erwähnen KI oder KI-Tools in der Anzeige. Das sind 13 von 113.\n\nWer \"ChatGPT im Alltag\" in den CV schreibt, sollte Beispiele parat haben.\n\nwhittle.at/?source=x",
+   "card": {
+    "kicker": "Österreich · Office & Assistenz",
+    "big": "12%",
+    "bigSub": "der Anzeigen erwähnen KI oder KI-Tools",
+    "n": 113
    }
   }
  ]

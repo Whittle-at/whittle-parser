@@ -1,11 +1,11 @@
 {
-  "usd": 5.3063,
-  "cat": 1.2446,
+  "usd": 5.488,
+  "cat": 1.2509,
   "brief": 1.5147,
   "pending": {
-    "msgbatch_01FZYCh9gtGWKHjMov7wQ18N": {
-      "f": 0.1686,
-      "c": 0.0056,
+    "msgbatch_014GkgUN7WZEwJgK8BG5pH4z": {
+      "f": 0.143,
+      "c": 0.2331,
       "b": 0
     }
   },
