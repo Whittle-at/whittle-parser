@@ -1268,5 +1268,1125 @@
     "_added": "2026-10-25",
     "employerType": "konzern",
     "_note": "25.10: rexx, JSON-LD (htmlld). Çoğu inşaat/işçi ilanı; Ferialpraktikum için eklendi."
+  },
+  {
+    "name": "TPA Austria",
+    "url": "https://karriere.tpa-group.at/karriere/",
+    "_added": "2026-10-25",
+    "employerType": "beratung",
+    "_note": "25.10: karriere Teilzeit listesinden (8 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "SCHULMEISTER Management Consulting GmbH",
+    "url": "https://www.schulmeister-consulting.com/de/fuer-bewerberinnen/jobs-finden",
+    "_added": "2026-10-25",
+    "employerType": "beratung",
+    "_note": "25.10: karriere Teilzeit listesinden (7 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Ambulatorium Döbling",
+    "url": "http://www.ambulatorium-doebling.at/de/ueber-uns/jobs-und-bewerbung",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (7 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Rudolfinerhaus Privatklinik GmbH",
+    "url": "https://www.rudolfinerhaus.at/karriere/",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (6 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Barmherzige Brüder Österreich",
+    "url": "https://www.barmherzige-brueder.at/portal/karriere/jobs",
+    "_added": "2026-10-25",
+    "employerType": "ngo",
+    "_note": "25.10: karriere Teilzeit listesinden (5 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "LBG Österreich GmbH Wirtschaftsprüfung & Steuerberatung",
+    "url": "https://www.lbg.at/karriere/jobs_freie_offene_stellen/index_ger.html",
+    "_added": "2026-10-25",
+    "employerType": "beratung",
+    "_note": "25.10: karriere Teilzeit listesinden (5 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Medizinische Universität Wien",
+    "url": "https://www.meduniwien.ac.at/web/karriere/offene-stellen/",
+    "_added": "2026-10-25",
+    "employerType": "public",
+    "_note": "25.10: karriere Teilzeit listesinden (5 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Maschinenring Österreich",
+    "url": "https://www.maschinenring.at/jobs",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (4 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "magdas Caritas Services GmbH",
+    "url": "https://jobs.magdas.at/Jobs",
+    "_added": "2026-10-25",
+    "employerType": "ngo",
+    "_note": "25.10: karriere Teilzeit listesinden (4 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Österreichisches Rotes Kreuz - Generalsekretariat",
+    "url": "https://www.roteskreuz.at/jobs-und-karriere-im-generalsekretariat",
+    "_added": "2026-10-25",
+    "employerType": "ngo",
+    "_note": "25.10: karriere Teilzeit listesinden (4 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "WERNER CONSULT Ziviltechniker GmbH",
+    "url": "https://www.wernerconsult.com/karriere-3/",
+    "_added": "2026-10-25",
+    "employerType": "beratung",
+    "_note": "25.10: karriere Teilzeit listesinden (3 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "BOKU University",
+    "url": "https://boku.ac.at/mitteilungsblatt/jobs/",
+    "_added": "2026-10-25",
+    "employerType": "public",
+    "_note": "25.10: karriere Teilzeit listesinden (3 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Hochschule für Angewandte Wissenschaften Campus Wien",
+    "url": "https://www.hcw.ac.at/karriere/stellenangebote.html",
+    "_added": "2026-10-25",
+    "employerType": "public",
+    "_note": "25.10: karriere Teilzeit listesinden (3 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Joseph Brot",
+    "url": "https://www.joseph.co.at/karriere/",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (3 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Ecovis Austria Wirtschaftsprüfungs- und Steuerberatungsgesellschaft m.b.H.",
+    "url": "https://karriere.ecovis.com/jobs",
+    "_added": "2026-10-25",
+    "employerType": "beratung",
+    "_note": "25.10: karriere Teilzeit listesinden (3 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "IMV Immobilien Management GmbH",
+    "url": "https://imv.co.at/karriere/",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (3 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "FHWien der WKW",
+    "url": "https://www.fh-wien.ac.at/fachhochschule/jobs/jobangebote/",
+    "_added": "2026-10-25",
+    "employerType": "public",
+    "_note": "25.10: karriere Teilzeit listesinden (2 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Bank Gutmann AG",
+    "url": "https://www.gutmann.at/de/offene-stellen",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (2 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Swiss Life Select Österreich GmbH",
+    "url": "https://www.swisslife.at/de/home/ueber-uns/jobs-karriere.html",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (2 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "CMS Reich-Rohrwig Hainz Rechtsanwälte GmbH",
+    "url": "https://cms.law/de/aut/offene-stellen/cms-reich-rohrwig-hainz",
+    "_added": "2026-10-25",
+    "employerType": "beratung",
+    "_note": "25.10: karriere Teilzeit listesinden (2 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "PMC International GmbH",
+    "url": "https://pmc.at/jobs/",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (2 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "WTH Steuerberatung KG",
+    "url": "https://wth-seekirchen.at/jobs/",
+    "_added": "2026-10-25",
+    "employerType": "beratung",
+    "_note": "25.10: karriere Teilzeit listesinden (2 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "FRANZISKUS SPITAL GMBH",
+    "url": "https://karriere.franziskusspital.at/Jobs",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (2 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Neuroth",
+    "url": "https://career.neuroth.com/de-AT/offene-stellen/",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (2 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Saubermacher AG",
+    "url": "https://saubermacher.com/karriere/offene-stellen/",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (2 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Schrack Technik GmbH",
+    "url": "https://www.schrack.at/karriere/karriere-bei-schrack-technik",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (2 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Cegeka Austria GmbH",
+    "url": "https://www.cegeka.com/de-at/karriere/offene-stellen",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (2 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Musik und Kunst Privatuniversität der Stadt Wien GmbH",
+    "url": "https://muk.ac.at/die-muk/stellenangebote.html",
+    "_added": "2026-10-25",
+    "employerType": "public",
+    "_note": "25.10: karriere Teilzeit listesinden (2 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Wien Work-integrative Betriebe und AusbildungsgmbH",
+    "url": "https://www.wienwork.at/de/jobs",
+    "_added": "2026-10-25",
+    "employerType": "ngo",
+    "_note": "25.10: karriere Teilzeit listesinden (2 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "ERGO Versicherung AG",
+    "url": "https://careers.munichre.com/de/jobsuche?acm=ALL&alrpm=ALL&ascf=[%7B%22key%22:%22custom_fields.BrandTheme%22,%22value%22:%22ERGO%22%7D,%7B%22key%22:%22custom_fields.BrandTheme%22,%22value%22:%22ERGO+Beratung+und+Vertrieb%22%7D,%7B%22key%22:%22custom_fields.BrandTheme%22,%22value%22:%22ERGO+Direkt%22%7D,%7B%22key%22:%22custom_fields.BrandTheme%22,%22value%22:%22ERV%22%7D,%7B%22key%22:%22custom_fields.BrandTheme%22,%22value%22:%22ITERGO%22%7D,%7B%22key%22:%22custom_fields.BrandTheme%22,%22value%22:%22Allysca%22%7D,%7B%22key%22:%22custom_fields.BrandTheme%22,%22value%22:%22Viwis%22%7D,%7B%22key%22:%22custom_fields.BrandTheme%22,%22value%22:%22Longial%22%7D,%7B%22key%22:%22custom_fields.BrandTheme%22,%22value%22:%22Legial%22%7D]",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (2 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Hausverwaltung Obermeier GmbH",
+    "url": "https://join.com/companies/obermeier",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (2 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "HOERBIGER Wien GmbH",
+    "url": "https://careers.hoerbiger.com/?locale=de_DE",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (2 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Lidl Österreich",
+    "url": "https://karriere.lidl.at/lidl-als-arbeitgeber/karriere-bei-lidl",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (2 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "AIWWF – Arge Amnesty International Österreich & Umweltverband WWF Österreich",
+    "url": "https://wwf-at.onlyfy.jobs/",
+    "_added": "2026-10-25",
+    "employerType": "ngo",
+    "_note": "25.10: karriere Teilzeit listesinden (2 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "reha.ambulant",
+    "url": "https://www.rehawienbaumgarten.at/karriere/jobs/",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (2 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "CONTAX Wirtschaftstreuhand- gesellschaft mbH",
+    "url": "https://www.contax.at/de/career",
+    "_added": "2026-10-25",
+    "employerType": "beratung",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "St. Nikolausstiftung",
+    "url": "https://nikolausstiftung.at/jobs/",
+    "_added": "2026-10-25",
+    "employerType": "ngo",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "imaging",
+    "url": "https://karriere.imaging.at/",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Forvis Mazars",
+    "url": "https://karriere-at.forvismazars.com/unsere-jobs/",
+    "_added": "2026-10-25",
+    "employerType": "beratung",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Die Österreichische Hagelversicherung",
+    "url": "https://www.hagel.at/karriere/",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Westbahn Management GmbH",
+    "url": "https://jobs.westbahn.at/",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Diagnosezentrum Stadlau",
+    "url": "https://www.dzmed22.at/page/jobs",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "EFS Unternehmensberatung GesmbH",
+    "url": "https://efs.consulting/careers/aktuelle-jobs/",
+    "_added": "2026-10-25",
+    "employerType": "beratung",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Canon Austria GmbH",
+    "url": "https://www.canon.at/careers/",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Com One Austria GmbH",
+    "url": "https://www.com-one.at/karriere/",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Dunkin' Donuts",
+    "url": "https://www.dunkin.at/jobs",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "GARTNER KG",
+    "url": "https://www.gartnerkg.com/jobs/offene-stellen/",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "ENERGO Energiedienstleistungen GmbH",
+    "url": "https://www.energogroup.com/de/karriere/",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "FLAGA GmbH",
+    "url": "https://www.flaga.at/uberflaga/karriere/",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "pro mente Wien - Gesellschaft für psychische und soziale Gesundheit",
+    "url": "https://www.promente.wien/mitarbeit/freie-stellen",
+    "_added": "2026-10-25",
+    "employerType": "ngo",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Digitalisten GmbH",
+    "url": "https://digitalisten.at/karriere",
+    "_added": "2026-10-25",
+    "employerType": "startup",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "PKF Österreicher & Partner GmbH & Co KG",
+    "url": "https://www.pkf.at/karriere",
+    "_added": "2026-10-25",
+    "employerType": "beratung",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "HUMANOCARE Group",
+    "url": "https://www.humanocare.at/karriere/jobangebote/",
+    "_added": "2026-10-25",
+    "employerType": "ngo",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Schönbrunner Tiergarten GesmbH",
+    "url": "https://www.zoovienna.at/ueber-uns/jobs/",
+    "_added": "2026-10-25",
+    "employerType": "public",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Sigmund Freud Privatuniversität Wien GmbH",
+    "url": "https://sfu.onboard.org/de/jobs",
+    "_added": "2026-10-25",
+    "employerType": "public",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Hypo Vorarlberg Bank AG",
+    "url": "https://www.hypovbg.at/karriere/offene-stellen",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Arsipa Gruppe",
+    "url": "https://arsipa.recruitee.com/",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Häuser zum Leben",
+    "url": "https://jobs.kwp.at/offene-stellen/",
+    "_added": "2026-10-25",
+    "employerType": "ngo",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Ankerbrot",
+    "url": "https://www.ankerbrot.at/karriere/aktuelle_jobs",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "BIOGENA GROUP",
+    "url": "https://career.biogena.com/Jobs/All",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "EQUANS Austria GmbH",
+    "url": "https://www.equans.at/karriere/offene-stellen",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Drees & Sommer Projektmanagement und bautechnische Beratung GmbH",
+    "url": "https://career.dreso.com/at/de/",
+    "_added": "2026-10-25",
+    "employerType": "beratung",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Stingl Steuer- & Immobilienberatung GmbH & Co KG",
+    "url": "https://join.com/companies/stingl1",
+    "_added": "2026-10-25",
+    "employerType": "beratung",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Advvise Consulting GmbH",
+    "url": "https://advvise.eu/karriere/offene-stellen/",
+    "_added": "2026-10-25",
+    "employerType": "beratung",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "ST PAULUS STIFTUNG D ERZDIOEZESE WIEN",
+    "url": "https://www.erzdioezese-wien.at/pages/inst/14428019/stellenangebote",
+    "_added": "2026-10-25",
+    "employerType": "ngo",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Szabo & Partner Steuerberatung GmbH",
+    "url": "https://www.szabo.at/unternehmen/karriere/",
+    "_added": "2026-10-25",
+    "employerType": "beratung",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Elwera InstallationsgesmbH",
+    "url": "https://www.elwera.at/",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Geisselhofer Versicherungskonzepte GmbH",
+    "url": "https://www.geisselhofer-konzepte.at/en/jobs-and-careers",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Greenpeace Österreich",
+    "url": "https://cee.jobs.greenpeace.org/l/de",
+    "_added": "2026-10-25",
+    "employerType": "ngo",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Studio Salvi Weber ZT GmbH",
+    "url": "https://join.com/companies/schenkersalviweber",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Securitas Sicherheitsdienstleistungen GmbH",
+    "url": "https://www.securitas.at/karriere/stellenangebote/",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Hallas & Partner Wirtschaftsprüfung und Steuerberatung GmbH & Co KG",
+    "url": "https://www.hallas-partner.at/kanzlei/karriere/",
+    "_added": "2026-10-25",
+    "employerType": "beratung",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Unwired Networks GmbH",
+    "url": "https://jobs.unwirednetworks.com/jobs",
+    "_added": "2026-10-25",
+    "employerType": "startup",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "BUWOG Group GmbH",
+    "url": "https://karriere.buwog.at/jobs",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "ÖSTU-STETTIN Hoch- und Tiefbau GmbH",
+    "url": "https://jobs.oestu-stettin.at/",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Ecolab GmbH",
+    "url": "https://jobs.ecolab.com/global/de/home",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Sozialversicherung der Selbständigen",
+    "url": "https://karriere.svs.at/",
+    "_added": "2026-10-25",
+    "employerType": "public",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Haus der Barmherzigkeit",
+    "url": "https://jobs.hb.at/mitarbeiten/jobs/",
+    "_added": "2026-10-25",
+    "employerType": "ngo",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Österreichischer Tierschutzverein",
+    "url": "https://www.tierschutz-austria.at/ueber-uns/jobs/",
+    "_added": "2026-10-25",
+    "employerType": "ngo",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "ÖBV Blindenwaren Vertriebs GmbH",
+    "url": "https://www.oebv-gmbh.at/stellenangebote.php",
+    "_added": "2026-10-25",
+    "employerType": "ngo",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Swiss Sense Deutschland GmbH",
+    "url": "https://www.swisssense.at/stellenangebote",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Motto Catering GmbH",
+    "url": "https://motto.at/jobs/",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "BARCOTEC GmbH",
+    "url": "https://join.com/companies/barcotec",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Supernova Invest GmbH",
+    "url": "https://supernovainvest.com/jobs/",
+    "_added": "2026-10-25",
+    "employerType": "startup",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "MYACCOUNT Steuerberatung GmbH",
+    "url": "https://www.steuerservice.at/jobs/",
+    "_added": "2026-10-25",
+    "employerType": "beratung",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "ÖBSV - Österreichischer Behindertensportverband",
+    "url": "https://www.obsv.at/verband/jobs/",
+    "_added": "2026-10-25",
+    "employerType": "ngo",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "EOS Partner - Wirtschaftsprüfung und Steuerberatung GmbH",
+    "url": "https://www.eospartner.at/karriere/freie_stellen/",
+    "_added": "2026-10-25",
+    "employerType": "beratung",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "XXXLdigital – Part of XXXL Group",
+    "url": "https://www.xxxl.digital/jobs-en",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "ImWind",
+    "url": "https://www.imwind.at/jobs",
+    "_added": "2026-10-25",
+    "employerType": "startup",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "BBRZ Reha GmbH",
+    "url": "https://www.bbrz.at/jobs/",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "spinup GmbH",
+    "url": "https://spinup.at/jobs/",
+    "_added": "2026-10-25",
+    "employerType": "startup",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "St. Elisabeth Pflege GmbH",
+    "url": "https://www.elisabeth-pflege.at/mit-uns-im-team/unsere-jobs-fuer-sie/",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "veloce liefert gmbh",
+    "url": "https://veloce.at/jobs/",
+    "_added": "2026-10-25",
+    "employerType": "startup",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "F + P ARCHITEKTEN ZT GMBH",
+    "url": "https://www.fp-arch.at/jobs/",
+    "_added": "2026-10-25",
+    "employerType": "beratung",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "haelsi",
+    "url": "https://haelsi.at/blog/jobs",
+    "_added": "2026-10-25",
+    "employerType": "startup",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Unverschwendet GmbH",
+    "url": "https://www.unverschwendet.at/jobs",
+    "_added": "2026-10-25",
+    "employerType": "startup",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "J&P Immobilienmakler GmbH",
+    "url": "https://join.com/companies/jpimmobilien",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "CS Caritas Socialis GmbH",
+    "url": "https://karriere.cs.at/offene-stellen/",
+    "_added": "2026-10-25",
+    "employerType": "ngo",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "proALPHA Business Solutions GmbH",
+    "url": "https://jobs.proalpha.com/de/stellenangebote",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "BFI Berufsförderungsinstitut Wien",
+    "url": "https://www.bfi.wien/karriere/aktuelle-jobausschreibungen",
+    "_added": "2026-10-25",
+    "employerType": "public",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Seher + Partner OG",
+    "url": "https://www.seherundpartner.at/offene-stellen/",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Daikin Airconditioning Central Europe HandelsgmbH",
+    "url": "https://www.daikin.eu/en_us/working-at-daikin/vacancies.html",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Casa Leben gGmbH",
+    "url": "https://jobs.casa.or.at/Jobs",
+    "_added": "2026-10-25",
+    "employerType": "ngo",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Straumann GmbH",
+    "url": "https://careers.straumann.com/",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "PÜSPÖK Erneuerbare Energie GmbH",
+    "url": "https://www.puespoek.at/karriere/offene-stellen",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Risk Consult - Sicherheits- & Risiko-Managementberatung Ges.m.b.H.",
+    "url": "https://riskconsult.at/karriere-bei-risk-consult/",
+    "_added": "2026-10-25",
+    "employerType": "beratung",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Lugar Installateur GesmbH",
+    "url": "https://www.lugar.at/wien23/jobs/",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Kammer für Arbeiter und Angestellte für Wien",
+    "url": "https://jobs.akwien.at/",
+    "_added": "2026-10-25",
+    "employerType": "public",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "APA-Comm GmbH",
+    "url": "https://apa.at/jobs/?handle=ftts6adyepoxzsb7s50g39jrd4cga9m",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Pro Juventute",
+    "url": "https://www.projuventute.at/de/jobs-und-karriere/aktuelle-stellenangebote",
+    "_added": "2026-10-25",
+    "employerType": "ngo",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "JBA-Justizbetreuungsagentur",
+    "url": "https://jba.gv.at/stellenangebote/",
+    "_added": "2026-10-25",
+    "employerType": "public",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Frauenthal Handel Gruppe GmbH",
+    "url": "https://www.frauenthal.at/de/karriere.html",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "ASZ - Das arbeitsmedizinische und sicherheitstechnische Zentrum in Linz GmbH",
+    "url": "https://www.asz.at/karriere/",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Valida Vorsorge Management",
+    "url": "https://www.valida.at/de/vorsorge-management/karriere.html",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "BMD Systemhaus GesmbH",
+    "url": "https://www.bmd.com/at/karriere/jobs",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "TÜV AUSTRIA",
+    "url": "https://karriere.tuv.at/Jobs",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Gebauer & Griller Kabelwerke GmbH",
+    "url": "https://www.gg-group.com/de/karriere/offene-stellen/",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Möbelix",
+    "url": "https://karriere.moebelix.at/",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "ROJO GmbH - Santos Mexican Grill & Bar",
+    "url": "https://www.santos-bar.com/en/jobs.html",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Concircle Österreich GmbH",
+    "url": "https://www.concircle.com/jobs-concircle/",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Österreichische Gesundheitskasse",
+    "url": "https://www.oegk.at/cdscontent/?contentid=10007.904960",
+    "_added": "2026-10-25",
+    "employerType": "public",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Diagnosezentrum Meidling",
+    "url": "https://karriere.diagnostikum.at/",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Privatklinik Confraternität & Goldenes Kreuz",
+    "url": "https://www.confraternitaet-goldenes-kreuz.at/de/ueber-uns/jobs-und-bewerbung",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Gesiba Gemeinnützige Siedlungs- u Baugesellschaft m.b.H.",
+    "url": "https://www.gesiba.at/jobs",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Synermed Management GmbH",
+    "url": "https://www.synermed.com/careers/jobs/",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Ludwig Boltzmann Gesellschaft",
+    "url": "https://karriere.lbg.ac.at/de/jobs",
+    "_added": "2026-10-25",
+    "employerType": "public",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Glatz GmbH",
+    "url": "https://www.glatz.com/de/ueber-glatz/sonstiges/jobs",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Austro Control GmbH",
+    "url": "https://karriere.austrocontrol.at/Jobs",
+    "_added": "2026-10-25",
+    "employerType": "public",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Places to Be GmbH",
+    "url": "https://join.com/companies/studentenjob",
+    "_added": "2026-10-25",
+    "employerType": "startup",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Ineltro Electronics GmbH",
+    "url": "https://www.ineltro.eu/contact/career/?lang=en",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Kunststoffwerk Kremsmünster GmbH",
+    "url": "https://kwk.bewerberportal.at/Jobs",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "REITER Betten & Vorhänge GmbH",
+    "url": "https://www.bettenreiter.at/jobs/",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "RUBICON IT GmbH",
+    "url": "https://karriere-bei.rubicon.eu/jobs/",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Oberbank AG",
+    "url": "https://www.oberbank.at/jobs",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Aida Prousek & Co Chocolaterie u Großkonditorei",
+    "url": "https://aida.at/apply-job/",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "horizont3000",
+    "url": "https://www.horizont3000.org/en/jobs",
+    "_added": "2026-10-25",
+    "employerType": "ngo",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Ing. Sumetzberger GmbH",
+    "url": "https://www.sumetzberger.at/karriere",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "EDV 2000 Systembetreuung GmbH.",
+    "url": "https://join.com/companies/edv2000",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "TÜV SÜD Landesgesellschaft Österreich GmbH",
+    "url": "https://jobs.tuvsud.com/?locale=de_DE",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Rita kocht gesund GmbH",
+    "url": "https://www.ritabringts.at/jobs",
+    "_added": "2026-10-25",
+    "employerType": "startup",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Gesundheitszentrum für Selbständige",
+    "url": "https://www.gesundheitszentrum-selbstaendige.at/ueber-uns/jobs-und-bewerbung/uebersicht",
+    "_added": "2026-10-25",
+    "employerType": "public",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "ADVOKAT Unternehmensberatung - GREITER & GREITER GmbH - Innsbruck",
+    "url": "https://advokat.at/bewerbung/",
+    "_added": "2026-10-25",
+    "employerType": "beratung",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Axians ICT Austria GmbH",
+    "url": "https://jobs.axians.at/",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "VACE Engineering GmbH",
+    "url": "https://www.vace.at/hr/jobs-finden/jobsuche/",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "CARL REINER GMBH",
+    "url": "https://www.carlreiner.at/home/karriere/",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "ÖVW Österreichisches Volkswohnungswerk",
+    "url": "https://www.oevw.at/unternehmen/karriere",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "ZHS Office- & Facilitymanagement GmbH",
+    "url": "https://jobs.rbinternational.com/zhs/?locale=de_DE",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "HDI Versicherung AG",
+    "url": "https://careers.hdi.group/de/karriere",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Austro Holding AG",
+    "url": "https://www.austro-holding.at/karriere/",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "GW Cosmetics GmbH",
+    "url": "https://gwcosmetics.at/karriere",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "KRÖSWANG - Der Frische-Lieferant",
+    "url": "https://jobs.kroeswang.at/hcm/jobexchange/showJobOfferList.do",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Österreichischer Integrationsfonds",
+    "url": "https://www.integrationsfonds.at/der-oeif/organisation/karriere/",
+    "_added": "2026-10-25",
+    "employerType": "public",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "TEDi Warenhandels GmbH",
+    "url": "https://karriere.tedi.com/jobs-karriere",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Schneiders Vienna GmbH",
+    "url": "https://schneiders-bags.com/pages/jobs",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "ovos media gmbh",
+    "url": "https://jobs.ovos.at/jobs/Careers",
+    "_added": "2026-10-25",
+    "employerType": "startup",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Klein & Co Immobilienmanagement GmbH",
+    "url": "https://k-immo.at/jobs/",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Hill Woltron Management Partner",
+    "url": "https://hill-woltron.com/jobs/",
+    "_added": "2026-10-25",
+    "employerType": "beratung",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Raiffeisen Capital Management",
+    "url": "https://jobs.rbinternational.com/raiffeisencapitalmgmt/?locale=de_DE",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Raiffeisen Niederösterreich-Wien",
+    "url": "https://www.raiffeisenbank.jobs/de/karriere-bei-raiffeisen/stellenangebote.html",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
+  },
+  {
+    "name": "Österreichische Lotterien",
+    "url": "https://www.glueckimjob.cal-group.at/jobs",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: karriere Teilzeit listesinden (1 ilan); genel tarayıcı akışı."
   }
 ]
