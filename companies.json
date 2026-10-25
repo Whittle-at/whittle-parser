@@ -42,7 +42,7 @@
   },
   {
     "name": "Erste Group Bank",
-    "url": "https://www.erstegroup.com/en/career/positions-offered",
+    "url": "https://www.erstegroup.com/de/karriere/stellenangebote",
     "employerType": "konzern"
   },
   {
@@ -91,6 +91,7 @@
   {
     "name": "Wiener Stadtwerke (Wiener Linien + Wien Energie)",
     "url": "https://jobs.wienerstadtwerke.at/de/jobs",
+    "linkPattern": "jobs.wienerstadtwerke.at/de/jobs/",
     "employerType": "konzern"
   },
   {
@@ -142,7 +143,7 @@
   },
   {
     "name": "Philip Morris Austria (PMI)",
-    "url": "https://join.pmicareers.com",
+    "url": "https://join.pmicareers.com/gb/en/search-results?qcountry=Austria",
     "_note": "Phenom People — BCG ile ayni platform, fetchPhenomJobs() zaten host-bagimsiz oldugu icin hic yeni kod yazmadan ilk denemede calisti (Bitpanda gibi). PMI'nin ham /widgets cevabinda applyUrl VE tam aciklama YOK — sadece jobId+locale (ör. \"en_GB\") ve kirpilmis teaser metinleri var (Eren'in getirdigi ham JSON ile dogrulandi). Gercek ilan linki simdi locale'den turetiliyor ({origin}/{ulke}/{dil}/job/{jobId}/{baslik-slug}, ornek: join.pmicareers.com/gb/en/job/23262/...), detay sayfasindan JSON-LD aranmaya devam ediyor, bulunamazsa en temiz teaser (descriptionTeaser) aciklama olarak kullaniliyor. Sirket adi COMPANY_NAME_OVERRIDES haritasiyla \"Philip Morris International\" olarak sabitlendi (alan adindan turetilen otomatik \"Pmi\" yerine). DÜZELTME (evidence sorunu — Eren'in birkac kez tekrar test edip dogruladigi hata, iki asamada cozuldu): hem JSON-LD description hem de teaser metinleri ham HTML tasiyordu (\"<br />•\", \"</strong>\" gibi etiketler evidence alintilarina karisiyordu, ör. \"…><br />•    Du befindest dich mitten im Masterstudium…\"). Ilk duzeltme (script/style'i icerigiyle silip kalan etiketleri temizleme — Schönherr'deki ayni mantik) TEK BASINA yetmedi, Eren'in gercek terminal ciktisinda hala ayni ham HTML goruluyordu. GERCEK KOK NEDEN: PMI'nin teaser metni Bitpanda'da gorulen turden CIFT KODLANMIS HTML donduruyor — gercek \"<br />\" yerine literal \"&lt;br /&gt;\" metni geliyor. Etiket-silme regex'leri gercek \"<...>\" karakteri ariyordu ama entity cozme (decodeHtmlEntities) bundan SONRA, guessRequirements'in ICINDE calisiyordu — yani temizlik sirasinda etiketler henuz \"gorunmez\" haldeydi, temizlikten SONRA decode edilince tekrar ortaya cikip evidence'a siziyordu. fetchPhenomJobs artik once decodeHtmlEntities cagirip SONRA etiketleri temizliyor (siralama duzeltildi) — sahte cift-kodlanmis veriyle yeniden uretilip dogrulandi. Etiketsiz/tek-kodlanmis metinleri (BCG gibi) hic etkilemiyor. Dogrulandi (9 Wien ilani, 7 hedef-uygun, 18.09.2026, evidence artik tertemiz) — NOT: aciklama hala kismen teaser-kaynakli olabilir, req alanlari icin elle goz atmak iyi olur.",
     "employerType": "konzern"
   },
@@ -1207,5 +1208,65 @@
     "_added": "2026-10-03",
     "employerType": "beratung",
     "_note": "15.10: P&I bewerber-web (#hash linkler) — metin headless tarayıcıyla (fetchBinderJobs)."
+  },
+  {
+    "name": "MAN Truck & Bus Österreich",
+    "url": "https://jobs.man.eu/",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: SuccessFactors CSB API (fetchSfCsbJobs) — 735 MAN ilanından division_obj 'Vertrieb Österreich' olanlar."
+  },
+  {
+    "name": "Sky Österreich",
+    "url": "https://karriere.sky.at/stellenangebote.html",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: rexx, JSON-LD (htmlld). Praktikumlar çoğu zaman sadece karriere.at'te."
+  },
+  {
+    "name": "Peek & Cloppenburg Österreich",
+    "url": "https://karriere.peek-cloppenburg.at/jobs",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "linkPattern": "/jobs/job/req",
+    "pageTemplate": "https://karriere.peek-cloppenburg.at/jobs?tx_solr%5Bfilter%5D%5B0%5D=type%3Avacancy&tx_solr%5Bpage%5D={n}",
+    "maxPages": 5,
+    "_note": "25.10: TYPO3/solr, 12'şerli sayfalar; ilan sayfasında JSON-LD yok → tarayıcı akışı."
+  },
+  {
+    "name": "Finanzmarktaufsicht (FMA)",
+    "url": "https://karriere.fma.gv.at/de/",
+    "_added": "2026-10-25",
+    "employerType": "public",
+    "_note": "25.10: rexx portalı; linkler ?yid= ile → rexx detay (htmlld)."
+  },
+  {
+    "name": "CERHA HEMPEL",
+    "url": "https://jobs.cerhahempel.com/Jobs",
+    "_added": "2026-10-25",
+    "employerType": "beratung",
+    "_note": "25.10: ilan listesi sayfadaki JSON'da (Id), detayda JSON-LD; CEE ofisleri AT filtresiyle eleniyor."
+  },
+  {
+    "name": "Wiener Städtische Versicherung",
+    "url": "https://www.wienerstaedtische.at/karriere/guterjob/jobs-bewerbung/offene-stellen.html",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "linkPattern": "/offene-stellen/detail/",
+    "_note": "25.10: TYPO3 liste (20 ilan tek sayfa), başvuru d.vinci; JSON-LD yok → tarayıcı akışı."
+  },
+  {
+    "name": "Becton Dickinson Austria",
+    "url": "https://bdx.wd1.myworkdayjobs.com/EXTERNAL_CAREER_SITE_AUSTRIA",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: Workday (Avusturya sitesi)."
+  },
+  {
+    "name": "Leyrer + Graf",
+    "url": "https://jobs.leyrer-graf.at/",
+    "_added": "2026-10-25",
+    "employerType": "konzern",
+    "_note": "25.10: rexx, JSON-LD (htmlld). Çoğu inşaat/işçi ilanı; Ferialpraktikum için eklendi."
   }
 ]

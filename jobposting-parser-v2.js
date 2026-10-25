@@ -624,6 +624,17 @@ function detectAtsFromUrl(url){
     if(host === 'jobboerse.strabag.at' && !/job-detail/.test(path)) return { type: 'strabag' };
     if(/\.ob\.sagedpw\.at$/.test(host) && /onlinebewerbung_uebersicht/.test(path)) return { type: 'sagedpw', url };
     if(/(^|\.)horvath-partners\.com$/.test(host) && /\/(jobsuche|jobsearch)\/?$/.test(path)) return { type: 'horvath', url };
+    if(host === 'jobs.man.eu' && (path === '/' || path === '')) return { type: 'sfcsb', origin: u.origin, locale: 'de_DE', company: 'MAN Truck & Bus Österreich' }; // 25.10
+    if(host === 'jobs.helvetia.com' && /^\/at\/?$/.test(path)) return { type: 'prospective', medium: '1002532', f: u.searchParams.get('f') || '20:1192756', company: 'Helvetia Versicherung' }; // 25.10
+    if(/(^|\.)generali\.at$/.test(host) && /^\/karriere\/aktuelle-jobs\/?$/.test(path)) return { type: 'generali', url }; // 25.10
+    // 25.10: rexx portalları — liste sayfası, ilan sayfasında JobPosting JSON-LD (FMA linkleri ana siteye "?yid=" ile gidiyor → rexx detay adresi kuruluyor)
+    if(host === 'karriere.fma.gv.at' && /^\/(de\/?)?$/.test(path)) return { type: 'htmlld', url, link: '[?&]yid=(\\d+)', build: 'https://karriere.fma.gv.at/job-de-j{1}.html', company: 'Finanzmarktaufsicht (FMA)' };
+    if(host === 'karriere.sky.at' && /^\/stellenangebote\.html$/.test(path)) return { type: 'htmlld', url, link: 'href="([^"]*-de-j\\d+\\.html)"', company: 'Sky Österreich' };
+    if(host === 'jobs.cerhahempel.com' && /^\/jobs\/?$/i.test(path)) return { type: 'htmlld', url, link: '"Id":(\\d{4,8}),"Title"', build: 'https://jobs.cerhahempel.com/Job/{1}', company: 'CERHA HEMPEL' }; // 25.10 (ilan listesi sayfadaki JSON'da)
+    if(host === 'jobs.leyrer-graf.at' && (path === '/' || path === '')) return { type: 'htmlld', url, link: 'href="([^"]*-de-j\\d+\\.html)"', company: 'Leyrer + Graf' }; // 25.10 rexx
+    if(host === 'karriere.bdo.at' && /^\/jobs\/?$/.test(path)) return { type: 'htmlld', url, next: 'https://karriere.bdo.at/jobs/p{n}', link: 'href="(https:\\/\\/karriere\\.bdo\\.at\\/jobs\\/[^"#]+)#JobEntry"', company: 'BDO Austria' }; // 25.10
+    if(host === 'join.pmicareers.com' && /\/search-results\/?$/.test(path)) return { type: 'phenom', url, company: 'Philip Morris Austria' }; // 25.10
+    if(/(^|\.)erstegroup\.com$/.test(host) && /^\/(de\/karriere\/stellenangebote|en\/career\/positions-offered)\/?$/.test(path)) return { type: 'erste', url }; // 25.10
     if(/(^|\.)bindergroesswang\.at$/.test(host) && /\/(career|karriere)\/jobs\/?$/.test(path)) return { type: 'binder', url };
     // 02.10: Roland Berger (kendi arama API'si → ilanlar SmartRecruiters'ta), Kearney (Yello), Henkel (kendi AJAX listesi).
     if(/(^|\.)rolandberger\.com$/.test(host) && /\/join/i.test(path)) return { type: 'rolandberger' };
@@ -1219,6 +1230,12 @@ async function fetchAtsJobs(ats){
   if(ats.type === 'sagedpw') return fetchSagedpwJobs(ats);
   if(ats.type === 'horvath') return fetchHorvathJobs(ats);
   if(ats.type === 'binder') return fetchBinderJobs(ats);
+  if(ats.type === 'erste') return fetchErsteJobs(ats);
+  if(ats.type === 'phenom') return fetchPhenomJobs(ats);
+  if(ats.type === 'htmlld') return fetchHtmlLdJobs(ats);
+  if(ats.type === 'generali') return fetchGeneraliJobs(ats);
+  if(ats.type === 'prospective') return fetchProspectiveJobs(ats);
+  if(ats.type === 'sfcsb') return fetchSfCsbJobs(ats);
   return [];
 }
 
@@ -2643,6 +2660,250 @@ async function fetchHorvathJobs(ats){
 
 // Binder Grösswang: kariyer sayfası P&I "bewerber-web" ilanlarına #hash linkleriyle gidiyor (GWT-RPC, düz HTML yok; genel
 // tarayıcı hash'i atınca 7 link tek URL'e iniyordu). Liste kendi sayfasından, metin her ilan headless tarayıcıda açılarak.
+// 25.10: Erste Group / Sparkassen-Gruppe — kariyer sayfası ilanları "Load more" ile JS'te çiziyor; genel crawl
+// 170 ilandan sadece 3–4'ünü yakalıyordu (karriere.at'te sadece Wien'de 15 Erste praktikumu var). Sayfanın kendi
+// JSON API'si kullanılıyor: liste + ilan başına "jobdetail" (bölümler yapılandırılmış). API adresi ve başlığı
+// sabit yazılmıyor, her seferinde sayfadaki joblist config'inden okunuyor (değişirse kendiliğinden uyum sağlar).
+// CEE şehirleri (Bratislava, Prag …) eleniyor; konum "<şehir>, Österreich" olarak AT filtresine veriliyor.
+const ERSTE_FOREIGN = /bratislava|ko[sš]ice|praha|prague|brno|ostrava|budapest|debrecen|zagreb|rijeka|split|osijek|beograd|belgrade|novi sad|bucure|cluj|timi[sș]|ia[sș]i|ljubljana|maribor|sarajevo|podgorica|skopje|banská|[žz]ilina|nitra|trnava|pre[sš]ov|trenčín|chi[sș]in/i;
+function ersteCompanyName(n){
+  const s = String(n || '').trim();
+  if(/^erste bank oesterreich/i.test(s)) return 'Erste Bank';
+  if(/^erste group bank/i.test(s)) return 'Erste Group';
+  return s || 'Erste Group';
+}
+function ersteSectionsToText(d){
+  const out = [];
+  for(const s of (d.sections || [])){
+    if(typeof s.data === 'string'){ const t = decodeHtmlEntities(stripHtmlToPlainText(s.data)).trim(); if(t) out.push(t); }
+    else if(Array.isArray(s.data)){
+      for(const b of s.data){
+        if(b && b.title) out.push(String(b.title).trim());
+        for(const it of ((b && b.items) || [])){ const t = decodeHtmlEntities(stripHtmlToPlainText(String(it))).trim(); if(t) out.push('• ' + t); }
+      }
+    }
+  }
+  return out.join('\n');
+}
+async function fetchErsteJobs(ats){
+  let h;
+  try{ const r = await fetch(ats.url, { headers: { ...RETAIL_UA, Accept: 'text/html' }, signal: AbortSignal.timeout(25000) }); if(!r.ok){ console.log(`  ⚠️  Erste HTTP ${r.status}`); return null; } h = await r.text(); }
+  catch(e){ console.log(`  ⚠️  Erste sayfa: ${e.message}`); return null; }
+  const m = h.match(/<script[^>]*data-cid="joblist"[^>]*>([\s\S]*?)<\/script>/);
+  let cfg = null; try{ cfg = m && JSON.parse(m[1]).apiConfiguration; }catch(e){}
+  if(!cfg || !cfg.url){ console.log('  ⚠️  Erste: joblist API ayarı sayfada bulunamadı.'); return null; }
+  const headers = { ...(cfg.headers || {}), Accept: 'application/json', Referer: ats.url, 'User-Agent': RETAIL_UA['User-Agent'] };
+  const base = cfg.url.split('/list')[0];
+  let list = [];
+  try{ const r = await fetch(cfg.url.replace(/language=[a-z]{2}_[A-Z]{2}/, 'language=de_DE'), { headers, signal: AbortSignal.timeout(25000) }); if(!r.ok){ console.log(`  ⚠️  Erste liste HTTP ${r.status}`); return null; } list = ((await r.json()) || {}).data || []; }
+  catch(e){ console.log(`  ⚠️  Erste liste: ${e.message}`); return null; }
+  const origin = new URL(ats.url).origin;
+  const detailPath = /\/de\//.test(ats.url) ? '/de/karriere/stellenangebote/job-detail/' : '/en/career/positions-offered/job-detail/';
+  const slug = s => String(s || '').toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g, '').replace(/ß/g, 'ss').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 80) || 'job';
+  const out = []; let foreign = 0;
+  for(const x of list){
+    const loc = (Array.isArray(x.location) ? x.location : [x.location]).filter(Boolean).join(', ');
+    if(loc && ERSTE_FOREIGN.test(loc)){ foreign++; continue; }
+    let d = null;
+    try{ const r = await fetch(`${base}/jobdetail?language=${encodeURIComponent(x.primary_lang || x.locale || 'de_DE')}&jobID=${encodeURIComponent(x.id)}`, { headers, signal: AbortSignal.timeout(20000) }); if(r.ok) d = (((await r.json()) || {}).data || [])[0] || null; }
+    catch(e){ /* tek ilan atlanmasın — listeden gelen bilgiyle devam */ }
+    const title = String((d && d.external_title) || x.external_title || x.job_title || '').trim();
+    if(!title) continue;
+    const head = [title, (d && d.legal_entity_name) || x.legal_entity_name, loc, (d && d.employment_level) || x.employment_level, d && d.working_hours ? `${String(d.working_hours).replace('.', ',')} Wochenstunden` : null].filter(Boolean).join('\n');
+    const body = d ? ersteSectionsToText(d) : '';
+    out.push({
+      title, company: ersteCompanyName(x.legal_entity_name), location: `${loc || 'Österreich'}, Österreich`,
+      datePosted: (d && d.posting_date_iso) || (x.date_sort ? x.date_sort : null),
+      description: (head + '\n\n' + body).slice(0, 9000), url: `${origin}${detailPath}${slug(title)}/${x.id}`,
+      departmentNames: (x.discipline_items || [x.discipline]).filter(Boolean), experienceLevelRaw: (d && d.level_of_experties) || x.level_of_experties || null,
+    });
+    await new Promise(r => setTimeout(r, 120));
+  }
+  console.log(`  Erste/Sparkassen: ${out.length} ilan (${list.length} toplam, ${foreign} yurt dışı elendi).`);
+  return out;
+}
+
+// 25.10: Phenom People (Philip Morris: join.pmicareers.com) — kök sayfa genel bir tanıtım sayfası, crawl 0 ilan
+// buluyordu. Arama sayfası (?qcountry=Austria) ilanları sunucu tarafında "phApp.ddo.eagerLoadRefineSearch" içinde
+// gönderiyor; ilan sayfalarında tam JobPosting JSON-LD var (açıklama HTML'i bir kez daha kaçışlı geliyor).
+async function fetchPhenomJobs(ats){
+  const jobs = new Map(); let total = Infinity;
+  for(let from = 0; from < Math.min(total, 200); from += 10){
+    const u = ats.url + (ats.url.includes('?') ? '&' : '?') + (from ? `from=${from}&s=1` : '');
+    let h; try{ const r = await fetch(u, { headers: { ...RETAIL_UA, Accept: 'text/html' }, signal: AbortSignal.timeout(25000) }); if(!r.ok){ console.log(`  ⚠️  Phenom HTTP ${r.status}`); break; } h = await r.text(); }
+    catch(e){ console.log(`  ⚠️  Phenom liste: ${e.message}`); break; }
+    const m = h.match(/phApp\.ddo\s*=\s*(\{[\s\S]*?\});\s*(?:phApp\.|<\/script>)/);
+    let res = null; try{ res = m && JSON.parse(m[1]).eagerLoadRefineSearch; }catch(e){}
+    const list = (res && res.data && res.data.jobs) || [];
+    if(res && Number.isFinite(Number(res.totalHits))) total = Number(res.totalHits);
+    const before = jobs.size;
+    list.forEach(j => { if(j && j.jobId && !jobs.has(j.jobId)) jobs.set(j.jobId, j); });
+    if(!list.length || jobs.size === before) break;
+  }
+  if(!jobs.size) return null;
+  const origin = new URL(ats.url).origin, prefix = (new URL(ats.url).pathname.match(/^\/[a-z]{2}\/[a-z]{2}\//) || ['/'])[0];
+  const out = [];
+  for(const j of jobs.values()){
+    const slug = String(j.title || '').replace(/[^A-Za-z0-9]+/g, '-').replace(/^-|-$/g, '');
+    const url = `${origin}${prefix}job/${j.jobId}/${slug}`;
+    let desc = j.descriptionTeaser || '', posted = j.postedDate || null;
+    try{
+      const r = await fetch(url, { headers: { ...RETAIL_UA, Accept: 'text/html' }, signal: AbortSignal.timeout(20000) });
+      if(r.ok){ const jp = findJobPostings(extractJsonLd(await r.text()))[0]; if(jp){ desc = stripHtmlToPlainText(decodeHtmlEntities(String(jp.description || ''))) || desc; posted = jp.datePosted || posted; } }
+    }catch(e){ /* teaser ile devam */ }
+    out.push({ title: j.title, company: ats.company || 'Philip Morris Austria', location: j.cityStateCountry || [j.city, j.country].filter(Boolean).join(', '), datePosted: posted,
+      description: [j.title, j.cityStateCountry, j.type].filter(Boolean).join('\n') + '\n\n' + String(desc).replace(/\n{3,}/g, '\n\n').slice(0, 8500), url, departmentNames: j.multi_category || [j.category].filter(Boolean) });
+    await new Promise(r => setTimeout(r, 150));
+  }
+  console.log(`  Phenom (${new URL(ats.url).host}): ${out.length} ilan.`);
+  return out;
+}
+
+// 25.10: Genel "liste sayfaları + ilan sayfasında JobPosting JSON-LD" okuyucu (tarayıcısız). İlk kullanım: BDO
+// (karriere.bdo.at — 44 ilan, genel crawl "Details" linklerini kaçırıp 1 ilan getiriyordu). ats.link = ilan
+// linklerini seçen regex (kaynak), ats.next = "sonraki sayfa" adresi şablonu ({n}), ats.company = görünen ad.
+function ldLocation(jp){
+  const locs = [].concat(jp.jobLocation || []).map(l => (l && l.address) || l || {});
+  const parts = locs.map(a => [a.addressLocality, a.addressRegion && a.addressRegion !== a.addressLocality ? a.addressRegion : null].filter(Boolean).join(', ')).filter(Boolean);
+  const country = locs.map(a => a.addressCountry && (a.addressCountry.name || a.addressCountry)).find(Boolean);
+  return [...new Set(parts)].join(' / ') + (country ? `, ${/^(AT|AUT)$/i.test(String(country)) ? 'Österreich' : country}` : '');
+}
+async function fetchHtmlLdJobs(ats){
+  const linkRe = new RegExp(ats.link, 'gi');
+  const urls = new Set();
+  for(let n = 1; n <= (ats.maxPages || 15); n++){
+    const u = n === 1 ? ats.url : (ats.next || '').replace('{n}', n);
+    if(!u) break;
+    let h; try{ const r = await fetch(u, { headers: { ...RETAIL_UA, Accept: 'text/html' }, signal: AbortSignal.timeout(20000) }); if(!r.ok) break; h = await r.text(); }catch(e){ break; }
+    const before = urls.size;
+    for(const m of h.matchAll(linkRe)){ try{ const abs = new URL(ats.build ? ats.build.replace('{1}', m[1]) : decodeHtmlEntities(m[1]), u); abs.hash = ''; urls.add(abs.href); }catch(e){} }
+    if(urls.size === before) break;
+  }
+  if(!urls.size) return null;
+  const out = [];
+  for(const url of urls){
+    try{
+      const r = await fetch(url, { headers: { ...RETAIL_UA, Accept: 'text/html' }, signal: AbortSignal.timeout(20000) });
+      if(!r.ok) continue;
+      const jp = findJobPostings(extractJsonLd(await r.text()))[0];
+      if(!jp || !jp.title) continue;
+      const loc = ldLocation(jp);
+      const desc = stripHtmlToPlainText(decodeHtmlEntities(String(jp.description || '')));
+      out.push({ title: decodeHtmlEntities(String(jp.title)).trim(), company: ats.company || (jp.hiringOrganization && jp.hiringOrganization.name) || '', location: loc,
+        datePosted: jp.datePosted || null, description: [jp.title, loc, [].concat(jp.employmentType || []).join(', ')].filter(Boolean).join('\n') + '\n\n' + desc.slice(0, 8500), url, departmentNames: [] });
+    }catch(e){ /* tek ilan */ }
+    await new Promise(r => setTimeout(r, 150));
+  }
+  console.log(`  ${ats.company || new URL(ats.url).host}: ${out.length} ilan (${urls.size} link).`);
+  return out;
+}
+
+// 25.10: Generali (generali.at/karriere/aktuelle-jobs) — Next.js sayfası, 10'arlı istemci tarafı sayfalama; genel crawl 2
+// ilan buluyordu. Tüm ilanlar (onlyfy nesneleri) sayfanın RSC verisinde (self.__next_f) zaten var. Sadece yayında olanlar
+// (is_published_on_job_center && !finished_at) alınıyor; kişisel alanlar (user/main_contact) hiç kullanılmıyor.
+function nextFlightText(html){
+  return [...html.matchAll(/self\.__next_f\.push\(\[1,("(?:[^"\\]|\\.)*")\]\)/g)].map(m => { try{ return JSON.parse(m[1]); }catch(e){ return ''; } }).join('');
+}
+function jsonObjectsAround(s, key){
+  const out = []; let p = -1;
+  while((p = s.indexOf(key, p + 1)) >= 0){
+    let d = 0, b = -1;
+    for(let k = p; k >= 0; k--){ if(s[k] === '}') d++; else if(s[k] === '{'){ if(d === 0){ b = k; break; } d--; } }
+    if(b < 0) continue;
+    let d2 = 0, e = -1, inStr = false;
+    for(let m = b; m < s.length; m++){
+      const c = s[m];
+      if(inStr){ if(c === '\\') m++; else if(c === '"') inStr = false; continue; }
+      if(c === '"') inStr = true; else if(c === '{') d2++; else if(c === '}'){ d2--; if(d2 === 0){ e = m; break; } }
+    }
+    try{ out.push(JSON.parse(s.slice(b, e + 1))); }catch(x){}
+  }
+  return out;
+}
+async function fetchGeneraliJobs(ats){
+  let h; try{ const r = await fetch(ats.url, { headers: { ...RETAIL_UA, Accept: 'text/html' }, signal: AbortSignal.timeout(30000) }); if(!r.ok){ console.log(`  ⚠️  Generali HTTP ${r.status}`); return null; } h = await r.text(); }
+  catch(e){ console.log(`  ⚠️  Generali: ${e.message}`); return null; }
+  const s = nextFlightText(h);
+  if(!s){ console.log('  ⚠️  Generali: sayfada RSC verisi yok (bot koruması olabilir).'); return null; }
+  const all = new Map();
+  for(const o of jsonObjectsAround(s, '"short_handle"')) if(o && o.handle && o.title && !all.has(o.handle)) all.set(o.handle, o);
+  const out = [];
+  for(const o of all.values()){
+    if(!o.is_published_on_job_center || o.finished_at || /initiativbewerbung|interessentenpool|^vorschlag job/i.test(o.title)) continue;
+    const zip = String(o.zip_code || '').trim();
+    const loc = /^1[0-2]\d0$/.test(zip) ? `Wien, Österreich` : `${zip ? zip + ' ' : ''}Österreich`;
+    const body = (o.job_contents || []).map(c => stripHtmlToPlainText(decodeHtmlEntities(String((c && c.content) || '')))).filter(Boolean).join('\n\n');
+    out.push({ title: String(o.title).trim(), company: 'Generali Österreich', location: loc, datePosted: o.published_at || o.created_at || null,
+      description: [o.title, loc, o.position_type].filter(Boolean).join('\n') + '\n\n' + body.slice(0, 8500), url: o.apply_url || `https://www.generali.at/karriere/${o.handle}/`, departmentNames: [] });
+  }
+  console.log(`  Generali: ${out.length} yayında ilan (${all.size} nesne).`);
+  return out;
+}
+
+// 25.10: prospective.ch (Helvetia: jobs.helvetia.com/at) — liste 5'erli sayfalanıyordu, genel crawl 16 ilandan 2'sini
+// buluyordu. Herkese açık JSON API (ohws.prospective.ch/public/v1/medium/{id}/jobs) tüm alanları tek istekte veriyor.
+async function fetchProspectiveJobs(ats){
+  const out = [];
+  for(let offset = 0; offset < 500; offset += 100){
+    const u = `https://ohws.prospective.ch/public/v1/medium/${ats.medium}/jobs?lang=de&offset=${offset}&limit=100${ats.f ? `&f=${encodeURIComponent(ats.f)}` : ''}`;
+    let j; try{ const r = await fetch(u, { headers: { Accept: 'application/json', 'User-Agent': RETAIL_UA['User-Agent'] }, signal: AbortSignal.timeout(20000) }); if(!r.ok){ console.log(`  ⚠️  prospective HTTP ${r.status}`); break; } j = await r.json(); }
+    catch(e){ console.log(`  ⚠️  prospective: ${e.message}`); break; }
+    const jobs = (j && j.jobs) || [];
+    for(const x of jobs){
+      const z = x.szas || {}, txt = v => stripHtmlToPlainText(decodeHtmlEntities(String(v || ''))).trim();
+      const city = z['sza_location.city'] || ((x.attributes || {})[`20_${String(ats.f || '').split(':')[1]}`] || [])[0] || '';
+      const pensum = z['sza_pensum.max'] ? `Beschäftigungsausmaß ${z['sza_pensum.min'] && z['sza_pensum.min'] !== z['sza_pensum.max'] ? z['sza_pensum.min'] + '–' : ''}${z['sza_pensum.max']} %` : '';
+      const body = [txt(z.sza_introduction), txt(z.sza_tasks) && 'Aufgaben\n' + txt(z.sza_tasks), txt(z.sza_requirements) && 'Profil\n' + txt(z.sza_requirements), txt(z.sza_salary) && 'Gehalt\n' + txt(z.sza_salary)].filter(Boolean).join('\n\n');
+      out.push({ title: String(x.title || z.sza_title || '').replace(/\.\s*$/, '').trim(), company: ats.company, location: [city, 'Österreich'].filter(Boolean).join(', '),
+        datePosted: x.start_date || null, description: [x.title, city, txt(z.sza_employment_type), pensum].filter(Boolean).join('\n') + '\n\n' + body.slice(0, 8500),
+        url: (x.links && x.links.directlink) || z.sza_apply_link, departmentNames: ((x.attributes || {})['40']) || [] });
+    }
+    if(jobs.length < 100) break;
+  }
+  console.log(`  ${ats.company}: ${out.length} ilan (prospective).`);
+  return out.length ? out : null;
+}
+
+// 25.10: SuccessFactors "Career Site Builder" yeni arayüzü (MAN: jobs.man.eu) — sonuçlar JS ile, POST
+// /services/recruiting/v1/jobs üzerinden geliyor; klasik RMK okuyucusu 0 ilan görüyordu. Liste cevabında konum yok ama
+// "division_obj" (yasal birim) ve filter alanları (ör. filter7 = şehir) var → Avusturya'ya ait olanlar onlardan seçiliyor.
+async function fetchSfCsbJobs(ats){
+  const origin = ats.origin, locale = ats.locale || 'de_DE';
+  let csrf = '';
+  try{ const h = await (await fetch(`${origin}/search/?q=&locale=${locale}`, { headers: { ...RETAIL_UA, Accept: 'text/html' }, signal: AbortSignal.timeout(20000) })).text(); csrf = (h.match(/CSRFToken\s*=\s*["']([^"']+)/) || [])[1] || ''; }
+  catch(e){ console.log(`  ⚠️  SF-CSB sayfa: ${e.message}`); return null; }
+  const atRe = buildCityRegex('AT'), keep = [];
+  let total = Infinity, seen = 0;
+  for(let p = 0; p < 150 && seen < total; p++){
+    let j; try{
+      const r = await fetch(`${origin}/services/recruiting/v1/jobs`, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json', 'X-CSRF-Token': csrf, 'User-Agent': RETAIL_UA['User-Agent'] },
+        body: JSON.stringify({ locale, pageNumber: p, sortBy: '', keywords: '', location: '', facetFilters: {}, brand: '', skills: [], categoryId: 0, alertId: '', rcmCandidateId: '' }), signal: AbortSignal.timeout(20000) });
+      if(!r.ok){ console.log(`  ⚠️  SF-CSB HTTP ${r.status}`); break; } j = await r.json();
+    }catch(e){ console.log(`  ⚠️  SF-CSB liste: ${e.message}`); break; }
+    const L = (j && j.jobSearchResult) || []; total = Number(j && j.totalJobs) || 0;
+    if(!L.length) break; seen += L.length;
+    for(const x of L){
+      const r = (x && x.response) || {};
+      const facts = Object.entries(r).filter(([k]) => /^(division_obj|filter\d+)$/.test(k)).map(([, v]) => [].concat(v).join(' ')).join(' | ');
+      if(atRe.test(facts) || /öster|austria/i.test(facts)) keep.push(r);
+    }
+    await new Promise(res => setTimeout(res, 120));
+  }
+  if(!keep.length){ console.log(`  SF-CSB (${origin}): ${seen} ilandan Avusturya'ya ait yok.`); return seen ? [] : null; }
+  const out = [];
+  for(const r of keep){
+    const url = `${origin}/job/${r.urlTitle || r.unifiedUrlTitle}/${r.id}-${locale}`;
+    let desc = '';
+    try{ const h = await (await fetch(url, { headers: { ...RETAIL_UA, Accept: 'text/html' }, signal: AbortSignal.timeout(20000) })).text(); const mm = /<(?:span|div)[^>]+itemprop="description"[^>]*>/i.exec(h); if(mm) desc = stripHtmlToPlainText(balancedInner(h, mm.index)); }catch(e){}
+    const city = [].concat(r.filter7 || [])[0] || '';
+    out.push({ title: r.unifiedStandardTitle, company: ats.company, location: [city, 'Österreich'].filter(Boolean).join(', '), datePosted: null,
+      description: [r.unifiedStandardTitle, city, [].concat(r.filter6 || []).join(', ')].filter(Boolean).join('\n') + '\n\n' + desc.slice(0, 8500), url, departmentNames: [].concat(r.filter1 || []) });
+    await new Promise(res => setTimeout(res, 150));
+  }
+  console.log(`  ${ats.company}: ${out.length} Avusturya ilanı (${seen} toplam).`);
+  return out;
+}
+
 async function fetchBinderJobs(ats){
   let h;
   try{ const r = await fetch(ats.url, { headers: { ...RETAIL_UA, Accept: 'text/html' }, signal: AbortSignal.timeout(20000) }); if(!r.ok){ console.log(`  ⚠️  Binder HTTP ${r.status}`); return null; } h = await r.text(); }catch(e){ console.log(`  ⚠️  Binder: ${e.message}`); return null; }
@@ -3768,6 +4029,14 @@ async function runCrawl(listingUrl, cityFilter, opts = {}){
       console.log(`📄 Sayfa şablonundan ${jobLinks.length} ilan linki.`);
     }
     else jobLinks = await crawlListing(listingUrl, 25, browser);
+    // 25.10 (Wiener Stadtwerke): linkPattern artık sitemap dışında da geçerli — liste sayfasındaki
+    // www.wienerstadtwerke.at tanıtım sayfaları ("Internet of Trees", "Haltestellenmast") aynı ana alan adında
+    // olduğu için host filtresinden geçiyordu. Config'te linkPattern varsa sadece onu içeren linkler kalır.
+    if(!opts.sitemap && opts.linkPattern){
+      const before = jobLinks.length;
+      jobLinks = jobLinks.filter(u => String(u).includes(opts.linkPattern));
+      if(before !== jobLinks.length) console.log(`🔎 linkPattern "${opts.linkPattern}": ${before - jobLinks.length} ilan olmayan link elendi.`);
+    }
     if(opts.sitemap) console.log(`🗺️  Sitemap'ten ${jobLinks.length} ilan linki (${opts.linkPattern || 'tümü'}).`);
     const toVisit = jobLinks.filter(link => !urlLooksLikeOtherCity(link, cityFilter));
     const skipped = jobLinks.length - toVisit.length;
