@@ -51,11 +51,11 @@ jobs:
           sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
           if [ -x /usr/bin/google-chrome ]; then
             echo "PUPPETEER_EXECUTABLE_PATH=/usr/bin/google-chrome" >> "$GITHUB_ENV"
-            PUPPETEER_SKIP_DOWNLOAD=true npm install puppeteer
+            PUPPETEER_SKIP_DOWNLOAD=true npm install puppeteer pdfjs-dist@4.10.38
           else
             sudo apt-get update
             sudo apt-get install -y libnss3 libatk1.0-0 libatk-bridge2.0-0 libcups2 libdrm2 libxkbcommon0 libxcomposite1 libxdamage1 libxfixes3 libxrandr2 libgbm1 libasound2t64 libpango-1.0-0 libcairo2
-            npm install puppeteer
+            npm install puppeteer pdfjs-dist@4.10.38
           fi
 
       # 13.10: dünkü taramada görülen ilanların detay sayfaları 7 gün yeniden indirilmiyor (parser'da installDetailCache).
@@ -126,7 +126,7 @@ jobs:
         run: |
           sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
           echo "PUPPETEER_EXECUTABLE_PATH=/usr/bin/google-chrome" >> "$GITHUB_ENV"
-          PUPPETEER_SKIP_DOWNLOAD=true npm install puppeteer
+          PUPPETEER_SKIP_DOWNLOAD=true npm install puppeteer pdfjs-dist@4.10.38
 
       - name: Problem şirketleri tara
         if: steps.day.outputs.run == '1'
@@ -254,11 +254,11 @@ jobs:
           sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
           if [ -x /usr/bin/google-chrome ]; then
             echo "PUPPETEER_EXECUTABLE_PATH=/usr/bin/google-chrome" >> "$GITHUB_ENV"
-            PUPPETEER_SKIP_DOWNLOAD=true npm install puppeteer
+            PUPPETEER_SKIP_DOWNLOAD=true npm install puppeteer pdfjs-dist@4.10.38
           else
             sudo apt-get update
             sudo apt-get install -y libnss3 libatk1.0-0 libatk-bridge2.0-0 libcups2 libdrm2 libxkbcommon0 libxcomposite1 libxdamage1 libxfixes3 libxrandr2 libgbm1 libasound2t64 libpango-1.0-0 libcairo2
-            npm install puppeteer
+            npm install puppeteer pdfjs-dist@4.10.38
           fi
 
       # 05.10: X paketi — her taslak için PNG kart, ilk 3'ü için 5 sn video + index.html.

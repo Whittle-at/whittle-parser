@@ -53,15 +53,14 @@ async function launchLean(opts){
   const P = (_puppeteer || (_puppeteer = require('puppeteer')));
   const o = { ...(opts || {}) }; o.args = [...(o.args || []), '--disable-dev-shm-usage', '--disable-gpu'];
   const b = await P.launch(o);
-  if(process.env.WHITTLE_FULL_RESOURCES === '1') return b;
-  const BLOCK = new Set(['image', 'media', 'font']);
+  // 25.10 v2: Request-Interception kaldırıldı (handler eklenmeden önce gelen istekler takılıp sayfayı kilitleyebiliyordu).
+  // Bunun yerine CDP Network.setBlockedURLs: sadece dosya uzantısına göre engelliyor, başka hiçbir isteğe dokunmuyor.
+  // Varsayılan KAPALI – WHITTLE_LEAN=1 ile açılır (önce tek parçada denenecek).
+  if(process.env.WHITTLE_LEAN !== '1') return b;
+  const BLOCK = ['*.png','*.jpg','*.jpeg','*.gif','*.webp','*.avif','*.ico','*.woff','*.woff2','*.ttf','*.otf','*.mp4','*.webm','*.mp3'];
   b.on('targetcreated', async t => {
     if(t.type() !== 'page') return;
-    try{
-      const pg = await t.page(); if(!pg) return;
-      await pg.setRequestInterception(true);
-      pg.on('request', r => { if(r.isInterceptResolutionHandled && r.isInterceptResolutionHandled()) return; (BLOCK.has(r.resourceType()) ? r.abort() : r.continue()).catch(() => {}); });
-    }catch(e){ /* sayfa kapanmış olabilir */ }
+    try{ const c = await t.createCDPSession(); await c.send('Network.enable'); await c.send('Network.setBlockedURLs', { urls: BLOCK }); }catch(e){}
   });
   return b;
 }
@@ -646,6 +645,7 @@ function detectAtsFromUrl(url){
     if(host === 'jobs.helvetia.com' && /^\/at\/?$/.test(path)) return { type: 'prospective', medium: '1002532', f: u.searchParams.get('f') || '20:1192756', company: 'Helvetia Versicherung' }; // 25.10
     if(/(^|\.)generali\.at$/.test(host) && /^\/karriere\/aktuelle-jobs\/?$/.test(path)) return { type: 'generali', url }; // 25.10
     // 25.10: rexx portalları — liste sayfası, ilan sayfasında JobPosting JSON-LD (FMA linkleri ana siteye "?yid=" ile gidiyor → rexx detay adresi kuruluyor)
+    if(/(^|\.)statistik\.at$/.test(host) && /karriere\/jobangebote\/?$/.test(path)) return { type: 'statistik', url }; // 25.10
     if(host === 'karriere.fma.gv.at' && /^\/(de\/?)?$/.test(path)) return { type: 'htmlld', url, link: '[?&]yid=(\\d+)', build: 'https://karriere.fma.gv.at/job-de-j{1}.html', company: 'Finanzmarktaufsicht (FMA)' };
     if(host === 'karriere.sky.at' && /^\/stellenangebote\.html$/.test(path)) return { type: 'htmlld', url, link: 'href="([^"]*-de-j\\d+\\.html)"', company: 'Sky Österreich' };
     if(host === 'jobs.cerhahempel.com' && /^\/jobs\/?$/i.test(path)) return { type: 'htmlld', url, link: '"Id":(\\d{4,8}),"Title"', build: 'https://jobs.cerhahempel.com/Job/{1}', company: 'CERHA HEMPEL' }; // 25.10 (ilan listesi sayfadaki JSON'da)
@@ -1249,9 +1249,10 @@ async function fetchAtsJobs(ats){
   if(ats.type === 'horvath') return fetchHorvathJobs(ats);
   if(ats.type === 'binder') return fetchBinderJobs(ats);
   if(ats.type === 'erste') return fetchErsteJobs(ats);
-  if(ats.type === 'phenom') return fetchPhenomJobs(ats);
+  if(ats.type === 'phenom') return fetchPhenomAtsJobs(ats);
   if(ats.type === 'htmlld') return fetchHtmlLdJobs(ats);
   if(ats.type === 'generali') return fetchGeneraliJobs(ats);
+  if(ats.type === 'statistik') return fetchStatistikJobs(ats);
   if(ats.type === 'prospective') return fetchProspectiveJobs(ats);
   if(ats.type === 'sfcsb') return fetchSfCsbJobs(ats);
   return [];
@@ -2744,7 +2745,9 @@ async function fetchErsteJobs(ats){
 // 25.10: Phenom People (Philip Morris: join.pmicareers.com) — kök sayfa genel bir tanıtım sayfası, crawl 0 ilan
 // buluyordu. Arama sayfası (?qcountry=Austria) ilanları sunucu tarafında "phApp.ddo.eagerLoadRefineSearch" içinde
 // gönderiyor; ilan sayfalarında tam JobPosting JSON-LD var (açıklama HTML'i bir kez daha kaçışlı geliyor).
-async function fetchPhenomJobs(ats){
+// 25.10 FIX: eskiden adı fetchPhenomJobs idi – genel Phenom yoklamasındaki fetchPhenomJobs(origin, city)'yi EZİYORDU,
+// her tarayıcı detay sayfası 'reading includes' hatasıyla düşüyordu (13.10–25.10 arası canlıya çıkınca 2035 ilan kayboldu).
+async function fetchPhenomAtsJobs(ats){
   const jobs = new Map(); let total = Infinity;
   for(let from = 0; from < Math.min(total, 200); from += 10){
     const u = ats.url + (ats.url.includes('?') ? '&' : '?') + (from ? `from=${from}&s=1` : '');
@@ -2814,6 +2817,42 @@ async function fetchHtmlLdJobs(ats){
   }
   console.log(`  ${ats.company || new URL(ats.url).host}: ${out.length} ilan (${urls.size} link).`);
   return out;
+}
+
+// 25.10: PDF-Text (Stellenbeschreibungen nur als PDF, z. B. Statistik Austria). pdfjs-dist wird nur bei Bedarf geladen;
+// fehlt das Paket (lokal), gibt es einfach keinen Beschreibungstext.
+async function pdfText(buf){
+  let pdfjs; try{ pdfjs = await import('pdfjs-dist/legacy/build/pdf.mjs'); }catch(e){ return ''; }
+  try{
+    const doc = await pdfjs.getDocument({ data: new Uint8Array(buf), useSystemFonts: true, isEvalSupported: false }).promise;
+    const parts = [];
+    for(let i = 1; i <= Math.min(doc.numPages, 4); i++){
+      const tc = await (await doc.getPage(i)).getTextContent();
+      let line = '';
+      for(const it of tc.items){ line += it.str; if(it.hasEOL){ parts.push(line); line = ''; } }
+      if(line) parts.push(line);
+    }
+    return parts.join('\n').replace(/[ \t]+/g, ' ').replace(/\n{3,}/g, '\n\n').trim();
+  }catch(e){ return ''; }
+}
+// 25.10: Statistik Austria — Liste ist serverseitig (Tabelle .joboffer), Beschreibung nur als PDF. Der allgemeine Crawl
+// folgte den "Bewerben"-Formularlinks → 16 Einträge mit Titel "Bewerbung". Jetzt: Titel aus der Tabelle, Text aus dem PDF.
+async function fetchStatistikJobs(ats){
+  let h; try{ const r = await fetch(ats.url, { headers: { ...RETAIL_UA, Accept: 'text/html' }, signal: AbortSignal.timeout(30000) }); if(!r.ok) return null; h = await r.text(); }catch(e){ return null; }
+  const rows = [...h.matchAll(/role="cell">\s*(\d{2,5})\s*<\/div>[\s\S]*?<div class="col-md-6[^"]*">([\s\S]*?)<\/div>[\s\S]*?href="([^"]*\/career\/\d+\.pdf)"/g)];
+  const out = [];
+  for(const m of rows){
+    const title = decodeHtmlEntities(stripHtmlToPlainText(m[2])).replace(/\s+/g, ' ').trim();
+    if(!title || /initiativbewerbung/i.test(title)) continue;
+    const pdfUrl = new URL(m[3], ats.url).href;
+    let text = '';
+    try{ const r = await fetch(pdfUrl, { headers: RETAIL_UA, signal: AbortSignal.timeout(30000) }); if(r.ok) text = await pdfText(await r.arrayBuffer()); }catch(e){}
+    out.push({ title, company: 'Statistik Austria', location: 'Wien', datePosted: null, url: pdfUrl,
+      description: [title, 'Wien', 'Referenznummer ' + m[1]].join('\n') + '\n\n' + (text || '').slice(0, 8500), departmentNames: [] });
+    await new Promise(r => setTimeout(r, 150));
+  }
+  console.log(`  Statistik Austria: ${out.length} ilan (${out.filter(o=> o.description.length > 300).length} mit PDF-Text).`);
+  return out.length ? out : null;
 }
 
 // 25.10: Generali (generali.at/karriere/aktuelle-jobs) — Next.js sayfası, 10'arlı istemci tarafı sayfalama; genel crawl 2

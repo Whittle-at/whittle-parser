@@ -82,9 +82,10 @@
   },
   {
     "name": "Statistik Austria",
-    "url": "https://www.statistik.at/en/ueber-uns/karriere/jobangebote",
+    "url": "https://www.statistik.at/ueber-uns/karriere/jobangebote",
     "_added": "2026-10-03",
-    "employerType": "public"
+    "employerType": "public",
+    "_note": "25.10: eigener Reader (Tabelle + PDF-Text); vorher Titel \"Bewerbung\"."
   },
   {
     "name": "Wirtschaftsagentur Wien",
