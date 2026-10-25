@@ -46,7 +46,25 @@
 // 30.09: puppeteer ilk kullanıldığında yükleniyor — merge-results.js bu dosyadaki filtreleri kullanabilsin diye
 // (merge işinde puppeteer kurulu değil).
 let _puppeteer = null;
-const puppeteer = new Proxy({}, { get: (_, k) => (_puppeteer || (_puppeteer = require('puppeteer')))[k] });
+const puppeteer = new Proxy({}, { get: (_, k) => { const P = (_puppeteer || (_puppeteer = require('puppeteer'))); return k === 'launch' ? launchLean : P[k]; } });
+// 25.10 (GitHub dakikası): her tarayıcıda resim/video/font indirilmiyor — iş linkleri ve metin için gerekmiyor,
+// sayfalar belirgin şekilde daha hızlı yükleniyor (networkidle daha erken). WHITTLE_FULL_RESOURCES=1 ile kapatılır.
+async function launchLean(opts){
+  const P = (_puppeteer || (_puppeteer = require('puppeteer')));
+  const o = { ...(opts || {}) }; o.args = [...(o.args || []), '--disable-dev-shm-usage', '--disable-gpu'];
+  const b = await P.launch(o);
+  if(process.env.WHITTLE_FULL_RESOURCES === '1') return b;
+  const BLOCK = new Set(['image', 'media', 'font']);
+  b.on('targetcreated', async t => {
+    if(t.type() !== 'page') return;
+    try{
+      const pg = await t.page(); if(!pg) return;
+      await pg.setRequestInterception(true);
+      pg.on('request', r => { if(r.isInterceptResolutionHandled && r.isInterceptResolutionHandled()) return; (BLOCK.has(r.resourceType()) ? r.abort() : r.continue()).catch(() => {}); });
+    }catch(e){ /* sayfa kapanmış olabilir */ }
+  });
+  return b;
+}
 const fs = require('fs');
 const path = require('path');
 const learning = require('./ai-learning'); // 28.09: kendi kendine öğrenme katmanı (bkz. ai-learning.js)
@@ -4681,16 +4699,27 @@ async function runCrawlBatch(configFile, shard){
     }
   }
 
-  for(let start = 0; start < config.length; start += CRAWL_CONCURRENCY){
-    const chunk = config.slice(start, start + CRAWL_CONCURRENCY);
-    await Promise.all(chunk.map((company, j) => processCompany(company, start + j)));
+  // 25.10 (GitHub dakikası): eskiden 4'lü gruplar halinde ilerliyordu — grubun en yavaş şirketi bitmeden sıradaki grup
+  // başlamıyordu (bir şirket 25 dk sürerse diğer 3 slot boş bekliyordu). Artık havuz: biten slot hemen sıradakini alıyor.
+  // Ara kayıt eskisi gibi her CRAWL_CONCURRENCY şirkette bir yazılıyor.
+  let nextIdx = 0, doneSinceSave = 0;
+  const savePoint = () => {
     const soFar = writeProgress();
     if(detailCache) detailCache.save(all);
     saveBudget(); saveQueue();
     saveAiCache(aiCache, aiCacheOut); // sonuç dosyasıyla aynı "yarıda kesilse bile kayıp olmasın" mantığı
     const doneCount = perCompany.filter(Boolean).length;
     console.log(`  💾 Ara kayıt yazıldı: ${outFile} (şimdiye kadar ${soFar} ilan, ${doneCount}/${config.length} şirket tamamlandı) — AI kotası (günlük): ${aiBudget.remaining}/${MAX_AI_CALLS_PER_RUN} kaldı`);
-  }
+  };
+  const worker = async () => {
+    while(nextIdx < config.length){
+      const i = nextIdx++;
+      await processCompany(config[i], i);
+      if(++doneSinceSave >= CRAWL_CONCURRENCY){ doneSinceSave = 0; savePoint(); }
+    }
+  };
+  await Promise.all(Array.from({ length: Math.min(CRAWL_CONCURRENCY, config.length) }, worker));
+  savePoint();
 
   console.log(`\n${'='.repeat(60)}\n✅ TOPLU-CRAWL SONUCU (${config.length} şirket):\n`);
   perCompany.forEach(c => c && console.log(`  ${c.ok ? '✅' : '❌'} ${c.name} [${Math.round((c.ms||0)/1000)} sn, ${c.mode||'?'}${c.opened!=null && c.mode==='browser' ? `, ${c.opened} açıldı/${c.reused} önbellek` : ''}]: ${c.count} ilan (${c.rawCount} link işlendi, ${c.rawCount-c.count} elendi: senior / genel başvuru / ilan olmayan sayfa)${c.error ? ` (hata: ${c.error})` : ''}`));
