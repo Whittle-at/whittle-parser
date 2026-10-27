@@ -153,6 +153,16 @@ const RETIRED = ['ONLY Stores Austria', 'JYSK Austria', "McDonald's Österreich"
   for (const name of RETIRED) if (!perCompany.some(c => c.name === name)) perCompany.push({ name, count: 1, rawCount: 0, ok: true, retired: true });
 }
 
+// 27.10 (Dakika): elenen ilan linkleri de combined'a (sadece link + tarih). Bunlar olmadan parser ertesi gün her elenen
+// ilanı (senior, başka şehir, ilan olmayan sayfa) baştan açıyordu — tarayıcı taramasında açılan sayfaların çoğu buydu.
+const excludedItems = [];
+{
+  const seenEx = new Set(combinedItems.map(it => it._srcLink).filter(Boolean));
+  for (const src of [main, problem]) for (const ex of (src && src.excludedItems) || []) {
+    if (!ex || !ex._srcLink || !ex._fetchedAt || seenEx.has(ex._srcLink)) continue;
+    seenEx.add(ex._srcLink); excludedItems.push({ _srcLink: ex._srcLink, _fetchedAt: ex._fetchedAt });
+  }
+}
 const combined = {
   date: dateStr,
   totalCompanies: (main?.totalCompanies || 0) + (problem?.totalCompanies || 0),
@@ -160,6 +170,7 @@ const combined = {
   totalItems: combinedItems.length,
   perCompany,
   items: combinedItems,
+  excludedItems,
 };
 
 const outFile = path.join(outDir, `whittle-import-${dateStr}-combined.json`);

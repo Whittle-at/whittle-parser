@@ -184,9 +184,10 @@
   },
   {
     "name": "REWE Group Austria",
-    "url": "https://rewe-group.jobs/en/jobs",
+    "url": "https://jobs.smartrecruiters.com/REWEInternationalDienstleistungsgesellschaftmbH",
     "mode": "office",
-    "employerType": "konzern"
+    "employerType": "konzern",
+    "_note": "27.10: rewe-group.jobs lädt Jobs nur noch per JS mit Login-Token; Head-Office-Jobs kommen öffentlich von SmartRecruiters (Filialjobs filtert mode=office)."
   },
   {
     "name": "DO & CO",

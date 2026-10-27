@@ -4120,6 +4120,9 @@ async function runCrawl(listingUrl, cityFilter, opts = {}){
         const { items } = await processUrl(link, cityFilter, browser, ctx);
         items.forEach(it => { it._srcLink = link; it._fetchedAt = today; });
         all.push(...items);
+        // 27.10: sayfa sorunsuz açıldı ama ilan çıkmadı (başka şehir, ilan olmayan sayfa) → "elendi" olarak hatırla,
+        // REFETCH_DAYS boyunca tekrar açılmasın. Hata veren sayfalar (catch) hatırlanmıyor, ertesi gün yeniden denenir.
+        if(!items.length && !ctx.atsDone) all.push({ _srcLink: link, _fetchedAt: today, _knownExcluded: true, title: null });
       }catch(e){
         console.log(`⚠️  Bu ilan işlenirken hata: ${e.message} — atlanıp bir sonrakine geçiliyor.`);
       }
@@ -4698,19 +4701,19 @@ async function runCrawlBatch(configFile, shard){
       // başlık/şirket/metnin başında geçmeyen ilanları atar.
       if(company.onlyIf){
         const re = new RegExp(company.onlyIf, 'i'), before = items.length;
-        items = items.filter(it => re.test([it.title, it.companyName, it.company, String(it.description || it._adText || it._rawText || '').slice(0, 3000)].join(' ')));
+        items = items.filter(it => it._knownExcluded || re.test([it.title, it.companyName, it.company, String(it.description || it._adText || it._rawText || '').slice(0, 3000)].join(' ')));
         console.log(`  onlyIf /${company.onlyIf}/: ${before} → ${items.length}`);
       }
       // 15.10: tersi — eşleşenler atılıyor (Siemens AG Österreich listesi Siemens Mobility ilanlarını da içeriyor; onlar ayrı şirket).
       if(company.exceptIf){
         const re = new RegExp(company.exceptIf, 'i'), before = items.length;
-        items = items.filter(it => !re.test([it.title, it.companyName, it.company, String(it.description || it._adText || it._rawText || '').slice(0, 3000)].join(' ')));
+        items = items.filter(it => it._knownExcluded || !re.test([it.title, it.companyName, it.company, String(it.description || it._adText || it._rawText || '').slice(0, 3000)].join(' ')));
         console.log(`  exceptIf /${company.exceptIf}/: ${before} → ${items.length}`);
       }
       // 05.10: "mode": "office" → mağaza/depo/şoför ilanları AI'a gitmeden atılıyor, sadece merkez ofis + öğrenci ilanları kalıyor.
       if(company.mode === 'office'){
         const { officeTitle } = require('./ai-fields'), before = items.length;
-        items = items.filter(it => officeTitle(it.title));
+        items = items.filter(it => it._knownExcluded || officeTitle(it.title)); // 27.10: Platzhalter bleiben (Cache)
         console.log(`  mode=office: ${before} → ${items.length} (mağaza/depo ilanları atıldı)`);
       }
       // DÜZELTME (Eren'in fark ettiği kafa karışıklığı): eskiden buraya HAM link sayısı
