@@ -810,6 +810,22 @@ async function detectEmbeddedAts(page){
 // bu yüzden "Toplu İçe Aktar"a yapıştırılacak bloktan seniorityGuess==='senior' olan ilanlar
 // otomatik ÇIKARILIYOR (junior + belirsiz/null kalıyor, elle gözden geçirilebilsin diye).
 // Çıkarılanlar kaybolmuyor — ayrı bir listede gösteriliyor, sadece paste bloğunun dışında.
+// 27.10 (Eren: "AI'dan geçirmiyor muyuz, nasıl sızıyor"): yeni eklenen şirketlerde makale, haber, kariyer tanıtım ve
+// 404 sayfaları ilan diye girdi (BearingPoint "Internet der Dinge …", Valida "Gelebte Nachhaltigkeit", Apleona Lüksemburg …).
+// İlan sayılması için en az bir sinyal lazım: başlıkta iş/rol kelimesi ya da cinsiyet eki, VEYA metinde maaş (AT'de ilanlarda
+// zorunlu), VEYA metinde en az 4 ilan ifadesi (Aufgaben, Profil, wir bieten, bewerben …). Bilinen çöp başlıklar her zaman elenir.
+const JOB_TITLE_RE = /\b(m\/w\/d|w\/m\/d|m\/f\/d|f\/m\/d|f\/m\/x|w\/m\/x|m\/w\/x|d\/f\/m|all genders|gn|w\/m\/div|m\/w\/div|d\/m\/w)\b|\*in\b|:in\b|\/in\b|innen\b|\(m|praktik|intern\b|internship|trainee|werkstudent|student|junior|assistent|assistant|manager|referent|sachbearbeit|mitarbeiter|specialist|spezialist|analyst|engineer|ingenieur|entwickler|developer|consultant|berater|techniker|lehrling|lehre\b|kaufm|koordinator|coordinator|leiter|leitung|fachkraft|verkäufer|kassier|aushilfe|ferial|associate|officer|controller|accountant|counsel|jurist|buchhalt|bilanz|steuer|recruiter|designer|architekt|admin|support|koch|kellner|pflege|therap|arzt|ärztin|lehrer|pädagog|betreuer|fahrer|lager|monteur|elektrik|mechanik|operator|scientist|researcher|forsch|doktorand|phd|postdoc|masterarbeit|diplomarbeit|bachelorarbeit|abschlussarbeit|product owner|lead\b|head of|direktor|director|expert|executive|representative|agent|clerk|sekretär|empfang|rezeption|makler|landwirt|gärtner|coach|fellow|reiniger|prüfer|vorbereiter|konstrukteur|verrechner|unterstützung|sales|führungskraft|technician|professur|professor|videograph|fotograf|photograph|controlling|compliance|amlo|\baml\b|risk|audit|marketing|finance|\bhr\b|deputy|vertrieb|einkäufer|buyer|editor|redakteur|journalist|übersetzer|translator|psycholog|sozialarbeit|jurist|rechtsanwalt|notar|apothek|labor|chemiker|biolog|physiker|mathemat|statistik|data\b|devops|security|tester|qa\b|ux\b|ui\b/i;
+const JUNK_TITLE_RE = /^(seite nicht gefunden.*|page not found.*|404.*|jobbörse|new jobs|offene stellen|karriere|jobs|stellenangebote|general application|bewerbung|initiativbewerbung|jobprofile.*|international|förderstellen|on the job|leg los\.?|ankommen bei .*|wir als arbeitgeber|unser team.*|unser angebot.*)$/i;
+const AD_SIGNAL_RE = /bewirb|bewerbung|apply|application|ihr profil|dein profil|your profile|aufgaben|your tasks|anforderungen|requirements|wir bieten|we offer|kollektivvertrag|brutto|gross|überzahlung|qualifikation/gi;
+function looksLikeJob(it){
+  if(!it || it._knownExcluded) return true; // yer tutucu zaten başka yoldan eleniyor
+  const t = String(it.title || '').replace(/­/g, '').trim();
+  if(JUNK_TITLE_RE.test(t)) return false;
+  if(JOB_TITLE_RE.test(t)) return true;
+  const txt = String(it._rawText || it._adText || it.description || '');
+  if(it._salaryText || /(€|EUR)\s?\d|\d[\d.,]*\s?(€|EUR)|brutto|gross/i.test(txt)) return true;
+  return (txt.match(AD_SIGNAL_RE) || []).length >= 4;
+}
 function splitByTargetFit(items){
   // DEĞİŞTİ (26.09): kurye/depo/şoför/üretim ilanları artık ELENMİYOR — Whittle'ın Handwerk, Bau &
   // Produktion şemsiyesi (Lager, Fahren & Transport, Produktion) tam da bu ilanlar için var ve
@@ -819,7 +835,7 @@ function splitByTargetFit(items){
   const norm = x => (x || '').toLowerCase().replace(/[^a-z0-9äöü]/g, '');
   // 30.09 (TROX): "RO | INTERNAL SALES ENGINEER" — başlıktaki ülke kodu öneki yabancı ilan demek.
   const FOREIGN_PREFIX = /^(RO|HU|CZ|SK|PL|DE|CH|SI|HR|RS|BG|IT|FR|UK|GB|US|ES|NL|BE|UA|TR|BA|ME|MK|AL|LT|LV|EE|DK|SE|NO|FI|CN|IN)\s*[|:–]\s/;
-  const bad = it => guessGenericApplication(it.title) || !it.title || FOREIGN_PREFIX.test(String(it.title).trim()) || norm(it.title) === norm(it.companyName) || norm(it.title) === norm(it._company)
+  const bad = it => guessGenericApplication(it.title) || !it.title || !looksLikeJob(it) || FOREIGN_PREFIX.test(String(it.title).trim()) || norm(it.title) === norm(it.companyName) || norm(it.title) === norm(it._company)
     || isJunkTitle(it.title) || (isAustriaMode(it._city)
       ? FOREIGN_CITY_IN_TITLE.test(it.title) && !buildCityRegex('AT').test(it.title)   // AT modu: sadece yurt dışı başlıklar elenir
       : (OTHER_CITY_IN_TITLE.test(it.title) && !/wien|vienna/i.test(it.title)) || isNonViennaTitle(it.title));
