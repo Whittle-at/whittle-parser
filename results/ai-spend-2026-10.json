@@ -1,14 +1,8 @@
 {
-  "usd": 5.488,
-  "cat": 1.2509,
+  "usd": 5.8443,
+  "cat": 1.5099,
   "brief": 1.5147,
-  "pending": {
-    "msgbatch_014GkgUN7WZEwJgK8BG5pH4z": {
-      "f": 0.143,
-      "c": 0.2331,
-      "b": 0
-    }
-  },
+  "pending": {},
   "cap": 6.5,
   "catCap": 1.5,
   "briefCap": 1.5

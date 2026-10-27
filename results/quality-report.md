@@ -1,20 +1,20 @@
-# Veri kalitesi – whittle-import-2026-10-25-combined.json
+# Veri kalitesi – whittle-import-2026-10-27-combined.json
 
-1720 ilan · 2026-10-25 20:34 UTC
+1931 ilan · 2026-10-27 11:38 UTC
 
 ## Kapsama
 
 | Alan | Değer var | Kural kanıtı (evidence) var |
 |---|---|---|
-| Abschluss | 76 % | 76 % |
-| Deutsch | 68 % | 68 % |
-| Englisch | 50 % | 50 % |
-| Erfahrung | 80 % | 69 % |
-| Maaş cümlesi bulundu | 78 % | metinde € geçen: 82 % |
-| Wochenstunden (Zahl) | 56 % | |
-| Arbeitszeit bekannt (Zahl oder Voll-/Teilzeit, ohne Lehre) | 88 % | |
-| Beschäftigungsart (emp) | 89 % | |
-| Kısa metin (<600 karakter, fetcher detay sayfasını açmıyor olabilir) | 2 % | |
+| Abschluss | 75 % | 75 % |
+| Deutsch | 71 % | 71 % |
+| Englisch | 48 % | 48 % |
+| Erfahrung | 80 % | 70 % |
+| Maaş cümlesi bulundu | 75 % | metinde € geçen: 80 % |
+| Wochenstunden (Zahl) | 57 % | |
+| Arbeitszeit bekannt (Zahl oder Voll-/Teilzeit, ohne Lehre) | 89 % | |
+| Beschäftigungsart (emp) | 90 % | |
+| Kısa metin (<600 karakter, fetcher detay sayfasını açmıyor olabilir) | 3 % | |
 
 ## En kötü şirketler (≥5 ilan)
 
@@ -22,35 +22,35 @@
 
 | Şirket | İlan | Maaş | Ort. metin |
 |---|---|---|---|
-| UniQA | 44 | 0 % | 3174 |
+| UniQA | 43 | 0 % | 3155 |
 | McKinsey & Company | 29 | 0 % | 4000 |
-| MAN Truck & Bus Österreich | 22 | 0 % | 224 |
+| JBA - Justizbetreuungsagentur | 24 | 0 % | 2114 |
 | Kearney | 20 | 0 % | 3869 |
 | Bybit EU | 20 | 0 % | 3915 |
-| Bitpanda | 15 | 0 % | 4000 |
+| MAN Truck & Bus Österreich | 18 | 0 % | 238 |
 | Qualysoft | 15 | 0 % | 1239 |
+| Bitpanda | 14 | 0 % | 4000 |
+| DHL Austria | 14 | 0 % | 200 |
+| KML Linear Motion Technology GmbH | 10 | 0 % | 199 |
+| FHWien der WKW | 7 | 0 % | 4000 |
 | Falstaff Verlags-Gesellschaft m.b.H. | 6 | 0 % | 2566 |
-| REWE International | 5 | 0 % | 711 |
-| BERNARD Gruppe | 5 | 0 % | 3203 |
-| Sportradar | 12 | 8 % | 4000 |
-| Austrian Airlines | 8 | 13 % | 2338 |
 
 **Saat:**
 
 | Şirket | İlan | Saat | Ort. metin |
 |---|---|---|---|
-| Leyrer + Graf | 55 | 0 % | 2764 |
+| Leyrer + Graf | 34 | 0 % | 2847 |
 | McKinsey & Company | 29 | 0 % | 4000 |
-| MAN Truck & Bus Österreich | 22 | 0 % | 224 |
+| DHL Austria | 14 | 0 % | 200 |
+| KML Linear Motion Technology GmbH | 10 | 0 % | 199 |
 | Greiner | 8 | 0 % | 2393 |
 | GROPYUS | 7 | 0 % | 4000 |
 | Prewave | 7 | 0 % | 4000 |
 | Freshfields Wien | 6 | 0 % | 3238 |
+| Allianz Österreich | 6 | 0 % | 382 |
 | OMV | 6 | 0 % | 3440 |
-| AVL List | 5 | 0 % | 3606 |
-| Bybit EU | 20 | 5 % | 3915 |
-| Lomography | 16 | 6 % | 3180 |
-| Kearney | 20 | 10 % | 3869 |
+| Wien Work-integrative Betriebe und AusbildungsgmbH | 6 | 0 % | 3904 |
+| UNIDO | 6 | 0 % | 4000 |
 
 ## Elle kontrol listesi (25 rastgele ilan)
 
@@ -58,28 +58,28 @@
 
 | İlan | Şirket | Deutsch | Englisch | Erfahrung | Abschluss | Saat |
 |---|---|---|---|---|---|---|
-| [Social Media Manager (m/w/d) 25h/Woche](https://santander.wd3.myworkdayjobs.com/SantanderCareers/job/Wien/Social-Media-Manager--m-w-d--25h-Woche_Req1586146) | Santander Consumer Bank Austria | B2 | ? | 1–2 J. | Matura/Lehre | ✓ |
-| [Elektriker - Internationale Montage (m/w/d)](https://careers.knapp.com/job/Hart-bei-Graz-Elektriker-Internationale-Montage-%28mwd%29-Stei-8075/811779702/) | KNAPP | B2 | B1 | ? | Matura/Lehre | ✓ |
-| [IT Business Analyst - Retail Applications (m/w/d)](https://www.spar.at/karriere/jobboerse/it-informationstechnologie/1398) | SPAR Österreich | C1 | B2 | ? | Matura/Lehre | – |
-| [Category Planning & Development Specialist (m/f/d)](https://wd3.myworkdaysite.com/recruiting/mdlz/External/job/Vienna-Austria/Category-Planning---Development-Specialist--m-f-d-_R-178435-2) | Mondelez Österreich | C1 | C1 | 1–2 J. | Bachelor lfd. | ✓ |
-| [Technischer Facility Manager im Liegenschafts- und Gebäudema](https://jobs.leyrer-graf.at/Technischer-Facility-Manager-im-Liegenschafts-und-Gebaeude-de-j486.html) | Leyrer + Graf | ? | ? | keine | Matura/Lehre | – |
-| [Marketing Volontariat Austria, Germany & Switzerland (m/f/x ](https://lomography.recruitee.com/o/marketing-volontariat-austria-germany-switzerland-mfx-internship) | Lomography | C1 | B2 | keine | Bachelor lfd. | – |
-| [Back End Developer / Integration Engineer](https://santander.wd3.myworkdayjobs.com/SantanderCareers/job/Valladolid---Plaza-Juan-de-Austria-5-P02/Back-End-Developer---Integration-Engineer_Req1617699-1) | Santander Consumer Bank Austria | – | B2 | 3–5 J. | Bachelor | – |
-| [Projektentwickler Expansion- und Immobilienentwicklung (m/w/](https://www.spar.at/karriere/jobboerse/verwaltung-organisation-management/6018) | SPAR Österreich | ? | ? | 3–5 J.* | Bachelor lfd. | ✓ |
-| [Techlead Database Platform (m/w/d)](https://www.spar.at/karriere/jobboerse/it-informationstechnologie/2479) | SPAR Österreich | C1 | B2 | 3–5 J.* | ? | – |
-| [Mitarbeiter Warencontrolling (m/w/d) 38,5 Std/Wo in Dornbirn](https://www.spar.at/karriere/jobboerse/verwaltung-organisation-management/6533) | SPAR Österreich | ? | ? | ? | ? | ✓ |
-| [NETZWERKTECHNIKER DATACENTER (W/M/D)](https://karriere.itsv.at/job/Wien-NETZWERKTECHNIKER-DATACENTER-%28WMD%29/951817455/) | ITSV | ? | ? | 3–5 J.* | Matura/Lehre | ✓ |
-| [Marketing & Retail Internship Scandinavia & Netherlands](https://lomography.recruitee.com/o/marketing-retail-internship-scandinavia-netherlands-2) | Lomography | – | C1 | keine | Bachelor lfd. | – |
-| [Grafiker in der Marketingabteilung (m/w/d) 15-17 Std./Wo - G](https://www.spar.at/karriere/jobboerse/verwaltung-organisation-management/6801) | SPAR Österreich | ? | ? | ? | ? | ✓ |
-| [University Assistant Predoctoral - "Carbene stabilized Nano ](https://jobs.univie.ac.at/job/University-Assistant-Predoctoral-Carbene-stabilized-Nano-materials-and-composites/1448345333/) | Universität Wien | A2 | ? | keine | Master | ✓ |
-| [HR Spezialist Personalsysteme (m/w/d) VZ od. TZ ab 20 Std./W](https://www.spar.at/karriere/jobboerse/verwaltung-organisation-management/6705) | SPAR Österreich | C1 | B1 | keine | Matura/Lehre | – |
-| [SPAR ICS Praktikant (m/w/d)](https://www.spar.at/karriere/jobboerse/ferial-praktika/2439) | SPAR Österreich | ? | ? | keine | Bachelor lfd. | – |
-| [Databricks AI / ML Engineer (m/w/d)](https://jobs.lever.co/qualysoft/8af4898f-84b9-496d-b68e-8ef6802078cb) | Qualysoft | ? | ? | ? | ? | – |
-| [Media Production & Event Specialist (m/w/d)](https://www.spar.at/karriere/jobboerse/it-informationstechnologie/6834) | SPAR Österreich | ? | ? | keine | Bachelor lfd. | ✓ |
-| [Junior Sales im Außendienst (m/w/d)](https://jobs.smartrecruiters.com/SalesianerMiettex/744000151787118) | SALESIANER MIETTEX | ? | ? | ? | Matura/Lehre | ✓ |
-| [Institutsreferent*in](https://jobs.univie.ac.at/job/Institutsreferentin/1450301733/) | Universität Wien | C1 | B2 | keine | Matura/Lehre | ✓ |
-| [Spezialist:in Immobilienbewertung und Finanzierungsservice](https://www.erstegroup.com/de/karriere/stellenangebote/job-detail/spezialist-in-immobilienbewertung-und-finanzierungsservice/33680) | Sparkasse Bludenz Bank AG | ? | ? | ? | Matura/Lehre | ✓ |
-| [Projektmanager Business Innovation & KI-Transformation (m/w/](https://jobs.smartrecruiters.com/SalesianerMiettex/744000151538559) | SALESIANER MIETTEX | C1 | B2 | 3–5 J.* | ? | ✓ |
-| [Financial Risk Modeler and Data Analyst (f/m/d)](https://careers.unicredit.eu/en_GB/jobsuche/JobDetail/AT-INT-EXT-UCBA-Professional-CRO-Financial-Risk-Modeler-Data-Analyst-EN/114309) | UniCredit Bank Austria | B2 | B2 | keine | Bachelor | ✓ |
-| [HR Specialist (m/w/d)](https://jobs.smartrecruiters.com/SalesianerMiettex/744000155201553) | SALESIANER MIETTEX | ? | ? | ? | ? | ✓ |
-| [Sachbearbeiter:in Recht & Regulatorik](https://www.erstegroup.com/de/karriere/stellenangebote/job-detail/sachbearbeiter-in-recht-regulatorik/34705) | SPK Eferd.Peuerb.Waizenk. | ? | ? | keine | Matura/Lehre | ✓ |
+| [FH-Praktikant:in Fahrwerksentwicklung Siemens Mobility Austr](https://jobs.siemens.com/en_US/externaljobs/JobDetail/523854) | Siemens Mobility Austria | B2 | B2 | keine | Bachelor lfd. | ✓ |
+| [Kundenbetreuer_in im Außendienst (Vollzeit/Teilzeit) - Kärnt](https://www.generali.at/karriere/mrctpzehwuidn4m64v2qlpu8op52wo2) | Generali Österreich | ? | ? | ? | ? | – |
+| [Kundenberater:in Top/Premium](https://www.erstegroup.com/de/karriere/stellenangebote/job-detail/kundenberater-in-top-premium/34793) | Erste Group Bank | ? | ? | 3–5 J.* | ? | ✓ |
+| [Berufseinsteiger:in Schwerpunkt Umsatzsteuer](https://bewerbung.kpmg.at/job/Berufseinsteigerin-Schwerpunkt-Umsatzsteuer/1006-de_DE) | KPMG | C1 | C1 | keine | Master | – |
+| [Eventsecurity für (Sport-)Veranstaltungen (m/w/d) - Graz - G](https://jobs.smartrecruiters.com/Securitas/744000127385419) | Securitas Sicherheitsdienstleistungen GmbH | B2 | ? | ? | ? | ✓ |
+| [Administrativer Supervisor (m/w/d) – Linz – Vollzeit](https://jobs.smartrecruiters.com/Securitas/744000147484929) | Securitas Sicherheitsdienstleistungen GmbH | C1 | C1 | 1–2 J. | Matura/Lehre | ✓ |
+| [Spezialist*in Schutztechnik](https://jobs.wienerstadtwerke.at/de/jobs/28344/spezialistin-schutztechnik) | Wiener Stadtwerke-Gruppe | B2 | B2 | keine | Bachelor | ✓ |
+| [Service Owner*in Enterprise Security Risk Management (ESRM)](https://jobs.wienerstadtwerke.at/de/jobs/28353/service-ownerin-enterprise-security-risk-management-esrm) | Wiener Stadtwerke-Gruppe | B2 | ? | keine | Bachelor | ✓ |
+| [Freshfields Unplugged – das Praktikum (w/m/x)](https://freshfields.wd3.myworkdayjobs.com/FBD_101/job/Vienna/Freshfields-Unplugged---das-Praktikum--w-m-x-_R-08753-1) | Freshfields Wien | B2 | B2 | keine | Bachelor | – |
+| [Praktikant:in Health Care Consulting (m/w/d)](https://karriere.bdo.at/jobs/praktikantin-health-care-consulting-m-w-d-2) | BDO Austria | C1 | B1 | keine | Bachelor | ✓ |
+| [Mitarbeiter:in im Talent Acquisition Team für Candidate Rela](https://pwc.wd3.myworkdayjobs.com/Global_Campus_Careers/job/Wien---Donau-City-Strae-7/Mitarbeiter-in-im-Talent-Acquisition-Team-fr-Candidate-Relations-und-Hochschulkooperationen--w-m-d-_768202WD) | PwC | B2 | B2 | 1–2 J. | Bachelor | – |
+| [DGKP* auf der akutkonservativen Bettenstation](https://karriereportal.vinzenzgruppe.at/DGKP-auf-der-akutkonservativen-Bettenstation-de-j10764.html) | Orthopädisches Spital Speising | ? | ? | keine | Bachelor | ✓ |
+| [Gewerbemanager:in (m/w/d)](https://careers.uniqagroup.com/job/Klagenfurt-Gewerbemanagerin-%28mwd%29/1376564333/) | UniQA | ? | ? | ? | ? | – |
+| [Hardware Engineer (m/f/d)](https://jobs.frequentis.com/karriere/JobDetail/FCO-Hardware-Engineer-m-f-d/3694) | Frequentis | C1 | A2 | keine | Bachelor | – |
+| [Category Group Head (all gender)](https://careers.mediamarktsaturn.com/job-invite/98764/?locale=de_DE) | MediaMarkt Austria | B2 | ? | 3–5 J.* | Bachelor | – |
+| [INTERNATIONALE STEUERPLANUNG](https://www.contax.at/de/leistungen/internationale-steuerplanung) | CONTAX Wirtschaftstreuhand- gesellschaft mbH | ? | ? | ? | ? | – |
+| [Presales Solution Designer - Unified Communication & Collabo](https://a1group.wd3.myworkdayjobs.com/A1_Jobs_at/job/Austria/Presales-Solution-Designer---Unified-Communication---Collaboration--w-m-d-_REQ-8541-1) | A1 Telekom Austria | C1 | B1 | 3–5 J.* | Bachelor | ✓ |
+| [Junior Specialist Cybersecurity & OT Infrastructure (w/m/div](https://jobs.smartrecruiters.com/BoschGroup/744000157035339) | Bosch Österreich | C1 | B2 | 3–5 J. | Matura/Lehre | ✓ |
+| [Sales Trainee im Außendienst (w/m/d) - Salzburg](https://www.generali.at/karriere/p586iyuvqwga9qdh6ns099h7trjt97e) | Generali Österreich | ? | ? | keine | – | ✓ |
+| [Mitarbeiter:in Telefonisches Kundenservice](https://careers.uniqagroup.com/job/Wien-Mitarbeiterin-Telefonisches-Kundenservice/1390674933/) | UniQA | ? | ? | keine | Matura/Lehre | – |
+| [Domain Sales Manager (all genders)](https://jobs.frequentis.com/karriere/JobDetail/VIE-Domain-Sales-Manager-all-genders/3680) | Frequentis | ? | C1 | 3–5 J. | Bachelor | – |
+| [Radiologietechnologin*/Radiologietechnologe*](https://karriereportal.vinzenzgruppe.at/RadiologietechnologinRadiologietechnologe-de-j10593.html) | Göttlicher Heiland Krankenhaus Wien | B2 | ? | 1–2 J. | Matura/Lehre | ✓ |
+| [Eventsecurity für (Sport-)Veranstaltungen (m/w/d) - Wolfsber](https://jobs.smartrecruiters.com/Securitas/744000100924590) | Securitas Sicherheitsdienstleistungen GmbH | B2 | ? | ? | ? | ✓ |
+| [Mitarbeiter Betriebsfeuerwehr (m/w/d) - Wien - Vollzeit *€ 5](https://jobs.smartrecruiters.com/Securitas/744000111320986) | Securitas Sicherheitsdienstleistungen GmbH | C1 | ? | keine | ? | ✓ |
+| [Mitarbeiter:in Learning & Development (w/m/d)](https://pwc.wd3.myworkdayjobs.com/Global_Campus_Careers/job/Wien---Donau-City-Strae-7/Mitarbeiter-in-Learning---Development--w-m-d-_750067WD-1) | PwC | C1 | B1 | keine | Matura/Lehre | ✓ |
