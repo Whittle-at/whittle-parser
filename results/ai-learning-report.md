@@ -1,9 +1,9 @@
-# Parser öğrenme raporu — 2026-10-28
+# Parser öğrenme raporu — 2026-10-29
 
-Kaynak: results/ai-soft-cache.json. İfade (_q) taşıyan ilan kaydı: **2572**.
+Kaynak: results/ai-soft-cache.json. İfade (_q) taşıyan ilan kaydı: **2639**.
 Terfi eşiği: ≥3 ilan, ≥2 farklı şirket, oyların ≥%90'i aynı değer.
 
-## Terfi etmiş kurallar (135) — artık AI'ya sorulmadan uygulanıyor
+## Terfi etmiş kurallar (139) — artık AI'ya sorulmadan uygulanıyor
 Sürekli burada duranlar parser'daki kalıcı regex'e taşınmaya aday.
 
 | Alan | Değer | İfade | İlan | Şirket |
@@ -26,6 +26,7 @@ Sürekli burada duranlar parser'daki kalıcı regex'e taşınmaya aday.
 | autonomy | `1` | unternehmerisches denken | 5 | 2 |
 | certs | `["fsB"]` | führerschein der klasse b | 5 | 2 |
 | de | `3` | gute deutsch- und englischkenntnisse | 5 | 4 |
+| f_sales | `"yes"` | freude am verkauf | 5 | 2 |
 | hrs | `[38.5,38.5]` | basis vollzeit | 5 | 2 |
 | hrs | `[40,40]` | 40 wochenstunden | 5 | 3 |
 | mobile | `1` | auf den baustellen | 5 | 2 |
@@ -33,6 +34,7 @@ Sürekli burada duranlar parser'daki kalıcı regex'e taşınmaya aday.
 | variety | `1` | spannende projekte | 5 | 2 |
 | de | `1` | german is a plus | 4 | 3 |
 | de | `4` | deutsch auf muttersprachenniveau | 4 | 2 |
+| de | `3` | proficiency in english and german | 4 | 2 |
 | deg | `1` | abgeschlossene technische ausbildung | 4 | 4 |
 | emp | `["vollzeit"]` | abgeschlossene kaufmännische ausbildung | 4 | 2 |
 | emp | `["teilzeit"]` | 20 wochenstunden | 4 | 3 |
@@ -101,6 +103,7 @@ Sürekli burada duranlar parser'daki kalıcı regex'e taşınmaya aday.
 | f_place | `"field"` | im außendienst | 3 | 2 |
 | f_place | `"office"` | modernes office | 3 | 2 |
 | f_place | `"field"` | im store | 3 | 2 |
+| f_place | `"office"` | modern working environment | 3 | 2 |
 | f_sales | `"yes"` | vertriebsorientierte persönlichkeit | 3 | 3 |
 | f_shift | `"day"` | geregelte dienstzeiten | 3 | 2 |
 | f_shift | `"day"` | flexible arbeitszeiten | 3 | 3 |
@@ -129,6 +132,7 @@ Sürekli burada duranlar parser'daki kalıcı regex'e taşınmaya aday.
 | study | `["wirt"]` | wirtschaftliche ausbildung | 3 | 3 |
 | study | `["tech"]` | abgeschlossene ausbildung im bereich informatik | 3 | 3 |
 | study | `["wirt"]` | laufendes wirtschaftliches studium | 3 | 2 |
+| team | `"large"` | international team | 3 | 3 |
 | team | `"large"` | interdisziplinären team | 3 | 2 |
 | team | `"large"` | arbeitest gerne im team | 3 | 2 |
 | team | `"large"` | teil unseres teams | 3 | 2 |
@@ -144,7 +148,7 @@ Sürekli burada duranlar parser'daki kalıcı regex'e taşınmaya aday.
 | wm | `"onsite"` | dienstort: wien | 3 | 2 |
 | wm | `"hybrid"` | flexible arbeitszeiten | 3 | 2 |
 
-## Yaklaşanlar (1142) — bir-iki ilan daha görülürse terfi eder
+## Yaklaşanlar (1174) — bir-iki ilan daha görülürse terfi eder
 
 | Alan | Değer | İfade | İlan | Şirket |
 |---|---|---|---|---|
@@ -165,17 +169,18 @@ Sürekli burada duranlar parser'daki kalıcı regex'e taşınmaya aday.
 | variety | `1` | vielseitiges tätigkeitsfeld | 29 | 1 |
 | autonomy | `1` | packen gerne mit an | 26 | 1 |
 | autonomy | `1` | hier können sie mitgestalten | 26 | 1 |
+| certs | `["fsB"]` | führerschein klasse b | 25 | 1 |
 | cust | `1` | sendungen bei unseren kund*innen | 25 | 1 |
+| variety | `1` | maßgeschneiderte versicherungs- und vorsorge-produkte | 24 | 1 |
 | creative | `1` | begeisterung für die umsetzung von ideen | 23 | 1 |
 | competitive | `1` | leistungsbezogenes jahresbruttogehalt | 20 | 1 |
 | variety | `1` | lieben abwechslung | 20 | 1 |
 | autonomy | `1` | abwechslung und packen gerne mit an | 19 | 1 |
-| certs | `["fsB"]` | führerschein klasse b | 18 | 1 |
+| f_customers | `"b2c"` | kund_innen in allen lebenssituationen | 18 | 1 |
 | phys | `1` | sie stehen und gehen viel | 18 | 1 |
 | variety | `1` | jede menge abwechslung | 17 | 1 |
 | wm | `"hybrid"` | smart working am austria campus mit flexiblen arbeitszeiten | 17 | 1 |
 | competitive | `1` | kompromisslose einhaltung unserer werte | 16 | 1 |
-| variety | `1` | maßgeschneiderte versicherungs- und vorsorge-produkte | 16 | 1 |
 | f_commission | `"yes"` | ansprechende provision | 15 | 1 |
 | mobile | `1` | als zusteller*in | 14 | 1 |
 | certs | `["fsB"]` | gültigen pkw-führerschein | 13 | 1 |
@@ -186,7 +191,7 @@ Sürekli burada duranlar parser'daki kalıcı regex'e taşınmaya aday.
 | team | `"large"` | über 30.000 mitarbeitende | 13 | 1 |
 | wm | `"onsite"` | in einem unserer über 1.200 märkte | 13 | 1 |
 | competitive | `1` | high performance/high reward culture | 12 | 1 |
-| f_customers | `"b2c"` | kund_innen in allen lebenssituationen | 12 | 1 |
+| competitive | `1` | zielstrebig und wollen die zukunft eigenverantwortlich mitgestalten | 12 | 1 |
 | f_customers | `"b2c"` | unsere kund*innen | 12 | 1 |
 | leadership | `1` | du führst dein team aus lehrkräften | 12 | 1 |
 | cust | `1` | hilfst unseren kund*innen | 11 | 1 |
@@ -200,6 +205,7 @@ Sürekli burada duranlar parser'daki kalıcı regex'e taşınmaya aday.
 | f_customers | `"b2c"` | beantworten von kund:innenanfragen | 10 | 1 |
 | f_lehramt | `"open"` | auch als quereinsteiger*in | 10 | 1 |
 | f_place | `"field"` | backen und bereitstellen der backware | 10 | 1 |
+| f_sales | `"yes"` | gewinnen aktiv neue kund_innen | 10 | 1 |
 | mobile | `1` | eigener pkw | 10 | 1 |
 | team | `"large"` | teil eines starken teams | 10 | 1 |
 | variety | `1` | immer wieder neue wege | 10 | 1 |
@@ -212,7 +218,6 @@ Sürekli burada duranlar parser'daki kalıcı regex'e taşınmaya aday.
 | f_lehramt | `"open"` | quereinsteiger:innen sind willkommen | 9 | 1 |
 | f_night | `"has"` | früh- und spätdienste | 9 | 1 |
 | f_place | `"office"` | based in one of our european offices | 9 | 1 |
-| f_sales | `"yes"` | gewinnen aktiv neue kund_innen | 9 | 1 |
 | team | `"large"` | zielstrebiges und erfahrenes team | 9 | 1 |
 | team | `"large"` | international academic team | 9 | 1 |
 | variety | `1` | exciting, varied responsibilities | 9 | 1 |
@@ -247,7 +252,6 @@ Sürekli burada duranlar parser'daki kalıcı regex'e taşınmaya aday.
 | variety | `1` | du entwickelst deinen standort aktiv | 7 | 1 |
 | variety | `1` | abwechslungsreiche ausbildung | 7 | 1 |
 | variety | `1` | gibt es jede menge abwechslung | 7 | 1 |
-| variety | `1` | schnupperaufenthalte in anderen unternehmensbereichen | 7 | 1 |
 
 ## Çelişkili ifadeler (82) — aynı ifade farklı değerlere işaret ediyor, kural OLMAZ
 Bunlar genelde AI'nın bağlama göre karar verdiği yerler; prompt ya da alan tanımı netleştirilebilir.

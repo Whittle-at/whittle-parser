@@ -1,20 +1,20 @@
-# Veri kalitesi – whittle-import-2026-10-28-combined.json
+# Veri kalitesi – whittle-import-2026-10-29-combined.json
 
-1951 ilan · 2026-10-28 12:13 UTC
+1965 ilan · 2026-10-29 12:21 UTC
 
 ## Kapsama
 
 | Alan | Değer var | Kural kanıtı (evidence) var |
 |---|---|---|
-| Abschluss | 75 % | 75 % |
-| Deutsch | 71 % | 71 % |
-| Englisch | 46 % | 46 % |
-| Erfahrung | 80 % | 70 % |
-| Maaş cümlesi bulundu | 76 % | metinde € geçen: 79 % |
-| Wochenstunden (Zahl) | 51 % | |
-| Arbeitszeit bekannt (Zahl oder Voll-/Teilzeit, ohne Lehre) | 87 % | |
-| Beschäftigungsart (emp) | 89 % | |
-| Kısa metin (<600 karakter, fetcher detay sayfasını açmıyor olabilir) | 5 % | |
+| Abschluss | 77 % | 77 % |
+| Deutsch | 73 % | 73 % |
+| Englisch | 48 % | 48 % |
+| Erfahrung | 83 % | 72 % |
+| Maaş cümlesi bulundu | 76 % | metinde € geçen: 82 % |
+| Wochenstunden (Zahl) | 59 % | |
+| Arbeitszeit bekannt (Zahl oder Voll-/Teilzeit, ohne Lehre) | 90 % | |
+| Beschäftigungsart (emp) | 91 % | |
+| Kısa metin (<600 karakter, fetcher detay sayfasını açmıyor olabilir) | 3 % | |
 
 ## En kötü şirketler (≥5 ilan)
 
@@ -22,35 +22,35 @@
 
 | Şirket | İlan | Maaş | Ort. metin |
 |---|---|---|---|
-| Julius Blum | 48 | 0 % | 10 |
-| UniQA | 44 | 0 % | 3174 |
+| UniQA | 42 | 0 % | 3152 |
 | McKinsey & Company | 29 | 0 % | 4000 |
+| JBA - Justizbetreuungsagentur | 23 | 0 % | 2120 |
 | Kearney | 20 | 0 % | 3869 |
 | Bybit EU | 20 | 0 % | 3915 |
-| MAN Truck & Bus Österreich | 17 | 0 % | 259 |
+| MAN Truck & Bus Österreich | 16 | 0 % | 267 |
+| Bitpanda | 15 | 0 % | 4000 |
 | Qualysoft | 15 | 0 % | 1239 |
-| Bitpanda | 14 | 0 % | 4000 |
-| VACE Engineering GmbH | 12 | 0 % | 3183 |
-| BCG | 8 | 0 % | 341 |
+| DHL Austria | 14 | 0 % | 200 |
+| KML Linear Motion Technology GmbH | 10 | 0 % | 199 |
 | Falstaff Verlags-Gesellschaft m.b.H. | 6 | 0 % | 2566 |
-| Volkshilfe Wien | 6 | 0 % | 67 |
+| BERNARD Gruppe | 5 | 0 % | 3203 |
 
 **Saat:**
 
 | Şirket | İlan | Saat | Ort. metin |
 |---|---|---|---|
-| Julius Blum | 48 | 0 % | 10 |
-| Leyrer + Graf | 34 | 0 % | 2853 |
+| Leyrer + Graf | 34 | 0 % | 2857 |
 | McKinsey & Company | 29 | 0 % | 4000 |
-| MAN Truck & Bus Österreich | 17 | 0 % | 259 |
-| Oberbank AG | 13 | 0 % | 2742 |
-| BCG | 8 | 0 % | 341 |
+| MAN Truck & Bus Österreich | 16 | 0 % | 267 |
+| DHL Austria | 14 | 0 % | 200 |
+| KML Linear Motion Technology GmbH | 10 | 0 % | 199 |
+| Greiner | 8 | 0 % | 2341 |
+| Allianz Österreich | 7 | 0 % | 382 |
 | GROPYUS | 7 | 0 % | 4000 |
-| Greiner | 7 | 0 % | 2466 |
-| Prewave | 7 | 0 % | 4000 |
-| Allianz Österreich | 6 | 0 % | 382 |
 | Freshfields Wien | 6 | 0 % | 3238 |
-| Joseph Brot | 6 | 0 % | 2901 |
+| Prewave | 6 | 0 % | 4000 |
+| OMV | 5 | 0 % | 3327 |
+| AVL List | 5 | 0 % | 3606 |
 
 ## Elle kontrol listesi (25 rastgele ilan)
 
@@ -58,28 +58,28 @@
 
 | İlan | Şirket | Deutsch | Englisch | Erfahrung | Abschluss | Saat |
 |---|---|---|---|---|---|---|
-| [Berufseinsteiger (w/m/d) in der Wirtschaftsprüfung](https://pwc.wd3.myworkdayjobs.com/Global_Campus_Careers/job/Wien---Donau-City-Strae-7/Associate-Berufsanwrter--w-m-d--in-der-Wirtschaftsprfung_126739WD-3) | PwC | ? | C1 | keine | Bachelor lfd. | ✓ |
-| [Elektrotechniker Instandhaltung (m/f/d), Novartis Pharmaceut](https://novartis.wd3.myworkdayjobs.com/Novartis_Careers/job/Kundl/Elektrotechniker-Instandhaltung--m-f-d---Novartis-Pharmaceutical-Manufacturing-GmbH--Kundl--Austria_REQ-10076113-2) | Novartis Austria | B2 | A2 | keine | Matura/Lehre | – |
-| [Creative Strategist (m/w/x)](https://dmb.jobs.personio.com/job/2087084) | DEMNER GROUP | B2 | ? | 3–5 J. | ? | ✓ |
-| [Planer Elektrotechnik (m/w/d)](https://jobs.rhomberg-sersa.com/Planer-Elektrotechnik-mwd-de-j2450.html) | Rhomberg Sersa Rail Group | ? | ? | 3–5 J.* | Matura/Lehre | ✓ |
-| [Level 2 Deskside Support Engineer](https://jobs.lever.co/qualysoft/3b924cd9-edc7-47f0-88f7-41970770279f) | Qualysoft | B2 | B2 | 1–2 J. | ? | ✓ |
-| [Organisationsassistent*in](https://jobs.univie.ac.at/job/Organisationsassistentin/1447540133/) | Universität Wien | C1 | ? | keine | Matura/Lehre | ✓ |
-| [Legal Counsel Part-Time/Full-Time (f/m/x)](https://www.refurbed.de/jobs/?gh_jid=4879713101) | Refurbed | ? | ? | 1–2 J. | ? | – |
-| [Haushaltshilfe und Büro-Reinigungskraft Teilzeit](https://investmentpunk.recruitee.com/o/haushaltshilfe-und-buro-reinigungskraft-teilzeit) | Investmentpunk Academy | B2 | ? | ? | ? | ✓ |
-| [Data Platform Software Developer (m/w/d)](https://careers.knapp.com/job/Hart-bei-Graz-Data-Platform-Software-Developer-%28mwd%29-Stei-8075/1360702557/) | KNAPP | ? | ? | 1–2 J. | Matura/Lehre | ✓ |
-| [Nr42 Innere Medizin I, Kennzahl: 610/26](https://www.meduniwien.ac.at/web/karriere/offene-stellen/personalmitteilungsblatt-nr42/26/nr42-innere-medizin-i-kennzahl-610/26/) | Medizinische Universität Wien | C1 | ? | 1–2 J. | Bachelor lfd. | – |
-| [INFORMATION SECURITY MANAGER:IN (W/M/X)](https://karriere.itsv.at/job/Wien-INFORMATION-SECURITY-MANAGERIN-%28WMX%29/1143461655/) | ITSV | ? | ? | ? | Bachelor | ✓ |
-| [Maschinenbautechniker (m/w/d) für die Inhouse-Montage von Ge](https://careers.andritz.com/andritz/job/Linz-Maschinenbautechniker-%28mwd%29-f%C3%BCr-die-Inhouse-Montage-von-Generatoren-Uppe-4030/817815702/) | ANDRITZ | B2 | ? | keine | Matura/Lehre | – |
-| [Nr43 Technology Transfer Office, Reference number: 638/26](https://www.meduniwien.ac.at/web/karriere/offene-stellen/synapse-austria-platform/nr43-technology-transfer-office-reference-number-638/26/) | Medizinische Universität Wien | – | ? | 1–2 J. | Master | – |
-| [QC Specialist (m/w/d)](https://pfizer.wd1.myworkdayjobs.com/PfizerCareers/job/Austria---Orth/QC-Specialist--m-w-d-_4964762-1) | Pfizer Austria | C1 | B1 | keine | ? | – |
-| [Embedded Firmware Developer (m/w/d)](https://careers.schrack-seconet.com/de/offene-stellen/details/embedded-firmware-developer-m-w-d) | Schrack Seconet AG | ? | ? | keine | Bachelor | ✓ |
-| [Rechtsanwaltsanwärter*in (m/w/d) - Wettbewerbsrecht](https://bgr.pi-asp.de/bewerber-web?company=BGR-FIRMA-ID&tenant=&lang=AT#position,id=2e289624-f75e-405e-ac80-2a646ba830f0,jobportalid=7d51b858-e466-400d-8696-5e01d3b26140) | Binder Grösswang | ? | C1 | keine | Bachelor lfd. | – |
-| [Application Manager (w/m/d) Steueranwendungen - Java/Postgre](https://www.brz-jobs.at/Job/3345/Application-Manager-(w-m-d)-Steueranwendungen---Java-PostgreS-DB2) | Bundesrechenzentrum (BRZ) | C1 | ? | keine | ? | ✓ |
-| [Technical Customer Success Manager - DACH Region (all gender](https://www.fiskaly.com/jobs/4673030101?gh_jid=4673030101) | fiskaly | C1 | C1 | keine | ? | – |
-| [Praktikum AI & Data (all genders)](https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Vienna/Praktikum-AI---Data--all-genders-_R00334035) | Accenture Österreich | C1 | C1 | 1–2 J. | Bachelor lfd. | – |
-| [Nr44 KKS, Kennzahl: 646/26](https://www.meduniwien.ac.at/web/karriere/offene-stellen/personalmitteilungsblatt-nr44/26/nr44-kks-kennzahl-646/26/) | Medizinische Universität Wien | B2 | ? | 1–2 J. | Bachelor lfd. | – |
-| [Data Intelligence Consultant - Logistics Solutions (m/w/d)](https://careers.knapp.com/job/Hart-bei-Graz-Data-Intelligence-Consultant-Logistics-Solutions-%28mwd%29-Stei-8075/1370964357/) | KNAPP | ? | ? | keine | Bachelor | – |
-| [Team Assistant in der Wirtschaftsprüfung (w/m/d)](https://pwc.wd3.myworkdayjobs.com/Global_Campus_Careers/job/Wien---Donau-City-Strae-7/Team-Assistant-in-der-Wirtschaftsprfung--w-m-d-_755158WD) | PwC | C1 | B2 | keine | Matura/Lehre | – |
-| [Mitarbeiter Sachbearbeitung Finanzierungen (m/w/d)](https://santander.wd3.myworkdayjobs.com/SantanderCareers/job/Eisenstadt/Mitarbeiter-Sachbearbeitung-Finanzierungen--m-w-d-_Req1599173) | Santander Consumer Bank Austria | ? | ? | keine | Matura/Lehre | ✓ |
-| [SAP Cloud- und Integration Manager:in](https://austrian-power-grid.onlyfy.jobs/en/job/pani0bxn42hhmy8a68fztcyi44pciwm) | Austrian Power Grid AG | B2 | B2 | 1–2 J.* | Master | ✓ |
-| [Radiologietechnolog:in (w/m/d) Diagnosezentrum Meidling](https://karriere.diagnostikum.at/o/radiologietechnologin-wmd-diagnosezentrum-meidling) | Diagnosezentrum Meidling | ? | ? | ? | Bachelor lfd. | – |
+| [Development Project Manager - Mechatronics (m/w/d)](https://careers.knapp.com/job/Hart-bei-Graz-Development-Project-Manager-Mechatronics-%28mwd%29-Stei-8075/1368630257/) | KNAPP | ? | B2 | keine | ? | – |
+| [Consultant](https://www.bain.com/de/careers/find-a-role/position/?jobid=10409) | Bain & Company | – | C1 | keine | Master | ✓ |
+| [Program / Project Responsible IT (m/f/x)](https://wd3.myworkdaysite.com/recruiting/magna/Magna/job/Graz-AT/Program---Project-Responsible-IT--m-f-x-_R00255345-1) | Magna | B2 | B1 | 1–2 J. | Bachelor | ✓ |
+| [Buyer (m/w/x)](https://wd3.myworkdaysite.com/recruiting/magna/Magna/job/Graz-AT/Buyer--m-w-x-_R00254292-5) | Magna | ? | ? | keine | Matura/Lehre | ✓ |
+| [Spezialist Lieferantenqualitat / Supplier Quality Assurance ](https://wd3.myworkdaysite.com/recruiting/magna/Magna/job/Graz-AT/Spezialist-Lieferantenqualitat---Supplier-Quality-Assurance--m-w-x-_R00267199-1) | Magna | C1 | C1 | 3–5 J.* | Bachelor | ✓ |
+| [Kundenservicemitarbeiter:in Bankwesen - Vollzeit/Teilzeit mö](https://www.erstegroup.com/de/karriere/stellenangebote/job-detail/kundenservicemitarbeiter-in-bankwesen-vollzeit-teilzeit-moglich/33976) | s ServiceCenter GmbH | C1 | ? | keine | ? | ✓ |
+| [Marketing & Growth Specialist (f/m/d)](https://holzkern.jobs.personio.de/job/2651645) | Holzkern | – | C1 | 1–2 J. | ? | – |
+| [Erfahrene Personalverrechner:innen (all genders) mit BMD-Erf](https://jobs.smartrecruiters.com/DeloitteAT/744000149260790) | Deloitte Austria | B2 | ? | 3–5 J. | Matura/Lehre | ✓ |
+| [Requirements Engineering Consultant (all genders) Schwerpunk](https://jobs.smartrecruiters.com/DeloitteAT/744000156755441) | Deloitte Austria | B2 | ? | 1–2 J. | Matura/Lehre | – |
+| [IT Business Analyst Supply Chain Management und Finance (m/w](https://wd3.myworkdaysite.com/recruiting/magna/Magna/job/Graz-AT/Business-Analyst-Supply-Chain-Management-und-Finance--m-w-x-_R00266364-2) | Magna | C1 | B2 | 3–5 J.* | ? | ✓ |
+| [Kundenbetreuung Filiale Trofaiach (m/w/d)](https://www.erstegroup.com/de/karriere/stellenangebote/job-detail/kundenbetreuung-filiale-trofaiach-m-w-d/34606) | Steiermärkische Sparkasse | B2 | ? | ? | Matura/Lehre | ✓ |
+| [(Junior) Consultant (all genders) Advisory/Meldewesen](https://jobs.smartrecruiters.com/DeloitteAT/744000149576579) | Deloitte Austria | B2 | B2 | keine | Bachelor | ✓ |
+| [[EU] AML Specialist, Investigations](https://job-boards.eu.greenhouse.io/bybit/jobs/4988003101) | Bybit EU | – | ? | 3–5 J. | ? | – |
+| [Interne:r Controller:in (all genders)](https://jobs.smartrecruiters.com/DeloitteAT/744000157176289) | Deloitte Austria | C1 | B2 | 1–2 J. | Bachelor lfd. | ✓ |
+| [Software Test Engineer (w/m/d)](https://jobs.ait.ac.at/Job/271977) | AIT Austrian Institute of Technology | B2 | C1 | keine | Bachelor lfd. | ✓ |
+| [Berufseinsteiger:in (all genders) Steuerberatung / ab 20 Stu](https://jobs.smartrecruiters.com/DeloitteAT/744000154350379) | Deloitte Austria | C1 | B2 | keine | Bachelor lfd. | ✓ |
+| [Steuerberater:in (all genders) / ab 20 Stunden](https://jobs.smartrecruiters.com/DeloitteAT/744000156802728) | Deloitte Austria | C1 | B2 | ? | Bachelor | ✓ |
+| [Karrierestart in der Kundenberatung (m/w/d)](https://www.erstegroup.com/de/karriere/stellenangebote/job-detail/karrierestart-in-der-kundenberatung-m-w-d/34607) | Erste Group Bank | ? | ? | ? | Matura/Lehre | ✓ |
+| [Market Surveillance Specialist](https://job-boards.eu.greenhouse.io/bybit/jobs/4908991101) | Bybit EU | B2 | B2 | 3–5 J. | Bachelor | – |
+| [Kearney Associate / Manager Supply Chain 2026/2027](https://kearney.recsolu.com/jobs/yVl-wkSqrrDxPrZQ704amg) | Kearney | C1 | ? | ? | ? | – |
+| [Ferialpraktikum 2027 Süd- und Weststeiermark (w/m/d)](https://www.erstegroup.com/de/karriere/stellenangebote/job-detail/ferialpraktikum-2027-sud-und-weststeiermark-w-m-d/34681) | Steiermärkische Sparkasse | ? | ? | keine | Matura/Lehre | ✓ |
+| [Business Analyst (all genders) mit BMD Expertise / ab 30 Stu](https://jobs.smartrecruiters.com/DeloitteAT/744000153743280) | Deloitte Austria | ? | ? | keine | ? | ✓ |
+| [Ferialpraktikum 2027 Nordsteiermark (w/m/d)](https://www.erstegroup.com/de/karriere/stellenangebote/job-detail/ferialpraktikum-2027-nordsteiermark-w-m-d/34683) | Steiermärkische Sparkasse | ? | ? | keine | Matura/Lehre | ✓ |
+| [Praktikant:in (all genders) – Advisory/Data Science & AI in ](https://jobs.smartrecruiters.com/DeloitteAT/744000158456879) | Deloitte Austria | B2 | B2 | keine | Bachelor lfd. | ✓ |
+| [Mitarbeiter Project Management Office (m/w/x)](https://wd3.myworkdaysite.com/recruiting/magna/Magna/job/Graz-AT/Mitarbeiter-Project-Management-Office--m-w-x-_R00265014-1) | Magna | C1 | C1 | keine | Matura/Lehre | ✓ |

@@ -1,20 +1,19 @@
-# Crawl sağlık raporu — 2026-10-28
+# Crawl sağlık raporu — 2026-10-29
 
-Toplam ilan: **1951** (önceki dosya 2026-10-27: 1931) · taranan şirket: 313
+Toplam ilan: **1965** (önceki dosya 2026-10-28: 1951) · taranan şirket: 359
 
-## Bugün 0 ilan getiren (önceden ilanı vardı) (0)
+## Bugün 0 ilan getiren (önceden ilanı vardı) (3)
 
-- yok
+- Microsoft Österreich: bugün 0 (son 6 günün en iyisi 2026-10-28: 5)
+- UNIDO: bugün 0 (son 6 günün en iyisi 2026-10-27: 7)
+- TPA Steuerberatung: bugün 0 (son 6 günün en iyisi 2026-10-23: 1)
 
 ## İlan sayısı sert düşen (0)
 
 - yok
 
-## Metni okunamayan (4)
+## Metni okunamayan (0)
 
-- corda business & information engineering: 4/6 ilanda metin boş ya da çok kısa
-- Volkshilfe Wien: 5/6 ilanda metin boş ya da çok kısa
-- magdas Caritas Services GmbH: 4/6 ilanda metin boş ya da çok kısa
-- Julius Blum: 48/48 ilanda metin boş ya da çok kısa
+- yok
 
 _0 ilan getiren şirketlerin ilanları sitede kapanmıyor; sadece yenileri gelmiyor._
