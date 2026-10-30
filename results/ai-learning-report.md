@@ -1,9 +1,9 @@
-# Parser öğrenme raporu — 2026-10-29
+# Parser öğrenme raporu — 2026-10-30
 
-Kaynak: results/ai-soft-cache.json. İfade (_q) taşıyan ilan kaydı: **2639**.
+Kaynak: results/ai-soft-cache.json. İfade (_q) taşıyan ilan kaydı: **2694**.
 Terfi eşiği: ≥3 ilan, ≥2 farklı şirket, oyların ≥%90'i aynı değer.
 
-## Terfi etmiş kurallar (139) — artık AI'ya sorulmadan uygulanıyor
+## Terfi etmiş kurallar (144) — artık AI'ya sorulmadan uygulanıyor
 Sürekli burada duranlar parser'daki kalıcı regex'e taşınmaya aday.
 
 | Alan | Değer | İfade | İlan | Şirket |
@@ -16,6 +16,7 @@ Sürekli burada duranlar parser'daki kalıcı regex'e taşınmaya aday.
 | team | `"large"` | teil eines engagierten teams | 15 | 2 |
 | en | `1` | grundkenntnisse in englisch | 12 | 2 |
 | f_place | `"field"` | in der filiale | 12 | 3 |
+| team | `"large"` | dynamischen team | 10 | 9 |
 | f_customers | `"b2c"` | unsere kund:innen | 8 | 3 |
 | study | `["wirt"]` | wirtschaftlichem schwerpunkt | 8 | 2 |
 | de | `3` | sehr gute kommunikationsfähigkeiten in deutsch | 7 | 2 |
@@ -43,6 +44,7 @@ Sürekli burada duranlar parser'daki kalıcı regex'e taşınmaya aday.
 | exp | `0` | von vorteil | 4 | 4 |
 | f_place | `"office"` | modernen arbeitsplatz | 4 | 2 |
 | f_place | `"office"` | hybrid working model | 4 | 2 |
+| f_place | `"office"` | in unseren filialen | 4 | 2 |
 | hrs | `[38.5,38.5]` | 38.5 h/week | 4 | 2 |
 | hrs | `[38.5,38.5]` | 38,5 stunden/woche | 4 | 2 |
 | leadership | `1` | verantwortung zu übernehmen | 4 | 2 |
@@ -58,6 +60,7 @@ Sürekli burada duranlar parser'daki kalıcı regex'e taşınmaya aday.
 | autonomy | `1` | strukturierte arbeitsweise | 3 | 2 |
 | autonomy | `1` | hohes maß an eigenverantwortung | 3 | 2 |
 | autonomy | `1` | lösungsorientierte arbeitsweise | 3 | 3 |
+| autonomy | `1` | selbstständige arbeitsweise | 3 | 3 |
 | certs | `["lap"]` | abgeschlossene kaufmännische ausbildung | 3 | 3 |
 | competitive | `1` | vertriebsorientierte persönlichkeit | 3 | 2 |
 | competitive | `1` | ergebnisorientierte arbeitsweise | 3 | 2 |
@@ -125,6 +128,7 @@ Sürekli burada duranlar parser'daki kalıcı regex'e taşınmaya aday.
 | start | `"asap"` | as soon as possible | 3 | 3 |
 | start | `"2027-01"` | start: januar 2027 | 3 | 2 |
 | start | `"2027-01"` | ab 01.01.2027 | 3 | 2 |
+| start | `"2027-09"` | ab september 2027 | 3 | 2 |
 | start | `"2026-12"` | ab dezember 2026 | 3 | 2 |
 | start | `"2027-09"` | lehrbeginn: 01. september 2027 | 3 | 2 |
 | study | `["health"]` | gesundheits- und krankenpflege | 3 | 2 |
@@ -147,8 +151,9 @@ Sürekli burada duranlar parser'daki kalıcı regex'e taşınmaya aday.
 | wm | `"onsite"` | am standort wien | 3 | 2 |
 | wm | `"onsite"` | dienstort: wien | 3 | 2 |
 | wm | `"hybrid"` | flexible arbeitszeiten | 3 | 2 |
+| wm | `"hybrid"` | home-office möglichkeit | 3 | 2 |
 
-## Yaklaşanlar (1174) — bir-iki ilan daha görülürse terfi eder
+## Yaklaşanlar (1196) — bir-iki ilan daha görülürse terfi eder
 
 | Alan | Değer | İfade | İlan | Şirket |
 |---|---|---|---|---|
@@ -178,23 +183,23 @@ Sürekli burada duranlar parser'daki kalıcı regex'e taşınmaya aday.
 | autonomy | `1` | abwechslung und packen gerne mit an | 19 | 1 |
 | f_customers | `"b2c"` | kund_innen in allen lebenssituationen | 18 | 1 |
 | phys | `1` | sie stehen und gehen viel | 18 | 1 |
+| wm | `"hybrid"` | smart working am austria campus mit flexiblen arbeitszeiten | 18 | 1 |
 | variety | `1` | jede menge abwechslung | 17 | 1 |
-| wm | `"hybrid"` | smart working am austria campus mit flexiblen arbeitszeiten | 17 | 1 |
 | competitive | `1` | kompromisslose einhaltung unserer werte | 16 | 1 |
 | f_commission | `"yes"` | ansprechende provision | 15 | 1 |
+| f_customers | `"b2c"` | unsere kund*innen | 14 | 1 |
 | mobile | `1` | als zusteller*in | 14 | 1 |
 | certs | `["fsB"]` | gültigen pkw-führerschein | 13 | 1 |
 | competitive | `1` | unmittelbaren erfolg eines verkaufs | 13 | 1 |
 | cust | `1` | umgang mit anderen menschen | 13 | 1 |
+| cust | `1` | hilfst unseren kund*innen | 13 | 1 |
 | f_shift | `"two"` | früh- und spätdienste | 13 | 1 |
 | shift | `1` | früh- und spätdienste (montag bis samstag | 13 | 1 |
 | team | `"large"` | über 30.000 mitarbeitende | 13 | 1 |
 | wm | `"onsite"` | in einem unserer über 1.200 märkte | 13 | 1 |
 | competitive | `1` | high performance/high reward culture | 12 | 1 |
 | competitive | `1` | zielstrebig und wollen die zukunft eigenverantwortlich mitgestalten | 12 | 1 |
-| f_customers | `"b2c"` | unsere kund*innen | 12 | 1 |
 | leadership | `1` | du führst dein team aus lehrkräften | 12 | 1 |
-| cust | `1` | hilfst unseren kund*innen | 11 | 1 |
 | de | `1` | grundlegende deutschkenntnisse | 11 | 1 |
 | start | `"2027-08"` | im august 2027 | 11 | 1 |
 | study | `["wirt"]` | abgeschlossenes wirtschaftliches universitäts- oder fh-studium | 11 | 1 |
@@ -233,6 +238,7 @@ Sürekli burada duranlar parser'daki kalıcı regex'e taşınmaya aday.
 | wm | `"onsite"` | based in one of our european offices | 8 | 1 |
 | wm | `"hybrid"` | partially work remotely | 8 | 1 |
 | autonomy | `1` | du übernimmst verantwortung, ohne auf anweisung zu warten | 7 | 1 |
+| autonomy | `1` | herausforderungen proaktiv anzugehen | 7 | 1 |
 | autonomy | `1` | lösungsorientiert, flexibel handeln | 7 | 1 |
 | competitive | `1` | leistung wird belohnt | 7 | 1 |
 | competitive | `1` | abschlussstarke sowie vertriebsorientierte persönlichkeit | 7 | 1 |
@@ -251,9 +257,8 @@ Sürekli burada duranlar parser'daki kalıcı regex'e taşınmaya aday.
 | variety | `1` | breites aufgabenspektrum | 7 | 1 |
 | variety | `1` | du entwickelst deinen standort aktiv | 7 | 1 |
 | variety | `1` | abwechslungsreiche ausbildung | 7 | 1 |
-| variety | `1` | gibt es jede menge abwechslung | 7 | 1 |
 
-## Çelişkili ifadeler (82) — aynı ifade farklı değerlere işaret ediyor, kural OLMAZ
+## Çelişkili ifadeler (84) — aynı ifade farklı değerlere işaret ediyor, kural OLMAZ
 Bunlar genelde AI'nın bağlama göre karar verdiği yerler; prompt ya da alan tanımı netleştirilebilir.
 
 | Alan | Değer | İfade | İlan | Şirket | Oylar |
@@ -261,7 +266,6 @@ Bunlar genelde AI'nın bağlama göre karar verdiği yerler; prompt ya da alan t
 | en | `3` | fluent in english | 23 | 9 | 3×15, 4×8 |
 | en | `2` | gute deutsch- und englischkenntnisse | 13 | 11 | 2×7, 3×6 |
 | en | `3` | fluent english | 8 | 4 | 1×1, 2×1, 3×4, 4×2 |
-| team | `"large"` | dynamischen team | 8 | 8 | "large"×7, "small"×1 |
 | en | `3` | fluent in german and english | 7 | 3 | 2×1, 3×5, 4×1 |
 | en | `4` | excellent command of written and spoken english | 7 | 1 | 3×1, 4×6 |
 | hrs | `[38.5,38.5]` | vollzeit oder teilzeit | 7 | 1 | [38.5,38.5]×6, [20,40]×1 |
@@ -318,3 +322,4 @@ Bunlar genelde AI'nın bağlama göre karar verdiği yerler; prompt ya da alan t
 | deg | `3` | law degree (llb, jd, mag. iur., ll.m | 2 | 1 | 3×1, 4×1 |
 | emp | `["praktikum"]` | 20 hours/week | 2 | 1 | ["praktikum"]×1, ["teilzeit"]×1 |
 | en | `3` | sicher auf deutsch und englisch | 2 | 2 | 3×1, 4×1 |
+| en | `3` | excellent english skills | 2 | 2 | 3×1, 4×1 |
