@@ -1,20 +1,20 @@
-# Veri kalitesi – whittle-import-2026-11-03-combined.json
+# Veri kalitesi – whittle-import-2026-11-04-combined.json
 
-1874 ilan · 2026-11-03 13:36 UTC
+1883 ilan · 2026-11-04 13:51 UTC
 
 ## Kapsama
 
 | Alan | Değer var | Kural kanıtı (evidence) var |
 |---|---|---|
-| Abschluss | 78 % | 78 % |
-| Deutsch | 72 % | 72 % |
-| Englisch | 47 % | 47 % |
-| Erfahrung | 83 % | 74 % |
-| Maaş cümlesi bulundu | 76 % | metinde € geçen: 79 % |
-| Wochenstunden (Zahl) | 52 % | |
-| Arbeitszeit bekannt (Zahl oder Voll-/Teilzeit, ohne Lehre) | 88 % | |
-| Beschäftigungsart (emp) | 90 % | |
-| Kısa metin (<600 karakter, fetcher detay sayfasını açmıyor olabilir) | 6 % | |
+| Abschluss | 81 % | 81 % |
+| Deutsch | 76 % | 76 % |
+| Englisch | 51 % | 51 % |
+| Erfahrung | 86 % | 76 % |
+| Maaş cümlesi bulundu | 77 % | metinde € geçen: 82 % |
+| Wochenstunden (Zahl) | 60 % | |
+| Arbeitszeit bekannt (Zahl oder Voll-/Teilzeit, ohne Lehre) | 92 % | |
+| Beschäftigungsart (emp) | 93 % | |
+| Kısa metin (<600 karakter, fetcher detay sayfasını açmıyor olabilir) | 3 % | |
 
 ## En kötü şirketler (≥5 ilan)
 
@@ -22,35 +22,35 @@
 
 | Şirket | İlan | Maaş | Ort. metin |
 |---|---|---|---|
-| Julius Blum | 49 | 0 % | 10 |
-| UniQA | 39 | 0 % | 3088 |
+| UniQA | 38 | 0 % | 3064 |
 | McKinsey & Company | 29 | 0 % | 4000 |
 | Kearney | 20 | 0 % | 3869 |
 | Bybit EU | 19 | 0 % | 3910 |
-| MAN Truck & Bus Österreich | 19 | 0 % | 252 |
-| Bitpanda | 15 | 0 % | 4000 |
+| MAN Truck & Bus Österreich | 18 | 0 % | 267 |
 | Qualysoft | 15 | 0 % | 1239 |
-| Austrian Airlines | 10 | 0 % | 2275 |
-| Volkshilfe Wien | 10 | 0 % | 52 |
-| BCG | 8 | 0 % | 341 |
+| Bitpanda | 13 | 0 % | 4000 |
+| DHL Austria | 13 | 0 % | 200 |
+| Austrian Airlines | 12 | 0 % | 2321 |
 | Falstaff Verlags-Gesellschaft m.b.H. | 6 | 0 % | 2566 |
+| BERNARD Gruppe | 5 | 0 % | 3203 |
+| Sparkasse Feldkirch | 5 | 0 % | 2623 |
 
 **Saat:**
 
 | Şirket | İlan | Saat | Ort. metin |
 |---|---|---|---|
-| Julius Blum | 49 | 0 % | 10 |
 | McKinsey & Company | 29 | 0 % | 4000 |
-| MAN Truck & Bus Österreich | 19 | 0 % | 252 |
-| Volkshilfe Wien | 10 | 0 % | 52 |
+| MAN Truck & Bus Österreich | 18 | 0 % | 267 |
 | Allianz Österreich | 8 | 0 % | 375 |
-| BCG | 8 | 0 % | 341 |
-| Volksbank Vorarlberg | 7 | 0 % | 2335 |
 | GROPYUS | 7 | 0 % | 4000 |
 | Freshfields Wien | 6 | 0 % | 3238 |
-| Prewave | 6 | 0 % | 4000 |
-| EFS Unternehmensberatung GesmbH | 6 | 0 % | 2696 |
-| ProSiebenSat.1 PULS 4 | 5 | 0 % | 4000 |
+| OMV | 5 | 0 % | 3327 |
+| Greiner | 5 | 0 % | 2770 |
+| Leyrer + Graf | 32 | 3 % | 3001 |
+| Bybit EU | 19 | 5 % | 3910 |
+| Lomography | 14 | 7 % | 3384 |
+| DHL Austria | 13 | 8 % | 200 |
+| Austrian Airlines | 12 | 8 % | 2321 |
 
 ## Elle kontrol listesi (25 rastgele ilan)
 
@@ -58,28 +58,28 @@
 
 | İlan | Şirket | Deutsch | Englisch | Erfahrung | Abschluss | Saat |
 |---|---|---|---|---|---|---|
-| [Technician at the Neuroinformatics Research Group](https://jobs.univie.ac.at/job/Technician-at-the-Neuroinformatics-Research-Group/1453014933/) | Universität Wien | B2 | B2 | 1–2 J. | Matura/Lehre | ✓ |
-| [Sachbearbeiter:in Mautstellen](https://karriere.asfinag.at/job/Sachbearbeiterin-Mautstellen/5856-de_DE) | ASFINAG | ? | ? | keine | ? | ✓ |
-| [Praktikant:in (m/w/d) im Bereich Large Corporates](https://careers.unicredit.eu/en_GB/jobsuche/JobDetail/AT-EXT-WP-Praktikum-Corporates-Large-Corporates-2027/114716) | UniCredit Bank Austria | B2 | B2 | keine | Bachelor lfd. | ✓ |
-| [Elektrotechniker Gebäude (m/w/d)](https://julius-blum-gmbh.onlyfy.jobs/en/job/8zq7vhvgbukvlbfb079crz0yshmcnuy?career_page_search=page%3D4) | Julius Blum | ? | ? | ? | ? | – |
-| [Produktdatenmanager (m/w/d)](https://julius-blum-gmbh.onlyfy.jobs/en/job/mwdmgisf4p906uaw6yt43u2pkkudel0) | Julius Blum | ? | ? | ? | ? | – |
-| [Rezeptionsmitarbeiter:in – Patientenadministration & Organis](https://www.rehawienbaumgarten.at/karriere/jobs/details/rezeptionsmitarbeiter-in-patientenadministration-und-organisation-m-w-d-teilzeit-32-stunden-woche--7c8e8f) | Rehaklinik Wien Baumgarten Betriebs – GmbH | B2 | ? | 1–2 J. | Matura/Lehre | ✓ |
-| [Data-Scientist im Bereich Supply Chain Management (w/m/x)](https://www.dm-jobs.at/job/data-scientist-im-bereich-supply-chain-management-w-m-x/254634/) | dm drogerie markt | C1 | B1 | keine | Bachelor | ✓ |
-| [FH Pflichtpraktikant (m/w/d) für den Bereich Einkauf & Recht](https://jobs.man.eu/job/FH-Pflichtpraktikant-%28mwd%29-f%C3%BCr-den-Bereich-Einkauf-&amp;-Recht/6765-de_DE) | MAN Truck & Bus Österreich | ? | ? | keine | Bachelor lfd. | – |
-| [QC Specialist (m/w/d)](https://pfizer.wd1.myworkdayjobs.com/PfizerCareers/job/Austria---Orth/QC-Specialist--m-w-d-_4964762-1) | Pfizer Austria | C1 | B1 | keine | ? | – |
-| [Trainer:in (w/m/d) für User:innen-Schulungen des AMS](https://www.brz-jobs.at/Job/3354/Trainerin-(w-m-d)-fuer-Userinnen-Schulungen-des-AMS) | Bundesrechenzentrum (BRZ) | C1 | ? | 3–5 J.* | Matura/Lehre | ✓ |
-| [Mitarbeiter Supply Chain Management (m/w/d)](https://karriere.hofer.at/job/1211348901) | HOFER | C1 | B2 | keine | Matura/Lehre | ✓ |
-| [Service Owner:in für Reisendeninformationssysteme](https://oebb.csod.com/ux/ats/careersite/4/home/requisition/26292?c=oebb) | ÖBB | ? | ? | keine | Bachelor | ✓ |
-| [Elektrotechniker Instandhaltung (m/f/d), Novartis Pharmaceut](https://novartis.wd3.myworkdayjobs.com/Novartis_Careers/job/Kundl/Elektrotechniker-Instandhaltung--m-f-d---Novartis-Pharmaceutical-Manufacturing-GmbH--Kundl--Austria_REQ-10076113-2) | Novartis Austria | B2 | A2 | keine | Matura/Lehre | – |
-| [Pflegeassistenz mit eigenem PKW](https://www.volkshilfe-wien.at/job/pflegeassistenz-mit-eigenem-pkw/) | Volkshilfe Wien | ? | ? | ? | ? | – |
-| [Professional SAP Consultant (w/m/d) FI/CO](https://www.brz-jobs.at/Job/3259/Professional-SAP-Consultant-(w-m-d)-FI-CO) | Bundesrechenzentrum (BRZ) | C1 | ? | 3–5 J. | ? | ✓ |
-| [Customer Success Manager*in](https://investmentpunk.recruitee.com/o/customer-success-manager) | Investmentpunk Academy | B2 | ? | keine | ? | ✓ |
-| [Specialist Post Market Surveillance (all genders)](https://jobs.greiner.com/GBO/job/Kremsm%C3%BCnster-Specialist-Post-Market-Surveillance-%28all-genders%29-4550/1370185155/) | Greiner | C1 | B2 | 3–5 J.* | Matura/Lehre | – |
-| [Beratung Personaladministration (w/m/d)](https://karriere.post.at/job/Wien-Beratung-Personaladministration-%28wmd%29-Wien-1030/1449876833/) | Österreichische Post AG | ? | ? | 3–5 J.* | Bachelor | ✓ |
-| [Facharbeiter:in Lehne](https://oebb.csod.com/ux/ats/careersite/4/home/requisition/26065?c=oebb) | ÖBB | C1 | ? | ? | Matura/Lehre | ✓ |
-| [Berater:in Wohnfinanzierung Steiermark](https://www.erstegroup.com/de/karriere/stellenangebote/job-detail/berater-in-wohnfinanzierung-steiermark/34414) | s Wohnfinanz | ? | ? | keine | ? | ✓ |
-| [FH Pflichtpraktikant (m/w/d) für den Bereich Marketing/Kommu](https://jobs.man.eu/job/FH-Pflichtpraktikant-%28mwd%29-f%C3%BCr-den-Bereich-MarketingKommunikation/6763-de_DE) | MAN Truck & Bus Österreich | ? | ? | keine | Bachelor lfd. | – |
-| [Nr42 Augenheilkunde, Kennzahl: 516-1/26](https://www.meduniwien.ac.at/web/karriere/offene-stellen/personalmitteilungsblatt-nr42/26/nr42-augenheilkunde-kennzahl-516-1/26/) | Medizinische Universität Wien | B2 | ? | 1–2 J. | Bachelor lfd. | – |
-| [FH Pflichtpraktikant (m/w/d) Customer Service Management](https://jobs.man.eu/job/FH-Pflichtpraktikant-%28mwd%29-Customer-Service-Management/6767-de_DE) | MAN Truck & Bus Österreich | ? | ? | keine | Bachelor lfd. | – |
-| [Mitarbeiter:in Marketing & Kommunikation (m/w/d)](https://www.erstegroup.com/de/karriere/stellenangebote/job-detail/mitarbeiter-in-marketing-kommunikation-m-w-d/34789) | Waldviertler Spk Bank AG | B2 | ? | ? | Matura/Lehre | ✓ |
-| [FH-Pflichtpraktikant (m/w/d) für den Bereich Personalentwick](https://jobs.man.eu/job/FH-Pflichtpraktikant-%28mwd%29-f%C3%BCr-den-Bereich-Personalentwicklung/6768-de_DE) | MAN Truck & Bus Österreich | ? | ? | keine | Bachelor lfd. | – |
+| [Business Application Consultant (m/w/d)](https://careers.andritz.com/andritz/job/Weiz-Business-Application-Consultant-%28mwd%29-Styr-8160/1367105457/) | ANDRITZ | C1 | C1 | 3–5 J.* | Matura/Lehre | – |
+| [Sicherheitsfachkraft (m/w/d)](https://jobs.siemens.com/en_US/externaljobs/JobDetail/527272) | Siemens Mobility Austria | C1 | B2 | 3–5 J. | Matura/Lehre | – |
+| [Biomedizinische*n Analytiker*in, Karenzvertretung](https://karriereportal.vinzenzgruppe.at/Biomedizinischen-Analytikerin-Karenzvertretung-de-j10781.html) | Vinzenz Gruppe | B2 | ? | keine | Matura/Lehre | ✓ |
+| [Praktikant:in Digital Advisory (m/w/d)](https://karriere.bdo.at/jobs/praktikantin-digital-advisory-m-w-d) | BDO Austria | C1 | B2 | keine | Bachelor | ✓ |
+| [Informationsecurity & Riskmanagement Junior Expert (w/m/d)](https://pwc.wd3.myworkdayjobs.com/Global_Campus_Careers/job/Wien---Donau-City-Strae-7/Informationsecurity---Riskmanagement-Junior-Expert--w-m-d-_754195WD) | PwC | ? | ? | keine | – | ✓ |
+| [Professur für Allgemeinchirurgie und Viszeralchirurgie](https://sfu.onboard.org/de/jobs/Q4Av9MGZ?show_back_button=true) | Sigmund Freud PrivatUniversität | ? | ? | keine | Bachelor lfd. | – |
+| [Identity & Access Management Junior Expert (w/m/d)](https://pwc.wd3.myworkdayjobs.com/Global_Campus_Careers/job/Wien---Donau-City-Strae-7/Identity---Access-Management-Junior-Expert--w-m-d-_767646WD) | PwC | B2 | ? | keine | Matura/Lehre | ✓ |
+| [Kommunikationsassistent*in der Philologisch-Kulturwissenscha](https://jobs.univie.ac.at/job/Kommunikationsassistentin-der-Philologisch-Kulturwissenschaftlichen-Fakult%C3%A4t/1452405533/) | Universität Wien | B2 | B2 | 1–2 J. | Bachelor lfd. | ✓ |
+| [SAP Software Engineer (all genders)](https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Vienna/SAP-Software-Engineer--all-genders-_R00336215) | Accenture Österreich | C1 | C1 | keine | Bachelor | – |
+| [Experienced Consultant - Procurement](https://mckinsey.avature.net/careers/ApplicationMethods?folderId=112993) | McKinsey & Company | – | C1 | 3–5 J. | ? | – |
+| [Pflichtpraktikant (m/w/d) - Strafvollzug - Ergotherapie - Re](https://jba.onlyfy.jobs/job/lmsya7gt) | JBA - Justizbetreuungsagentur | ? | ? | keine | Bachelor lfd. | ✓ |
+| [Ferialpraktikum 2027 Obersteiermark (w/m/d)](https://www.erstegroup.com/de/karriere/stellenangebote/job-detail/ferialpraktikum-2027-obersteiermark-w-m-d/34680) | Steiermärkische Sparkasse | ? | ? | keine | Matura/Lehre | ✓ |
+| [Berufseinsteiger (m/w/d) in der Wirtschaftsprüfung - Standor](https://pwc.wd3.myworkdayjobs.com/Global_Campus_Careers/job/Linz---Hafenstrae-2a/Berufseinsteiger--m-w-d---in-der-Wirtschaftsprfung---Standort-Linz_655467WD) | PwC | B2 | C1 | keine | Bachelor lfd. | ✓ |
+| [Certification Engineer (all genders)](https://www.fiskaly.com/jobs/4975619101?gh_jid=4975619101) | fiskaly | ? | B2 | 1–2 J. | Bachelor | – |
+| [AI Innovation & Solution Engineer (f/m/d)](https://jobs.ait.ac.at/Job/266176) | AIT Austrian Institute of Technology | ? | ? | 3–5 J.* | ? | – |
+| [Mitarbeiter Project Management Office (m/w/x)](https://wd3.myworkdaysite.com/recruiting/magna/Magna/job/Graz-AT/Mitarbeiter-Project-Management-Office--m-w-x-_R00265014-1) | Magna | C1 | C1 | keine | Matura/Lehre | ✓ |
+| [(Associate) Manager (all genders) Audit mit Fokus Private & ](https://jobs.smartrecruiters.com/DeloitteAT/744000148741499) | Deloitte Austria | ? | ? | ? | Bachelor lfd. | ✓ |
+| [Steuerberater:in (all genders) / ab 20 Stunden](https://jobs.smartrecruiters.com/DeloitteAT/744000156802728) | Deloitte Austria | C1 | B2 | ? | Bachelor | ✓ |
+| [(Junior) Consultant (all genders) Advisory/Governance, Risk ](https://jobs.smartrecruiters.com/DeloitteAT/744000152145765) | Deloitte Austria | C1 | B2 | keine | ? | ✓ |
+| [Technologie-Berater:in – Cloud-Innovation (all genders)](https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Innsbruck/Technologie-Berater-in---Cloud-Innovation--all-genders-_R00333190) | Accenture Österreich | B2 | B2 | keine | Bachelor lfd. | – |
+| [Erfahrene Personalverrechner:innen (all genders)](https://jobs.smartrecruiters.com/DeloitteAT/744000148998839) | Deloitte Austria | B2 | ? | 3–5 J.* | Bachelor | – |
+| [Aufzugsmonteur für Modernisierungen (m/w/d) in Linz](https://otis.wd504.myworkdayjobs.com/REC_Ext_Gateway/job/Franzosenhausweg-50-4030-Linz-Austria/Aufzugsmonteur-fr-Modernisierungen--m-w-d--in-Linz_20169192) | OTIS Österreich | B2 | ? | 1–2 J. | Matura/Lehre | ✓ |
+| [Consultant (all genders) Internal Controls](https://jobs.smartrecruiters.com/DeloitteAT/744000149507419) | Deloitte Austria | B2 | B2 | 1–2 J. | Bachelor | – |
+| [Mitarbeiter:in (all genders) für die interne Administration ](https://jobs.smartrecruiters.com/DeloitteAT/744000159419960) | Deloitte Austria | C1 | B2 | 1–2 J. | Matura/Lehre | – |
+| [Berufseinsteiger:in (all genders) für die Bankenprüfung (FSI](https://jobs.smartrecruiters.com/DeloitteAT/744000150681974) | Deloitte Austria | B2 | ? | 1–2 J. | Bachelor lfd. | ✓ |
