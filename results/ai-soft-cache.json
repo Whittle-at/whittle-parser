@@ -160977,5 +160977,21 @@
       "country": "Österreich",
       "austria": true
     }
+  },
+  "https://www.hb.at/offene-stellen/lehre-koch-koechin-all-genders-969": {
+    "cat": "RETAIL:gastro",
+    "_rc": 1
+  },
+  "https://www.hb.at/offene-stellen/koch-koechin-all-genders-964": {
+    "cat": "RETAIL:gastro",
+    "_rc": 1
+  },
+  "https://jobs.smartrecruiters.com/SalesianerMiettex/744000159810359": {
+    "cat": "TRADES:warehouse",
+    "_rc": 1
+  },
+  "https://magenta.onlyfy.jobs/candidate/widget/y6lvdyzt/job/mnv9u65jo8um3pteqtkwm8s89nw1txy?display_length=3&page=1&sort=matching&sort_dir=DESC&search=": {
+    "cat": "RETAIL:retailsales",
+    "_rc": 1
   }
 }
