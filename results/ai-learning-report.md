@@ -1,4 +1,4 @@
-# Parser öğrenme raporu — 2026-11-05
+# Parser öğrenme raporu — 2026-11-06
 
 Kaynak: results/ai-soft-cache.json. İfade (_q) taşıyan ilan kaydı: **2962**.
 Terfi eşiği: ≥3 ilan, ≥2 farklı şirket, oyların ≥%90'i aynı değer.
