@@ -1,20 +1,20 @@
-# Veri kalitesi – whittle-import-2026-11-12-combined.json
+# Veri kalitesi – whittle-import-2026-11-13-combined.json
 
-1900 ilan · 2026-11-12 14:40 UTC
+1881 ilan · 2026-11-13 14:01 UTC
 
 ## Kapsama
 
 | Alan | Değer var | Kural kanıtı (evidence) var |
 |---|---|---|
-| Abschluss | 83 % | 83 % |
-| Deutsch | 77 % | 77 % |
-| Englisch | 50 % | 50 % |
-| Erfahrung | 86 % | 77 % |
-| Maaş cümlesi bulundu | 77 % | metinde € geçen: 83 % |
-| Wochenstunden (Zahl) | 64 % | |
-| Arbeitszeit bekannt (Zahl oder Voll-/Teilzeit, ohne Lehre) | 92 % | |
-| Beschäftigungsart (emp) | 93 % | |
-| Kısa metin (<600 karakter, fetcher detay sayfasını açmıyor olabilir) | 2 % | |
+| Abschluss | 81 % | 81 % |
+| Deutsch | 76 % | 76 % |
+| Englisch | 46 % | 46 % |
+| Erfahrung | 85 % | 76 % |
+| Maaş cümlesi bulundu | 76 % | metinde € geçen: 79 % |
+| Wochenstunden (Zahl) | 59 % | |
+| Arbeitszeit bekannt (Zahl oder Voll-/Teilzeit, ohne Lehre) | 88 % | |
+| Beschäftigungsart (emp) | 91 % | |
+| Kısa metin (<600 karakter, fetcher detay sayfasını açmıyor olabilir) | 6 % | |
 
 ## En kötü şirketler (≥5 ilan)
 
@@ -22,35 +22,35 @@
 
 | Şirket | İlan | Maaş | Ort. metin |
 |---|---|---|---|
-| UniQA | 39 | 0 % | 3124 |
+| Julius Blum | 45 | 0 % | 10 |
+| UniQA | 40 | 0 % | 3115 |
 | McKinsey & Company | 29 | 0 % | 4000 |
 | Kearney | 20 | 0 % | 3869 |
+| MAN Truck & Bus Österreich | 18 | 0 % | 264 |
 | Bybit EU | 17 | 0 % | 3984 |
 | Qualysoft | 16 | 0 % | 1221 |
-| MAN Truck & Bus Österreich | 16 | 0 % | 277 |
 | Bitpanda | 15 | 0 % | 4000 |
 | Austrian Airlines | 15 | 0 % | 2362 |
-| DHL Austria | 14 | 0 % | 200 |
-| Falstaff Verlags-Gesellschaft m.b.H. | 7 | 0 % | 2724 |
-| BERNARD Gruppe | 5 | 0 % | 3203 |
-| Sparkasse Feldkirch | 5 | 0 % | 2627 |
+| Volkshilfe Wien | 11 | 0 % | 50 |
+| BCG | 8 | 0 % | 341 |
+| Allianz Österreich | 7 | 0 % | 383 |
 
 **Saat:**
 
 | Şirket | İlan | Saat | Ort. metin |
 |---|---|---|---|
-| MAN Truck & Bus Österreich | 16 | 0 % | 277 |
-| Allianz Österreich | 7 | 0 % | 385 |
+| Julius Blum | 45 | 0 % | 10 |
+| MAN Truck & Bus Österreich | 18 | 0 % | 264 |
+| Volkshilfe Wien | 11 | 0 % | 50 |
+| BCG | 8 | 0 % | 341 |
+| Allianz Österreich | 7 | 0 % | 383 |
+| ProSiebenSat.1 PULS 4 | 7 | 0 % | 4000 |
 | UNIDO | 6 | 0 % | 4000 |
+| EFS Unternehmensberatung GesmbH | 6 | 0 % | 2564 |
 | OMV | 5 | 0 % | 3327 |
-| Leyrer + Graf | 30 | 3 % | 3010 |
+| Leyrer + Graf | 31 | 3 % | 3032 |
 | Bybit EU | 17 | 6 % | 3984 |
 | Lomography | 13 | 8 % | 3467 |
-| Kearney | 20 | 10 % | 3869 |
-| McKinsey & Company | 29 | 10 % | 4000 |
-| Austrian Airlines | 15 | 13 % | 2362 |
-| DHL Austria | 14 | 14 % | 200 |
-| Swarovski | 6 | 17 % | 3876 |
 
 ## Elle kontrol listesi (25 rastgele ilan)
 
@@ -58,28 +58,28 @@
 
 | İlan | Şirket | Deutsch | Englisch | Erfahrung | Abschluss | Saat |
 |---|---|---|---|---|---|---|
-| [Business Development Representative - DACH (f/m/d)](https://job-boards.eu.greenhouse.io/ecosio/jobs/5024921101) | ecosio | C1 | B2 | 1–2 J. | – | – |
-| [Agile Coach im Bereich Research & Development (m/w/d)](https://fronius.wd3.myworkdayjobs.com/Job_Board/job/Thalheim-bei-Wels/Agile-Coach-im-Bereich-Research---Development--m-w-d-_REQ-10009820) | Fronius | C1 | B2 | 3–5 J.* | Matura/Lehre | ✓ |
-| [Tax Advisor I Steuerberater:in I International Tax & M&A](https://careers.ey.com/ey/job/Vienna-Tax-Advisor-I-Steuerberaterin-I-International-Tax-&-M&A-1220/1418585333/) | EY | C1 | C1 | 1–2 J. | Master | – |
-| [Projektassistenz Austrian Technik Transformation 2030 (100%,](https://apply.lufthansagroup.careers/index.php?ac=jobad&id=136248) | Austrian Airlines | C1 | B2 | keine | Bachelor lfd. | ✓ |
-| [Zimmerer - Poliere, Vorarbeiter, Facharbeiter (m/w/d)](https://jobs.leyrer-graf.at/Zimmerer-Poliere-Vorarbeiter-Facharbeiter-mwd-de-j124.html) | Leyrer + Graf | ? | ? | keine | Matura/Lehre | – |
-| [Karrierechance: Kundenberatung (mensch*) Region WEST - Quere](https://www.careers.zurich.com/job/Salzburg-Karrierechance-Kundenberatung-%28mensch%29-Region-WEST-Quereinsteigende-willkommen%21/823119602/) | Zurich Versicherung Österreich | B2 | ? | keine | – | ✓ |
-| [Java Full Stack Developer (f/m/d)](https://jobs.lever.co/qualysoft/266fe438-6ffa-42b1-9542-885ef692abe5) | Qualysoft | – | ? | 1–2 J. | ? | – |
-| [Planer Glasfaser-/ Telekominfrastruktur (m/w/d)](https://jobs.leyrer-graf.at/Planer-Glasfaser-Telekominfrastruktur-mwd-de-j90.html) | Leyrer + Graf | ? | ? | ? | ? | – |
-| [FH-/Uni-Praktikant:in Legal](https://www.erstegroup.com/de/karriere/stellenangebote/job-detail/fh-uni-praktikant-in-legal/35055) | Erste Bank | C1 | B2 | keine | Bachelor lfd. | ✓ |
-| [Karrierechance: Kundenberatung Region OST (mensch*) - Querei](https://www.careers.zurich.com/job/Wien-Karrierechance-Kundenberatung-Region-OST-%28mensch%29-Quereinsteigende-willkommen%21/823018902/) | Zurich Versicherung Österreich | B2 | ? | keine | – | ✓ |
-| [Lastenrad Lieferant:in für 10-18 Wochenstunden (geringfügige](https://www.ritabringts.at/jobs/lastenradlieferung) | Rita kocht gesund GmbH | C1 | ? | keine | ? | ✓ |
-| [Gas-, Wasser-, Heizungsinstallateur/in](https://www.lugar.at/wien23/jobs/monteur.asp) | Lugar Installateur GesmbH | B2 | ? | ? | Matura/Lehre | ✓ |
-| [Statistical Reporting & Digital Innovation Specialist (w/m/d](https://www.erstegroup.com/de/karriere/stellenangebote/job-detail/statistical-reporting-digital-innovation-specialist-w-m-d/35006) | Erste Group Services GmbH | C1 | C1 | 1–2 J. | Bachelor lfd. | ✓ |
-| [VDSP - PhD Completion Contract](https://jobs.univie.ac.at/job/VDSP-PhD-Completion-Contract/1454739533/) | Universität Wien | – | ? | keine | Bachelor lfd. | ✓ |
-| [Jugendkundenbetreuer:in](https://www.erstegroup.com/de/karriere/stellenangebote/job-detail/jugendkundenbetreuer-in/34994) | Sparkasse Kitzbühel | ? | ? | keine | Matura/Lehre | ✓ |
-| [(Uni-/FH-) Praktikant:in Non-Financial Risk Management 2027](https://www.erstegroup.com/de/karriere/stellenangebote/job-detail/uni-fh-praktikant-in-non-financial-risk-management-2027/35046) | Steiermärkische Sparkasse | ? | ? | keine | Bachelor | ✓ |
-| [Vorarbeiter Betonbau (m/w/d)](https://jobs.leyrer-graf.at/Vorarbeiter-Betonbau-mwd-de-j464.html) | Leyrer + Graf | ? | ? | keine | Bachelor | – |
-| [Sales & Marketing Internship](https://lomography.recruitee.com/o/sales-marketing-internship-3) | Lomography | – | B2 | keine | Bachelor lfd. | – |
-| [Mittelspannungs-/Starkstrommonteur (m/w/d)](https://jobs.leyrer-graf.at/Mittelspannungs-Starkstrommonteur-mwd-de-j366.html) | Leyrer + Graf | B2 | ? | keine | Matura/Lehre | – |
-| [Fachexpert:in Real Estate Management (m/w/d)](https://www.fh-wien.ac.at/fachhochschule/jobs/jobangebote/fachexpertin-real-estate-management-m-w-d/) | FHWien der WKW | ? | ? | 3–5 J. | Bachelor lfd. | ✓ |
-| [Co-Betreuung Workout (w/m/d)](https://www.erstegroup.com/de/karriere/stellenangebote/job-detail/co-betreuung-workout-w-m-d/32522) | Sparkasse Neunkirchen | ? | ? | keine | Matura/Lehre | ✓ |
-| [Technical Writer - Karenzvertretung (m/w/d)](https://careers.knapp.com/job/Hart-bei-Graz-Technical-Writer-Karenzvertretung-%28mwd%29-Stei-8075/1366158557/) | KNAPP | C1 | C1 | keine | Bachelor | – |
-| [Marketing & Retail Internship Scandinavia & Netherlands](https://lomography.recruitee.com/o/marketing-retail-internship-scandinavia-netherlands-2) | Lomography | – | C1 | keine | Bachelor lfd. | – |
-| [Implementation Manager (m/w/d)](https://careers.knapp.com/job/Hart-bei-Graz-Implementation-Manager-%28mwd%29-Stei-8075/823212502/) | KNAPP | C1 | ? | ? | ? | – |
-| [(Uni-/FH-) Praktikant:in Großkundenbetreuung 2027](https://www.erstegroup.com/de/karriere/stellenangebote/job-detail/uni-fh-praktikant-in-grosskundenbetreuung-2027/35045) | Steiermärkische Sparkasse | ? | ? | keine | Bachelor lfd. | ✓ |
+| [Institutsreferent*in](https://jobs.univie.ac.at/job/Institutsreferentin/1450301733/) | Universität Wien | C1 | B2 | keine | Matura/Lehre | ✓ |
+| [Praktikant:in (m/w/d) im Bereich Compliance](https://careers.unicredit.eu/en_GB/jobsuche/JobDetail/AT-EXT-WP-Praktikum-UCBA-CEO-Compliance-2027/117163) | UniCredit Bank Austria | C1 | B2 | keine | Bachelor lfd. | ✓ |
+| [Praktikant:in (w/m/d) im Bereich Risk](https://careers.unicredit.eu/en_GB/jobsuche/JobDetail/AT-WP-CRO-Risk-2026/63663) | UniCredit Bank Austria | C1 | B2 | keine | Bachelor lfd. | ✓ |
+| [FH-/Uni-Praktikant:in Legal Schwerpunkt KI-Recht (AI Legal)](https://www.erstegroup.com/de/karriere/stellenangebote/job-detail/fh-uni-praktikant-in-legal-schwerpunkt-ki-recht-ai-legal/35055) | Erste Bank | C1 | B2 | keine | Bachelor lfd. | ✓ |
+| [Teamkoordinator:in Trusted Infrastructure Services](https://oebb.csod.com/ux/ats/careersite/4/home/requisition/25703?c=oebb) | ÖBB | ? | ? | keine | Matura/Lehre | – |
+| [Facharbeiter:in Gleisbautechnik](https://oebb.csod.com/ux/ats/careersite/4/home/requisition/26046?c=oebb) | ÖBB | C1 | ? | ? | Matura/Lehre | ✓ |
+| [Business Site Reliability Engineer](https://job-boards.eu.greenhouse.io/bybit/jobs/4939042101) | Bybit EU | – | B2 | 3–5 J. | ? | – |
+| [Praktikant:in (m/w/d) im Bereich Regulatory Affairs](https://careers.unicredit.eu/en_GB/jobsuche/JobDetail/AT-EXT-WP-Praktikum-UCBA-CEO-Regulatory-Affairs-2027/117361) | UniCredit Bank Austria | C1 | B2 | keine | Bachelor lfd. | ✓ |
+| [Security Architekt:in PAM](https://oebb.csod.com/ux/ats/careersite/4/home/requisition/25554?c=oebb) | ÖBB | B2 | B1 | 3–5 J. | Bachelor | ✓ |
+| [Facharbeiter:in Oberleitung](https://oebb.csod.com/ux/ats/careersite/4/home/requisition/24209?c=oebb) | ÖBB | C1 | ? | ? | Matura/Lehre | ✓ |
+| [Ausgebildete:r Lokführer:in mit Erfahrung](https://oebb.csod.com/ux/ats/careersite/4/home/requisition/25637?c=oebb) | ÖBB | C1 | ? | ? | Matura/Lehre | – |
+| [Erfahrene:r Change Manager:in](https://oebb.csod.com/ux/ats/careersite/4/home/requisition/25239?c=oebb) | ÖBB | B2 | ? | keine | Bachelor | ✓ |
+| [Ferialjob Produktion Sommer 2027](https://julius-blum-gmbh.onlyfy.jobs/en/job/fgrmu5aye9vngkv7ixt1t6e32atdpf1?career_page_search=page%3D3) | Julius Blum | ? | ? | ? | ? | – |
+| [Ferialjob 2027](https://www.erstegroup.com/de/karriere/stellenangebote/job-detail/ferialjob-2027/34488) | Dornbirner Sparkasse AG | ? | ? | keine | Bachelor lfd. | ✓ |
+| [Mitarbeiter:in Asset Compliance und Rechte & Pflichten mit S](https://oebb.csod.com/ux/ats/careersite/4/home/requisition/26254?c=oebb) | ÖBB | B2 | ? | 1–2 J. | Bachelor | ✓ |
+| [Ferialpraktikum 2027](https://www.erstegroup.com/de/karriere/stellenangebote/job-detail/ferialpraktikum-2027/34450) | Sparkasse Kufstein | ? | ? | 1–2 J. | Bachelor lfd. | ✓ |
+| [Praktikant:innen technisches Anlagenmanagement](https://oebb.csod.com/ux/ats/careersite/4/home/requisition/26154?c=oebb) | ÖBB | B2 | ? | keine | Bachelor lfd. | – |
+| [Junior Spezialist:in Technisches Dokumentenmanagement](https://oebb.csod.com/ux/ats/careersite/4/home/requisition/26168?c=oebb) | ÖBB | B2 | B1 | keine | Matura/Lehre | ✓ |
+| [Ferialjob in der Sparkasse Oberösterreich 2027](https://www.erstegroup.com/de/karriere/stellenangebote/job-detail/ferialjob-in-der-sparkasse-oberosterreich-2027/34005) | Sparkasse Oberösterreich | ? | ? | keine | Bachelor lfd. | ✓ |
+| [Facharbeiter:in - Schweißer:in](https://oebb.csod.com/ux/ats/careersite/4/home/requisition/25620?c=oebb) | ÖBB | B2 | ? | ? | Matura/Lehre | ✓ |
+| [Kundenbetreuer:in Freie Berufe](https://www.erstegroup.com/de/karriere/stellenangebote/job-detail/kundenbetreuer-in-freie-berufe/33832) | Erste Bank | ? | ? | 3–5 J.* | ? | ✓ |
+| [Ferialangestellte:r 2027 (all genders)](https://www.erstegroup.com/de/karriere/stellenangebote/job-detail/ferialangestellte-r-2027-all-genders/34351) | SPK NOE MITTE WEST AG | ? | ? | 1–2 J. | Bachelor lfd. | ✓ |
+| [Kundenbetreuung TOP](https://www.erstegroup.com/de/karriere/stellenangebote/job-detail/kundenbetreuung-top/34909) | Sparkasse Baden | B2 | ? | 3–5 J. | Matura/Lehre | ✓ |
+| [KFZ-Mechaniker:In/Mechatroniker:In (m/w/d)](https://jobs.man.eu/job/KFZ-MechanikerInMechatronikerIn-%28mwd%29/6975-de_DE) | MAN Truck & Bus Österreich | ? | ? | keine | Matura/Lehre | – |
+| [Service Owner:in Zustandsüberwachung Schienenfahrzeuge (Zugl](https://oebb.csod.com/ux/ats/careersite/4/home/requisition/26409?c=oebb) | ÖBB | ? | ? | ? | Bachelor | ✓ |
