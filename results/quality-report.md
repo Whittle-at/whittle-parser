@@ -1,20 +1,20 @@
-# Veri kalitesi – whittle-import-2026-11-13-combined.json
+# Veri kalitesi – whittle-import-2026-11-14-combined.json
 
-1881 ilan · 2026-11-13 14:01 UTC
+1842 ilan · 2026-11-14 13:10 UTC
 
 ## Kapsama
 
 | Alan | Değer var | Kural kanıtı (evidence) var |
 |---|---|---|
-| Abschluss | 81 % | 81 % |
-| Deutsch | 76 % | 76 % |
-| Englisch | 46 % | 46 % |
-| Erfahrung | 85 % | 76 % |
-| Maaş cümlesi bulundu | 76 % | metinde € geçen: 79 % |
-| Wochenstunden (Zahl) | 59 % | |
-| Arbeitszeit bekannt (Zahl oder Voll-/Teilzeit, ohne Lehre) | 88 % | |
-| Beschäftigungsart (emp) | 91 % | |
-| Kısa metin (<600 karakter, fetcher detay sayfasını açmıyor olabilir) | 6 % | |
+| Abschluss | 84 % | 84 % |
+| Deutsch | 79 % | 79 % |
+| Englisch | 51 % | 51 % |
+| Erfahrung | 89 % | 79 % |
+| Maaş cümlesi bulundu | 78 % | metinde € geçen: 83 % |
+| Wochenstunden (Zahl) | 65 % | |
+| Arbeitszeit bekannt (Zahl oder Voll-/Teilzeit, ohne Lehre) | 92 % | |
+| Beschäftigungsart (emp) | 95 % | |
+| Kısa metin (<600 karakter, fetcher detay sayfasını açmıyor olabilir) | 2 % | |
 
 ## En kötü şirketler (≥5 ilan)
 
@@ -22,35 +22,35 @@
 
 | Şirket | İlan | Maaş | Ort. metin |
 |---|---|---|---|
-| Julius Blum | 45 | 0 % | 10 |
 | UniQA | 40 | 0 % | 3115 |
 | McKinsey & Company | 29 | 0 % | 4000 |
 | Kearney | 20 | 0 % | 3869 |
-| MAN Truck & Bus Österreich | 18 | 0 % | 264 |
 | Bybit EU | 17 | 0 % | 3984 |
+| Bitpanda | 16 | 0 % | 4000 |
+| Austrian Airlines | 16 | 0 % | 2368 |
 | Qualysoft | 16 | 0 % | 1221 |
-| Bitpanda | 15 | 0 % | 4000 |
-| Austrian Airlines | 15 | 0 % | 2362 |
-| Volkshilfe Wien | 11 | 0 % | 50 |
-| BCG | 8 | 0 % | 341 |
-| Allianz Österreich | 7 | 0 % | 383 |
+| DHL Austria | 14 | 0 % | 200 |
+| Falstaff Verlags-Gesellschaft m.b.H. | 7 | 0 % | 2724 |
+| MAN Truck & Bus Österreich | 7 | 0 % | 298 |
+| Procter & Gamble Austria | 6 | 0 % | 200 |
+| BERNARD Gruppe | 5 | 0 % | 3203 |
 
 **Saat:**
 
 | Şirket | İlan | Saat | Ort. metin |
 |---|---|---|---|
-| Julius Blum | 45 | 0 % | 10 |
-| MAN Truck & Bus Österreich | 18 | 0 % | 264 |
-| Volkshilfe Wien | 11 | 0 % | 50 |
-| BCG | 8 | 0 % | 341 |
-| Allianz Österreich | 7 | 0 % | 383 |
-| ProSiebenSat.1 PULS 4 | 7 | 0 % | 4000 |
+| MAN Truck & Bus Österreich | 7 | 0 % | 298 |
 | UNIDO | 6 | 0 % | 4000 |
-| EFS Unternehmensberatung GesmbH | 6 | 0 % | 2564 |
 | OMV | 5 | 0 % | 3327 |
 | Leyrer + Graf | 31 | 3 % | 3032 |
 | Bybit EU | 17 | 6 % | 3984 |
 | Lomography | 13 | 8 % | 3467 |
+| Kearney | 20 | 10 % | 3869 |
+| McKinsey & Company | 29 | 10 % | 4000 |
+| Austrian Airlines | 16 | 13 % | 2368 |
+| DHL Austria | 14 | 14 % | 200 |
+| Swarovski | 6 | 17 % | 3876 |
+| Massar Capital | 6 | 17 % | 2661 |
 
 ## Elle kontrol listesi (25 rastgele ilan)
 
@@ -58,28 +58,28 @@
 
 | İlan | Şirket | Deutsch | Englisch | Erfahrung | Abschluss | Saat |
 |---|---|---|---|---|---|---|
-| [Institutsreferent*in](https://jobs.univie.ac.at/job/Institutsreferentin/1450301733/) | Universität Wien | C1 | B2 | keine | Matura/Lehre | ✓ |
-| [Praktikant:in (m/w/d) im Bereich Compliance](https://careers.unicredit.eu/en_GB/jobsuche/JobDetail/AT-EXT-WP-Praktikum-UCBA-CEO-Compliance-2027/117163) | UniCredit Bank Austria | C1 | B2 | keine | Bachelor lfd. | ✓ |
-| [Praktikant:in (w/m/d) im Bereich Risk](https://careers.unicredit.eu/en_GB/jobsuche/JobDetail/AT-WP-CRO-Risk-2026/63663) | UniCredit Bank Austria | C1 | B2 | keine | Bachelor lfd. | ✓ |
-| [FH-/Uni-Praktikant:in Legal Schwerpunkt KI-Recht (AI Legal)](https://www.erstegroup.com/de/karriere/stellenangebote/job-detail/fh-uni-praktikant-in-legal-schwerpunkt-ki-recht-ai-legal/35055) | Erste Bank | C1 | B2 | keine | Bachelor lfd. | ✓ |
-| [Teamkoordinator:in Trusted Infrastructure Services](https://oebb.csod.com/ux/ats/careersite/4/home/requisition/25703?c=oebb) | ÖBB | ? | ? | keine | Matura/Lehre | – |
-| [Facharbeiter:in Gleisbautechnik](https://oebb.csod.com/ux/ats/careersite/4/home/requisition/26046?c=oebb) | ÖBB | C1 | ? | ? | Matura/Lehre | ✓ |
-| [Business Site Reliability Engineer](https://job-boards.eu.greenhouse.io/bybit/jobs/4939042101) | Bybit EU | – | B2 | 3–5 J. | ? | – |
-| [Praktikant:in (m/w/d) im Bereich Regulatory Affairs](https://careers.unicredit.eu/en_GB/jobsuche/JobDetail/AT-EXT-WP-Praktikum-UCBA-CEO-Regulatory-Affairs-2027/117361) | UniCredit Bank Austria | C1 | B2 | keine | Bachelor lfd. | ✓ |
-| [Security Architekt:in PAM](https://oebb.csod.com/ux/ats/careersite/4/home/requisition/25554?c=oebb) | ÖBB | B2 | B1 | 3–5 J. | Bachelor | ✓ |
-| [Facharbeiter:in Oberleitung](https://oebb.csod.com/ux/ats/careersite/4/home/requisition/24209?c=oebb) | ÖBB | C1 | ? | ? | Matura/Lehre | ✓ |
-| [Ausgebildete:r Lokführer:in mit Erfahrung](https://oebb.csod.com/ux/ats/careersite/4/home/requisition/25637?c=oebb) | ÖBB | C1 | ? | ? | Matura/Lehre | – |
-| [Erfahrene:r Change Manager:in](https://oebb.csod.com/ux/ats/careersite/4/home/requisition/25239?c=oebb) | ÖBB | B2 | ? | keine | Bachelor | ✓ |
-| [Ferialjob Produktion Sommer 2027](https://julius-blum-gmbh.onlyfy.jobs/en/job/fgrmu5aye9vngkv7ixt1t6e32atdpf1?career_page_search=page%3D3) | Julius Blum | ? | ? | ? | ? | – |
-| [Ferialjob 2027](https://www.erstegroup.com/de/karriere/stellenangebote/job-detail/ferialjob-2027/34488) | Dornbirner Sparkasse AG | ? | ? | keine | Bachelor lfd. | ✓ |
-| [Mitarbeiter:in Asset Compliance und Rechte & Pflichten mit S](https://oebb.csod.com/ux/ats/careersite/4/home/requisition/26254?c=oebb) | ÖBB | B2 | ? | 1–2 J. | Bachelor | ✓ |
-| [Ferialpraktikum 2027](https://www.erstegroup.com/de/karriere/stellenangebote/job-detail/ferialpraktikum-2027/34450) | Sparkasse Kufstein | ? | ? | 1–2 J. | Bachelor lfd. | ✓ |
-| [Praktikant:innen technisches Anlagenmanagement](https://oebb.csod.com/ux/ats/careersite/4/home/requisition/26154?c=oebb) | ÖBB | B2 | ? | keine | Bachelor lfd. | – |
-| [Junior Spezialist:in Technisches Dokumentenmanagement](https://oebb.csod.com/ux/ats/careersite/4/home/requisition/26168?c=oebb) | ÖBB | B2 | B1 | keine | Matura/Lehre | ✓ |
-| [Ferialjob in der Sparkasse Oberösterreich 2027](https://www.erstegroup.com/de/karriere/stellenangebote/job-detail/ferialjob-in-der-sparkasse-oberosterreich-2027/34005) | Sparkasse Oberösterreich | ? | ? | keine | Bachelor lfd. | ✓ |
-| [Facharbeiter:in - Schweißer:in](https://oebb.csod.com/ux/ats/careersite/4/home/requisition/25620?c=oebb) | ÖBB | B2 | ? | ? | Matura/Lehre | ✓ |
-| [Kundenbetreuer:in Freie Berufe](https://www.erstegroup.com/de/karriere/stellenangebote/job-detail/kundenbetreuer-in-freie-berufe/33832) | Erste Bank | ? | ? | 3–5 J.* | ? | ✓ |
-| [Ferialangestellte:r 2027 (all genders)](https://www.erstegroup.com/de/karriere/stellenangebote/job-detail/ferialangestellte-r-2027-all-genders/34351) | SPK NOE MITTE WEST AG | ? | ? | 1–2 J. | Bachelor lfd. | ✓ |
-| [Kundenbetreuung TOP](https://www.erstegroup.com/de/karriere/stellenangebote/job-detail/kundenbetreuung-top/34909) | Sparkasse Baden | B2 | ? | 3–5 J. | Matura/Lehre | ✓ |
-| [KFZ-Mechaniker:In/Mechatroniker:In (m/w/d)](https://jobs.man.eu/job/KFZ-MechanikerInMechatronikerIn-%28mwd%29/6975-de_DE) | MAN Truck & Bus Österreich | ? | ? | keine | Matura/Lehre | – |
-| [Service Owner:in Zustandsüberwachung Schienenfahrzeuge (Zugl](https://oebb.csod.com/ux/ats/careersite/4/home/requisition/26409?c=oebb) | ÖBB | ? | ? | ? | Bachelor | ✓ |
+| [Data & Analytics - Data Engineer (all genders)](https://group.vig/karriere/bewerben/stellenangebot/?handle=89) | Vienna Insurance Group (VIG) | C1 | B2 | keine | Bachelor lfd. | ✓ |
+| [Portier*in mit Wiegetätigkeit (w/m/d)](https://jobs.wienerstadtwerke.at/de/jobs/27447/portierin-mit-wiegetatigkeit-wmd) | Wiener Stadtwerke-Gruppe | C1 | ? | keine | Matura/Lehre | ✓ |
+| [Associate, Customer Support - Live chat](https://job-boards.eu.greenhouse.io/bitpanda/jobs/4969789101) | Bitpanda | – | C1 | keine | – | – |
+| [Junior Projekt Manager (all gender)](https://jobs.smartrecruiters.com/ALTEN/744000156281889) | ALTEN Austria | C1 | ? | keine | Matura/Lehre | ✓ |
+| [Software Development Engineer – Automation & Mechatronics (a](https://jobs.smartrecruiters.com/ALTEN/744000161267469) | ALTEN Austria | – | B1 | 3–5 J. | Master | ✓ |
+| [Underwriter:in Haftpflicht Corporate Individual](https://careers.uniqagroup.com/job/Wien-Underwriterin-Haftpflicht-Corporate-Individual/1444782033/) | UniQA | C1 | B1 | 3–5 J.* | Bachelor | – |
+| [Berufseinsteiger (m/w/d) in der Wirtschaftsprüfung - Standor](https://pwc.wd3.myworkdayjobs.com/Global_Campus_Careers/job/Linz---Hafenstrae-2a/Berufseinsteiger--m-w-d---in-der-Wirtschaftsprfung---Standort-Linz_655467WD) | PwC | B2 | C1 | keine | Bachelor lfd. | ✓ |
+| [Professional IAM Engineer (w/m/d)](https://careers.telekom.com/en/jobs/professional-iam-engineer-w-m-d-563465370529435) | Deutsche Telekom Cyber Security Austria GmbH | ? | ? | 3–5 J. | Bachelor | – |
+| [(Junior) Consultant (all genders) Advisory/Meldewesen](https://jobs.smartrecruiters.com/DeloitteAT/744000149576579) | Deloitte Austria | B2 | B2 | keine | Bachelor | ✓ |
+| [Universitätsassistent*in prae doc](https://jobs.wu.ac.at/Universitaetsassistentin-prae-doc-de-j2950.html) | WU Wien | C1 | C1 | ? | Master | ✓ |
+| [Berufseinsteiger:in (all genders) Steuerberatung](https://jobs.smartrecruiters.com/DeloitteAT/744000155171740) | Deloitte Austria | C1 | B2 | keine | Bachelor lfd. | ✓ |
+| [Marketing & Growth Specialist (f/m/d)](https://holzkern.jobs.personio.de/job/2651645) | Holzkern | – | C1 | 1–2 J. | – | ✓ |
+| [(Associate) Manager (all genders) Audit mit Fokus Private & ](https://jobs.smartrecruiters.com/DeloitteAT/744000148741499) | Deloitte Austria | B2 | ? | ? | Bachelor lfd. | ✓ |
+| [(Junior) Consultant (all genders) Solution Developer](https://jobs.smartrecruiters.com/DeloitteAT/744000159575489) | Deloitte Austria | C1 | B2 | keine | Bachelor lfd. | ✓ |
+| [Serviceassistent:In (m/w/d)](https://jobs.man.eu/job/ServiceassistentIn-%28mwd%29/6903-de_DE) | MAN Truck & Bus Österreich | ? | ? | 1–2 J. | ? | – |
+| [Junior Consultant (all genders) Forensic](https://jobs.smartrecruiters.com/DeloitteAT/744000159852879) | Deloitte Austria | C1 | B2 | 1–2 J. | Bachelor | ✓ |
+| [Masterarbeit „Elektrochemische Biosensoren für die Nukleinsä](https://jobs.ait.ac.at/Job/269965) | AIT Austrian Institute of Technology | ? | B1 | keine | Bachelor lfd. | ✓ |
+| [Erfahrene Personalverrechner:innen (all genders)](https://jobs.smartrecruiters.com/DeloitteAT/744000148998839) | Deloitte Austria | B2 | ? | 3–5 J.* | Bachelor | – |
+| [Berufsanwärter:in (all genders) Steuerberatung mit erster Be](https://jobs.smartrecruiters.com/DeloitteAT/744000158036839) | Deloitte Austria | B2 | ? | 1–2 J. | Bachelor | ✓ |
+| [Category Planning & Development Manager (m/f/d)](https://wd3.myworkdaysite.com/recruiting/mdlz/External/job/Vienna-Austria/Category-Planning---Development-Manager--m-f-d-_R-180065-1) | Mondelez Österreich | C1 | C1 | 3–5 J. | Bachelor lfd. | ✓ |
+| [Anlagenplaner (m/w/x)](https://wd3.myworkdaysite.com/recruiting/magna/Magna/job/Graz-AT/Anlagenplaner--m-w-x-_R00260442-5) | Magna | B2 | ? | keine | Matura/Lehre | ✓ |
+| [AI Automation Specialist & Executive Assistant to the C-Leve](https://holzkern.jobs.personio.de/job/2805293) | Holzkern | B2 | B2 | 1–2 J. | ? | ✓ |
+| [Projektmanager:in (all genders) / BMD, Digitalisierung & Aut](https://jobs.smartrecruiters.com/DeloitteAT/744000156596769) | Deloitte Austria | B2 | ? | ? | Bachelor | ✓ |
+| [Berufsanwärter:in (all genders) Steuerberatung I Fokus Umsat](https://jobs.smartrecruiters.com/DeloitteAT/744000160193544) | Deloitte Austria | C1 | B2 | 1–2 J. | Bachelor | ✓ |
+| [Master Thesis “Differentiable Ray Tracing for Radio Propagat](https://jobs.ait.ac.at/Job/269596) | AIT Austrian Institute of Technology | – | ? | ? | Master | ✓ |

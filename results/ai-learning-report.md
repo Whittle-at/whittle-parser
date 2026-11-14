@@ -1,9 +1,9 @@
-# Parser öğrenme raporu — 2026-11-13
+# Parser öğrenme raporu — 2026-11-14
 
-Kaynak: results/ai-soft-cache.json. İfade (_q) taşıyan ilan kaydı: **3466**.
+Kaynak: results/ai-soft-cache.json. İfade (_q) taşıyan ilan kaydı: **3591**.
 Terfi eşiği: ≥3 ilan, ≥2 farklı şirket, oyların ≥%90'i aynı değer.
 
-## Terfi etmiş kurallar (200) — artık AI'ya sorulmadan uygulanıyor
+## Terfi etmiş kurallar (205) — artık AI'ya sorulmadan uygulanıyor
 Sürekli burada duranlar parser'daki kalıcı regex'e taşınmaya aday.
 
 | Alan | Değer | İfade | İlan | Şirket |
@@ -12,11 +12,11 @@ Sürekli burada duranlar parser'daki kalıcı regex'e taşınmaya aday.
 | f_customers | `"b2c"` | umgang mit menschen | 29 | 2 |
 | team | `"large"` | kollegialen team | 20 | 4 |
 | certs | `["lap"]` | abgeschlossene ausbildung | 18 | 2 |
-| deg | `1` | abgeschlossene kaufmännische ausbildung | 16 | 10 |
+| deg | `1` | abgeschlossene kaufmännische ausbildung | 18 | 12 |
 | team | `"large"` | teil eines engagierten teams | 15 | 2 |
+| hrs | `[40,40]` | 40 wochenstunden | 13 | 6 |
 | en | `1` | grundkenntnisse in englisch | 12 | 2 |
 | f_place | `"field"` | in der filiale | 12 | 3 |
-| hrs | `[40,40]` | 40 wochenstunden | 12 | 5 |
 | deg | `1` | abgeschlossene schul- oder berufsausbildung | 10 | 2 |
 | team | `"large"` | dynamischen team | 10 | 9 |
 | f_customers | `"b2c"` | menschen mit behinderung | 9 | 2 |
@@ -37,6 +37,7 @@ Sürekli burada duranlar parser'daki kalıcı regex'e taşınmaya aday.
 | hrs | `[25,25]` | 25 wochenstunden | 5 | 3 |
 | mobile | `1` | auf den baustellen | 5 | 2 |
 | start | `"2027-01"` | ab jänner 2027 | 5 | 4 |
+| start | `"2027-02"` | ab februar 2027 | 5 | 5 |
 | team | `"large"` | motivierten team | 5 | 2 |
 | variety | `1` | spannende projekte | 5 | 2 |
 | variety | `1` | vielseitiges aufgabengebiet | 5 | 3 |
@@ -67,6 +68,8 @@ Sürekli burada duranlar parser'daki kalıcı regex'e taşınmaya aday.
 | team | `"large"` | engagierten team | 4 | 2 |
 | team | `"small"` | herzliches team | 4 | 2 |
 | variety | `1` | abwechslungsreiches aufgabengebiet | 4 | 2 |
+| wm | `"hybrid"` | flexible arbeitszeiten | 4 | 3 |
+| wm | `"onsite"` | vollzeit 38,5 wochenstunden | 4 | 2 |
 | autonomy | `1` | eigenverantwortliche arbeitsweise | 3 | 3 |
 | autonomy | `1` | hohe eigeninitiative | 3 | 2 |
 | autonomy | `1` | strukturierte arbeitsweise | 3 | 2 |
@@ -83,7 +86,9 @@ Sürekli burada duranlar parser'daki kalıcı regex'e taşınmaya aday.
 | cust | `1` | zusammenarbeit mit fachbereichen | 3 | 3 |
 | cust | `1` | beim kunden vor ort | 3 | 2 |
 | cust | `1` | arbeit mit menschen | 3 | 2 |
+| cust | `1` | betreuung unserer kund:innen | 3 | 2 |
 | cust | `1` | collaborate with cross-functional teams | 3 | 3 |
+| cust | `1` | single point of contact | 3 | 2 |
 | de | `3` | sehr gute kenntnisse | 3 | 3 |
 | de | `3` | abgeschlossene technische ausbildung | 3 | 3 |
 | de | `3` | abgeschlossene ausbildung | 3 | 3 |
@@ -147,6 +152,7 @@ Sürekli burada duranlar parser'daki kalıcı regex'e taşınmaya aday.
 | f_shift | `"day"` | geregelte arbeitszeiten von montag bis freitag | 3 | 2 |
 | f_shift | `"day"` | flexible arbeitszeiten | 3 | 3 |
 | f_shift | `"day"` | flexible working hours | 3 | 2 |
+| f_shift | `"day"` | 40 wochenstunden | 3 | 2 |
 | f_shift | `"day"` | montag bis freitag | 3 | 2 |
 | f_shift | `"day"` | 38,5 stunden/woche | 3 | 2 |
 | f_shift | `"day"` | flexible arbeitszeitmodelle | 3 | 3 |
@@ -160,8 +166,9 @@ Sürekli burada duranlar parser'daki kalıcı regex'e taşınmaya aday.
 | hrs | `[38.5,38.5]` | 38.5 hours per week | 3 | 3 |
 | hrs | `[38.5,38.5]` | 38,5 std./woche | 3 | 2 |
 | hrs | `[35,35]` | 35 wochenstunden | 3 | 3 |
-| hrs | `[30,38.5]` | ab 30 wochenstunden | 3 | 2 |
+| hrs | `[38.5,38.5]` | 38,5 wstd | 3 | 2 |
 | hrs | `[15,15]` | 15 wochenstunden | 3 | 3 |
+| leadership | `1` | supervision of students | 3 | 2 |
 | mobile | `1` | führerschein der klasse b | 3 | 3 |
 | phys | `1` | handwerkliches geschick | 3 | 3 |
 | sem | `4` | fortgeschrittenes studium | 3 | 2 |
@@ -176,13 +183,13 @@ Sürekli burada duranlar parser'daki kalıcı regex'e taşınmaya aday.
 | start | `"2027-01"` | ab 01.01.2027 | 3 | 2 |
 | start | `"2026-12"` | ab dezember 2026 | 3 | 2 |
 | start | `"2027-09"` | lehrbeginn: 01. september 2027 | 3 | 2 |
-| start | `"2027-02"` | ab februar 2027 | 3 | 3 |
 | study | `["health"]` | gesundheits- und krankenpflege | 3 | 2 |
 | study | `["jus"]` | abgeschlossenes studium der rechtswissenschaften | 3 | 3 |
 | study | `["wirt"]` | kaufmännische ausbildung | 3 | 2 |
 | study | `["wirt"]` | wirtschaftliche ausbildung | 3 | 3 |
 | study | `["tech"]` | abgeschlossene ausbildung im bereich informatik | 3 | 3 |
 | study | `["tech"]` | abgeschlossene technische ausbildung | 3 | 3 |
+| study | `["tech","wirt"]` | wirtschaftliche oder technische ausbildung | 3 | 3 |
 | study | `["wirt"]` | laufendes wirtschaftliches studium | 3 | 2 |
 | study | `["jus"]` | rechtswissenschaften oder wirtschaftsrecht | 3 | 2 |
 | study | `["jus"]` | abgeschlossenes rechtswissenschaftliches studium | 3 | 2 |
@@ -201,15 +208,8 @@ Sürekli burada duranlar parser'daki kalıcı regex'e taşınmaya aday.
 | variety | `1` | kein tag wie der andere | 3 | 3 |
 | variety | `1` | deine aufgaben | 3 | 2 |
 | variety | `1` | vielfältigen aufgaben | 3 | 3 |
-| variety | `1` | abwechslungsreiche aufgaben | 3 | 2 |
-| wm | `"hybrid"` | flexible arbeitszeitmodelle | 3 | 2 |
-| wm | `"onsite"` | am standort wien | 3 | 2 |
-| wm | `"onsite"` | dienstort: wien | 3 | 2 |
-| wm | `"hybrid"` | flexible arbeitszeiten | 3 | 2 |
-| wm | `"onsite"` | vollzeit 38,5 wochenstunden | 3 | 2 |
-| wm | `"hybrid"` | home-office möglichkeit | 3 | 2 |
 
-## Yaklaşanlar (1532) — bir-iki ilan daha görülürse terfi eder
+## Yaklaşanlar (1579) — bir-iki ilan daha görülürse terfi eder
 
 | Alan | Değer | İfade | İlan | Şirket |
 |---|---|---|---|---|
@@ -242,9 +242,9 @@ Sürekli burada duranlar parser'daki kalıcı regex'e taşınmaya aday.
 | competitive | `1` | high performance/high reward culture | 21 | 1 |
 | variety | `1` | lieben abwechslung | 20 | 1 |
 | autonomy | `1` | abwechslung und packen gerne mit an | 19 | 1 |
+| certs | `["fsB"]` | gültigen pkw-führerschein | 18 | 1 |
 | f_customers | `"b2c"` | kund_innen in allen lebenssituationen | 18 | 1 |
 | phys | `1` | sie stehen und gehen viel | 18 | 1 |
-| certs | `["fsB"]` | gültigen pkw-führerschein | 17 | 1 |
 | hrs | `[30,38]` | 30-38 wochenstunden | 17 | 1 |
 | variety | `1` | jede menge abwechslung | 17 | 1 |
 | cust | `1` | arbeit mit sozialen randgruppen | 16 | 1 |
@@ -305,6 +305,7 @@ Sürekli burada duranlar parser'daki kalıcı regex'e taşınmaya aday.
 | cust | `1` | work with colleagues and clients | 8 | 1 |
 | deg | `3` | registrierung im gesundheitsberuferegister zum gehobenen dienst | 8 | 1 |
 | f_cold | `"yes"` | backen und bereitstellen der backware | 8 | 1 |
+| f_commission | `"yes"` | monatlicher leistungsbonus | 8 | 1 |
 | f_customers | `"b2b"` | fortune-500- und dax-unternehmen | 8 | 1 |
 | f_place | `"field"` | montage von reifen und felgen | 8 | 1 |
 | f_sales | `"yes"` | verkauf von versicherungsprodukten | 8 | 1 |
@@ -312,9 +313,8 @@ Sürekli burada duranlar parser'daki kalıcı regex'e taşınmaya aday.
 | shift | `1` | straf- bzw. maßnahmenvollzug | 8 | 1 |
 | start | `"2027-01"` | as of mid january 2027 | 8 | 1 |
 | study | `["wirt"]` | laufendes studium mit wirtschaftlichem schwerpunkt | 8 | 1 |
-| variety | `1` | du entwickelst deinen standort aktiv | 8 | 1 |
 
-## Çelişkili ifadeler (113) — aynı ifade farklı değerlere işaret ediyor, kural OLMAZ
+## Çelişkili ifadeler (117) — aynı ifade farklı değerlere işaret ediyor, kural OLMAZ
 Bunlar genelde AI'nın bağlama göre karar verdiği yerler; prompt ya da alan tanımı netleştirilebilir.
 
 | Alan | Değer | İfade | İlan | Şirket | Oylar |
@@ -322,7 +322,7 @@ Bunlar genelde AI'nın bağlama göre karar verdiği yerler; prompt ya da alan t
 | en | `3` | fluent in english | 29 | 14 | 3×20, 4×9 |
 | en | `2` | gute deutsch- und englischkenntnisse | 13 | 11 | 2×7, 3×6 |
 | en | `3` | fluent in german and english | 11 | 5 | 2×1, 3×8, 4×2 |
-| de | `3` | abgeschlossene kaufmännische ausbildung | 8 | 7 | 2×1, 3×7 |
+| de | `3` | abgeschlossene kaufmännische ausbildung | 9 | 8 | 2×1, 3×8 |
 | en | `3` | fluent english | 8 | 4 | 1×1, 2×1, 3×4, 4×2 |
 | en | `4` | excellent command of written and spoken english | 8 | 1 | 3×2, 4×6 |
 | hrs | `[20,20]` | 20 wochenstunden | 8 | 5 | [19.25,19.25]×2, [20,20]×6 |
@@ -334,6 +334,7 @@ Bunlar genelde AI'nın bağlama göre karar verdiği yerler; prompt ya da alan t
 | deg | `1` | abgeschlossene fachspezifische ausbildung | 6 | 2 | 1×3, 3×3 |
 | deg | `3` | abgeschlossene wirtschaftliche ausbildung | 6 | 2 | 1×1, 3×5 |
 | en | `3` | deutsch und englisch | 6 | 4 | 2×2, 3×4 |
+| en | `2` | auf deutsch und englisch | 6 | 1 | 1×1, 2×5 |
 | en | `3` | fluency in english | 6 | 4 | 3×3, 4×3 |
 | f_night | `"none"` | keine nachtdienste | 6 | 3 | "none"×5, "has"×1 |
 | study | `["tech","wirt"]` | kaufmännische oder technische ausbildung | 6 | 5 | ["tech","wirt"]×5, ["wirt"]×1 |
@@ -344,6 +345,7 @@ Bunlar genelde AI'nın bağlama göre karar verdiği yerler; prompt ya da alan t
 | de | `2` | gute deutsch- und/oder englischkenntnisse | 5 | 1 | 2×3, 3×2 |
 | de | `3` | excellent written and spoken german | 5 | 4 | 3×4, 4×1 |
 | en | `3` | excellent command of english | 5 | 3 | 3×3, 4×2 |
+| en | `3` | englisch in wort und schrift | 5 | 4 | 2×1, 3×4 |
 | en | `2` | sprachtraining in englisch | 5 | 1 | 1×1, 2×4 |
 | exp | `2` | mehrjährige berufserfahrung in einer ähnlichen position | 5 | 1 | 1×1, 2×4 |
 | f_place | `"office"` | a1 shop | 5 | 1 | "field"×2, "office"×3 |
@@ -352,13 +354,15 @@ Bunlar genelde AI'nın bağlama göre karar verdiği yerler; prompt ya da alan t
 | en | `2` | gute deutsch- und/oder englischkenntnisse | 4 | 1 | 1×1, 2×3 |
 | en | `2` | gute deutsch- und / oder englischkenntnisse | 4 | 1 | 1×1, 2×3 |
 | en | `3` | fluency in english and german | 4 | 4 | 3×2, 4×2 |
-| en | `3` | englisch in wort und schrift | 4 | 4 | 2×1, 3×3 |
 | en | `3` | application should be in english | 4 | 1 | 3×3, 4×1 |
 | exp | `2` | mehrjährige berufserfahrung | 4 | 3 | 1×1, 2×3 |
+| f_night | `"has"` | flexible arbeitszeiten | 4 | 4 | "has"×2, "none"×2 |
 | f_place | `"field"` | im studio | 4 | 1 | "field"×2, "office"×2 |
 | f_place | `"office"` | im friseur- und kosmetikstudio | 4 | 1 | "office"×2, "field"×2 |
+| hrs | `[30,38.5]` | ab 30 wochenstunden | 4 | 3 | [30,38.5]×3, [30,30]×1 |
 | start | `"2027-07"` | sommermonate 2027 | 4 | 1 | "2027-07"×3, "2027-06"×1 |
 | team | `"large"` | young, dynamic team | 4 | 2 | "small"×1, "large"×3 |
+| team | `"large"` | motiviertes team | 4 | 3 | "large"×3, "small"×1 |
 | de | `2` | gute deutsch- und oder englischkenntnisse | 3 | 1 | 2×2, 3×1 |
 | de | `3` | fluent in german and english | 3 | 2 | 3×2, 4×1 |
 | de | `3` | perfekte deutschkenntnisse in wort und schrift | 3 | 3 | 3×2, 4×1 |
@@ -375,7 +379,3 @@ Bunlar genelde AI'nın bağlama göre karar verdiği yerler; prompt ya da alan t
 | exp | `2` | mehrjährige berufs- und führungserfahrung | 3 | 1 | 2×2, 3×1 |
 | f_commission | `"yes"` | attraktive zuverdienstmöglichkeiten | 3 | 1 | "no"×1, "yes"×2 |
 | f_customers | `"b2b"` | für unsere kunden | 3 | 3 | "b2c"×1, "b2b"×2 |
-| f_customers | `"b2c"` | unsere kunden | 3 | 3 | "b2c"×2, "b2b"×1 |
-| f_customers | `"b2c"` | österreichische publikum | 3 | 1 | "b2c"×2, "b2b"×1 |
-| f_night | `"has"` | flexible arbeitszeiten | 3 | 3 | "has"×2, "none"×1 |
-| f_shift | `"three"` | wochenend- und nachtdienste | 3 | 2 | "three"×2, "two"×1 |
